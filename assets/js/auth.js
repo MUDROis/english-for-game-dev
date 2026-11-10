@@ -139,8 +139,9 @@
       var pass = passEl.value;
       showErr('');
       if (!email || !pass) { showErr('Enter both email and password.'); return; }
-      if (unconfigured) return;
-      if (!auth) { showErr('Auth is unavailable right now.'); return; }
+      if (unconfigured) { showErr('Firebase is not configured — open assets/js/firebase-config.js and add your apiKey.'); return; }
+      if (!auth) { showErr('Authentication is not ready yet — try reloading the page.'); return; }
+      setDiag('attempting sign-in…');
       submitBtn.disabled = true;
       submitBtn.textContent = 'Signing in…';
       auth.signInWithEmailAndPassword(email, pass)
