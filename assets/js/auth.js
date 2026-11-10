@@ -26,7 +26,7 @@
     'auth/operation-not-allowed': 'Email/password sign-in is not enabled in your Firebase console (Authentication → Sign-in method).',
     'auth/invalid-email': 'That email looks invalid.',
     'auth/too-many-requests': 'Too many attempts — wait a minute and try again.',
-    'auth/invalid-api-key': 'Firebase is not configured yet — add your apiKey in assets/js/firebase-config.js.',
+    'auth/invalid-api-key': 'The Firebase API key is invalid. Open assets/js/firebase-config.js and check it holds the apiKey of THIS project (english-for-game-dev), and that the key is not restricted in Google Cloud Console.',
     'auth/network-request-failed': 'Network error — check your connection.'
   };
 
@@ -40,9 +40,11 @@
       '  <div class="auth-eyebrow">🔒 Course access</div>' +
       '  <h3>' + (isLesson ? 'Sign in to study' : 'Sign in') + '</h3>' +
       '  <p class="auth-sub">' + (isLesson ? 'Lesson pages require a signed-in course account.' : 'Sign in to open course lessons.') + '</p>' +
-      '  <label class="auth-field">Email<input type="email" id="authEmail" autocomplete="email" spellcheck="false"></label>' +
-      '  <label class="auth-field">Password<input type="password" id="authPass" autocomplete="current-password"></label>' +
-      '  <button class="btn primary w100" id="authSubmit" type="button">Sign in</button>' +
+      '  <form id="authForm">' +
+      '    <label class="auth-field">Email<input type="email" id="authEmail" autocomplete="email" spellcheck="false"></label>' +
+      '    <label class="auth-field">Password<input type="password" id="authPass" autocomplete="current-password"></label>' +
+      '    <button class="btn primary w100" id="authSubmit" type="submit">Sign in</button>' +
+      '  </form>' +
       '  <p class="auth-err" id="authErr"></p>' +
       '  <p class="auth-hint">Your progress stays in this browser. No account? Ask the course admin.</p>' +
       '  <a class="auth-back" href="' + (isLesson ? '../index.html' : 'index.html') + '">← Back to course map</a>' +
@@ -53,6 +55,7 @@
     var passEl = d.querySelector('#authPass');
     var errEl = d.querySelector('#authErr');
     var submitBtn = d.querySelector('#authSubmit');
+    var form = d.querySelector('#authForm');
 
     function showErr(msg) {
       errEl.textContent = msg || '';
@@ -80,10 +83,7 @@
         });
     }
 
-    submitBtn.addEventListener('click', trySignIn);
-    d.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter' && !submitBtn.disabled) trySignIn();
-    });
+    form.addEventListener('submit', function (e) { e.preventDefault(); trySignIn(); });
     d.addEventListener('click', function (e) { if (e.target === d) hide(); });
   }
 
