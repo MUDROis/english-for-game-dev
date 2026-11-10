@@ -12,8 +12,16 @@
   var auth = null, user = null;
   var initError = null;
   try {
-    if (window.firebase && !firebase.apps.length) firebase.initializeApp(config);
-    if (window.firebase) auth = firebase.auth();
+    if (window.firebase) {
+      if (!firebase.apps.length) {
+        // never initialize an app without a real apiKey — that state breaks
+        // the SDK's Auth service later ("auth/invalid-api-key" on firebase.auth())
+        if (config.apiKey) firebase.initializeApp(config);
+      } else if (!firebase.apps[0].options.apiKey) {
+        initError = 'auth/invalid-api-key (app was initialized without an apiKey — hard-refresh the page / clear site data)';
+      }
+      if (firebase.apps.length && firebase.apps[0].options.apiKey) auth = firebase.auth();
+    }
   } catch (e) {
     auth = null;
     initError = (e && e.code) || (e && e.message) || String(e);
