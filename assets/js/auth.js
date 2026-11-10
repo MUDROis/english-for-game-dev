@@ -19,8 +19,11 @@
   var chip = document.getElementById('authChip');
 
   var ERR_MSGS = {
+    'auth/invalid-credential': 'Wrong email or password.',
     'auth/wrong-password': 'Wrong password.',
     'auth/user-not-found': 'No account with this email.',
+    'auth/user-disabled': 'This account has been disabled.',
+    'auth/operation-not-allowed': 'Email/password sign-in is not enabled in your Firebase console (Authentication → Sign-in method).',
     'auth/invalid-email': 'That email looks invalid.',
     'auth/too-many-requests': 'Too many attempts — wait a minute and try again.',
     'auth/invalid-api-key': 'Firebase is not configured yet — add your apiKey in assets/js/firebase-config.js.',
