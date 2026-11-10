@@ -4,7 +4,7 @@ Static site for a year-long English course (B1→B2) for a game-dev team lead:
 12 modules · 48 lessons · each lesson is a standalone HTML page with interactive
 exercises, audio, video and illustrations.
 
-**Ready to study: Modules 1–3 (lessons 1–12)**
+**Ready to study: Modules 1–4 (lessons 1–16)**
 - `lessons/m01-01.html` — Sprints, Builds and Right Now (Present Simple vs Present Continuous)
 - `lessons/m01-02.html` — State Verbs and the Rhythm of a Team (state verbs + frequency adverbs)
 - `lessons/m01-03.html` — A Startup, the Studio, Zero Doubts (articles)
@@ -17,6 +17,10 @@ exercises, audio, video and illustrations.
 - `lessons/m03-02.html` — How Long Have You Been Testing? (Present Perfect Continuous)
 - `lessons/m03-03.html` — Just, Yet, Still — and the Slopes (just/already/yet/still + for/since)
 - `lessons/m03-04.html` — Speaking Challenge: My Journey (+ Module Test 3)
+- `lessons/m04-01.html` — Will, Going To, or Already Booked? (will / going to / Present Continuous)
+- `lessons/m04-02.html` — By Q3 We Will Have Shipped (Future Continuous & Future Perfect)
+- `lessons/m04-03.html` — Likely, Probably, Might — Forecasting (the confidence ladder)
+- `lessons/m04-04.html` — Pitch Your Next Quarter (+ Module Test 4)
 
 Every lesson follows the yearly plan: Warm-up → Listening → Reading → Grammar →
 Grammar→Speaking → Writing → Homework. All interface text is in English; Russian
@@ -34,6 +38,7 @@ english-course-site/
 │   ├── m01-01.html … m01-04.html   # Module 1 — fully ready
 │   ├── m02-01.html … m02-04.html   # Module 2 — fully ready
 │   ├── m03-01.html … m03-04.html   # Module 3 — fully ready
+│   ├── m04-01.html … m04-04.html   # Module 4 — fully ready
 │   └── _template.html      # template for the next lessons
 ├── assets/
 │   ├── css/style.css       # platform styling (dark theme, orange/blue accents)

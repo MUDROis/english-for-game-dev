@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 13 — Will, Going To, or Already Booked? | English for Game Dev</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Play:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23f7941e'/><text x='50' y='68' font-size='52' text-anchor='middle' font-family='sans-serif' font-weight='bold' fill='%231a1104'>E</text></svg>">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><span class="cube">E</span> English for Game Dev</a>
+    <nav>
+      <a href="../index.html">← Course map</a>
+      <a href="m03-04.html">← Lesson 12</a>
+      <a href="#homework">Homework</a>
+      <span class="auth-chip" id="authChip">Sign in</span>
+    </nav>
+  </div>
+</header>
+
+<section class="lesson-hero">
+  <div class="wrap">
+    <div class="crumb">Module 4 · Plans, Roadmaps and the Future · Lesson 13 / 48</div>
+    <h1><span style="color:var(--acc)">Will</span>, <span style="color:var(--pc)">Going To</span>, or Already <span style="color:var(--ok)">Booked</span>?</h1>
+    <p class="goal">Module 4 moves from the past to the future: roadmaps, launch dates and forecasts. Lesson goal: say what you decide right now (will), what you planned before (going to) and what is already fixed in the calendar (Present Continuous) — the three futures every roadmap is built from.</p>
+    <div class="plan-chips">
+      <a class="tag time" href="#warmup">🔥 Warm-up · 10 min</a>
+      <a class="tag time" href="#listening">🎧 Listening · 12 min</a>
+      <a class="tag time" href="#reading">📖 Reading · 8 min</a>
+      <a class="tag time" href="#grammar">⚙️ Grammar · 15 min</a>
+      <a class="tag time" href="#speaking">🎤 Grammar → Speaking · 10 min</a>
+      <a class="tag time" href="#writing">✍️ Writing · 5 min</a>
+      <a class="tag" href="#homework">🏠 Homework · ≤30 min</a>
+    </div>
+  </div>
+</section>
+
+<div class="progress-wrap" id="lessonProgress">
+  <div class="wrap progress-row">
+    <span class="p-label">Lesson progress: 0/7</span>
+    <div class="bar"><i></i></div>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <!-- ============ 1. WARM-UP ============ -->
+  <section class="sec" id="warmup">
+    <div class="sec-head">
+      <div class="sec-num">1</div><h2>Warm-up</h2>
+      <span class="tag time">10 min</span><span class="tag">roadmaps · decisions · your next month</span>
+    </div>
+    <div class="note" style="margin-left:44px">Module 4 is the future module. In English there is no single "future tense" — there are three main roads: <span class="tag will">WILL</span> the decision you make while speaking, <span class="tag goto">GOING TO</span> the plan you made earlier, and <span class="tag arr">PRESENT CONTINUOUS</span> the arrangement that is already in the calendar. Every answer today should make that choice out loud.</div>
+
+    <div class="card audio-card">
+      <h3>🎧 Listen to the questions</h3>
+      <audio controls src="../assets/audio/m04-01-warmup.mp3" data-speeds preload="none"></audio>
+    </div>
+
+    <div class="card">
+      <h3>❓ Three questions — click a card to open the sentence starters</h3>
+      <div id="warmCards"></div>
+      <div class="note"><b>The rule of the lesson:</b> deciding or predicting at this moment → <span class="tag will">will</span>; a plan with early signs → <span class="tag goto">going to</span>; a fixed time, a person, a place → <span class="tag arr">Present Continuous</span>.</div>
+    </div>
+  </section>
+
+  <!-- ============ 2. LISTENING ============ -->
+  <section class="sec" id="listening">
+    <div class="sec-head">
+      <div class="sec-num">2</div><h2>Listening — The Roadmap Meeting</h2>
+      <span class="tag time">12 min</span><span class="tag">audio + comprehension</span>
+    </div>
+
+    <img src="../assets/img/l13-roadmap.png" alt="A game studio roadmap meeting — the founder points at a board with three colourful lanes while the team and a cat listen — illustration">
+    <div class="note">Monday morning, Harbour Lights. The winter update ships in December, and the roadmap board is full of sticky notes. Listen for the three futures: what is <b>decided in the room</b>, what was <b>planned before</b>, and what is <b>already in the calendar</b>.</div>
+
+    <div class="card">
+      <h3>🧩 Before you listen: 10 key words</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 4px">Click a word — a definition and an example will open. The Russian gloss is there to check your understanding. Listen to the recording of all ten words.</p>
+      <div id="vocabRow"></div>
+      <audio controls src="../assets/audio/m04-01-vocab.mp3" data-speeds preload="none" style="width:100%;height:40px"></audio>
+    </div>
+
+    <div class="card audio-card">
+      <h3>🎧 Track 1 — The Roadmap Meeting</h3>
+      <audio controls src="../assets/audio/m04-01-listening.mp3" data-speeds preload="none"></audio>
+      <div class="note" style="margin:0"><b>Listen 1 — for gist:</b> what date is fixed, and what does Dana promise? &nbsp;·&nbsp; <b>Listen 2 — for detail:</b> catch one decision (<i>will</i>), one plan (<i>going to</i>) and one arrangement (<i>Present Continuous</i>).</div>
+    </div>
+
+    <div id="listenMCQ"></div>
+    <div id="listenTF"></div>
+
+    <div class="card">
+      <h3>🌍 Extension — BBC 6 Minute English: Sharing the road with driverless cars</h3>
+      <p style="font-size:14.5px">From the yearly plan: <b><a href="https://www.bbc.co.uk/learningenglish/features/6-minute-english_2026/ep-260820" target="_blank" rel="noopener">Sharing the road with driverless cars ↗</a></b></p>
+      <p style="color:var(--mut);font-size:14px;margin:0">Task: listen and note 2 future forms — one with <i>will</i> + infinitive, one with <i>going to</i>. What will change in cities?</p>
+    </div>
+  </section>
+
+  <!-- ============ 3. READING ============ -->
+  <section class="sec" id="reading">
+    <div class="sec-head">
+      <div class="sec-num">3</div><h2>Reading — Dana's December Memo</h2>
+      <span class="tag time">8 min</span><span class="tag">text + future spotting</span>
+    </div>
+
+    <div class="card">
+      <h3>The December Memo</h3>
+      <p><b>From:</b> Dana · <b>To:</b> everyone · <b>Subject:</b> December without panic</p>
+      <p>Team, here is the December plan. The winter update is coming out on 12 December. I know we first said January, but the beta results are strong and the game is going to be ready early — the numbers say so, not my optimism.</p>
+      <p>Two promises from me. One: I will not add any new features to this release — the scope stays frozen. Two: I will answer every partner email this week, because our new partner is visiting the studio next Monday, and the office is going to look extra clean.</p>
+      <p>What I need from you. Tom is running the final regression cycle from 3 to 7 December — every test case, both platforms. Priya is finishing the trailer art by Friday. And when the build is ready, QA will send the report directly to me — no "we'll look at it later".</p>
+      <p>This time next month, this update will be history and you will all be heroes. Thank you, and back to work.</p>
+    </div>
+
+    <div id="readLabel"></div>
+    <div id="readTF"></div>
+
+    <div class="card">
+      <h3>🌍 Extension — The Guardian: Technology</h3>
+      <p style="font-size:14.5px">From the yearly plan — pick any fresh tech news: <b><a href="https://www.theguardian.com/technology" target="_blank" rel="noopener">theguardian.com/technology ↗</a></b></p>
+      <p style="color:var(--mut);font-size:14px;margin:0">Find the future forms (<i>will, going to, present continuous with future meaning</i>) — 3 examples minimum. Which one did the journalist choose for the headline?</p>
+    </div>
+  </section>
+
+  <!-- ============ 4. GRAMMAR ============ -->
+  <section class="sec" id="grammar">
+    <div class="sec-head">
+      <div class="sec-num">4</div><h2>Grammar — Will vs Going To vs Present Continuous</h2>
+      <span class="tag time">15 min</span><span class="tag">rules + 4 exercises</span>
+    </div>
+
+    <div class="grid2">
+      <div class="rulebox will">
+        <h3><span class="tag will">WILL</span> — decide now, predict now</h3>
+        <ul>
+          <li>A decision at the moment of speaking: <i>The trailer? We'<b>ll cut</b> it this week.</i></li>
+          <li>Predictions and opinions: <i>Players <b>will find</b> the secret in a day.</i></li>
+          <li>Promises and offers: <i>The update <b>will not break</b> your saves — I promise.</i></li>
+          <li>Signal words: <i>I think, probably, maybe, I'm sure</i></li>
+        </ul>
+        <div class="note" style="margin-top:10px">Service promises live here: <i>the update <b>will not break</b> your saves</i>. Nobody decided it before the sentence.</div>
+      </div>
+      <div class="rulebox goto">
+        <h3><span class="tag goto">GOING TO</span> — planned before, or evidence now</h3>
+        <ul>
+          <li>An intention made earlier: <i>We <b>are going to keep</b> this meeting short.</i></li>
+          <li>A prediction with visible evidence: <i>At this speed we <b>are going to pass</b> 50,000 wishlists.</i></li>
+          <li>Something you can already see coming: <i>Look at those clouds — it <b>is going to snow</b>.</i></li>
+        </ul>
+        <div class="note" style="margin-top:10px">The plan existed <b>before</b> the sentence. Will = decided <b>in</b> the sentence.</div>
+      </div>
+    </div>
+
+    <div class="rulebox arr" style="margin-top:14px">
+      <h3><span class="tag arr">PRESENT CONTINUOUS</span> — already in the calendar</h3>
+      <ul>
+        <li>A personal arrangement with time and people: <i>We <b>are presenting</b> the roadmap to our partner on Thursday.</i></li>
+        <li>Diaries, tickets, booked rooms: <i>The focus group <b>is testing</b> the beta on Saturday. I <b>am moving</b> the launch — it's decided.</i></li>
+        <li>Compare: <i>I'<b>ll meet</b> her tomorrow</i> (offer/decision now) vs <i>I<b>'m meeting</b> her tomorrow</i> (it's in the calendar).</li>
+      </ul>
+      <div class="note" style="margin-top:10px">If you can open your calendar and show it — it is Present Continuous. If you can only feel it — it is going to. If it was born while you speak — it is will.</div>
+    </div>
+
+    <div class="card">
+      <h3>⚙️ Mini-table — which future, and why?</h3>
+      <table class="gtable">
+        <tr><th>Sentence</th><th>Why?</th></tr>
+        <tr><td><i>We'<b>ll cut</b> the trailer this week.</i></td><td>Decided in the meeting, at the moment of speaking — <b>will</b>.</td></tr>
+        <tr><td><i>We <b>are going to keep</b> this short.</i></td><td>An intention made before the meeting — <b>going to</b>.</td></tr>
+        <tr><td><i>We <b>are presenting</b> the roadmap on Thursday.</i></td><td>Fixed in the calendar with people and time — <b>Present Continuous</b>.</td></tr>
+        <tr><td><i>The build <b>will not break</b> your saves.</i></td><td>A promise about the future — <b>will</b>.</td></tr>
+        <tr><td><i>We <b>are going to pass</b> 50,000 wishlists.</i></td><td>Evidence you can see now (the numbers) — <b>going to</b>.</td></tr>
+        <tr><td><i>The office <b>is going to look</b> extra clean.</i></td><td>A clear sign of the result — <b>going to</b>.</td></tr>
+      </table>
+      <div class="note">🩹 <b>Typical mistakes of Russian-speaking team leads:</b> <span class="no">I will to start the regression tomorrow</span> → <span class="yes">I will start the regression tomorrow</span> · <span class="no">I go to present the roadmap on Friday</span> → <span class="yes">I am presenting the roadmap on Friday</span> · <span class="no">We meet the partner next Monday (planned long ago)</span> → <span class="yes">We are meeting the partner next Monday</span> · <span class="no">Wait, I'm going to help! (decided right now)</span> → <span class="yes">Wait, I'll help!</span></div>
+    </div>
+
+    <div class="card">
+      <h3>🎬 Video — BBC 6 Minute Grammar: How to talk about the future (6 min)</h3>
+      <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/elPHkXNxi2g" title="BBC 6 Minute Grammar: How to talk about the future" loading="lazy" allowfullscreen></iframe></div>
+      <div class="note" style="margin:0">The BBC hosts walk through all the future forms in one episode. If the video does not open on this device — <a href="https://www.youtube.com/watch?v=elPHkXNxi2g" target="_blank" rel="noopener">watch on YouTube ↗</a>.</div>
+    </div>
+
+    <div id="gramMCQ"></div>
+    <div id="gramGap"></div>
+    <div id="gramOrder"></div>
+    <div id="gramTF"></div>
+
+    <div class="card">
+      <h3>🔊 Shadowing — speak along with the speaker</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 4px">Track A — decisions and promises (will), Track B — plans and arrangements (going to + Present Continuous). Listen to a sentence → repeat it out loud in the pause. Two loops per track.</p>
+      <div class="grid2">
+        <div class="audio-card">
+          <span class="tag will">Track A · Decisions &amp; promises</span>
+          <audio controls src="../assets/audio/m04-01-shadowing-a.mp3" data-speeds preload="none"></audio>
+        </div>
+        <div class="audio-card">
+          <span class="tag goto">Track B · Plans &amp; arrangements</span>
+          <audio controls src="../assets/audio/m04-01-shadowing-b.mp3" data-speeds preload="none"></audio>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. SPEAKING ============ -->
+  <section class="sec" id="speaking">
+    <div class="sec-head">
+      <div class="sec-num">5</div><h2>Grammar → Speaking — the main section of the lesson</h2>
+      <span class="tag time">10 min</span><span class="tag">goal: three futures in live speech</span>
+    </div>
+    <div class="note"><b>The 5-second rule:</b> before every future sentence ask silently: <i>deciding now, planned before, or in the calendar?</i> If you catch yourself saying <i>"I will to start"</i> — stop, rebuild calmly: <i>"I will start."</i> No <i>to</i> after will, ever.</div>
+
+    <div class="card">
+      <div class="speak-round">
+        <h3>🎙 Round 1 — Three Futures about One Plan <span class="tag will">the plan's drill</span></h3>
+        <p style="font-size:14.5px;margin:0 0 6px">Take <b>one</b> work task and say it three times, changing the future: first <b>will</b> (you decide right now), then <b>going to</b> (it was your intention), then <b>Present Continuous</b> (it is booked in the calendar). Model: <i>I will look into it → I am going to prototype it → I am presenting it on Friday.</i> Do the same with your real task. <b>90 seconds</b>.</p>
+        <div class="starters">
+          <span class="starter will">OK, I'll …</span>
+          <span class="starter goto">I'm going to …</span>
+          <span class="starter arr">I'm + -ing … on (day)</span>
+          <span class="starter will">I promise …</span>
+        </div>
+        <div id="rec1"></div>
+      </div>
+
+      <div class="speak-round">
+        <h3>🎙 Round 2 — Roadmap in Three Tenses <span class="tag goto">release plan</span></h3>
+        <p style="font-size:14.5px;margin:0 0 6px">Present a small release or study plan (your project, your QA course, your ski season) in 5–6 sentences. Requirement: <b>each future form at least once</b> — a decision, a plan with evidence, and one fixed arrangement. <b>120 seconds</b>.</p>
+        <div class="starters">
+          <span class="starter will">I think we'll …</span>
+          <span class="starter goto">The numbers say we're going to …</span>
+          <span class="starter arr">On (date) we're + -ing …</span>
+        </div>
+        <div id="rec2"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>🩹 Round 3 — Correction Sprint (roadmap edition)</h3>
+      <p style="font-size:14.5px;margin:0 0 6px">Five sentences with typical future mistakes — they sound like a real project chat. Correct each one <b>out loud</b> and explain why. Click a card to see the fix.</p>
+      <div id="fixCards"></div>
+      <div id="rec3"></div>
+    </div>
+
+    <div class="card">
+      <h3>⚡ Speed Drill — a situation every 5 seconds</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 8px">Open a card and instantly say a true sentence about your work or study. Choose the future first: is it born now, planned before, or in the calendar?</p>
+      <div id="drillCards"></div>
+    </div>
+  </section>
+
+  <!-- ============ 6. WRITING ============ -->
+  <section class="sec" id="writing">
+    <div class="sec-head">
+      <div class="sec-num">6</div><h2>Writing — your week in three columns</h2>
+      <span class="tag time">5 min</span><span class="tag">40–80 words</span>
+    </div>
+    <div id="writerBox" class="card"></div>
+    <details class="folding">
+      <summary>Model answer — open it after your own version</summary>
+      <div class="inner"><p>My week in three futures. <b>Will</b> (deciding now): I'll try the new bug-tracking template on Monday, and I'll ask Tom to check my test cases. <b>Going to</b> (planned before): I'm going to finish the regression module of my QA course this week — the deadline is on Sunday. <b>Fixed in the calendar</b>: I'm running my first solo regression cycle on Thursday, and on Saturday I'm meeting my study group at the library. Three columns, no panic.</p></div>
+    </details>
+    <div class="note">Want an automatic B1+ check of your text? Paste it into <b><a href="https://writeandimprove.com" target="_blank" rel="noopener">Write &amp; Improve (Cambridge) ↗</a></b> — the task "Work — My plans at work".</div>
+  </section>
+
+  <!-- ============ 7. HOMEWORK ============ -->
+  <section class="sec" id="homework">
+    <div class="sec-head">
+      <div class="sec-num">7</div><h2>Homework</h2>
+      <span class="tag">≤ 30 minutes in total</span>
+    </div>
+    <div id="hwList"></div>
+  </section>
+
+  <details class="folding">
+    <summary>🧑‍🏫 Teacher notes</summary>
+    <div class="inner">
+      <p><b>Goal:</b> the student splits "the future" into three conscious choices — will (deciding/predicting now), going to (planned before or evidence now) and Present Continuous (fixed arrangement) — and stops using one form for everything.</p>
+      <p><b>Suggested flow:</b> Warm-up: collect answers and ask "decided now, planned before, or in the calendar?" after each → Listening: the roadmap meeting; second pass hunts one example of each form → Reading: label every future in Dana's memo (8 forms) → Grammar: the decision table is the heart; the video consolidates → Speaking: Round 1 is the module's key drill; keep the 5-second rule visible.</p>
+      <p><b>Success criteria:</b> Round 1 — three clean transformations of one task, no pauses over 3 seconds; Round 2 — all three forms present and justified; Round 3 — 5 corrections with reasons.</p>
+      <p><b>Error pocket:</b> <i>will to</i> + infinitive · using Present Simple for personal arrangements (<i>I go to the dentist tomorrow</i>) · <i>going to</i> for decisions born mid-sentence · promises in <i>going to</i> instead of will.</p>
+      <p><b>Threads:</b> the memo's frozen scope returns from Lesson 11; the new partner appears again in Lesson 16 (Pitch Day — she is presenting to him); Tom's promise "the update will not break your saves" closes the race-condition storyline of Lesson 10; the three-column week plan is the Writing genre of the module.</p>
+    </div>
+  </details>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Lesson 13 · Module 4</b> — Will, Going To, or Already Booked?. <a href="../index.html">Course map →</a>
+    <div style="margin-top:8px"><button class="btn small ghost" id="resetLesson">↺ Reset this lesson's progress</button></div>
+  </div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="../assets/js/firebase-config.js?v=10"></script>
+<script src="../assets/js/auth.js?v=10"></script>
+<script src="../assets/js/progress-firebase.js?v=10"></script>
+<script src="../assets/js/engine.js"></script>?v=10
+<script>
+const KEY = 'm04-01';
+const SECTIONS = [
+  {id:'warmup', title:'Warm-up'}, {id:'listening', title:'Listening'}, {id:'reading', title:'Reading'},
+  {id:'grammar', title:'Grammar'}, {id:'speaking', title:'Speaking'}, {id:'writing', title:'Writing'},
+  {id:'homework', title:'Homework'}
+];
+EC.initLesson(KEY, SECTIONS);
+
+/* ---- Warm-up: 3 cards ---- */
+EC.flipGrid('#warmCards', [
+  {front:"1 · What tech change will affect game development first — AI, cloud, or something else?", back:"I think AI <b>will change</b> testing first — it <b>will write</b> routine test cases for us.<br><span class='tag will'>will — a prediction with I think</span>"},
+  {front:"2 · What are you and your team doing next month that is already fixed?", back:"We <b>are launching</b> the winter update on 12 December, and I <b>am running</b> the regression cycle that week.<br><span class='tag arr'>arrangements — in the calendar</span>"},
+  {front:"3 · When you plan a workday, do you ever follow the plan? Be honest!", back:"I'<b>ll be</b> honest — no! I <b>am going to follow</b> the plan next week. Really. Probably.<br><span class='tag will'>will — honest decision now</span> <span class='tag goto'>going to — a fresh intention</span>"}
+]);
+
+/* ---- Listening: vocab (definitions in Russian — for checking understanding) ---- */
+EC.vocab('#vocabRow', [
+  {w:"a roadmap", d:"роадмап, план развития", e:"The roadmap board is full of sticky notes."},
+  {w:"a launch date", d:"дата релиза", e:"The launch date is fixed: 12 December."},
+  {w:"a trailer", d:"трейлер", e:"Priya is finishing the trailer art by Friday."},
+  {w:"a wishlist", d:"список желаемого (в магазине игр)", e:"We are going to pass 50,000 wishlists."},
+  {w:"a focus group", d:"фокус-группа", e:"The focus group is testing the beta on Saturday."},
+  {w:"a beta", d:"бета-версия", e:"The beta is stable, so the game is going to be ready early."},
+  {w:"a test report", d:"отчёт по тестированию", e:"QA will send the final test report to Dana."},
+  {w:"to look into", d:"разобраться, изучить вопрос", e:"Good question — I will look into it today."},
+  {w:"a promise", d:"обещание", e:"The update will not break your saves. That is a promise."},
+  {w:"to raise a hand", d:"поднять руку (чтобы сказать)", e:"Tom raised his hand and asked about the party."}
+]);
+
+/* ---- Listening: MCQ ---- */
+EC.mcq('#listenMCQ', {
+  title:"🎧 Comprehension — Part 1: multiple choice",
+  exKey:'m04-01-listen1',
+  items:[
+    {q:"What is already fixed in the calendar?", opts:["The winter update on 12 December","A new game jam","The office party in March"], a:0, why:"“The winter update is coming out on 12 December — the date is fixed, the posters are printed.”"},
+    {q:"Which sentence is a promise (will)?", opts:["We are going to keep this short","The new build will not break player saves","The focus group is testing the beta"], a:1, why:"“The new build will not break player saves. I promise.” — a service promise → will."},
+    {q:"Why is Dana sure the studio will pass 50,000 wishlists?", opts:["She hopes so","The numbers are rising fast — visible evidence","The partner said so"], a:1, why:"“At this speed, we are going to pass fifty thousand wishlists” — evidence now → going to."},
+    {q:"What happens if the focus group finds something big?", opts:["Dana will cancel the update","They are moving the launch to January","Tom will skip the report"], a:1, why:"“If we find anything big, we are moving the launch to January — no drama.” — a decision already agreed → Present Continuous."}
+  ]
+});
+
+/* ---- Listening: True/False ---- */
+EC.tf('#listenTF', {
+  title:"🎧 Comprehension — Part 2: true or false",
+  exKey:'m04-01-listen2',
+  items:[
+    {s:"Tom's team fixed the race condition before this meeting.", a:true, why:"True — “The save system is fixed. Tom's team killed the race condition last week”."},
+    {s:"Dana had already decided to cut the trailer before the meeting.", a:false, why:"False — “We'll cut it this week” was born in the room, at the moment of speaking → will."}
+  ]
+});
+
+/* ---- Reading: label the future ---- */
+EC.mcq('#readLabel', {
+  title:"📖 Label the future — which form is it?",
+  exKey:'m04-01-read1',
+  items:[
+    {q:"“The winter update is coming out on 12 December.”", opts:["Present Continuous — in the calendar","Going to — an intention"], a:0, why:"A fixed date, posters printed → an arrangement → Present Continuous."},
+    {q:"“The game is going to be ready early — the numbers say so.”", opts:["Will — a promise","Going to — evidence now"], a:1, why:"“The numbers say so” — visible evidence → going to."},
+    {q:"“I will not add any new features to this release.”", opts:["Will — a decision/promise","Present Continuous — an arrangement"], a:0, why:"A promise made in the memo itself → will."},
+    {q:"“Our new partner is visiting the studio next Monday.”", opts:["Present Continuous — a booked visit","Will — a prediction"], a:0, why:"A booked visit with people and a date → Present Continuous."},
+    {q:"“Tom is running the final regression cycle from 3 to 7 December.”", opts:["Present Continuous — scheduled work","Going to — evidence"], a:0, why:"Fixed dates and a named person → Present Continuous."},
+    {q:"“No ‘we'll look at it later’.”", opts:["Will — a spontaneous (bad) habit","Going to — a plan"], a:0, why:"The delay would be decided at the moment of speaking → will. Dana forbids it."}
+  ]
+});
+
+EC.tf('#readTF', {
+  title:"📖 True or false?",
+  exKey:'m04-01-read2',
+  items:[
+    {s:"Dana moved the launch from January to December.", a:true, why:"True — “I know we first said January, but the beta results are strong and the game is going to be ready early”."},
+    {s:"Dana promises to add new features in December.", a:false, why:"False — “I will not add any new features to this release — the scope stays frozen”."}
+  ]
+});
+
+/* ---- Grammar: MCQ ---- */
+EC.mcq('#gramMCQ', {
+  title:"⚙️ Exercise 1 — choose the correct future",
+  exKey:'m04-01-gram1',
+  items:[
+    {q:"These invoices are wrong — I ___ them today, promise.", opts:["fix","will fix","am going to fix"], a:1, why:"You decide at the moment of speaking → will."},
+    {q:"Look at the wishlist chart — we ___ 50,000 before launch.", opts:["pass","will pass","are going to pass"], a:2, why:"Visible evidence now → going to."},
+    {q:"I ___ the partner at the airport next Monday — it's in my calendar.", opts:["will meet","am meeting","meet"], a:1, why:"A fixed personal arrangement → Present Continuous."},
+    {q:"A: The build failed. — B: OK, I ___ a hotfix right now.", opts:["will push","am going to push","push"], a:0, why:"An instant decision → will."},
+    {q:"We ___ the office for the party on the 19th — booked in November.", opts:["will rent","are going to rent","are renting"], a:2, why:"Booked and paid → Present Continuous."},
+    {q:"I think the update ___ without problems — the beta is clean.", opts:["ships","will ship","is shipping"], a:1, why:"A prediction with “I think” → will."}
+  ]
+});
+
+/* ---- Grammar: gap-fill ---- */
+EC.gap('#gramGap', {
+  title:"⚙️ Exercise 2 — type the correct future form",
+  exKey:'m04-01-gram2',
+  items:[
+    {t:"Don't worry, I ___ you with the test report. (help — offering now)", a:["will help","'ll help"], verbs:["will"]},
+    {t:"We ___ the winter update on 12 December. (release — fixed date)", a:["are releasing"], verbs:["present continuous"]},
+    {t:"She ___ the trailer art by Friday. (finish — her plan)", a:["is going to finish","'s going to finish"], verbs:["going to"]},
+    {t:"I promise the patch ___ the mods. (not break — a promise)", a:["will not break","won't break"], verbs:["will"]},
+    {t:"Look at the fog — the ferry ___ today. (not sail — visible evidence)", a:["is not going to sail","isn't going to sail"], verbs:["going to"]},
+    {t:"I ___ my QA mentor on Thursday at six. (call — booked)", a:["am calling","'m calling"], verbs:["present continuous"]}
+  ]
+});
+
+/* ---- Grammar: sentence builder ---- */
+EC.order('#gramOrder', {
+  title:"⚙️ Exercise 3 — build the English sentence",
+  exKey:'m04-01-gram3',
+  items:[
+    {words:["I","will look into","the crash logs","tonight"], answer:"I will look into the crash logs tonight.", ru:"Я разберусь в логах краша сегодня вечером (решаю сейчас)."},
+    {words:["We","are going to test","the beta","with real players"], answer:"We are going to test the beta with real players.", ru:"Мы собираемся протестировать бету с реальными игроками (план)."},
+    {words:["The focus group","is playing","the build","on Saturday"], answer:"The focus group is playing the build on Saturday.", ru:"Фокус-группа играет в билд в субботу (в календаре)."},
+    {words:["I promise","the update","will not break","your saves"], answer:"I promise the update will not break your saves.", ru:"Обещаю: обновление не сломает ваши сохранения."}
+  ]
+});
+
+/* ---- Grammar: true/false on the form ---- */
+EC.tf('#gramTF', {
+  title:"⚙️ Exercise 4 — is the explanation correct?",
+  exKey:'m04-01-gram4',
+  items:[
+    {s:"“I will to send the report” is correct because will needs to after it.", a:false, why:"False — after will the infinitive has no to: I will send the report."},
+    {s:"“We are meeting the partner on Thursday” means it is already arranged.", a:true, why:"True — Present Continuous + a time = a fixed arrangement in the calendar."},
+    {s:"“Wait, I'm going to help!” is the natural way to offer help right now.", a:false, why:"False — an offer born at the moment of speaking takes will: Wait, I'll help!"},
+    {s:"“Look at those clouds — it's going to rain” uses evidence you can see.", a:true, why:"True — visible evidence now → going to."}
+  ]
+});
+
+/* ---- Speaking: correction cards ---- */
+EC.flipGrid('#fixCards', [
+  {front:"🩹 I will to start the regression tomorrow.", back:"<span class='no'>will to start</span> → <span class='yes'>I will start the regression tomorrow.</span><br>After will there is no <i>to</i>."},
+  {front:"🩹 I go to present the roadmap on Friday.", back:"<span class='no'>I go to present</span> → <span class='yes'>I am presenting the roadmap on Friday.</span><br>A fixed arrangement → Present Continuous, not Present Simple."},
+  {front:"🩹 We are going to present the roadmap on Thursday — it is in both calendars, and the partner confirmed the time.", back:"<span class='no'>are going to present</span> → <span class='yes'>We are presenting the roadmap on Thursday.</span><br>A confirmed arrangement in both calendars takes the Present Continuous; going to sounds like a mere intention."},
+  {front:"🩹 OK, I'm going to help you right now! (offering)", back:"<span class='no'>I'm going to help</span> → <span class='yes'>OK, I'll help you right now!</span><br>An offer decided at the moment of speaking → will."},
+  {front:"🩹 We will meet the new partner next Monday — it was agreed last month.", back:"<span class='no'>will meet</span> → <span class='yes'>We are meeting the new partner next Monday.</span><br>Agreed before + time + people → Present Continuous."}
+]);
+
+/* ---- Speaking: recorders ---- */
+EC.recorder('#rec1', {maxSec:90, hint:"Round 1 · three futures about one task: will → going to → Continuous"});
+EC.recorder('#rec2', {maxSec:120, hint:"Round 2 · roadmap in three tenses: each form at least once"});
+EC.recorder('#rec3', {maxSec:90, hint:"Round 3 · correct each sentence out loud, then explain"});
+
+/* ---- Speaking: speed drill ---- */
+EC.flipGrid('#drillCards', [
+  {front:"⏱ Your coffee is empty and you stand up.", back:"<b>I'll get another coffee.</b> <span class='tag will'>decided now → will</span>"},
+  {front:"⏱ You bought tickets to a conference.", back:"<b>I'm attending the conference next week.</b> <span class='tag arr'>in the calendar → Continuous</span>"},
+  {front:"⏱ You want to learn Unreal Engine this year.", back:"<b>I'm going to learn Unreal Engine this year.</b> <span class='tag goto'>intention → going to</span>"},
+  {front:"⏱ A player reports a crash in the chat.", back:"<b>Thanks — I'll look into it right away.</b> <span class='tag will'>instant decision → will</span>"},
+  {front:"⏱ The beta has 3 critical bugs, launch is in a week.", back:"<b>We're going to delay the launch.</b> <span class='tag goto'>evidence → going to</span>"},
+  {front:"⏱ The dentist — next Tuesday at 6.", back:"<b>I'm seeing the dentist on Tuesday.</b> <span class='tag arr'>booked → Continuous</span>"},
+  {front:"⏱ You promise a fix before the weekend.", back:"<b>The fix will be live before the weekend — I promise.</b> <span class='tag will'>promise → will</span>"},
+  {front:"⏱ Your QA course deadline is on Sunday.", back:"<b>I'm submitting the final test plan on Sunday.</b> <span class='tag arr'>fixed date → Continuous</span>"}
+]);
+
+/* ---- Writing ---- */
+EC.writer('#writerBox', {
+  task:"✍️ Your week in three columns (<b>40–80 words</b>): 2 things you decide to do now (<b>will</b>), 2 things you are going to do (plans with a reason), 2 things already fixed (<b>Present Continuous</b> + day/time). Make it about real work or your QA course.",
+  placeholder:"I'll …, I'm going to … because …, On Thursday I'm …",
+  min:40, max:80
+});
+
+/* ---- Homework ---- */
+EC.checklist('#hwList', {
+  items:[
+    {t:"Test-English B1: <i>Future forms — will, be going to, present continuous</i> — one set of exercises (≈10 minutes) <a href='https://test-english.com/grammar-points/b1/future-forms/' target='_blank' rel='noopener'>test-english.com → b1/future-forms ↗</a>", m:"Tick the box when the page shows your score"},
+    {t:"Voice memo (from the plan): 4 sentences about your company's or your own plans — each in a different future form (will / won't / going to / Present Continuous)", m:"Record it on your phone; we will listen at the start of Lesson 14"},
+    {t:"BBC 6 Minute English: “Sharing the road with driverless cars” — if we did not finish it in class <a href='https://www.bbc.co.uk/learningenglish/features/6-minute-english_2026/ep-260820' target='_blank' rel='noopener'>bbc.co.uk/learningenglish ↗</a>", m:"Note 2 future forms you hear"},
+    {t:"Shadowing tracks from this page — 5 minutes of repeating after the speaker (both tracks)", m:"Track A = decisions and promises, Track B = plans and arrangements"}
+  ]
+});
+
+/* ---- audio speed buttons + reset ---- */
+EC.enhanceAudio();
+document.getElementById('resetLesson').addEventListener('click', () => {
+  if (!confirm('Reset the progress, exercise results and the written text of Lesson 13?')) return;
+  try {
+    const d = JSON.parse(localStorage.getItem('ec_progress_v1') || '{}');
+    delete d.lessons['m04-01']
+    if (window.PG) window.PG.clearLesson('m04-01');;
+    localStorage.setItem('ec_progress_v1', JSON.stringify(d));
+    location.reload();
+  } catch (e) {}
+});
+</script>
+</body>
+</html>

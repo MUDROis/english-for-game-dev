@@ -273,3 +273,21 @@ details.folding .inner{padding:0 18px 16px}
 .auth-chip{cursor:pointer; user-select:none; display:inline-flex; align-items:center; font-size:13px; font-weight:600; padding:4px 12px; border-radius:999px; border:1px solid rgba(69,184,255,.4); background:var(--pc-soft); color:#a8dcff; transition:.15s}
 .auth-chip:hover{border-color:var(--pc); color:var(--text)}
 .auth-chip.on{color:#ffc98a; border-color:rgba(247,148,30,.4); background:var(--acc-soft)}
+
+/* ---------- module 4: future forms ---------- */
+.tag.goto{color:#a8dcff; background:var(--pc-soft); border-color:rgba(69,184,255,.4)}
+.tag.arr{color:#bdf0d8; background:var(--ok-soft); border-color:rgba(62,207,142,.4)}
+.tag.mod{color:#d7c4ff; background:rgba(167,139,250,.14); border-color:rgba(167,139,250,.4)}
+.rulebox.will{border-left:4px solid var(--acc)}
+.rulebox.goto{border-left:4px solid var(--pc)}
+.rulebox.arr{border-left:4px solid var(--ok)}
+.rulebox.mod{border-left:4px solid #a78bfa}
+.starter.will{color:#ffc98a; border-color:rgba(247,148,30,.35)}
+.starter.goto{color:#a8dcff; border-color:rgba(69,184,255,.35)}
+.starter.arr{color:#bdf0d8; border-color:rgba(62,207,142,.4)}
+.starter.mod{color:#d7c4ff; border-color:rgba(167,139,250,.4)}
+.gtable .hwill{color:#ffc98a; background:var(--acc-soft)}
+.gtable .hgoto{color:#a8dcff; background:var(--pc-soft)}
+.gtable .harr{color:#bdf0d8; background:var(--ok-soft)}
+.gtable .hmod{color:#d7c4ff; background:rgba(167,139,250,.14)}
+span.yes{color:#bdf0d8}

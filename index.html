@@ -80,7 +80,7 @@
 
 <footer>
   <div class="wrap">
-    <b>English for Game Dev</b> · a year-long plan B1→B2 · 12 modules · 48 lessons · Modules 1–3 (lessons 1–12) are ready to study.
+    <b>English for Game Dev</b> · a year-long plan B1→B2 · 12 modules · 48 lessons · Modules 1–4 (lessons 1–16) are ready to study.
     Your progress is stored in the browser (localStorage): it never leaves your device and survives page reloads.
     External materials belong to their respective owners; the audio and illustrations were generated specifically for this course.
   </div>
@@ -105,10 +105,10 @@ const COURSE = [
     {num:11, t:"Just, Yet, Still — and the Slopes", url:"lessons/m03-03.html", d:"ski season news · just / already / yet / still · Is the season open — or yet to start?"},
     {num:12, t:"Speaking Challenge: My Journey", url:"lessons/m03-04.html", d:"a 3-minute talk + Module Test 3 · Perfect in your story · Which milestone changed your career?"}]},
   {n:4, t:"Plans, Roadmaps and the Future", ru:"Plans, roadmaps and the future", g:"will / going to · Future Perfect · forecasting modality", lessons:[
-    {num:13, t:"Will, Going To, or Already Booked?", d:"roadmap decisions · will vs going to · Who decides the future — the plan or you?"},
-    {num:14, t:"By Q3 We Will Have Shipped", d:"quarter goals · Future Perfect · What will we have shipped by Q3?"},
-    {num:15, t:"Likely, Probably, Might — Forecasting", d:"industry forecasts · modal adverbs · Can anyone predict the next hit genre?"},
-    {num:16, t:"Pitch Your Next Quarter", d:"pitch day · future forms together · Sell your next quarter in three minutes."}]},
+    {num:13, t:"Will, Going To, or Already Booked?", url:"lessons/m04-01.html", d:"roadmap decisions · will vs going to · Who decides the future — the plan or you?"},
+    {num:14, t:"By Q3 We Will Have Shipped", url:"lessons/m04-02.html", d:"quarter goals · Future Perfect · What will we have shipped by Q3?"},
+    {num:15, t:"Likely, Probably, Might — Forecasting", url:"lessons/m04-03.html", d:"industry forecasts · modal adverbs · Can anyone predict the next hit genre?"},
+    {num:16, t:"Pitch Your Next Quarter", url:"lessons/m04-04.html", d:"pitch day · future forms together · Sell your next quarter in three minutes."}]},
   {n:5, t:"What If? Scenarios, Rules and Testing", ru:"Scenarios, rules and testing", g:"Conditional 0–1 · unless / in case · imperative in instructions", lessons:[
     {num:17, t:"If the Build Fails, We Roll Back", d:"build pipelines · Conditional 0–1 · If the build fails, what happens next?"},
     {num:18, t:"Unless, As Soon As, In Case", d:"safety nets · unless / in case / as soon as · When does “if” mean “only if not”?"},
@@ -189,7 +189,7 @@ COURSE.forEach((m, mi) => {
 function renderNote() {
   const note = document.getElementById('progressNote');
   const names = {warmup:'Warm-up', listening:'Listening', reading:'Reading', grammar:'Grammar', speaking:'Speaking', writing:'Writing', test:'Module Test', homework:'Homework'};
-  const READY = [['m01-01',1],['m01-02',2],['m01-03',3],['m01-04',4],['m02-01',5],['m02-02',6],['m02-03',7],['m02-04',8],['m03-01',9],['m03-02',10],['m03-03',11],['m03-04',12]];
+  const READY = [['m01-01',1],['m01-02',2],['m01-03',3],['m01-04',4],['m02-01',5],['m02-02',6],['m02-03',7],['m02-04',8],['m03-01',9],['m03-02',10],['m03-03',11],['m03-04',12],['m04-01',13],['m04-02',14],['m04-03',15],['m04-04',16]];
   try {
     const d = JSON.parse(localStorage.getItem('ec_progress_v1') || '{}');
     const lessons = (d.lessons || {});
