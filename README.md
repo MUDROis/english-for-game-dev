@@ -47,6 +47,23 @@ true/false, gap-fill, sentence builder, marker sorting, flip cards, writing with
 a word counter, in-browser voice recorder, homework checklist, module test with
 an automatic score summary. Progress is saved in the browser (localStorage).
 
+## Course authorization (Firebase)
+
+Lesson pages require a signed-in account; the main page stays open to guests.
+Auth is implemented with the Firebase JS SDK (compat, loaded from CDN) using
+email/password sign-in:
+
+- `assets/js/firebase-config.js` — **fill in your real Firebase web-app config**
+  (Firebase console → Project settings → General → Your apps → SDK setup and
+  configuration, then commit & push).
+- `assets/js/auth.js` — shared auth logic: guards lesson pages, sign-in card,
+  topbar sign-in/sign-out chip.
+- Accounts are created by you in the Firebase console (Authentication → Users →
+  Add user); the site itself only signs people in.
+- Enable the Email/Password provider in Firebase console → Authentication →
+  Sign-in method. The site must be served over HTTPS (Firebase refuses plain
+  HTTP) — GitHub Pages with the custom domain should have HTTPS enforced.
+
 ## Deploy to GitHub Pages (5 minutes)
 
 **Option A — via the web interface (no git):**

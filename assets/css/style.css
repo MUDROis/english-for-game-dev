@@ -254,3 +254,21 @@ details.folding summary::before{content:"▸ "; color:var(--acc)}
 details.folding[open] summary::before{content:"▾ "}
 details.folding .inner{padding:0 18px 16px}
 .kicker{color:var(--acc); font:700 12px Inter,sans-serif; letter-spacing:.14em; text-transform:uppercase; margin-bottom:6px}
+
+/* ---------- auth ---------- */
+.auth-guard{position:fixed; inset:0; z-index:100; background:rgba(8,10,14,.66); backdrop-filter:blur(3px); display:flex; align-items:center; justify-content:center; padding:20px}
+.auth-guard[hidden]{display:none}
+.auth-card{width:min(400px,100%); background:var(--panel2); border:1px solid var(--line); border-radius:16px; padding:26px; box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.auth-eyebrow{font-size:13px; color:var(--acc); font-weight:600; margin-bottom:6px}
+.auth-card h3{margin:0 0 6px}
+.auth-sub{color:var(--mut); font-size:14px; margin:0 0 18px}
+.auth-field{display:block; font-size:13px; color:var(--mut); margin-bottom:12px}
+.auth-field input{display:block; width:100%; margin-top:5px; background:var(--bg); border:1px solid var(--line); border-radius:9px; padding:9px 12px; color:var(--text); font:400 14px Inter,sans-serif; box-sizing:border-box}
+.auth-field input:focus{outline:none; border-color:var(--acc)}
+.btn.w100{width:100%; justify-content:center}
+.auth-err{display:none; color:#ff9db1; font-size:13px; background:var(--pf-soft); border:1px solid rgba(255,93,109,.35); padding:8px 10px; border-radius:8px; margin:12px 0 0}
+.auth-hint{color:var(--mut); font-size:12.5px; margin:14px 0 0; line-height:1.5}
+.auth-back{display:inline-block; margin-top:12px; font-size:13px; color:var(--pc)}
+.auth-chip{cursor:pointer; user-select:none; display:inline-flex; align-items:center; font-size:13px; font-weight:600; padding:4px 12px; border-radius:999px; border:1px solid rgba(69,184,255,.4); background:var(--pc-soft); color:#a8dcff; transition:.15s}
+.auth-chip:hover{border-color:var(--pc); color:var(--text)}
+.auth-chip.on{color:#ffc98a; border-color:rgba(247,148,30,.4); background:var(--acc-soft)}

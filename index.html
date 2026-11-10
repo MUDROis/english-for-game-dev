@@ -19,6 +19,7 @@
     <nav>
       <a href="#course">Course map</a>
       <a href="#resources">Library</a>
+      <span class="auth-chip" id="authChip">Sign in</span>
     </nav>
   </div>
 </header>
@@ -205,5 +206,9 @@ COURSE.forEach((m, mi) => {
   } catch (e) {}
 })();
 </script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="assets/js/firebase-config.js"></script>
+<script src="assets/js/auth.js"></script>
 </body>
 </html>

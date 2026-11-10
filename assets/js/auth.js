@@ -1,0 +1,125 @@
+/* ===== Course auth (Firebase, email/password) =====
+   - Main page: guests can browse freely; the topbar chip opens the sign-in card.
+   - Lesson pages: the sign-in card blocks the lesson until a user is signed in.
+   Accounts are created by the course admin in the Firebase console
+   (Authentication → Users → Add user); the site only signs people in. */
+(function () {
+  'use strict';
+
+  var config = window.FIREBASE_CONFIG || {};
+  var unconfigured = !config.apiKey || config.apiKey.indexOf('PLACEHOLDER') !== -1;
+
+  var auth = null, user = null;
+  try {
+    if (window.firebase && !firebase.apps.length) firebase.initializeApp(config);
+    if (window.firebase) auth = firebase.auth();
+  } catch (e) { auth = null; }
+
+  var isLesson = /\/lessons\//.test(location.pathname);
+  var chip = document.getElementById('authChip');
+
+  var ERR_MSGS = {
+    'auth/wrong-password': 'Wrong password.',
+    'auth/user-not-found': 'No account with this email.',
+    'auth/invalid-email': 'That email looks invalid.',
+    'auth/too-many-requests': 'Too many attempts — wait a minute and try again.',
+    'auth/invalid-api-key': 'Firebase is not configured yet — add your apiKey in assets/js/firebase-config.js.',
+    'auth/network-request-failed': 'Network error — check your connection.'
+  };
+
+  function buildCard() {
+    var d = document.createElement('div');
+    d.id = 'authGuard';
+    d.className = 'auth-guard';
+    d.hidden = true;
+    d.innerHTML =
+      '<div class="auth-card">' +
+      '  <div class="auth-eyebrow">🔒 Course access</div>' +
+      '  <h3>' + (isLesson ? 'Sign in to study' : 'Sign in') + '</h3>' +
+      '  <p class="auth-sub">' + (isLesson ? 'Lesson pages require a signed-in course account.' : 'Sign in to open course lessons.') + '</p>' +
+      '  <label class="auth-field">Email<input type="email" id="authEmail" autocomplete="email" spellcheck="false"></label>' +
+      '  <label class="auth-field">Password<input type="password" id="authPass" autocomplete="current-password"></label>' +
+      '  <button class="btn primary w100" id="authSubmit" type="button">Sign in</button>' +
+      '  <p class="auth-err" id="authErr"></p>' +
+      '  <p class="auth-hint">Your progress stays in this browser. No account? Ask the course admin.</p>' +
+      '  <a class="auth-back" href="' + (isLesson ? '../index.html' : 'index.html') + '">← Back to course map</a>' +
+      '</div>';
+    document.body.appendChild(d);
+
+    var emailEl = d.querySelector('#authEmail');
+    var passEl = d.querySelector('#authPass');
+    var errEl = d.querySelector('#authErr');
+    var submitBtn = d.querySelector('#authSubmit');
+
+    function showErr(msg) {
+      errEl.textContent = msg || '';
+      errEl.style.display = msg ? 'block' : 'none';
+    }
+    if (unconfigured) showErr('Firebase is not configured yet — add your apiKey in assets/js/firebase-config.js.');
+    else showErr('');
+
+    function trySignIn() {
+      var email = emailEl.value.trim();
+      var pass = passEl.value;
+      showErr('');
+      if (!email || !pass) { showErr('Enter both email and password.'); return; }
+      if (unconfigured) return;
+      if (!auth) { showErr('Auth is unavailable right now.'); return; }
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Signing in…';
+      auth.signInWithEmailAndPassword(email, pass)
+        .catch(function (e) {
+          showErr(ERR_MSGS[e.code] || e.message || 'Sign-in failed.');
+        })
+        .finally(function () {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Sign in';
+        });
+    }
+
+    submitBtn.addEventListener('click', trySignIn);
+    d.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' && !submitBtn.disabled) trySignIn();
+    });
+    d.addEventListener('click', function (e) { if (e.target === d) hide(); });
+  }
+
+  function overlay() {
+    var d = document.getElementById('authGuard');
+    if (!d) { buildCard(); d = document.getElementById('authGuard'); }
+    return d;
+  }
+  function show() {
+    var d = overlay();
+    d.hidden = false;
+    d.querySelector('#authEmail').focus();
+  }
+  function hide() {
+    var d = document.getElementById('authGuard');
+    if (d) d.hidden = true;
+  }
+
+  function setChip(signedIn) {
+    if (!chip) return;
+    chip.textContent = signedIn ? 'Sign out' : 'Sign in';
+    chip.classList.toggle('on', !!signedIn);
+  }
+
+  if (chip) chip.addEventListener('click', function () {
+    if (user) { auth && auth.signOut().catch(function () {}); }
+    else show();
+  });
+
+  if (auth) {
+    auth.onAuthStateChanged(function (u) {
+      user = u;
+      setChip(!!u);
+      if (isLesson) {
+        if (u) hide(); else show();
+      }
+    });
+  } else {
+    setChip(false);
+    if (isLesson) show();
+  }
+})();
