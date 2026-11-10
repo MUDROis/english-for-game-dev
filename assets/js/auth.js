@@ -10,13 +10,29 @@
   var unconfigured = !config.apiKey || config.apiKey.indexOf('PLACEHOLDER') !== -1;
 
   var auth = null, user = null;
+  var initError = null;
   try {
     if (window.firebase && !firebase.apps.length) firebase.initializeApp(config);
     if (window.firebase) auth = firebase.auth();
-  } catch (e) { auth = null; }
+  } catch (e) {
+    auth = null;
+    initError = (e && e.code) || (e && e.message) || String(e);
+  }
 
   var isLesson = /\/lessons\//.test(location.pathname);
   var chip = document.getElementById('authChip');
+
+  /* capture any unhandled Firebase error (e.g. during SDK init) and show it on the card */
+  var pendingErr = initError || '';
+  window.addEventListener('unhandledrejection', function (e) {
+    var r = e.reason;
+    var msg = (r && r.code) ? r.code : ((r && r.message) || String(r));
+    if (msg && /firebase|auth|api.key/i.test(msg)) {
+      pendingErr = msg;
+      var el = document.getElementById('authErr');
+      if (el) { el.textContent = 'Firebase error: ' + msg; el.style.display = 'block'; }
+    }
+  });
 
   var ERR_MSGS = {
     'auth/invalid-credential': 'Wrong email or password.',
@@ -96,6 +112,11 @@
     var d = overlay();
     d.hidden = false;
     d.querySelector('#authEmail').focus();
+    if (pendingErr) {
+      var el = d.querySelector('#authErr');
+      el.textContent = 'Firebase error: ' + pendingErr;
+      el.style.display = 'block';
+    }
   }
   function hide() {
     var d = document.getElementById('authGuard');
