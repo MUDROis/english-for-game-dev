@@ -186,7 +186,7 @@ COURSE.forEach((m, mi) => {
 });
 
 /* progress of the ready lessons (1–8) on the home page */
-(function () {
+function renderNote() {
   const note = document.getElementById('progressNote');
   const names = {warmup:'Warm-up', listening:'Listening', reading:'Reading', grammar:'Grammar', speaking:'Speaking', writing:'Writing', test:'Module Test', homework:'Homework'};
   const READY = [['m01-01',1],['m01-02',2],['m01-03',3],['m01-04',4],['m02-01',5],['m02-02',6],['m02-03',7],['m02-04',8],['m03-01',9],['m03-02',10],['m03-03',11],['m03-04',12]];
@@ -204,11 +204,15 @@ COURSE.forEach((m, mi) => {
     });
     if (lines.length) note.innerHTML = lines.join('<br>');
   } catch (e) {}
-})();
+}
+renderNote();
+window.addEventListener('ec:remote', renderNote);
 </script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
 <script src="assets/js/firebase-config.js"></script>
 <script src="assets/js/auth.js"></script>
+<script src="assets/js/progress-firebase.js"></script>
 </body>
 </html>

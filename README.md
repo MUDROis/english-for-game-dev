@@ -64,6 +64,33 @@ email/password sign-in:
   Sign-in method. The site must be served over HTTPS (Firebase refuses plain
   HTTP) — GitHub Pages with the custom domain should have HTTPS enforced.
 
+### Saving student progress (Cloud Firestore)
+
+When a student is signed in, the course progress (completed sections, exercise
+scores, writing, homework checklist) is mirrored to Firestore at
+`users/{uid}/progress/v1`, so it follows the student across devices. All
+writes go through `assets/js/progress-firebase.js`; localStorage stays the
+working copy (the site works offline and degrades to local-only when Firebase
+isn't configured).
+
+To enable:
+
+1. In the Firebase console, create a Cloud Firestore database (any region).
+2. Set these security rules so students can only read/write their own progress:
+   ```
+   rules_version = '2';
+   service cloud.firestore {
+     match /databases/{database}/documents {
+       match /users/{uid}/{document=**} {
+         allow read, write: if request.auth != null && request.auth.uid == uid;
+       }
+     }
+   }
+   ```
+3. No other setup — the site pushes on every save (debounced) and hydrates on
+   sign-in. If a lesson page is open when remote progress arrives first, it
+   reloads once to show it.
+
 ## Deploy to GitHub Pages (5 minutes)
 
 **Option A — via the web interface (no git):**

@@ -5,10 +5,10 @@
    `firebaseConfig` object and paste it below.
    After filling, commit and push — the deployed site updates automatically. */
 const FIREBASE_CONFIG = {
-  apiKey: "AIzaSy_PLACEHOLDER_REPLACE_ME",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "000000000000",
-  appId: "1:000000000000:web:placeholder"
+  apiKey: "AIzaSyC4MYNCptNFAquPIECE6sV8TObMRinspPo",
+  authDomain: "english-for-game-dev.firebaseapp.com",
+  projectId: "english-for-game-dev",
+  storageBucket: "english-for-game-dev.firebasestorage.app",
+  messagingSenderId: "1094418312043",
+  appId: "1:1094418312043:web:6311617777f8c7759cba2e"
 };

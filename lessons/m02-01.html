@@ -288,8 +288,10 @@
 
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
 <script src="../assets/js/firebase-config.js"></script>
 <script src="../assets/js/auth.js"></script>
+<script src="../assets/js/progress-firebase.js"></script>
 <script src="../assets/js/engine.js"></script>
 <script>
 const KEY = 'm02-01';
@@ -467,7 +469,8 @@ document.getElementById('resetLesson').addEventListener('click', () => {
   if (!confirm('Reset the progress, exercise results and the written text of Lesson 5?')) return;
   try {
     const d = JSON.parse(localStorage.getItem('ec_progress_v1') || '{}');
-    delete d.lessons['m02-01'];
+    delete d.lessons['m02-01']
+    if (window.PG) window.PG.clearLesson('m02-01');;
     localStorage.setItem('ec_progress_v1', JSON.stringify(d));
     location.reload();
   } catch (e) {}

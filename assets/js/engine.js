@@ -10,7 +10,10 @@
     try { return JSON.parse(LS.getItem('ec_progress_v1') || '{}'); }
     catch (e) { return {}; }
   };
-  const save = (d) => LS.setItem('ec_progress_v1', JSON.stringify(d));
+  const save = (d) => {
+    LS.setItem('ec_progress_v1', JSON.stringify(d));
+    if (window.PG) window.PG.push(d);
+  };
   const lesson = (key, make) => {
     const d = data();
     d.lessons = d.lessons || {};
