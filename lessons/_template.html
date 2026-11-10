@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- REPLACE: Lesson X.Y — Lesson title -->
+<title>Lesson X.Y — Lesson Title | English for Game Dev</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Play:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><span class="cube">E</span> English for Game Dev</a>
+    <nav><a href="../index.html">← Course map</a><a href="#homework">Homework</a></nav>
+  </div>
+</header>
+
+<!-- REPLACE: breadcrumb, title, goal and timing from the yearly plan -->
+<section class="lesson-hero">
+  <div class="wrap">
+    <div class="crumb">Module X · Module Name · Lesson Y / 48</div>
+    <h1>Lesson Title</h1>
+    <p class="goal">Lesson goal — one or two sentences.</p>
+    <div class="plan-chips">
+      <a class="tag time" href="#warmup">🔥 Warm-up · 10 min</a>
+      <a class="tag time" href="#listening">🎧 Listening · 12 min</a>
+      <a class="tag time" href="#reading">📖 Reading · 8 min</a>
+      <a class="tag time" href="#grammar">⚙️ Grammar · 15 min</a>
+      <a class="tag time" href="#speaking">🎤 Speaking · 10 min</a>
+      <a class="tag time" href="#writing">✍️ Writing · 5 min</a>
+      <a class="tag" href="#homework">🏠 Homework · ≤30 min</a>
+    </div>
+  </div>
+</section>
+
+<div class="progress-wrap" id="lessonProgress">
+  <div class="wrap progress-row"><span class="p-label">Lesson progress: 0/7</span><div class="bar"><i></i></div></div>
+</div>
+
+<main class="wrap">
+
+  <!-- Section = <section class="sec" id="…"> with .sec-head (number, title, tag time) -->
+  <!-- Content: .card, .rulebox ps/pc, .note, .grid2, img, iframe.video -->
+  <!-- Exercises: an empty <div id="…"> + EC.* calls at the bottom of the page -->
+
+  <section class="sec" id="warmup">
+    <div class="sec-head"><div class="sec-num">1</div><h2>Warm-up</h2><span class="tag time">10 min</span></div>
+    <div class="card"><h3>Warm-up questions</h3><div id="warmCards"></div></div>
+  </section>
+
+  <section class="sec" id="listening">
+    <div class="sec-head"><div class="sec-num">2</div><h2>Listening</h2><span class="tag time">12 min</span></div>
+    <!-- Lesson audio lives in assets/audio; player: -->
+    <div class="card audio-card"><h3>🎧 Track</h3><audio controls src="../assets/audio/FILE.mp3" data-speeds preload="none"></audio></div>
+    <div id="listenMCQ"></div>
+  </section>
+
+  <section class="sec" id="reading">
+    <div class="sec-head"><div class="sec-num">3</div><h2>Reading</h2><span class="tag time">8 min</span></div>
+    <div class="card"><h3>Text</h3><p>…</p></div>
+    <div id="readTF"></div>
+  </section>
+
+  <section class="sec" id="grammar">
+    <div class="sec-head"><div class="sec-num">4</div><h2>Grammar</h2><span class="tag time">15 min</span></div>
+    <div class="grid2">
+      <div class="rulebox ps"><h3>Rule A</h3><ul><li>…</li></ul></div>
+      <div class="rulebox pc"><h3>Rule B</h3><ul><li>…</li></ul></div>
+    </div>
+    <div id="gramMCQ"></div>
+    <div id="gramGap"></div>
+  </section>
+
+  <section class="sec" id="speaking">
+    <div class="sec-head"><div class="sec-num">5</div><h2>Grammar → Speaking</h2><span class="tag time">10 min</span></div>
+    <div class="card">
+      <div class="speak-round"><h3>🎙 Round 1</h3><p>Task…</p><div class="starters"><span class="starter ps">…</span><span class="starter pc">…</span></div><div id="rec1"></div></div>
+    </div>
+    <div id="drillCards"></div>
+  </section>
+
+  <section class="sec" id="writing">
+    <div class="sec-head"><div class="sec-num">6</div><h2>Writing</h2><span class="tag time">5 min</span></div>
+    <div id="writerBox" class="card"></div>
+  </section>
+
+  <section class="sec" id="homework">
+    <div class="sec-head"><div class="sec-num">7</div><h2>Homework</h2><span class="tag">≤ 30 minutes</span></div>
+    <div id="hwList"></div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap"><b>Lesson Y · Module X</b> — Lesson Title. <a href="../index.html">Course map →</a></div>
+</footer>
+
+<script src="../assets/js/engine.js"></script>
+<script>
+const KEY = 'mXX-YY'; // REPLACE: unique lesson key — progress is stored under it
+const SECTIONS = [
+  {id:'warmup'},{id:'listening'},{id:'reading'},{id:'grammar'},{id:'speaking'},{id:'writing'},{id:'homework'}
+];
+EC.initLesson(KEY, SECTIONS);
+
+/* Available renders (engine: assets/js/engine.js):
+
+EC.flipGrid(sel, [{front, back}, …])                  — flip cards (warm-up, speed drill)
+EC.vocab(sel, [{w, d, e}, …])                         — vocab chips with a definition (d in Russian — comprehension check)
+EC.mcq(sel, {title, exKey, items:[{q, opts, a, why}]})— multiple choice, instant check
+EC.tf(sel, {title, exKey, items:[{s, a, why, hint}]}) — true/false
+EC.gap(sel, {title, exKey, items:[{t:"…___…", a:["answer","variant"], verbs:["hint"]}]}) — type the form
+EC.order(sel, {title, exKey, items:[{words:[…], answer:"…", ru:"перевод"}]}) — sentence builder (ru = Russian source sentence)
+EC.sort2(sel, {title, exKey, items:[{w, a:"ps"|"pc"}]}) — sort into two columns
+EC.writer(sel, {task, placeholder, min, max})         — writing with a word counter and autosave
+EC.recorder(sel, {maxSec, hint})                      — speech recording with a timer
+EC.checklist(sel, {items:[{t, m}]})                   — homework checklist
+EC.enhanceAudio()                                     — speed buttons (1× / 1.25× / 1.5×) for audio[data-speeds]
+*/
+
+EC.flipGrid('#warmCards', [{front:"Question?", back:"Sentence starters…"}]);
+EC.mcq('#listenMCQ', {title:"🎧 Comprehension", exKey:KEY+'-listen1', items:[{q:"…", opts:["…","…"], a:0, why:"…"}]});
+EC.tf('#readTF', {title:"📖 True or false?", exKey:KEY+'-read1', items:[{s:"…", a:true, why:"…"}]});
+EC.mcq('#gramMCQ', {title:"⚙️ Exercise 1", exKey:KEY+'-gram1', items:[{q:"…", opts:["…","…"], a:0, why:"…"}]});
+EC.gap('#gramGap', {title:"⚙️ Exercise 2", exKey:KEY+'-gram2', items:[{t:"We ___ every Friday. (ship)", a:["ship"]}]});
+EC.recorder('#rec1', {maxSec:90, hint:"Round 1"});
+EC.flipGrid('#drillCards', [{front:"⏱ marker", back:"<span class='tag ps'>Simple</span><br>Sample sentence."}]);
+EC.writer('#writerBox', {task:"✍️ Task…", min:60, max:100});
+EC.checklist('#hwList', {items:[{t:"Task + <a href='…'>link ↗</a>", m:"comment"}]});
+
+EC.enhanceAudio();
+</script>
+</body>
+</html>

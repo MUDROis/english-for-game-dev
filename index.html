@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>English for Game Dev — a year-long lesson platform, B1→B2</title>
+<meta name="description" content="A year-long English course for a game-dev team lead: 12 modules, 48 lessons, grammar that always turns into speech.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Play:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23f7941e'/><text x='50' y='68' font-size='52' text-anchor='middle' font-family='sans-serif' font-weight='bold' fill='%231a1104'>E</text></svg>">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="index.html"><span class="cube">E</span> English for Game Dev</a>
+    <nav>
+      <a href="#course">Course map</a>
+      <a href="#resources">Library</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <img class="bg" src="assets/img/hero.png" alt="A game studio — course platform illustration">
+  <div class="overlay">
+    <div class="wrap">
+      <h1>English for Game Dev</h1>
+      <p>B1 → B2 in 12 months — 48 lessons where grammar always turns into speech: about sprints, releases, cats and skiing.</p>
+      <div class="badge-row">
+        <span class="badge">🎮 Game Dev PM &amp; Team Lead</span>
+        <span class="badge">🚀 Founder</span>
+        <span class="badge">🐞 Studying Game QA</span>
+        <span class="badge blue">⛷ Skiing</span>
+        <span class="badge blue">🐱 3 cats</span>
+        <span class="badge blue">🎬 Marvel</span>
+        <span class="badge blue">⚽ World Cup</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main class="wrap">
+
+  <section class="sec" id="how">
+    <div class="sec-head"><div class="sec-num">?</div><h2>How the platform works</h2></div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Lessons open on any device</h3><p style="color:var(--mut);font-size:14px">Progress, exercises and voice recordings stay in your browser — nothing is sent anywhere.</p></div>
+      <div class="step"><div class="n">2</div><h3>One structure for all 48 lessons</h3><p style="color:var(--mut);font-size:14px">Warm-up → Listening → Reading → Grammar → Grammar&nbsp;→&nbsp;Speaking → Writing → Homework. Each section is 5–15 minutes of the lesson.</p></div>
+      <div class="step"><div class="n">3</div><h3>Speaking is the main section</h3><p style="color:var(--mut);font-size:14px">Grammar is not memorised but spoken: 60-second rounds, picture comparison, speed drills and recording your own voice.</p></div>
+    </div>
+    <div class="note" id="progressNote">Your progress for lessons 1–12 will appear here once you start marking sections on their pages.</div>
+  </section>
+
+  <section class="sec" id="course">
+    <div class="sec-head"><div class="sec-num">🗺</div><h2>Course map: 12 modules · 48 lessons</h2>
+      <span class="tag time">click a module to expand it</span></div>
+    <div id="courseMap"></div>
+  </section>
+
+  <section class="sec" id="resources">
+    <div class="sec-head"><div class="sec-num">📚</div><h2>Resource library</h2></div>
+    <div class="res-grid">
+      <a class="res" href="https://www.bbc.co.uk/learningenglish" target="_blank" rel="noopener"><b>BBC Learning English</b><span>6 Minute English and 6 Minute Grammar — the course's core listening</span></a>
+      <a class="res" href="https://www.ted.com/talks" target="_blank" rel="noopener"><b>TED Talks</b><span>extended listening with subtitles</span></a>
+      <a class="res" href="https://ed.ted.com/lessons" target="_blank" rel="noopener"><b>TED-Ed</b><span>animated lessons, including the history of cats</span></a>
+      <a class="res" href="https://www.theguardian.com/games" target="_blank" rel="noopener"><b>The Guardian — Games</b><span>fresh industry news for reading and retelling</span></a>
+      <a class="res" href="https://www.gamedeveloper.com" target="_blank" rel="noopener"><b>Game Developer</b><span>professional articles about studios and development</span></a>
+      <a class="res" href="https://test-english.com/grammar-points/b1-b2" target="_blank" rel="noopener"><b>Test-English</b><span>grammar exercises at levels B1+ / B2</span></a>
+      <a class="res" href="https://writeandimprove.com" target="_blank" rel="noopener"><b>Write &amp; Improve (Cambridge)</b><span>writing with instant automated feedback</span></a>
+      <a class="res" href="https://learnenglish.britishcouncil.org" target="_blank" rel="noopener"><b>British Council LearnEnglish</b><span>reliable explanations and extra exercises</span></a>
+      <a class="res" href="https://youglish.com" target="_blank" rel="noopener"><b>YouGlish</b><span>how phrases sound from native speakers — real videos</span></a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>English for Game Dev</b> · a year-long plan B1→B2 · 12 modules · 48 lessons · Modules 1–3 (lessons 1–12) are ready to study.
+    Your progress is stored in the browser (localStorage): it never leaves your device and survives page reloads.
+    External materials belong to their respective owners; the audio and illustrations were generated specifically for this course.
+  </div>
+</footer>
+
+<script>
+/* ---------- course data ---------- */
+const COURSE = [
+  {n:1, t:"The Game Industry and Your World", ru:"The game industry and your working universe", g:"Present Simple vs Continuous · state verbs · articles", lessons:[
+    {num:1, t:"Sprints, Builds and Right Now", url:"lessons/m01-01.html", d:"sprint, build, ship · Present Simple vs Continuous · Could your calm week survive a winter update?"},
+    {num:2, t:"State Verbs and the Rhythm of a Team", url:"lessons/m01-02.html", d:"teammates' habits · state verbs + frequency adverbs · Why does Priya hardly ever play her own game?"},
+    {num:3, t:"A Startup, the Studio, Zero Doubts", url:"lessons/m01-03.html", d:"a founder's story · articles a/an/the · Zero investors, one laptop — how does a studio start?"},
+    {num:4, t:"Cats, Reviews and Consolidation", url:"lessons/m01-04.html", d:"office cats + Module Test 1 · all Module 1 grammar · Who really owns Harbour Lights?"}]},
+  {n:2, t:"Stories: Games, Films and Retrospectives", ru:"Stories: games, Marvel and project retrospectives", g:"Past Simple vs Continuous · Past Perfect · narrative tenses", lessons:[
+    {num:5, t:"What Makes a Superhero — and What Happened Last Sprint", url:"lessons/m02-01.html", d:"release night · Past Simple vs Continuous · Who is Chibatman — and what went wrong while the team was celebrating?"},
+    {num:6, t:"By the Time We Shipped… Past Perfect", url:"lessons/m02-02.html", d:"a post-mortem of a delay · Past Perfect (+ Continuous) · What had gone wrong before anyone noticed?"},
+    {num:7, t:"Gaming Can Make a Better World", url:"lessons/m02-03.html", d:"games for good · narrative tenses together · Could one game mechanic fix a real problem?"},
+    {num:8, t:"Retrospective Masterclass", url:"lessons/m02-04.html", d:"World Cup as a project retro · all past tenses + Module Test 2 · What had happened before the decisive goal?"}]},
+  {n:3, t:"Achievements, Experience and the Long Season", ru:"Achievements, experience and the ski season", g:"Present Perfect · Perfect vs Past · Perfect Continuous", lessons:[
+    {num:9, t:"I Have Launched, We Shipped in 2023", url:"lessons/m03-01.html", d:"career achievements · Present Perfect vs Past Simple · What have you already shipped this year?"},
+    {num:10, t:"How Long Have You Been Testing?", url:"lessons/m03-02.html", d:"long processes · Present Perfect Continuous · How long have you been chasing one bug?"},
+    {num:11, t:"Just, Yet, Still — and the Slopes", url:"lessons/m03-03.html", d:"ski season news · just / already / yet / still · Is the season open — or yet to start?"},
+    {num:12, t:"Speaking Challenge: My Journey", url:"lessons/m03-04.html", d:"a 3-minute talk + Module Test 3 · Perfect in your story · Which milestone changed your career?"}]},
+  {n:4, t:"Plans, Roadmaps and the Future", ru:"Plans, roadmaps and the future", g:"will / going to · Future Perfect · forecasting modality", lessons:[
+    {num:13, t:"Will, Going To, or Already Booked?", d:"roadmap decisions · will vs going to · Who decides the future — the plan or you?"},
+    {num:14, t:"By Q3 We Will Have Shipped", d:"quarter goals · Future Perfect · What will we have shipped by Q3?"},
+    {num:15, t:"Likely, Probably, Might — Forecasting", d:"industry forecasts · modal adverbs · Can anyone predict the next hit genre?"},
+    {num:16, t:"Pitch Your Next Quarter", d:"pitch day · future forms together · Sell your next quarter in three minutes."}]},
+  {n:5, t:"What If? Scenarios, Rules and Testing", ru:"Scenarios, rules and testing", g:"Conditional 0–1 · unless / in case · imperative in instructions", lessons:[
+    {num:17, t:"If the Build Fails, We Roll Back", d:"build pipelines · Conditional 0–1 · If the build fails, what happens next?"},
+    {num:18, t:"Unless, As Soon As, In Case", d:"safety nets · unless / in case / as soon as · When does “if” mean “only if not”?"},
+    {num:19, t:"Instructions: Polite but Precise", d:"writing instructions · imperative · How do you sound strict and polite at once?"},
+    {num:20, t:"Bug Triage: The Scenario Game", d:"triage simulation · Conditionals 0–1 · Which bug would you fix first?"}]},
+  {n:6, t:"Multiverse of Possibilities", ru:"A multiverse of possibilities", g:"Conditional 2–3 · wish / if only · I wish + would", lessons:[
+    {num:21, t:"If I Had More Funding…", d:"dream scenarios · Conditional 2 · If you had more funding, what would change?"},
+    {num:22, t:"If We Had Tested Earlier", d:"release regrets · Conditional 3 · If we had tested earlier — what then?"},
+    {num:23, t:"I Wish My Cats Could Talk", d:"wishes & complaints · wish / if only · What would your cats say if they could talk?"},
+    {num:24, t:"Speaking Challenge: If I Ran the Industry", d:"industry debate · mixed conditionals · If you ran the industry — rule number one?"}]},
+  {n:7, t:"Obligation, Advice and Deduction", ru:"Obligation, advice and deduction", g:"must / have to · should / had better · must be -ing", lessons:[
+    {num:25, t:"Must, Have To, or Optional?", d:"studio rules · must / have to · Which rule is truly non-negotiable?"},
+    {num:26, t:"Should, Ought To, Had Better", d:"advice for leads · should / had better · What do you tell a brand-new lead?"},
+    {num:27, t:"She Must Be Bored: Deduction", d:"detective game · must be / can't be · Who is calling — can you guess?"},
+    {num:28, t:"Advice Desk: Consolidation", d:"agony aunt format · all modals · Can you fix five sentences in five minutes?"}]},
+  {n:8, t:"How Games Are Made: Passive and Processes", ru:"How games are made: passive and processes", g:"Passive (all tenses) · modal passives · causative have/get", lessons:[
+    {num:29, t:"Builds Are Compiled, Bugs Are Found", d:"the pipeline in passive · Passive voice · Who made it — or was it made?"},
+    {num:30, t:"Rules Must Be Followed", d:"studio policies · modal passives · Must rules be followed — and by whom?"},
+    {num:31, t:"I Had It Tested: Delegation", d:"delegation language · causative have / get · Did you test it — or have it tested?"},
+    {num:32, t:"Release Report: Passive Masterclass", d:"a release report · Passive everywhere · What was decided, fixed and shipped?"}]},
+  {n:9, t:"Standups, Stakeholders and Stories", ru:"Standups, stakeholders and reported speech", g:"Reported speech · reporting verbs · polite requests", lessons:[
+    {num:33, t:"She Said the Build Was Ready", d:"standup gossip · reported statements · “The build is ready” — she said what?"},
+    {num:34, t:"Beyond Said: Reporting Verbs", d:"softening the news · reporting verbs · Did she warn, admit or suggest it?"},
+    {num:35, t:"Please, Don't Push on Friday", d:"polite pressure · requests & permissions · How do you forbid things politely?"},
+    {num:36, t:"Speaking Challenge: Report the Standup", d:"five voices, one story · reported speech · Can you retell a whole standup?"}]},
+  {n:10, t:"Reviews and Descriptions", ru:"Reviews and descriptions", g:"Relative clauses · which/that/whose · tricky articles", lessons:[
+    {num:37, t:"The Game That Changed Everything", d:"a game review · relative clauses · Which game deserves that title?"},
+    {num:38, t:"Whose Trailer, Where the Story Begins", d:"trailers & worlds · whose / where / why · What makes a trailer work?"},
+    {num:39, t:"The World Cup, Cats, and Zero Article", d:"zero article day · the or nothing · Why “play football” but “play a match”?"},
+    {num:40, t:"Review Night: Consolidation", d:"review night · all of Module 10 · Can you describe any game in one sentence?"}]},
+  {n:11, t:"Habits, Motivation and Leadership", ru:"Habits, motivation and leadership", g:"Gerund vs infinitive · stop/remember/try · used to / would", lessons:[
+    {num:41, t:"Enjoy Doing vs Decide To Do", d:"leader's verbs · gerund vs infinitive · Do you enjoy planning — or plan to enjoy?"},
+    {num:42, t:"Stop To Rest or Stop Resting?", d:"burnout prevention · stop / remember / try · Stop to rest or stop resting?"},
+    {num:43, t:"Used To, Would, and Getting Used To", d:"old habits · used to / would · What did you use to believe about leadership?"},
+    {num:44, t:"Leader's Habits: Consolidation", d:"habit audit · all of Module 11 · Which habit will you keep next year?"}]},
+  {n:12, t:"Final Pitch and the B2 Exam", ru:"Final pitch and the B2 exam", g:"Linkers (however / although / despite) · cleft sentences · mock B2 First", lessons:[
+    {num:45, t:"However, Although, Despite", d:"contrast & concessions · linkers · Can “despite” survive your sentence?"},
+    {num:46, t:"What We Need Is… Emphasis", d:"one clear message · cleft sentences · What we need is — emphasis."},
+    {num:47, t:"Mock B2 First: Use of English & Speaking", d:"exam rehearsal · mock B2 First · Could you pass B2 First today?"},
+    {num:48, t:"Final Pitch and Graduation", d:"graduation day · the whole year in one pitch · What changed in a year?"}]}
+];
+
+/* course map */
+const map = document.getElementById('courseMap');
+COURSE.forEach((m, mi) => {
+  const row = document.createElement('div');
+  row.className = 'modrow' + (mi <= 2 ? ' open' : '');
+  const lessonsHtml = m.lessons.map(L => {
+    if (L.url) return `
+      <div class="lesson-card">
+        <div class="ln">${String(L.num).padStart(2,'0')}</div>
+        <div class="lt">${L.t}<small>${L.d}</small></div>
+        <a class="cta btn primary small" href="${L.url}">Open →</a>
+      </div>`;
+    return `
+      <div class="lesson-card locked">
+        <div class="ln">${String(L.num).padStart(2,'0')}</div>
+        <div class="lt">${L.t}<small>${L.d}</small></div>
+        <span class="tag">🔒 coming soon</span>
+      </div>`;
+  }).join('');
+  row.innerHTML = `
+    <div class="modhead">
+      <div class="num">${m.n}</div>
+      <h3>${m.t}<br><span style="font-weight:400;font-size:13px;color:var(--mut)">${m.ru}</span></h3>
+      <span class="tag" style="flex:none">${m.g}</span>
+      <span class="lock">${mi <= 2 ? '▼' : '▶'}</span>
+    </div>
+    <div class="modbody">${lessonsHtml}</div>`;
+  row.querySelector('.modhead').addEventListener('click', () => {
+    row.classList.toggle('open');
+    row.querySelector('.lock').textContent = row.classList.contains('open') ? '▼' : '▶';
+  });
+  map.appendChild(row);
+});
+
+/* progress of the ready lessons (1–8) on the home page */
+(function () {
+  const note = document.getElementById('progressNote');
+  const names = {warmup:'Warm-up', listening:'Listening', reading:'Reading', grammar:'Grammar', speaking:'Speaking', writing:'Writing', test:'Module Test', homework:'Homework'};
+  const READY = [['m01-01',1],['m01-02',2],['m01-03',3],['m01-04',4],['m02-01',5],['m02-02',6],['m02-03',7],['m02-04',8],['m03-01',9],['m03-02',10],['m03-03',11],['m03-04',12]];
+  try {
+    const d = JSON.parse(localStorage.getItem('ec_progress_v1') || '{}');
+    const lessons = (d.lessons || {});
+    const lines = [];
+    READY.forEach(([key, num]) => {
+      const L = lessons[key];
+      if (L && L.sections) {
+        const done = Object.values(L.sections).filter(Boolean).length;
+        const doneNames = Object.keys(L.sections).filter(k => L.sections[k]).map(k => names[k] || k);
+        lines.push(`<b>Lesson ${num}:</b> ${done}/7 sections${doneNames.length ? ' — ' + doneNames.join(', ') : ''} <a href="lessons/${key}.html">continue →</a>`);
+      }
+    });
+    if (lines.length) note.innerHTML = lines.join('<br>');
+  } catch (e) {}
+})();
+</script>
+</body>
+</html>
