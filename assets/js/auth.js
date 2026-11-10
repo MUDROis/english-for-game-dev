@@ -16,7 +16,7 @@
   function ensureConfig(cb) {
     if (window.FIREBASE_CONFIG) { cb(); return; }
     var s = document.createElement('script');
-    s.src = (isLesson ? '../assets/js/firebase-config.js?v=6' : 'assets/js/firebase-config.js?v=6');
+    s.src = (isLesson ? '../assets/js/firebase-config.js?v=8' : 'assets/js/firebase-config.js?v=8');
     s.onload = cb;
     s.onerror = cb;
     document.head.appendChild(s);

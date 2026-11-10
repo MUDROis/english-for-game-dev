@@ -111,7 +111,7 @@
 
   window.PG = { push: push, hydrate: hydrate, clearLesson: clearLesson };
 
-  if (window.firebase && firebase.auth) {
+  if (window.firebase && firebase.auth && firebase.apps.length && firebase.apps[0].options.apiKey) {
     firebase.auth().onAuthStateChanged(function (u) {
       uid = u ? u.uid : null;
       if (uid) hydrate();
