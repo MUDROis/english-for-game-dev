@@ -42,6 +42,9 @@
     }
     pendingErr = initError || '';
     if (auth) {
+      var pid = '';
+      try { pid = firebase.apps[0].options.projectId || ''; } catch (e) {}
+      setDiag('Firebase OK · ' + (pid || 'app loaded') + (unconfigured ? ' · CONFIG PLACEHOLDER' : ''));
       auth.onAuthStateChanged(function (u) {
         user = u;
         setChip(!!u);
@@ -51,12 +54,21 @@
       });
     } else {
       setChip(false);
+      if (!window.firebase) {
+        setDiag('Firebase SDK did not load — check network / allow gstatic.com in ad-blockers');
+      } else {
+        setDiag((initError || 'not configured') + (unconfigured ? ' · fill apiKey in firebase-config.js' : ''));
+      }
       if (isLesson) show();
     }
   }
 
   var isLesson = /\/lessons\//.test(location.pathname);
   var chip = document.getElementById('authChip');
+
+  if (!window.firebase) {
+    setDiag('Firebase SDK did not load — check network / allow gstatic.com in ad-blockers');
+  }
 
   /* capture any unhandled Firebase error (e.g. during SDK init) and show it on the card */
   var pendingErr = initError || '';
@@ -69,6 +81,11 @@
       if (el) { el.textContent = 'Firebase error: ' + msg; el.style.display = 'block'; }
     }
   });
+
+  function setDiag(msg) {
+    var el = document.getElementById('authDiag');
+    if (el) el.textContent = msg;
+  }
 
   var ERR_MSGS = {
     'auth/invalid-credential': 'Wrong email or password.',
@@ -98,6 +115,7 @@
       '    <button class="btn primary w100" id="authSubmit" type="submit">Sign in</button>' +
       '  </form>' +
       '  <p class="auth-err" id="authErr"></p>' +
+      '  <p class="auth-diag" id="authDiag"></p>' +
       '  <p class="auth-hint">Your progress stays in this browser. No account? Ask the course admin.</p>' +
       '  <a class="auth-back" href="' + (isLesson ? '../index.html' : 'index.html') + '">← Back to course map</a>' +
       '</div>';

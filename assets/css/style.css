@@ -268,6 +268,7 @@ details.folding .inner{padding:0 18px 16px}
 .btn.w100{width:100%; justify-content:center}
 .auth-err{display:none; color:#ff9db1; font-size:13px; background:var(--pf-soft); border:1px solid rgba(255,93,109,.35); padding:8px 10px; border-radius:8px; margin:12px 0 0}
 .auth-hint{color:var(--mut); font-size:12.5px; margin:14px 0 0; line-height:1.5}
+.auth-diag{color:var(--mut); font-size:11.5px; margin-top:10px; word-break:break-word}
 .auth-back{display:inline-block; margin-top:12px; font-size:13px; color:var(--pc)}
 .auth-chip{cursor:pointer; user-select:none; display:inline-flex; align-items:center; font-size:13px; font-weight:600; padding:4px 12px; border-radius:999px; border:1px solid rgba(69,184,255,.4); background:var(--pc-soft); color:#a8dcff; transition:.15s}
 .auth-chip:hover{border-color:var(--pc); color:var(--text)}
