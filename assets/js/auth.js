@@ -48,9 +48,8 @@
       auth.onAuthStateChanged(function (u) {
         user = u;
         setChip(!!u);
-        if (isLesson) {
-          if (u) hide(); else show();
-        }
+        if (u) hide();
+        else if (isLesson) show();
       });
     } else {
       setChip(false);
