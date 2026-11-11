@@ -4,7 +4,7 @@ Static site for a year-long English course (B1→B2) for a game-dev team lead:
 12 modules · 48 lessons · each lesson is a standalone HTML page with interactive
 exercises, audio, video and illustrations.
 
-**Ready to study: Modules 1–4 (lessons 1–16)**
+**Ready to study: Modules 1–8 (lessons 1–32)**
 - `lessons/m01-01.html` — Sprints, Builds and Right Now (Present Simple vs Present Continuous)
 - `lessons/m01-02.html` — State Verbs and the Rhythm of a Team (state verbs + frequency adverbs)
 - `lessons/m01-03.html` — A Startup, the Studio, Zero Doubts (articles)
@@ -21,6 +21,22 @@ exercises, audio, video and illustrations.
 - `lessons/m04-02.html` — By Q3 We Will Have Shipped (Future Continuous & Future Perfect)
 - `lessons/m04-03.html` — Likely, Probably, Might — Forecasting (the confidence ladder)
 - `lessons/m04-04.html` — Pitch Your Next Quarter (+ Module Test 4)
+- `lessons/m05-01.html` — If the Build Fails, We Roll Back (zero conditional)
+- `lessons/m05-02.html` — Unless, As Soon As, In Case (first conditional + safety nets)
+- `lessons/m05-03.html` — Instructions: Polite but Precise (imperatives)
+- `lessons/m05-04.html` — Bug Triage: The Scenario Game (+ Module Test 5)
+- `lessons/m06-01.html` — If I Had More Funding… (Conditional 2)
+- `lessons/m06-02.html` — If We Had Tested Earlier (Conditional 3)
+- `lessons/m06-03.html` — I Wish My Cats Could Talk (wish / if only)
+- `lessons/m06-04.html` — Speaking Challenge: If I Ran the Industry (+ Module Test 6)
+- `lessons/m07-01.html` — Must, Have To, or Optional? (must / have to)
+- `lessons/m07-02.html` — Should, Ought To, Had Better (advice)
+- `lessons/m07-03.html` — She Must Be Bored: Deduction (must be / can't be)
+- `lessons/m07-04.html` — Advice Desk: Consolidation (+ Module Test 7)
+- `lessons/m08-01.html` — Builds Are Compiled, Bugs Are Found (passive voice)
+- `lessons/m08-02.html` — Rules Must Be Followed (modal passives)
+- `lessons/m08-03.html` — I Had It Tested: Delegation (causative have/get)
+- `lessons/m08-04.html` — Release Report: Passive Masterclass (+ Module Test 8)
 
 Every lesson follows the yearly plan: Warm-up → Listening → Reading → Grammar →
 Grammar→Speaking → Writing → Homework. All interface text is in English; Russian
@@ -39,6 +55,10 @@ english-course-site/
 │   ├── m02-01.html … m02-04.html   # Module 2 — fully ready
 │   ├── m03-01.html … m03-04.html   # Module 3 — fully ready
 │   ├── m04-01.html … m04-04.html   # Module 4 — fully ready
+│   ├── m05-01.html … m05-04.html   # Module 5 — fully ready
+│   ├── m06-01.html … m06-04.html   # Module 6 — fully ready
+│   ├── m07-01.html … m07-04.html   # Module 7 — fully ready
+│   ├── m08-01.html … m08-04.html   # Module 8 — fully ready
 │   └── _template.html      # template for the next lessons
 ├── assets/
 │   ├── css/style.css       # platform styling (dark theme, orange/blue accents)

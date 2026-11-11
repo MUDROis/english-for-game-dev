@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 22 — If We Had Tested Earlier | English for Game Dev</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Play:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="icon" href="../assets/img/favicon.ico">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><img class="logo-img" src="../assets/img/logo.png" alt="English for Game Dev — logo"> English for Game Dev</a>
+    <nav>
+      <a href="../index.html">← Course map</a>
+      <a href="m06-01.html">← Lesson 21</a>
+      <a href="#homework">Homework</a>
+      <span class="auth-chip" id="authChip">Sign in</span>
+    </nav>
+  </div>
+</header>
+
+<section class="lesson-hero">
+  <div class="wrap">
+    <div class="crumb">Module 6 · Multiverse of Possibilities · Lesson 22 / 48</div>
+    <h1>If We Had Tested Earlier, <span style="color:var(--acc)">We Would Have Caught It</span></h1>
+    <p class="goal">The multiverse turns to the past — regrets, post-mortems and alternative histories. Lesson goal: rewrite last month in the third conditional (If + had V3, would have V3) — if we had tested earlier, we would have caught the crash — and cross into mixed conditionals: if we had hired a tester in autumn, we would be calmer now.</p>
+    <div class="plan-chips">
+      <a class="tag time" href="#warmup">🔥 Warm-up · 10 min</a>
+      <a class="tag time" href="#listening">🎧 Listening · 12 min</a>
+      <a class="tag time" href="#reading">📖 Reading · 10 min</a>
+      <a class="tag time" href="#grammar">⚙️ Grammar · 10 min</a>
+      <a class="tag time" href="#speaking">🎤 Grammar → Speaking · 15 min</a>
+      <a class="tag time" href="#writing">✍️ Writing · 5 min</a>
+      <a class="tag" href="#homework">🏠 Homework · ≤30 min</a>
+    </div>
+  </div>
+</section>
+
+<div class="progress-wrap" id="lessonProgress">
+  <div class="wrap progress-row">
+    <span class="p-label">Lesson progress: 0/7</span>
+    <div class="bar"><i></i></div>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <!-- ============ 1. WARM-UP ============ -->
+  <section class="sec" id="warmup">
+    <div class="sec-head">
+      <div class="sec-num">1</div><h2>Warm-up</h2>
+      <span class="tag time">10 min</span><span class="tag">retrospectives · regrets · time machines</span>
+    </div>
+    <div class="note" style="margin-left:44px">Yesterday you built parallel universes about now. Today you visit universes about <b>last month</b>: <span class="tag tc">THIRD CONDITIONAL</span> — <i>If we had tested, we would have caught the crash.</i> The past cannot change, but the sentence structure can tell the whole story of what would have been different.</div>
+
+    <div class="card audio-card">
+      <h3>🎧 Listen to the questions</h3>
+      <audio controls src="../assets/audio/m06-02-warmup.mp3" data-speeds preload="none"></audio>
+    </div>
+
+    <div class="card">
+      <h3>❓ Three questions — click a card to open the sentence starters</h3>
+      <div id="warmCards"></div>
+      <div class="note"><b>The rule of the lesson:</b> an unreal past needs <b>had V3</b> in the if-half and <b>would have V3</b> in the result. If the result lives in the <b>present</b> — that is a mixed conditional, and it is allowed.</div>
+    </div>
+  </section>
+
+  <!-- ============ 2. LISTENING ============ -->
+  <section class="sec" id="listening">
+    <div class="sec-head">
+      <div class="sec-num">2</div><h2>Listening — The Post-Mortem</h2>
+      <span class="tag time">12 min</span><span class="tag">audio + comprehension</span>
+    </div>
+
+    <img src="../assets/img/l22-postmortem.png" alt="A game studio meeting room with a whiteboard full of arrow diagrams looping back into the past, a clock rewinding above the table, testers holding coffee cups, a cat sitting inside the drawn time machine — illustration">
+    <div class="note">Three weeks after the winter update launch, Harbour Lights holds its post-mortem — the meeting where the team studies what went wrong without hunting for anyone to blame. Listen for the <b>regrets</b> — every one of them is a third (or mixed) conditional.</div>
+
+    <div class="card">
+      <h3>🧩 Before you listen: 10 key words</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 4px">Click a word — a definition and an example will open. The Russian gloss is there to check your understanding. Listen to the recording of all ten words.</p>
+      <div id="vocabRow"></div>
+      <audio controls src="../assets/audio/m06-02-vocab.mp3" data-speeds preload="none" style="width:100%;height:40px"></audio>
+    </div>
+
+    <div class="card audio-card">
+      <h3>🎧 Track 1 — The Post-Mortem</h3>
+      <audio controls src="../assets/audio/m06-02-listening.mp3" data-speeds preload="none"></audio>
+      <div class="note" style="margin:0"><b>Listen 1 — for gist:</b> what three things went wrong at the launch? &nbsp;·&nbsp; <b>Listen 2 — for detail:</b> copy two regrets word for word: <i>If we had …, we would have … .</i></div>
+    </div>
+
+    <div id="listenMCQ"></div>
+    <div id="listenTF"></div>
+
+    <div class="card">
+      <h3>🌍 Extension — Learn English With TV Series (Marvel-based lessons)</h3>
+      <p style="font-size:14.5px">From the yearly plan — pick any Marvel-based lesson on the channel: <b><a href="https://www.youtube.com/c/LearnEnglishWithTVSeries" target="_blank" rel="noopener">youtube.com → Learn English With TV Series ↗</a></b></p>
+      <p style="color:var(--mut);font-size:14px;margin:0">Task: find <b>one hypothetical phrase</b> in the dialogue (an if-sentence, a would-sentence, a regret). If there is none, note <b>2 useful reaction phrases</b> instead. Do the heroes ever say "I should have…"? That is a regret too.</p>
+    </div>
+  </section>
+
+  <!-- ============ 3. READING ============ -->
+  <section class="sec" id="reading">
+    <div class="sec-head">
+      <div class="sec-num">3</div><h2>Reading — Post-Mortem: The Winter Update (internal wiki)</h2>
+      <span class="tag time">10 min</span><span class="tag">regrets + regret spotting</span>
+    </div>
+
+    <div class="card">
+      <h3>Harbour Lights Wiki · Page 14: Post-Mortem — Winter Update</h3>
+      <p><b>Category:</b> lessons learned · <b>Owner:</b> Tom · <b>Status:</b> no blaming, only rewinding</p>
+      <p>The rules of our post-mortems: every complaint must be rewritten as a sentence with <i>had V3 / would have V3</i>. Complaints age badly; time machines do not.</p>
+      <p>1. If we had tested the store page on launch morning, we would have seen the broken button in five minutes.</p>
+      <p>2. If Priya had checked the trailer title twice, we would not have shipped a typo to a million wishlists.</p>
+      <p>3. If the quest had a coin cap, nobody would have farmed a billion coins — the economy would have survived the weekend.</p>
+      <p>4. If we had hired a second QA tester in autumn, we would be calmer now. (mixed: past → present)</p>
+      <p>5. If the servers had held under the launch load, we would not have postponed the party.</p>
+      <p>6. If anyone breaks the build next month, they still bring cake. (Some laws survive every timeline.)</p>
+    </div>
+
+    <div id="readLabel"></div>
+    <div id="readTF"></div>
+
+    <div class="card">
+      <h3>🌍 Extension — The Guardian: Games</h3>
+      <p style="font-size:14.5px">From the yearly plan — find an article about a troubled game or studio: <b><a href="https://www.theguardian.com/games" target="_blank" rel="noopener">theguardian.com/games ↗</a></b></p>
+      <p style="color:var(--mut);font-size:14px;margin:0">Task: retell it — <b>what went wrong, and what should the team have done?</b> Build at least three third conditionals: <i>If the studio had delayed the launch, the reviews would have been kinder.</i></p>
+    </div>
+  </section>
+
+  <!-- ============ 4. GRAMMAR ============ -->
+  <section class="sec" id="grammar">
+    <div class="sec-head">
+      <div class="sec-num">4</div><h2>Grammar — Third + Mixed Conditionals</h2>
+      <span class="tag time">10 min</span><span class="tag">regrets + 4 exercises</span>
+    </div>
+
+    <div class="grid2">
+      <div class="rulebox tc">
+        <h3><span class="tag tc">THIRD CONDITIONAL</span> — the time machine</h3>
+        <ul>
+          <li>Form: <i>If + had V3, would have V3</i> — <i>If we <b>had tested</b> earlier, we <b>would have caught</b> the crash.</i></li>
+          <li>Meaning: an unreal <b>past</b> — the thing did not happen, and you are describing its shadow.</li>
+          <li>Alternatives in the result: <b>could have</b> (ability), <b>might have</b> (possibility) — <i>If we had shortened the demo, players <b>might have</b> finished the story.</i></li>
+          <li>The trap: <b>would have is forbidden in the if-half</b>. Ever. No exceptions.</li>
+        </ul>
+        <div class="note" style="margin-top:10px">Quick test: if the sentence contains a real date in the past that did not go the way you wanted — it is third conditional.</div>
+      </div>
+      <div class="rulebox tc">
+        <h3>🔀 MIXED CONDITIONALS — two clocks in one sentence</h3>
+        <ul>
+          <li>Past cause → present result: <i>If we <b>had hired</b> a second tester in autumn, we <b>would be</b> calmer now.</i></li>
+          <li>The if-half keeps <b>had V3</b> (the past that did not happen), the result half takes <b>would + infinitive</b> (now).</li>
+          <li>Present cause → past result (rarer): <i>If Tom <b>were</b> not so calm, he <b>would have shouted</b> during the launch.</i></li>
+          <li>Time words do the work: <i>now</i>, <i>today</i> in the result half is the mixed-conditional signal.</li>
+        </ul>
+        <div class="note" style="margin-top:10px">If the result half says <i>now</i> or <i>this month</i> — you are probably mixed, not third.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>⚙️ Mini-table — which time machine is it?</h3>
+      <table class="gtable">
+        <tr><th>Sentence</th><th>Why?</th></tr>
+        <tr><td><i>If we had tested the store page, we would have seen the bug.</i></td><td>Both halves in the past — unreal past → <b>third</b>.</td></tr>
+        <tr><td><i>If we had hired a tester in autumn, we would be calmer now.</i></td><td>Past cause, present result (<i>now</i>!) → <b>mixed</b>.</td></tr>
+        <tr><td><i>If we had a publisher, we would ship twice as fast.</i></td><td>No <i>had V3</i> — unreal present → <b>second</b> (Lesson 21).</td></tr>
+        <tr><td><i>If we would have tested earlier, we would have caught the crash.</i></td><td><b>Wrong</b> — would have must never enter the if-half.</td></tr>
+        <tr><td><i>If anyone breaks the build next month, they still bring cake.</i></td><td>A standing law → <b>zero</b>. Some things survive every timeline.</td></tr>
+      </table>
+      <div class="note">🩹 <b>Typical mistakes of Russian-speaking time travellers:</b> <span class="no">If we would have tested earlier…</span> → <span class="yes">If we had tested earlier…</span> (had V3 in the if-half) · <span class="no">If we had tested earlier, we would catch the crash</span> → <span class="yes">…we would have caught the crash</span> (unreal past result needs would have V3 — unless you really mean <i>now</i>, then it is mixed on purpose) · <span class="no">If we had knew the risk…</span> → <span class="yes">If we had known the risk…</span> (V3, not V2) · <span class="no">If I had more time last year…</span> → <span class="yes">If I had had more time last year…</span> (had V3 needs the extra had).</div>
+    </div>
+
+    <div class="card">
+      <h3>🎬 Video — BBC Learning English: The third conditional (Conditionals with Georgie)</h3>
+      <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/pbm9IWNQmuM" title="BBC Learning English: The third conditional — Conditionals with Georgie" loading="lazy" allowfullscreen></iframe></div>
+      <div class="note" style="margin:0">Georgie rewinds the clock in under five minutes. If the video does not open on this device — <a href="https://www.youtube.com/watch?v=pbm9IWNQmuM" target="_blank" rel="noopener">watch on YouTube ↗</a>. The full episode lives here: <a href="https://www.bbc.co.uk/learningenglish/features/conditionals_with_georgie/ep-240906" target="_blank" rel="noopener">bbc.co.uk → Conditionals with Georgie · Third conditional ↗</a>.</div>
+    </div>
+
+    <div id="gramMCQ"></div>
+    <div id="gramGap"></div>
+    <div id="gramOrder"></div>
+    <div id="gramTF"></div>
+
+    <div class="card">
+      <h3>🔊 Shadowing — speak along with the speaker</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 4px">Track A — pure third conditional, Track B — mixed time machines. Listen to a sentence → repeat it out loud in the pause. Two loops per track.</p>
+      <div class="grid2">
+        <div class="audio-card">
+          <span class="tag tc">Track A · Unreal past</span>
+          <audio controls src="../assets/audio/m06-02-shadowing-a.mp3" data-speeds preload="none"></audio>
+        </div>
+        <div class="audio-card">
+          <span class="tag tc">Track B · Mixed conditionals</span>
+          <audio controls src="../assets/audio/m06-02-shadowing-b.mp3" data-speeds preload="none"></audio>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. SPEAKING ============ -->
+  <section class="sec" id="speaking">
+    <div class="sec-head">
+      <div class="sec-num">5</div><h2>Grammar → Speaking — the main section of the lesson</h2>
+      <span class="tag time">15 min</span><span class="tag">goal: regrets that sound professional</span>
+    </div>
+    <div class="note"><b>The 5-second rule:</b> before every regret ask silently: <i>did the result live in the past or now?</i> If you catch yourself saying <i>"if we would have tested"</i> — stop, rebuild calmly: <i>"if we had tested, we would have caught it."</i> Had V3 + would have V3 — and never swap them.</div>
+
+    <div class="card">
+      <div class="speak-round">
+        <h3>🎙 Round 1 — Project Post-Mortem <span class="tag tc">5 regrets</span></h3>
+        <p style="font-size:14.5px;margin:0 0 6px">Think of a real difficult case from your work or studies (a launch, a deadline, a group project) and describe it in <b>5 third conditional sentences</b>. Model: <i>if the demo had been shorter, players would not have skipped the story.</i> No blaming — the grammar blames the timeline, not the people. <b>2 minutes</b>.</p>
+        <div class="starters">
+          <span class="starter tc">If we had started earlier, we would have …</span>
+          <span class="starter tc">If the demo had been shorter, players would not have …</span>
+          <span class="starter tc">If someone had tested the page that morning, …</span>
+          <span class="starter tc">If we had known the risk, we would have …</span>
+        </div>
+        <div id="rec1"></div>
+      </div>
+
+      <div class="speak-round" style="margin-top:18px">
+        <h3>🎙 Round 2 — History Rewrite <span class="tag tc">an alternative ending</span></h3>
+        <p style="font-size:14.5px;margin:0 0 6px">Take any game or film with an ending you dislike and <b>rewrite its history</b> through <i>had done / would have done</i>: what would have happened if one key decision had been different? <b>90 seconds</b>, at least four would-have sentences.</p>
+        <div class="starters">
+          <span class="starter tc">If the hero had saved the city in chapter one, …</span>
+          <span class="starter tc">If the studio had kept the original ending, the game would have …</span>
+          <span class="starter tc">If players had listened to the warning, …</span>
+        </div>
+        <div id="rec2"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>🎙 Round 3 — Mixed Bag (the plan's core drill)</h3>
+      <p style="font-size:14.5px;margin:0 0 6px">Four situations — <b>two about the past, two about now</b>. Choose the right form for each (third or mixed) and <b>explain your choice</b> in one clause: <i>"…because the result is about today."</i> This is the exact skill the module test will measure.</p>
+      <div class="starters">
+        <span class="starter tc">1 · You missed the wishlist deadline last spring. (past)</span>
+        <span class="starter tc">2 · Nobody taught you Git at university. You struggle now. (mixed)</span>
+        <span class="starter tc">3 · The demo crashed at gamescom last year. (past)</span>
+        <span class="starter tc">4 · You started English late. Your portfolio is thinner today. (mixed)</span>
+      </div>
+      <div id="rec3"></div>
+    </div>
+
+    <div class="card">
+      <h3>⚡ Speed Drill — a regret every 5 seconds</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 8px">Open a card and instantly say the regret it hides — out loud, in the third (or mixed) conditional.</p>
+      <div id="drillCards"></div>
+    </div>
+  </section>
+
+  <!-- ============ 6. WRITING ============ -->
+  <section class="sec" id="writing">
+    <div class="sec-head">
+      <div class="sec-num">6</div><h2>Writing — the rewritten post-mortem</h2>
+      <span class="tag time">5 min</span><span class="tag">5 regrets, 40–80 words</span>
+    </div>
+    <div id="writerBox" class="card"></div>
+    <details class="folding">
+      <summary>Model answer — open it after your own version</summary>
+      <div class="inner"><p>Post-mortem, rewritten. The launch of "Snow Drift" went wrong in every direction. 1. If we had tested the store page on launch morning, we would have caught the broken button. 2. If the artist had checked the trailer twice, we would not have shipped a typo to a million wishlists. 3. If the quest had a coin cap, the economy would have survived the first weekend. 4. If we had hired a second tester in autumn, we would be calmer now. 5. If we had delayed the launch by one week, the reviews would have been kinder. The past did not happen the way we wanted — but March is still ours.</p></div>
+    </details>
+    <div class="note">Want an automatic B2 check of your text? Paste it into <b><a href="https://writeandimprove.com" target="_blank" rel="noopener">Write &amp; Improve (Cambridge) ↗</a></b> — the task "Work — A project you worked on".</div>
+  </section>
+
+  <!-- ============ 7. HOMEWORK ============ -->
+  <section class="sec" id="homework">
+    <div class="sec-head">
+      <div class="sec-num">7</div><h2>Homework</h2>
+      <span class="tag">≤ 30 minutes in total</span>
+    </div>
+    <div id="hwList"></div>
+  </section>
+
+  <details class="folding">
+    <summary>🧑‍🏫 Teacher notes</summary>
+    <div class="inner">
+      <p><b>Goal:</b> the student narrates unreal pasts — <i>If + had V3, would have V3</i> — switches to mixed conditionals when the result is about <i>now</i>, and never lets <i>would have</i> into the if-half.</p>
+      <p><b>Suggested flow:</b> Warm-up: painful launches and the decision they regret least — push answers to "if I had known…, I would have…" → Listening: the post-mortem; second pass copies two regrets word for word → Reading: the wiki page shows the complaint→time-machine rewrite; the Guardian extension rebuilds a real failure → Grammar: the mini-table's "which time machine?" rows are the heart; the video consolidates → Speaking: Round 3 (mixed bag) is the module's key drill — choose and justify → Writing: the rewritten post-mortem is the second portfolio artefact of the module.</p>
+      <p><b>Success criteria:</b> Round 1 — 5 third conditionals, no would have in the if-half; Round 2 — four would-have sentences with a coherent alternative plot; Round 3 — all four situations classified correctly, with the reason said out loud.</p>
+      <p><b>Error pocket:</b> would have in the if-clause · would + V2 (<i>would catch</i> for an unreal past result) · V2 after had (<i>had knew</i>) · missing second had (<i>if I had more time last year</i>) · overusing third where the student really means mixed — listen for <i>now</i> in the result half.</p>
+      <p><b>Threads:</b> the post-mortem wall is the direct sequel of Lesson 21's multiverse board — dreams about the present became regrets about the past; the coin-cap exploit returns in Lesson 24's debate as an argument for regulation; the mixed conditionals trained here power the Speaking Challenge in Lesson 24 (minimum: 2 third conditionals in the monologue).</p>
+    </div>
+  </details>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Lesson 22 · Module 6</b> — If We Had Tested Earlier. <a href="../index.html">Course map →</a>
+    <div style="margin-top:8px"><button class="btn small ghost" id="resetLesson">↺ Reset this lesson's progress</button></div>
+      <div class="legal">© 2019-2026 ИП Громова Анна Александровна, ОГРНИП: 319237500156762, ИНН: 236507001744<br>
+    Лицензия № Л035-01218-23/01091451 Интерактивная школа «МУДРО»</div>
+</div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="../assets/js/firebase-config.js?v=10"></script>
+<script src="../assets/js/auth.js?v=10"></script>
+<script src="../assets/js/progress-firebase.js?v=10"></script>
+<script src="../assets/js/engine.js"></script>?v=10
+<script>
+const KEY = 'm06-02';
+const SECTIONS = [
+  {id:'warmup', title:'Warm-up'}, {id:'listening', title:'Listening'}, {id:'reading', title:'Reading'},
+  {id:'grammar', title:'Grammar'}, {id:'speaking', title:'Speaking'}, {id:'writing', title:'Writing'},
+  {id:'homework', title:'Homework'}
+];
+EC.initLesson(KEY, SECTIONS);
+
+/* ---- Warm-up: 3 cards ---- */
+EC.flipGrid('#warmCards', [
+  {front:"1 · Think of a painful launch — what would you have done differently?", back:"<b>If we had tested the store page that morning, we would have caught the broken button in five minutes.</b><br><span class='tag tc'>unreal past — third conditional</span>"},
+  {front:"2 · If you had known one thing before starting your company, what would it have been?", back:"<b>If I had known how long QA takes, I would have planned the launch a month later.</b><br><span class='tag tc'>had V3 + would have V3</span>"},
+  {front:"3 · Which decision do you regret the least, even if it was hard?", back:"<b>I regret the crunch least: if we had not worked that weekend, the demo would have crashed at gamescom.</b><br><span class='tag tc'>a regret with a silver lining</span>"}
+]);
+
+/* ---- Listening: vocab (definitions in Russian — for checking understanding) ---- */
+EC.vocab('#vocabRow', [
+  {w:"a post-mortem", d:"пост-мортем — разбор проекта после релиза", e:"The post-mortem answers one question: what would we do differently?"},
+  {w:"in hindsight", d:"задним числом, с высоты прошедшего", e:"In hindsight, the launch date was too ambitious."},
+  {w:"to regret", d:"сожалеть", e:"I regret not testing the store page that morning."},
+  {w:"a root cause", d:"первопричина, корень проблемы", e:"The root cause was a missing test, not a bad coder."},
+  {w:"to overlook", d:"не заметить, упустить из виду", e:"We overlooked the typo in the trailer title."},
+  {w:"a shortcut", d:"кратчайший путь, упрощение", e:"If we had taken no shortcuts, the build would have been stable."},
+  {w:"to cut corners", d:"срезать углы — делать наспех, экономить на качестве", e:"Teams that cut corners pay for it on launch day."},
+  {w:"a launch window", d:"окно запуска — выбранный период релиза", e:"If we had missed the launch window, we would have lost the holiday season."},
+  {w:"a lesson learned", d:"извлечённый урок (раздел пост-мортема)", e:"Every post-mortem ends with lessons learned."},
+  {w:"to catch", d:"поймать (баг, ошибку)", e:"If we had tested earlier, we would have caught the crash."}
+]);
+
+/* ---- Listening: MCQ ---- */
+EC.mcq('#listenMCQ', {
+  title:"🎧 Comprehension — Part 1: multiple choice",
+  exKey:'m06-02-listen1',
+  items:[
+    {q:"What are the rules of a Harbour Lights post-mortem?", opts:["Find the person to blame and fine them","Study what went wrong without hunting for anyone to blame","Cancel the next launch"], a:1, why:"“…a meeting where the team studies what went wrong without looking for anyone to blame.”"},
+    {q:"What went wrong with the trailer?", opts:["It was too long","It had a typo in the title","It did not play on mobile"], a:1, why:"“…the trailer had a typo in the title.”"},
+    {q:"What was wrong with one of the quests?", opts:["It gave infinite coins","It was impossible to finish","It had no reward"], a:0, why:"“…one quest gave infinite coins.”"},
+    {q:"Which sentence on the whiteboard is mixed, not third?", opts:["If we had tested the store page, we would have seen the broken button","If we had hired a second QA tester in autumn, we would be calmer now","If I had checked the trailer title twice, we would not have shipped a typo"], a:1, why:"“…we would be calmer NOW” — a past cause with a present result = mixed conditional."}
+  ]
+});
+
+/* ---- Listening: True/False ---- */
+EC.tf('#listenTF', {
+  title:"🎧 Comprehension — Part 2: true or false",
+  exKey:'m06-02-listen2',
+  items:[
+    {s:"Dana calls the post-mortem a funeral.", a:false, why:"False — “A post-mortem is not a funeral. It is a time machine.”"},
+    {s:"The store page was broken for two hours after the launch.", a:true, why:"True — “The store page broke for two hours.”"},
+    {s:"Dana says the team can fix last month.", a:false, why:"False — “We cannot fix last month, but we can fix March.”"}
+  ]
+});
+
+/* ---- Reading: label the time machine ---- */
+EC.mcq('#readLabel', {
+  title:"📖 Label the regret — which sentence is third, mixed or wrong?",
+  exKey:'m06-02-read1',
+  items:[
+    {q:"“If we had tested the store page on launch morning, we would have seen the broken button.”", opts:["Third — unreal past, both halves past","Mixed — past cause, present result"], a:0, why:"Both halves describe that morning → third conditional."},
+    {q:"“If we had hired a second QA tester in autumn, we would be calmer now.”", opts:["Third","Mixed — the result lives in now"], a:1, why:"“…would be calmer NOW” — a present result of an unreal past → mixed conditional."},
+    {q:"“If we would have tested earlier, we would have caught the crash.”", opts:["Correct third conditional","Wrong — would have is forbidden in the if-half"], a:1, why:"Wrong on purpose: If we had tested earlier… Had V3, never would have."},
+    {q:"“If the quest had a coin cap, nobody would have farmed a billion coins.”", opts:["Third — the quest had no cap in reality","Second — a dream about now"], a:0, why:"Unreal past: the quest did not have a cap → third conditional."},
+    {q:"“If anyone breaks the build next month, they still bring cake.”", opts:["Zero — a law that survives every timeline","Third — a past regret"], a:0, why:"True every time → zero conditional. The cake rule is eternal."},
+    {q:"“If the servers had held, we would not postpone the party.”", opts:["Mixed — but the timing is tangled; cleaner: …we would not have postponed","Perfectly correct third"], a:0, why:"The party postponement is finished history → would not have postponed. Mixed is for live results."}
+  ]
+});
+
+EC.tf('#readTF', {
+  title:"📖 True or false?",
+  exKey:'m06-02-read2',
+  items:[
+    {s:"According to the wiki, complaints must be rewritten as time-machine sentences.", a:true, why:"True — “every complaint must be rewritten as a sentence with had V3 / would have V3.”"},
+    {s:"The wiki believes the cake rule was a mistake worth fixing.", a:false, why:"False — “Some laws survive every timeline.” The cake rule is not up for review."}
+  ]
+});
+
+/* ---- Grammar: MCQ ---- */
+EC.mcq('#gramMCQ', {
+  title:"⚙️ Exercise 1 — choose the correct form",
+  exKey:'m06-02-gram1',
+  items:[
+    {q:"If we ___ the store page that morning, we would have seen the broken button.", opts:["tested","had tested","would have tested"], a:1, why:"Unreal past → had V3 in the if-half."},
+    {q:"If we had tested earlier, we ___ the crash.", opts:["would catch","would have caught","will catch"], a:1, why:"Unreal past result → would have V3."},
+    {q:"If we had hired a tester in autumn, we ___ calmer now.", opts:["would be","would have been","are"], a:0, why:"Past cause, present result (now) → mixed: would + infinitive."},
+    {q:"If the quest ___ a coin cap, nobody would have farmed a billion coins.", opts:["had had","had","has"], a:0, why:"had V3 of have = had had. The extra had is obligatory in the unreal past."},
+    {q:"If I ___ the risk, I would have backed up the build.", opts:["knew","had known","would know"], a:1, why:"V3 after had: had known, not had knew."},
+    {q:"If the demo had been shorter, players ___ the story.", opts:["might not have skipped","would not skip","did not skip"], a:0, why:"might have V3 works in the result half for possibility."}
+  ]
+});
+
+/* ---- Grammar: gap-fill ---- */
+EC.gap('#gramGap', {
+  title:"⚙️ Exercise 2 — type the verbs (third + mixed)",
+  exKey:'m06-02-gram2',
+  items:[
+    {t:"If we had tested earlier, we ___ the crash. (catch — would have form)", a:["would have caught"], verbs:["would have V3"]},
+    {t:"If Priya had checked the title twice, we ___ a typo. (not ship — would have form)", a:["would not have shipped","wouldn't have shipped"], verbs:["would have V3"]},
+    {t:"If we had hired a second tester, we ___ calmer now. (be — mixed, present result)", a:["would be"], verbs:["would + infinitive"]},
+    {t:"If I ___ about the exploit sooner, I would have reported it. (know — had form)", a:["had known"], verbs:["had V3"]},
+    {t:"If the servers had held, we ___ the party. (not postpone — would have form)", a:["would not have postponed","wouldn't have postponed"], verbs:["would have V3"]},
+    {t:"If we had ___ corners, the build would have been stable. (not cut — had form)", a:["not cut"], verbs:["had not cut"]}
+  ]
+});
+
+/* ---- Grammar: sentence builder ---- */
+EC.order('#gramOrder', {
+  title:"⚙️ Exercise 3 — build the time machine",
+  exKey:'m06-02-gram3',
+  items:[
+    {words:["If we had tested earlier,","we would have caught","the crash in five minutes"], answer:"If we had tested earlier, we would have caught the crash in five minutes.", ru:"Если бы мы тестировали раньше, мы бы поймали краш за пять минут."},
+    {words:["If we had hired a second tester in autumn,","we would be calmer now"], answer:"If we had hired a second tester in autumn, we would be calmer now.", ru:"Если бы мы наняли второго тестировщика осенью, сейчас мы были бы спокойнее (mixed)."},
+    {words:["If the quest had a coin cap,","the economy would have survived","the first weekend"], answer:"If the quest had a coin cap, the economy would have survived the first weekend.", ru:"Если бы у квеста был лимит монет, экономика пережила бы первые выходные."},
+    {words:["If we had missed the launch window,","we would have lost","the holiday season"], answer:"If we had missed the launch window, we would have lost the holiday season.", ru:"Если бы мы пропустили окно запуска, мы бы потеряли праздничный сезон."}
+  ]
+});
+
+/* ---- Grammar: true/false on the form ---- */
+EC.tf('#gramTF', {
+  title:"⚙️ Exercise 4 — is the explanation correct?",
+  exKey:'m06-02-gram4',
+  items:[
+    {s:"“If we would have tested earlier…” is acceptable in written post-mortems.", a:false, why:"False — would have must never enter the if-half. Write: If we had tested earlier."},
+    {s:"In a mixed conditional, the if-half keeps had V3 and the result half takes would + infinitive.", a:true, why:"True — If we had hired a tester, we would be calmer now. Past cause, present result."},
+    {s:"“If I had more time last year…” is a correct unreal past.", a:false, why:"False — unreal past needs the extra had: If I had had more time last year…"},
+    {s:"might have V3 and could have V3 can replace would have V3 in the result half.", a:true, why:"True — If we had shortened the demo, players might have finished the story."}
+  ]
+});
+
+/* ---- Speaking: speed drill ---- */
+EC.flipGrid('#drillCards', [
+  {front:"⏱ Nobody tested the store page that morning.", back:"<b>If someone had tested it, we would have caught the broken button.</b> <span class='tag tc'>third</span>"},
+  {front:"⏱ The artist checked the trailer once.", back:"<b>If she had checked it twice, we would not have shipped the typo.</b> <span class='tag tc'>third</span>"},
+  {front:"⏱ No second tester was hired in autumn.", back:"<b>If we had hired one, we would be calmer now.</b> <span class='tag tc'>mixed</span>"},
+  {front:"⏱ You started learning English late.", back:"<b>If I had started earlier, my portfolio would be bigger today.</b> <span class='tag tc'>mixed</span>"},
+  {front:"⏱ The team skipped the smoke test.", back:"<b>If we had run the smoke test, the demo would not have crashed.</b> <span class='tag tc'>third</span>"},
+  {front:"⏱ The demo was too long at gamescom.", back:"<b>If the demo had been shorter, players would not have skipped the story.</b> <span class='tag tc'>third</span>"},
+  {front:"⏱ Nobody backed up the build.", back:"<b>If we had backed it up, we would have saved the whole evening.</b> <span class='tag tc'>third</span>"},
+  {front:"⏱ The wishlists did not grow before the launch.", back:"<b>If the wishlists had grown faster, the publisher would have noticed us.</b> <span class='tag tc'>third</span>"}
+]);
+EC.recorder('#rec1', {maxSec:120, hint:"Round 1 · five third-conditional regrets about a real case"});
+EC.recorder('#rec2', {maxSec:90, hint:"Round 2 · rewrite the ending of a game or film"});
+EC.recorder('#rec3', {maxSec:120, hint:"Round 3 · mixed bag: 4 situations, choose third or mixed + explain"});
+
+/* ---- Writing ---- */
+EC.writer('#writerBox', {
+  task:"✍️ The rewritten post-mortem (<b>40–80 words</b>): invent a failed release and write <b>5 sentences</b> — four third conditionals and <b>one mixed</b> (a past cause with a result that lives <i>now</i>). No blaming people — only timelines.",
+  placeholder:"1. If we had tested …, we would have caught …  2. If the artist had …, we would not have …  5. If we had hired …, we would be calmer now.",
+  min:40, max:80
+});
+
+/* ---- Homework ---- */
+EC.checklist('#hwList', {
+  items:[
+    {t:"Test-English B2: <i>Mixed conditionals</i> — one set of exercises (≈10 minutes; it also revises third conditionals) <a href='https://test-english.com/grammar-points/b2/mixed-conditionals/' target='_blank' rel='noopener'>test-english.com → b2/mixed-conditionals ↗</a>", m:"Tick the box when the page shows your score"},
+    {t:"From the plan: open the Guardian article you read and pull out <b>3 regrets or failures</b> — rebuild each one as a third conditional", m:"Bring the 3 rebuilt sentences to Lesson 23"},
+    {t:"BBC Learning English: <i>The third conditional</i> — Conditionals with Georgie (if the lesson video did not play in class) <a href='https://www.bbc.co.uk/learningenglish/features/conditionals_with_georgie/ep-240906' target='_blank' rel='noopener'>bbc.co.uk → conditionals_with_georgie · ep-240906 ↗</a>", m:"Note 2 of Georgie's examples"},
+    {t:"Shadowing tracks from this page — 5 minutes of repeating after the speaker (both tracks)", m:"Track A = unreal past, Track B = mixed time machines"}
+  ]
+});
+
+/* ---- audio speed buttons + reset ---- */
+EC.enhanceAudio();
+document.getElementById('resetLesson').addEventListener('click', () => {
+  if (!confirm('Reset the progress, exercise results and the written text of Lesson 22?')) return;
+  try {
+    const d = JSON.parse(localStorage.getItem('ec_progress_v1') || '{}');
+    delete d.lessons['m06-02']
+    if (window.PG) window.PG.clearLesson('m06-02');;
+    localStorage.setItem('ec_progress_v1', JSON.stringify(d));
+    location.reload();
+  } catch (e) {}
+});
+</script>
+</body>
+</html>

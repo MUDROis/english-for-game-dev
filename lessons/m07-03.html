@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 27 — She Must Be Bored: Deduction | English for Game Dev</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Play:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="icon" href="../assets/img/favicon.ico">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><img class="logo-img" src="../assets/img/logo.png" alt="English for Game Dev — logo"> English for Game Dev</a>
+    <nav>
+      <a href="../index.html">← Course map</a>
+      <a href="m07-02.html">← Lesson 26</a>
+      <a href="#homework">Homework</a>
+      <span class="auth-chip" id="authChip">Sign in</span>
+    </nav>
+  </div>
+</header>
+
+<section class="lesson-hero">
+  <div class="wrap">
+    <div class="crumb">Module 7 · Obligation, Advice and Deduction · Lesson 27 / 48</div>
+    <h1>She Must Be Bored <span style="color:var(--acc)">The Bug Detective</span></h1>
+    <p class="goal">Lesson goal: reason like a detective — say what you are almost sure of (must be), what is possible (might be) and what is impossible (can't be) — about bugs, cats and lore, in the present and in the past (must have V3 / can't have V3).</p>
+    <div class="plan-chips">
+      <a class="tag time" href="#warmup">🔥 Warm-up · 10 min</a>
+      <a class="tag time" href="#listening">🎧 Listening · 12 min</a>
+      <a class="tag time" href="#reading">📖 Reading · 10 min</a>
+      <a class="tag time" href="#grammar">⚙️ Grammar · 10 min</a>
+      <a class="tag time" href="#speaking">🎤 Grammar → Speaking · 15 min</a>
+      <a class="tag time" href="#writing">✍️ Writing · 5 min</a>
+      <a class="tag" href="#homework">🏠 Homework · ≤30 min</a>
+    </div>
+  </div>
+</section>
+
+<div class="progress-wrap" id="lessonProgress">
+  <div class="wrap progress-row">
+    <span class="p-label">Lesson progress: 0/7</span>
+    <div class="bar"><i></i></div>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <!-- ============ 1. WARM-UP ============ -->
+  <section class="sec" id="warmup">
+    <div class="sec-head">
+      <div class="sec-num">1</div><h2>Warm-up</h2>
+      <span class="tag time">10 min</span><span class="tag">cats · evidence · small crimes</span>
+    </div>
+    <div class="note" style="margin-left:44px">Laws (Lesson 25) and advice (Lesson 26) were about what people <b>do</b>. Today is about what you <b>know</b> — without checking: <span class="tag ded">MUST BE · MIGHT BE · CAN'T BE</span>. The tool of QA triage, cat owners and Marvel theorists.</div>
+
+    <div class="card audio-card">
+      <h3>🎧 Listen to the questions</h3>
+      <audio controls src="../assets/audio/m07-03-warmup.mp3" data-speeds preload="none"></audio>
+    </div>
+
+    <div class="card">
+      <h3>❓ Three questions — click a card to open the sentence starters</h3>
+      <div id="warmCards"></div>
+      <div class="note"><b>The rule of the lesson:</b> every guess has a certainty level. <i>must be</i> = almost sure · <i>might / may / could be</i> = possible · <i>can't be</i> = impossible. Warning from the grammar: the opposite of <i>must be</i> is <b>can't be</b>, not mustn't be.</div>
+    </div>
+  </section>
+
+  <!-- ============ 2. LISTENING ============ -->
+  <section class="sec" id="listening">
+    <div class="sec-head">
+      <div class="sec-num">2</div><h2>Listening — Who Broke the Build?</h2>
+      <span class="tag time">12 min</span><span class="tag">audio + comprehension</span>
+    </div>
+
+    <img src="../assets/img/l27-detective.png" alt="A game studio Friday evening turned into a detective scene: a QA lead with a magnifying glass studying a red broken-build screen, evidence cards pinned in a chain, glowing paw prints leading across the desk to a cat with an innocent face, a detective hat on the monitor — illustration">
+    <div class="note">Friday, 18:07. The main branch goes red — and nobody has pushed anything for an hour. The team becomes a detective squad. Listen for the <b>certainty levels</b>: what must have happened, what can't have happened, and what might have happened.</div>
+
+    <div class="card">
+      <h3>🧩 Before you listen: 10 key words</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 4px">Click a word — a definition and an example will open. The Russian gloss is there to check your understanding. Listen to the recording of all ten words.</p>
+      <div id="vocabRow"></div>
+      <audio controls src="../assets/audio/m07-03-vocab.mp3" data-speeds preload="none" style="width:100%;height:40px"></audio>
+    </div>
+
+    <div class="card audio-card">
+      <h3>🎧 Track 1 — Who Broke the Build?</h3>
+      <audio controls src="../assets/audio/m07-03-listening.mp3" data-speeds preload="none"></audio>
+      <div class="note" style="margin:0"><b>Listen 1 — for gist:</b> who is the main suspect, and who is cleared? &nbsp;·&nbsp; <b>Listen 2 — for detail:</b> copy one must-have sentence and one can't-have sentence word for word.</div>
+    </div>
+
+    <div id="listenMCQ"></div>
+    <div id="listenTF"></div>
+
+    <div class="card">
+      <h3>🌍 Extension — TED-Ed: Why do cats act so weird?</h3>
+      <p style="font-size:14.5px">From the yearly plan: <b><a href="https://ed.ted.com/lessons/why-do-cats-act-so-weird-tony-buffington" target="_blank" rel="noopener">Why do cats act so weird? ↗</a></b></p>
+      <p style="color:var(--mut);font-size:14px;margin:0">Task: watch and build <b>3 deduction sentences</b> about cat behaviour: <i>if she kneads the blanket, she must feel safe; she might be bored; she can't be angry about the video.</i></p>
+    </div>
+  </section>
+
+  <!-- ============ 3. READING ============ -->
+  <section class="sec" id="reading">
+    <div class="sec-head">
+      <div class="sec-num">3</div><h2>Reading — The Bug Detective Files (internal wiki)</h2>
+      <span class="tag time">10 min</span><span class="tag">certainty spotting</span>
+    </div>
+
+    <div class="card">
+      <h3>Harbour Lights Wiki · Page 19: The Bug Detective Files</h3>
+      <p><b>Category:</b> QA folklore · <b>Owner:</b> Tom, self-appointed detective · <b>Status:</b> no suspects, only hypotheses</p>
+      <p>Grammar check: every line is a deduction. Rate the certainty: <i>must (have)</i> = almost sure · <i>might (have)</i> = possible · <i>can't (have)</i> = impossible.</p>
+      <p>1. The crash <b>can't be</b> in the UI — the UI layer logs nothing at all. It <b>must be</b> in the netcode.</p>
+      <p>2. Priya <b>can't have</b> pushed it — she was in Figma all afternoon; her commits stop at 14:00.</p>
+      <p>3. Someone <b>must have</b> left a debug flag on — the log says VERBOSE at line 204.</p>
+      <p>4. The pipeline <b>might have</b> merged the old branch by itself — it has done it before.</p>
+      <p>5. Boss <b>can't have</b> pushed to main — he has no access. But he <b>might have</b> stepped on the keyboard while the dialog was open.</p>
+      <p>6. Lag <b>must have been</b> bored: the sofa is torn, and the feather wand is on the shelf. It <b>can't have been</b> Pixel — he sleeps twenty hours a day.</p>
+    </div>
+
+    <div id="readLabel"></div>
+    <div id="readTF"></div>
+
+    <div class="card">
+      <h3>🌍 Extension — National Geographic: Animals</h3>
+      <p style="font-size:14.5px">From the yearly plan — pick any animal piece: <b><a href="https://www.nationalgeographic.com/animals" target="_blank" rel="noopener">nationalgeographic.com → animals ↗</a></b></p>
+      <p style="color:var(--mut);font-size:14px;margin:0">Task: make <b>3 deduction statements</b> about the animal: <i>this animal can't be…, it must…, it might…</i> — and rate your own certainty honestly.</p>
+    </div>
+  </section>
+
+  <!-- ============ 4. GRAMMAR ============ -->
+  <section class="sec" id="grammar">
+    <div class="sec-head">
+      <div class="sec-num">4</div><h2>Grammar — The Certainty Ladder</h2>
+      <span class="tag time">10 min</span><span class="tag">deduction now &amp; then + 4 exercises</span>
+    </div>
+
+    <div class="grid2">
+      <div class="rulebox ded">
+        <h3><span class="tag ded">DEDUCTION</span> — about now</h3>
+        <ul>
+          <li><b>must be</b> — almost sure: <i>The servers are silent — the build <b>must be</b> frozen.</i></li>
+          <li><b>might / may / could be</b> — possible: <i>The crash <b>might be</b> the new shader pack.</i></li>
+          <li><b>can't be</b> — impossible: <i>It <b>can't be</b> the UI — the UI logs nothing.</i></li>
+          <li>Careful: the logical opposite of <i>must be</i> is <b>can't be</b>. <i>Mustn't be</i> means "forbidden" — different machine.</li>
+        </ul>
+        <div class="note" style="margin-top:10px">Compare: <i>You mustn't touch main on Friday</i> (a rule, Lesson 25) vs <i>That mustn't be the cause</i> ✗ → <i>That <b>can't be</b> the cause</i> ✓.</div>
+      </div>
+      <div class="rulebox ded">
+        <h3>🕵️ About the past — the detective's toolkit</h3>
+        <ul>
+          <li><b>must have V3</b> — almost sure about yesterday: <i>Someone <b>must have left</b> a debug flag on.</i></li>
+          <li><b>might have V3</b> — possible: <i>The pipeline <b>might have merged</b> the old branch.</i></li>
+          <li><b>can't have V3</b> — impossible: <i>Priya <b>can't have pushed</b> it — she was in Figma.</i></li>
+          <li>Structure is rigid: <i>must / might / can't + have + the third form</i> — "must have left", never "must has left".</li>
+        </ul>
+        <div class="note" style="margin-top:10px">The Russian «должно быть, он оставил» = <i>he must have left</i> — the have is not "possess", it is the perfect marker.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>⚙️ Mini-table — one red build, three certainty levels</h3>
+      <table class="gtable">
+        <tr><th>Evidence</th><th>The detective speaks</th></tr>
+        <tr><td>The log says VERBOSE at line 204</td><td><i>Someone <b>must have left</b> a debug flag on.</i> → almost sure.</td></tr>
+        <tr><td>The merge queue ran at 17:55</td><td><i>The pipeline <b>might have merged</b> the old branch.</i> → possible.</td></tr>
+        <tr><td>Priya's commits stop at 14:00</td><td><i>Priya <b>can't have pushed</b> it.</i> → impossible.</td></tr>
+        <tr><td>Paw prints across the keyboard</td><td><i>Boss <b>must have walked</b> here… but he <b>can't have pushed</b> — no access.</i> → both levels in one case.</td></tr>
+        <tr><td>The sofa is torn; the wand is on the shelf</td><td><i>Lag <b>must have been</b> bored.</i> → deduction about a cat, same grammar.</td></tr>
+      </table>
+      <div class="note">🩹 <b>Typical mistakes of Russian-speaking detectives:</b> <span class="no">It mustn't be the UI</span> (for "impossible") → <span class="yes">It can't be the UI</span> · <span class="no">He must has left the flag</span> → <span class="yes">He must have left the flag</span> · <span class="no">She can't to be the author</span> → <span class="yes">She can't be the author</span> · <span class="no">He must have leave it</span> → <span class="yes">He must have left it</span> (third form!) · <span class="no">It can't be — maybe</span> (can't be = impossible, not "unlikely"; for "unlikely" use might not be).</div>
+    </div>
+
+    <div class="card">
+      <h3>🎬 Video — BBC Learning English: How to use modal verbs of deduction (English In A Minute)</h3>
+      <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/u6hEQdGGMuc" title="How to use modal verbs of deduction — English In A Minute" loading="lazy" allowfullscreen></iframe></div>
+      <div class="note" style="margin:0">One minute, the whole ladder: must, can't, may, might, could. If the video does not open on this device — <a href="https://www.youtube.com/watch?v=u6hEQdGGMuc" target="_blank" rel="noopener">watch on YouTube ↗</a>. The full episode with quiz lives here: <a href="https://www.bbc.co.uk/learningenglish/course/eiam/unit-2/session-10" target="_blank" rel="noopener">bbc.co.uk → English In A Minute · Modal verbs of deduction ↗</a>.</div>
+    </div>
+
+    <div id="gramMCQ"></div>
+    <div id="gramGap"></div>
+    <div id="gramOrder"></div>
+    <div id="gramTF"></div>
+
+    <div class="card">
+      <h3>🔊 Shadowing — speak along with the speaker</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 4px">Track A — deduction about now, Track B — the past detective. Listen to a sentence → repeat it out loud in the pause. Two loops per track.</p>
+      <div class="grid2">
+        <div class="audio-card">
+          <span class="tag ded">Track A · Deduction about now</span>
+          <audio controls src="../assets/audio/m07-03-shadowing-a.mp3" data-speeds preload="none"></audio>
+        </div>
+        <div class="audio-card">
+          <span class="tag ded">Track B · The past detective</span>
+          <audio controls src="../assets/audio/m07-03-shadowing-b.mp3" data-speeds preload="none"></audio>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. SPEAKING ============ -->
+  <section class="sec" id="speaking">
+    <div class="sec-head">
+      <div class="sec-num">5</div><h2>Grammar → Speaking — the main section of the lesson</h2>
+      <span class="tag time">15 min</span><span class="tag">goal: guesses that sound professional</span>
+    </div>
+    <div class="note"><b>The 5-second rule:</b> before every guess rate your certainty out loud: <i>almost sure → must; possible → might; impossible → can't.</i> If you catch yourself saying <i>"it mustn't be the UI"</i> about evidence — stop, rebuild: <i>"it can't be the UI."</i> Mustn't forbids, can't concludes.</div>
+
+    <div class="card">
+      <div class="speak-round">
+        <h3>🎙 Round 1 — Bug Detective <span class="tag ded">5 strange bugs</span></h3>
+        <p style="font-size:14.5px;margin:0 0 6px">Five bizarre bug reports arrive. Reason out loud about each — what <b>must have happened</b>, what <b>can't have happened</b>, what <b>might have happened</b>? Model: <i>the players can't have hacked the server; someone must have left a debug flag on.</i> <b>2 minutes</b>.</p>
+        <div class="starters">
+          <span class="starter ded">The coin counter shows -400 — someone must have …</span>
+          <span class="starter ded">The menus speak French on one device only — it might be …</span>
+          <span class="starter ded">The build passed on every machine except Tom's — it can't be …</span>
+          <span class="starter ded">The save file weighs 4 GB — somebody must have …</span>
+        </div>
+        <div id="rec1"></div>
+      </div>
+
+      <div class="speak-round" style="margin-top:18px">
+        <h3>🎙 Round 2 — Cat CSI <span class="tag ded">3 crimes, 3 alibis</span></h3>
+        <p style="font-size:14.5px;margin:0 0 6px">Three household "crimes" with evidence. Name the culprit and the motive with the right certainty: <i>the sofa is torn — it must have been the youngest; he might have been bored; it can't have been Pixel — he sleeps twenty hours a day.</i></p>
+        <div class="starters">
+          <span class="starter ded">The glass is on the floor, the cat looks proud — she must have …</span>
+          <span class="starter ded">The keyboard has paw prints — it might have been …</span>
+          <span class="starter ded">The fish bowl is empty, Pixel is asleep on it — it can't have been …</span>
+        </div>
+        <div id="rec2"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>🎙 Round 3 — Lore Theorist</h3>
+      <p style="font-size:14.5px;margin:0 0 6px">Build one fan theory about a universe you know (Marvel, a game, a series) — <b>90 seconds</b>, all three levels: <i>Loki can't have died — he must have left a variant behind; the next season might reveal it.</i> Confidence is grammar, not volume.</p>
+      <div class="starters">
+        <span class="starter ded">He can't have died — he must have …</span>
+        <span class="starter ded">The studio must have planned it since season one …</span>
+        <span class="starter ded">The final scene might mean …</span>
+      </div>
+      <div id="rec3"></div>
+    </div>
+
+    <div class="card">
+      <h3>⚡ Speed Drill — certainty at gunpoint</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 8px">Open a card and instantly say the deduction it hides — at the exact certainty level asked.</p>
+      <div id="drillCards"></div>
+    </div>
+  </section>
+
+  <!-- ============ 6. WRITING ============ -->
+  <section class="sec" id="writing">
+    <div class="sec-head">
+      <div class="sec-num">6</div><h2>Writing — the incident report</h2>
+      <span class="tag time">5 min</span><span class="tag">6 sentences, all deduction</span>
+    </div>
+    <div id="writerBox" class="card"></div>
+    <details class="folding">
+      <summary>Model answer — open it after your own version</summary>
+      <div class="inner"><p>Incident report — Friday, 18:07, main branch red. Nobody can have pushed anything on purpose: all commits stop at 17:00. Someone must have left the debug flag on after Wednesday's demo. The pipeline might have merged the old branch — it has form. Priya can't have touched it; she was in Figma all afternoon. Boss the cat must have walked across the keyboard, but he can't have pressed "push" — he has no access. Conclusion: the flag is guilty, the cat is innocent, the pipeline needs a leash.</p></div>
+    </details>
+    <div class="note">Want an automatic B1+ check of your text? Paste it into <b><a href="https://writeandimprove.com" target="_blank" rel="noopener">Write &amp; Improve (Cambridge) ↗</a></b> — the task "Work — Your work and future plans".</div>
+  </section>
+
+  <!-- ============ 7. HOMEWORK ============ -->
+  <section class="sec" id="homework">
+    <div class="sec-head">
+      <div class="sec-num">7</div><h2>Homework</h2>
+      <span class="tag">≤ 30 minutes in total</span>
+    </div>
+    <div id="hwList"></div>
+  </section>
+
+  <details class="folding">
+    <summary>🧑‍🏫 Teacher notes</summary>
+    <div class="inner">
+      <p><b>Goal:</b> the student reasons with graded certainty — must be / might be / can't be about now, must have / might have / can't have about the past — and never uses mustn't for "impossible". This is the language of bug triage meetings and of every good fan theory.</p>
+      <p><b>Suggested flow:</b> Warm-up: the three cat questions — every answer is already a deduction, polish the form → Listening: the red build; second pass copies one must-have and one can't-have sentence → Reading: the Detective Files rate six lines by certainty; the National Geographic extension applies the ladder to animals → Grammar: the mini-table's "one red build" is the exam shape; the EIAM video locks the ladder in one minute → Speaking: Round 1 (bug detective) is the work tool; Round 2 (cat CSI) is the fun rehearsal; Round 3 (lore theorist) stretches fluency → Writing: the incident report closes the case with all six forms.</p>
+      <p><b>Success criteria:</b> Round 1 — all three past-deduction forms used correctly, no must-has-left slips; Round 2 — every verdict names its evidence; the report — 6 sentences covering must have, might have, can't have, must be, can't be.</p>
+      <p><b>Error pocket:</b> mustn't be for "impossible" · must has V3 · can't to be · must have + first form (<i>must have leave</i>) · can't be used for "unlikely" (that is might not be) · spelling out "have" as /hæv/ instead of the weak /əv/ in speech.</p>
+      <p><b>Threads:</b> the debug flag returns in Lesson 29 as reported speech ("Tom said someone must have left a flag on"); cat CSI is now a recurring segment; the certainty ladder reappears in Module 10 for game reviews ("this can't be the same studio that shipped the demo").</p>
+    </div>
+  </details>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Lesson 27 · Module 7</b> — She Must Be Bored: Deduction <a href="../index.html">Course map →</a>
+    <div style="margin-top:8px"><button class="btn small ghost" id="resetLesson">↺ Reset this lesson's progress</button></div>
+      <div class="legal">© 2019-2026 ИП Громова Анна Александровна, ОГРНИП: 319237500156762, ИНН: 236507001744<br>
+    Лицензия № Л035-01218-23/01091451 Интерактивная школа «МУДРО»</div>
+</div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="../assets/js/firebase-config.js?v=10"></script>
+<script src="../assets/js/auth.js?v=10"></script>
+<script src="../assets/js/progress-firebase.js?v=10"></script>
+<script src="../assets/js/engine.js"></script>?v=10
+<script>
+const KEY = 'm07-03';
+const SECTIONS = [
+  {id:'warmup', title:'Warm-up'}, {id:'listening', title:'Listening'}, {id:'reading', title:'Reading'},
+  {id:'grammar', title:'Grammar'}, {id:'speaking', title:'Speaking'}, {id:'writing', title:'Writing'},
+  {id:'homework', title:'Homework'}
+];
+EC.initLesson(KEY, SECTIONS);
+
+/* ---- Warm-up: 3 cards ---- */
+EC.flipGrid('#warmCards', [
+  {front:"1 · Your cat knocks a glass off the table and looks at you — what must be going through her head?", back:"<b>She must be conducting a physics experiment — and she might be a little proud of the result.</b><br><span class='tag ded'>must be = almost sure</span>"},
+  {front:"2 · How do you usually know which cat did something naughty?", back:"<b>By the evidence: if the sofa is torn, it must have been the youngest — the other two can't run that fast anymore.</b><br><span class='tag ded'>past deduction — must have V3</span>"},
+  {front:"3 · What can't cats possibly be thinking about, ever?", back:"<b>They can't be thinking about deadlines — no creature that sleeps twenty hours a day worries about sprint velocity.</b><br><span class='tag ded'>can't be = impossible</span>"}
+]);
+
+/* ---- Listening: vocab (definitions in Russian — for checking understanding) ---- */
+EC.vocab('#vocabRow', [
+  {w:"evidence", d:"улика, доказательство", e:"The VERBOSE log is our strongest piece of evidence."},
+  {w:"a clue", d:"ключ к разгадке", e:"Paw prints on the keyboard — a clue we cannot ignore."},
+  {w:"a suspect", d:"подозреваемый", e:"Everyone is a suspect until the commits say otherwise."},
+  {w:"guilty", d:"виновный", e:"The debug flag is guilty; the cat is innocent."},
+  {w:"innocent", d:"невиновный", e:"Priya is innocent — she was in Figma all afternoon."},
+  {w:"an alibi", d:"алиби", e:"Her commit history is a perfect alibi."},
+  {w:"to solve", d:"раскрыть, разгадать", e:"We solved the case in eleven minutes — a studio record."},
+  {w:"obviously", d:"очевидно", e:"Obviously, the pipeline has form — it merged the old branch before."},
+  {w:"a paw print", d:"след лапы", e:"A paw print next to the Enter key — case closed."},
+  {w:"to accuse", d:"обвинять", e:"We never accuse without evidence — studio law."}
+]);
+
+/* ---- Listening: MCQ ---- */
+EC.mcq('#listenMCQ', {
+  title:"🎧 Comprehension — Part 1: multiple choice",
+  exKey:'m07-03-listen1',
+  items:[
+    {q:"What happens at 18:07 on Friday?", opts:["The demo goes perfectly","The main branch goes red — and nobody has pushed for an hour","The publisher visits the studio"], a:1, why:"“Friday, 18:07. The main branch goes red — and nobody has pushed anything for an hour.”"},
+    {q:"Why can't Priya have pushed the broken commit?", opts:["She was on holiday","She was in Figma all afternoon — her commits stop at 14:00","She has no access to the repository"], a:1, why:"“Priya can't have pushed it — she was in Figma all afternoon; her commits stop at 14:00.”"},
+    {q:"What does the VERBOSE log at line 204 prove?", opts:["The pipeline merged the old branch","Someone must have left a debug flag on","Boss pushed the commit"], a:1, why:"“Someone must have left a debug flag on — the log says VERBOSE at line 204.”"},
+    {q:"What is the team's final verdict?", opts:["Blame the newest team member","The flag is guilty, the pipeline needs watching — and no one is blamed","Fire the QA lead"], a:1, why:"The studio has a no-blame culture: the flag is the culprit, the humans (and the cat) are cleared."}
+  ]
+});
+
+/* ---- Listening: True/False ---- */
+EC.tf('#listenTF', {
+  title:"🎧 Comprehension — Part 2: true or false",
+  exKey:'m07-03-listen2',
+  items:[
+    {s:"Boss the cat might have stepped on the keyboard, but he can't have pushed to main — he has no access.", a:true, why:"True — “he might have stepped on the keyboard while the dialog was open… he can't have pushed to main.”"},
+    {s:"The pipeline has merged the wrong branch before.", a:true, why:"True — “it might have merged the old branch by itself — it has done it before.”"},
+    {s:"Tom concludes that somebody must have pushed on purpose.", a:false, why:"False — the point is the opposite: nobody pushed on purpose; a debug flag was left on."}
+  ]
+});
+
+/* ---- Reading: rate the certainty ---- */
+EC.mcq('#readLabel', {
+  title:"📖 Rate the certainty — must, might or can't?",
+  exKey:'m07-03-read1',
+  items:[
+    {q:"“The crash can't be in the UI — the UI layer logs nothing at all.”", opts:["Impossible","Possible"], a:0, why:"can't be = impossible — the evidence excludes the UI completely."},
+    {q:"“Someone must have left a debug flag on.”", opts:["Almost sure","Impossible"], a:0, why:"must have V3 = almost sure about the past — the log is the proof."},
+    {q:"“The pipeline might have merged the old branch by itself.”", opts:["Possible","Almost sure"], a:0, why:"might have V3 = possible — it has happened before, but we are not sure this time."},
+    {q:"“Boss can't have pushed to main — he has no access.”", opts:["Impossible","Almost sure but possible"], a:0, why:"No access = impossible. can't have V3 for the past."},
+    {q:"“Lag must have been bored.”", opts:["A deduction — almost sure","A prohibition"], a:0, why:"Deduction: the torn sofa + the shelf wand → almost sure. (mustn't would forbid being bored!)"},
+    {q:"“It can't have been Pixel — he sleeps twenty hours a day.”", opts:["Correct","Wrong — it should be mustn't have been"], a:0, why:"Correct: can't have been = impossible. The opposite of must have is can't have."}
+  ]
+});
+
+EC.tf('#readTF', {
+  title:"📖 True or false?",
+  exKey:'m07-03-read2',
+  items:[
+    {s:"The file's status says: no suspects, only hypotheses.", a:true, why:"True — “Status: no suspects, only hypotheses.”"},
+    {s:"The paw-print case has both certainty levels in it.", a:true, why:"True — Boss must have walked there, but can't have pushed (no access)."}
+  ]
+});
+
+/* ---- Grammar: MCQ ---- */
+EC.mcq('#gramMCQ', {
+  title:"⚙️ Exercise 1 — choose the correct form",
+  exKey:'m07-03-gram1',
+  items:[
+    {q:"The servers are silent — the build ___ frozen.", opts:["must be","can't be","might not be"], a:0, why:"Almost sure → must be."},
+    {q:"It ___ be the UI — the UI logs nothing at all.", opts:["mustn't","can't","must"], a:1, why:"Impossible → can't be. Mustn't be means forbidden, not impossible."},
+    {q:"Someone ___ a debug flag on — the log says VERBOSE.", opts:["must have left","must has left","can't have left"], a:0, why:"Almost sure about the past → must have + V3."},
+    {q:"Priya ___ it — she was in Figma all afternoon.", opts:["must have pushed","can't have pushed","might have pushed"], a:1, why:"Impossible → can't have pushed."},
+    {q:"The pipeline ___ the old branch — it has done it before.", opts:["might have merged","can't have merged","must merged"], a:0, why:"Possible → might have merged."},
+    {q:"That ___ be John — I just saw him in reception.", opts:["mustn't","can't","shouldn't"], a:1, why:"Impossible → can't be. (Classic EIAM example — now you know why.)"}
+  ]
+});
+
+/* ---- Grammar: gap-fill ---- */
+EC.gap('#gramGap', {
+  title:"⚙️ Exercise 2 — type the missing words",
+  exKey:'m07-03-gram2',
+  items:[
+    {t:"The crash ___ in the netcode — the UI is clean. (almost sure, now)", a:["must be"], verbs:["must be"]},
+    {t:"Someone ___ a debug flag on. (leave — almost sure, past)", a:["must have left"], verbs:["must have V3"]},
+    {t:"Priya ___ it — she has a perfect alibi. (push — impossible, past)", a:["can't have pushed","cannot have pushed"], verbs:["can't have V3"]},
+    {t:"The pipeline ___ the old branch. (merge — possible, past)", a:["might have merged","may have merged","could have merged"], verbs:["might have V3"]},
+    {t:"Lag ___ bored — the sofa is torn. (be — almost sure, past)", a:["must have been"], verbs:["must have been"]},
+    {t:"It ___ be the shader pack, but I am not sure. (possible, now)", a:["might be","may be","could be"], verbs:["might be"]}
+  ]
+});
+
+/* ---- Grammar: sentence builder ---- */
+EC.order('#gramOrder', {
+  title:"⚙️ Exercise 3 — build the deduction",
+  exKey:'m07-03-gram3',
+  items:[
+    {words:["The crash can't be in the UI —","it must be","in the netcode"], answer:"The crash can't be in the UI — it must be in the netcode.", ru:"Краш точно не в интерфейсе — он должен быть в сетевом коде (can't be / must be)."},
+    {words:["Someone must have left","a debug flag on","after Wednesday's demo"], answer:"Someone must have left a debug flag on after Wednesday's demo.", ru:"Кто-то должно быть оставил дебаг-флаг включённым после демо в среду (must have V3)."},
+    {words:["Priya can't have pushed it —","she was in Figma","all afternoon"], answer:"Priya can't have pushed it — she was in Figma all afternoon.", ru:"Прия не могла это запушить — она весь день была в Figma (can't have V3)."},
+    {words:["He might have stepped on the keyboard,","but he can't have pressed push —","he has no access"], answer:"He might have stepped on the keyboard, but he can't have pressed push — he has no access.", ru:"Он мог наступить на клавиатуру, но не мог нажать push — у него нет доступа."}
+  ]
+});
+
+/* ---- Grammar: true/false on the form ---- */
+EC.tf('#gramTF', {
+  title:"⚙️ Exercise 4 — is the explanation correct?",
+  exKey:'m07-03-gram4',
+  items:[
+    {s:"“It mustn't be the UI” is a good way to say the UI is impossible.", a:false, why:"False — mustn't forbids; the deduction-negative is can't be: It can't be the UI."},
+    {s:"“He must have left” means you are almost sure he left it.", a:true, why:"True — must have V3 = almost sure about the past."},
+    {s:"“She must has left” is correct because she is third person.", a:false, why:"False — modal + have + V3, no -s: she must have left."},
+    {s:"“Might have” and “may have” and “could have” all mark past possibility.", a:true, why:"True — three spellings of 'possible' in the past."}
+  ]
+});
+
+/* ---- Speaking: speed drill ---- */
+EC.flipGrid('#drillCards', [
+  {front:"⏱ The coin counter shows -400.", back:"<b>Someone must have broken the economy formula — players can't have done that from the shop screen.</b> <span class='tag ded'>must have · can't have</span>"},
+  {front:"⏱ The menus speak French on one device only.", back:"<b>It might be the device language setting — it can't be the build itself.</b> <span class='tag ded'>might be · can't be</span>"},
+  {front:"⏱ The build passes on every machine except Tom's.", back:"<b>It must be Tom's environment — his local cache is the prime suspect.</b> <span class='tag ded'>must be</span>"},
+  {front:"⏱ A save file weighs 4 GB.", back:"<b>Somebody must have logged every frame — or the screenshots folder is inside the save.</b> <span class='tag ded'>must have</span>"},
+  {front:"⏱ The sofa is torn; the wand is on the shelf.", back:"<b>It must have been Lag — she might have been bored; it can't have been Pixel.</b> <span class='tag ded'>all three levels</span>"},
+  {front:"⏱ The glass is on the floor; she looks proud.", back:"<b>She must have planned it — gravity can't have acted alone.</b> <span class='tag ded'>must have planned</span>"},
+  {front:"⏱ The fish bowl is empty; Pixel sleeps on it.", back:"<b>Pixel can't have eaten the fish — he is asleep. Someone else might have…</b> <span class='tag ded'>can't have</span>"},
+  {front:"⏱ Your theory: Loki in season two.", back:"<b>Loki can't have died — he must have left a variant behind.</b> <span class='tag ded'>lore deduction</span>"}
+]);
+EC.recorder('#rec1', {maxSec:120, hint:"Round 1 · Bug Detective — 5 reports, all certainty levels"});
+EC.recorder('#rec2', {maxSec:90, hint:"Round 2 · Cat CSI — 3 crimes with evidence"});
+EC.recorder('#rec3', {maxSec:90, hint:"Round 3 · Lore Theorist — your fan theory"});
+
+/* ---- Writing ---- */
+EC.writer('#writerBox', {
+  task:"✍️ The incident report (<b>50–90 words</b>): close the Friday case yourself — <b>6 sentences</b>, every one a deduction: <b>must have</b>, <b>can't have</b>, <b>might have</b> about the past, and <b>must be</b> / <b>can't be</b> about now. No names blamed except the flag.",
+  placeholder:"Nobody can have pushed it on purpose… Someone must have left… The pipeline might have… Conclusion: …",
+  min:50, max:90
+});
+
+/* ---- Homework ---- */
+EC.checklist('#hwList', {
+  items:[
+    {t:"Test-English: <i>Speculation and deduction</i> — one set of exercises (≈10 minutes): must / might / can't, now and in the past <a href='https://test-english.com/grammar-points/b2/speculation-deduction/' target='_blank' rel='noopener'>test-english.com → b2/speculation-deduction ↗</a>", m:"Tick the box when the page shows your score"},
+    {t:"YouGlish (from the plan): search <b>“she must have”</b> and <b>“he can't have”</b> — copy the intonation out loud, three repeats each <a href='https://youglish.com' target='_blank' rel='noopener'>youglish.com ↗</a>", m:"Notice: have sounds weak — /əv/, not /hæv/"},
+    {t:"TED-Ed: <i>Why do cats act so weird?</i> — if it did not play in class <a href='https://ed.ted.com/lessons/why-do-cats-act-so-weird-tony-buffington' target='_blank' rel='noopener'>ed.ted.com → why-do-cats-act-so-weird ↗</a>", m:"Add 1 new deduction sentence to your Cat CSI"},
+    {t:"Shadowing tracks from this page — 5 minutes of repeating after the speaker (both tracks)", m:"Track A = now, Track B = the past detective"}
+  ]
+});
+
+/* ---- audio speed buttons + reset ---- */
+EC.enhanceAudio();
+document.getElementById('resetLesson').addEventListener('click', () => {
+  if (!confirm('Reset the progress, exercise results and the written text of Lesson 27?')) return;
+  try {
+    const d = JSON.parse(localStorage.getItem('ec_progress_v1') || '{}');
+    delete d.lessons['m07-03']
+    if (window.PG) window.PG.clearLesson('m07-03');;
+    localStorage.setItem('ec_progress_v1', JSON.stringify(d));
+    location.reload();
+  } catch (e) {}
+});
+</script>
+</body>
+</html>

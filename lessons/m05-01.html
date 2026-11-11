@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 17 — If the Build Fails, We Roll Back | English for Game Dev</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Play:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="icon" href="../assets/img/favicon.ico">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><img class="logo-img" src="../assets/img/logo.png" alt="English for Game Dev — logo"> English for Game Dev</a>
+    <nav>
+      <a href="../index.html">← Course map</a>
+      <a href="m04-04.html">← Lesson 16</a>
+      <a href="#homework">Homework</a>
+      <span class="auth-chip" id="authChip">Sign in</span>
+    </nav>
+  </div>
+</header>
+
+<section class="lesson-hero">
+  <div class="wrap">
+    <div class="crumb">Module 5 · What If? Scenarios, Rules and Testing · Lesson 17 / 48</div>
+    <h1>If the Build Fails, <span style="color:var(--acc)">We Roll Back</span></h1>
+    <p class="goal">Module 5 is the "what if" module — the working tool of every tester and product manager. Lesson goal: say rules, laws and game mechanics in the zero conditional (If + Present Simple, Present Simple) until they feel automatic — because a rule is not a prediction, it is a law: if this happens, that happens. Always.</p>
+    <div class="plan-chips">
+      <a class="tag time" href="#warmup">🔥 Warm-up · 10 min</a>
+      <a class="tag time" href="#listening">🎧 Listening · 12 min</a>
+      <a class="tag time" href="#reading">📖 Reading · 10 min</a>
+      <a class="tag time" href="#grammar">⚙️ Grammar · 10 min</a>
+      <a class="tag time" href="#speaking">🎤 Grammar → Speaking · 15 min</a>
+      <a class="tag time" href="#writing">✍️ Writing · 5 min</a>
+      <a class="tag" href="#homework">🏠 Homework · ≤30 min</a>
+    </div>
+  </div>
+</section>
+
+<div class="progress-wrap" id="lessonProgress">
+  <div class="wrap progress-row">
+    <span class="p-label">Lesson progress: 0/7</span>
+    <div class="bar"><i></i></div>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <!-- ============ 1. WARM-UP ============ -->
+  <section class="sec" id="warmup">
+    <div class="sec-head">
+      <div class="sec-num">1</div><h2>Warm-up</h2>
+      <span class="tag time">10 min</span><span class="tag">sport · rules · non-negotiables</span>
+    </div>
+    <div class="note" style="margin-left:44px">Module 5 trains "if — then". The first tool is the <span class="tag zc">ZERO CONDITIONAL</span>: <i>If the player falls, the screen fades.</i> It describes laws, not predictions — game physics, studio rules, processes. If = every time, always. In sport, in studios, in games: rules are zero conditional.</div>
+
+    <div class="card audio-card">
+      <h3>🎧 Listen to the questions</h3>
+      <audio controls src="../assets/audio/m05-01-warmup.mp3" data-speeds preload="none"></audio>
+    </div>
+
+    <div class="card">
+      <h3>❓ Three questions — click a card to open the sentence starters</h3>
+      <div id="warmCards"></div>
+      <div class="note"><b>The rule of the lesson:</b> if your sentence is true every single time — it is <span class="tag zc">zero conditional</span>. If it is a plan about one concrete future — that is next lesson.</div>
+    </div>
+  </section>
+
+  <!-- ============ 2. LISTENING ============ -->
+  <section class="sec" id="listening">
+    <div class="sec-head">
+      <div class="sec-num">2</div><h2>Listening — The Rollback Drill</h2>
+      <span class="tag time">12 min</span><span class="tag">audio + comprehension</span>
+    </div>
+
+    <img src="../assets/img/l17-rollback.png" alt="A game studio QA room with a pipeline board of if-then arrows and a rollback arrow looping back to a server tower — illustration">
+    <div class="note">Friday afternoon, Harbour Lights. The new build is on the test servers, and Tom gathers the team for the rollback drill. Listen for the <b>studio laws</b> and the <b>game rules</b> — every one of them is a zero conditional.</div>
+
+    <div class="card">
+      <h3>🧩 Before you listen: 10 key words</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 4px">Click a word — a definition and an example will open. The Russian gloss is there to check your understanding. Listen to the recording of all ten words.</p>
+      <div id="vocabRow"></div>
+      <audio controls src="../assets/audio/m05-01-vocab.mp3" data-speeds preload="none" style="width:100%;height:40px"></audio>
+    </div>
+
+    <div class="card audio-card">
+      <h3>🎧 Track 1 — The Rollback Drill</h3>
+      <audio controls src="../assets/audio/m05-01-listening.mp3" data-speeds preload="none"></audio>
+      <div class="note" style="margin:0"><b>Listen 1 — for gist:</b> how many studio laws do you hear, and what happens after each? &nbsp;·&nbsp; <b>Listen 2 — for detail:</b> copy two game rules word for word: <i>If … , … .</i></div>
+    </div>
+
+    <div id="listenMCQ"></div>
+    <div id="listenTF"></div>
+
+    <div class="card">
+      <h3>🌍 Extension — BBC 6 Minute English: The Enhanced Games</h3>
+      <p style="font-size:14.5px">From the yearly plan: <b><a href="https://www.bbc.co.uk/learningenglish/features/6-minute-english_2026/ep-260730" target="_blank" rel="noopener">The Enhanced Games ↗</a></b></p>
+      <p style="color:var(--mut);font-size:14px;margin:0">Task: what is the idea of the Enhanced Games? Note <b>2 if-sentences or rules-style phrases</b>. Would the rules of such a competition be written in zero conditional?</p>
+    </div>
+  </section>
+
+  <!-- ============ 3. READING ============ -->
+  <section class="sec" id="reading">
+    <div class="sec-head">
+      <div class="sec-num">3</div><h2>Reading — The Studio Laws (internal wiki)</h2>
+      <span class="tag time">10 min</span><span class="tag">rules + rule spotting</span>
+    </div>
+
+    <div class="card">
+      <h3>Harbour Lights Wiki · Page 12: Studio Laws</h3>
+      <p><b>Category:</b> internal guidelines · <b>Owner:</b> Dana · <b>Status:</b> non-negotiable</p>
+      <p>These laws describe how our studio runs. They are not plans and not wishes — they are true every time.</p>
+      <p>1. If the build fails, we roll back to the previous version. Nobody fixes anything live.</p>
+      <p>2. If a bug is critical, the release stops. A red light is a red light.</p>
+      <p>3. If someone breaks the build, they bring cake on Monday. The cake rule has no exceptions.</p>
+      <p>4. If a tester reports a bug without a screenshot, the ticket goes back to the reporter.</p>
+      <p>5. If the servers go down during a demo, we switch to the trailer. Always have a plan B that is already recorded.</p>
+      <p>6. When in doubt, ask. A five-minute question saves a five-hour rewrite. ("When in doubt" = "if in doubt" — when and if are twins here.)</p>
+    </div>
+
+    <div id="readLabel"></div>
+    <div id="readTF"></div>
+
+    <div class="card">
+      <h3>🌍 Extension — GDC Vault: free talks</h3>
+      <p style="font-size:14.5px">From the yearly plan — pick a short free talk or slide deck about production or QA: <b><a href="https://gdcvault.com/free" target="_blank" rel="noopener">gdcvault.com/free ↗</a></b></p>
+      <p style="color:var(--mut);font-size:14px;margin:0">Task: extract <b>2 rule-like statements</b> and rebuild them as zero conditionals: <i>If we ship on Friday, the build freezes on Thursday.</i></p>
+    </div>
+  </section>
+
+  <!-- ============ 4. GRAMMAR ============ -->
+  <section class="sec" id="grammar">
+    <div class="sec-head">
+      <div class="sec-num">4</div><h2>Grammar — The Zero Conditional</h2>
+      <span class="tag time">10 min</span><span class="tag">rules + 4 exercises</span>
+    </div>
+
+    <div class="grid2">
+      <div class="rulebox zc">
+        <h3><span class="tag zc">ZERO CONDITIONAL</span> — the law</h3>
+        <ul>
+          <li>Form: <i>If + Present Simple, Present Simple</i> — <i>If the player <b>falls</b>, the screen <b>fades</b>.</i></li>
+          <li>Meaning: true <b>every time</b> — physics, rules, processes.</li>
+          <li>Game mechanics live here: <i>If you <b>press</b> the three buttons in order, the combo <b>fires</b>.</i></li>
+          <li><b>when</b> works the same way: <i>When the timer <b>runs</b> out, the level <b>restarts</b>.</i></li>
+        </ul>
+        <div class="note" style="margin-top:10px">If you can add "always" or "never" to the sentence and it stays true — it is zero conditional.</div>
+      </div>
+      <div class="rulebox zc">
+        <h3>🧪 Where the law applies</h3>
+        <ul>
+          <li>Game physics: <i>If the shield <b>is</b> up, the damage <b>is</b> zero.</i></li>
+          <li>Studio rules: <i>If a bug <b>is</b> critical, we <b>stop</b> the release.</i></li>
+          <li>Processes: <i>If the build <b>fails</b>, we <b>roll back</b>.</i></li>
+          <li>Consequences with people: <i>If someone <b>breaks</b> the build, they <b>bring</b> cake.</i></li>
+        </ul>
+        <div class="note" style="margin-top:10px">The result side can be a command in disguise — but that is next lesson. Today both halves are Present Simple.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>⚙️ Mini-table — law or not a law?</h3>
+      <table class="gtable">
+        <tr><th>Sentence</th><th>Why?</th></tr>
+        <tr><td><i>If the timer <b>runs</b> out, the level <b>restarts</b>.</i></td><td>True every time you play — a game law → <b>zero</b>.</td></tr>
+        <tr><td><i>If the build <b>fails</b> tonight, we <b>roll back</b>.</i></td><td>A standing procedure, true every time a build fails → <b>zero</b>.</td></tr>
+        <tr><td><i>If the build <b>fails</b> tonight, we <b>will call</b> the provider.</i></td><td>One concrete future evening with a promise → <b>first</b> (Lesson 18).</td></tr>
+        <tr><td><i>When the demo <b>freezes</b>, we <b>show</b> the trailer.</i></td><td>when = if here; still a law → <b>zero</b>.</td></tr>
+        <tr><td><i>If the cat <b>sits</b> on the keyboard, the demo <b>pauses</b>.</i></td><td>Harbour Lights law #0 → <b>zero</b>, obviously.</td></tr>
+      </table>
+      <div class="note">🩹 <b>Typical mistakes of Russian-speaking testers:</b> <span class="no">If the build will fail, we roll back</span> → <span class="yes">If the build fails, we roll back</span> (no will after if — ever) · <span class="no">If the player will press the button, the combo fires</span> → <span class="yes">If the player presses the button…</span> · <span class="no">If the servers went down, we call the provider</span> → <span class="yes">If the servers go down, we call the provider</span> (a law lives in the present) · <span class="no">If you don't understand, you ask</span> → <span class="yes">If you don't understand, ask</span> (the result is a command — Lesson 19 will make this precise).</div>
+    </div>
+
+    <div class="card">
+      <h3>🎬 Video — BBC Learning English: The zero conditional (Conditionals with Georgie)</h3>
+      <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/RGmKMInQZG8" title="BBC Learning English: The zero conditional — Conditionals with Georgie" loading="lazy" allowfullscreen></iframe></div>
+      <div class="note" style="margin:0">Georgie explains the law-building conditional in under five minutes. If the video does not open on this device — <a href="https://www.youtube.com/watch?v=RGmKMInQZG8" target="_blank" rel="noopener">watch on YouTube ↗</a>. The full episode lives here: <a href="https://www.bbc.co.uk/learningenglish/features/conditionals_with_georgie/ep-240816" target="_blank" rel="noopener">bbc.co.uk → Conditionals with Georgie ↗</a>.</div>
+    </div>
+
+    <div id="gramMCQ"></div>
+    <div id="gramGap"></div>
+    <div id="gramOrder"></div>
+    <div id="gramTF"></div>
+
+    <div class="card">
+      <h3>🔊 Shadowing — speak along with the speaker</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 4px">Track A — the rules of the game, Track B — the studio laws. Listen to a sentence → repeat it out loud in the pause. Two loops per track.</p>
+      <div class="grid2">
+        <div class="audio-card">
+          <span class="tag zc">Track A · Rules of the game</span>
+          <audio controls src="../assets/audio/m05-01-shadowing-a.mp3" data-speeds preload="none"></audio>
+        </div>
+        <div class="audio-card">
+          <span class="tag zc">Track B · Studio laws</span>
+          <audio controls src="../assets/audio/m05-01-shadowing-b.mp3" data-speeds preload="none"></audio>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. SPEAKING ============ -->
+  <section class="sec" id="speaking">
+    <div class="sec-head">
+      <div class="sec-num">5</div><h2>Grammar → Speaking — the main section of the lesson</h2>
+      <span class="tag time">15 min</span><span class="tag">goal: rules that sound like laws</span>
+    </div>
+    <div class="note"><b>The 5-second rule:</b> before every "if" sentence ask silently: <i>is this true every time, or is this one concrete plan?</i> If you catch yourself saying <i>"if the build will fail"</i> — stop, rebuild calmly: <i>"if the build fails."</i> No will after if, ever.</div>
+
+    <div class="card">
+      <div class="speak-round">
+        <h3>🎙 Round 1 — Rules of My Game <span class="tag zc">6 rules</span></h3>
+        <p style="font-size:14.5px;margin:0 0 6px">Choose any game you know well (yours, or one you play) and describe <b>6 rules of its behaviour</b> in zero conditional — combos, damage, saves, restarts. Model: <i>if the timer runs out, the level restarts; if the shield is up, the damage is zero.</i> <b>90 seconds</b>.</p>
+        <div class="starters">
+          <span class="starter zc">If the player …, the game …</span>
+          <span class="starter zc">If you press …, the combo …</span>
+          <span class="starter zc">When the timer runs out, …</span>
+          <span class="starter zc">If the save is safe, nothing is lost.</span>
+        </div>
+        <div id="rec1"></div>
+      </div>
+
+      <div class="speak-round" style="margin-top:18px">
+        <h3>🎙 Round 2 — Studio Laws <span class="tag zc">5 internal rules</span></h3>
+        <p style="font-size:14.5px;margin:0 0 6px">Now your real studio (or study team): give <b>5 internal rules</b> as laws. Include one funny law — Harbour Lights has the cake rule: <i>if someone breaks the build, they bring cake.</i> <b>90 seconds</b>.</p>
+        <div class="starters">
+          <span class="starter zc">If a bug is critical, we …</span>
+          <span class="starter zc">If someone breaks the build, they …</span>
+          <span class="starter zc">If the demo freezes, we …</span>
+        </div>
+        <div id="rec2"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>🎙 Round 3 — Chain Game (the plan's core drill)</h3>
+      <p style="font-size:14.5px;margin:0 0 6px">Classic chain: start with <i>"If the build fails, …"</i> — finish the result, then take your own result and start a new <i>if</i> from it: <i>If the build fails, we roll back → if we roll back, QA retests → if QA retests, …</i> Build a chain of <b>8 links without breaking the times</b>. Record it — the chain must sound like one law leading to the next.</p>
+      <div class="starters">
+        <span class="starter zc">If the build fails, …</span>
+        <span class="starter zc">… → if we roll back, …</span>
+        <span class="starter zc">… → if QA retests, …</span>
+      </div>
+      <div id="rec3"></div>
+    </div>
+
+    <div class="card">
+      <h3>⚡ Speed Drill — a situation every 5 seconds</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 8px">Open a card and instantly say the law it hides — out loud, in zero conditional.</p>
+      <div id="drillCards"></div>
+    </div>
+  </section>
+
+  <!-- ============ 6. WRITING ============ -->
+  <section class="sec" id="writing">
+    <div class="sec-head">
+      <div class="sec-num">6</div><h2>Writing — the crash regulation</h2>
+      <span class="tag time">5 min</span><span class="tag">5 rules, 40–80 words</span>
+    </div>
+    <div id="writerBox" class="card"></div>
+    <details class="folding">
+      <summary>Model answer — open it after your own version</summary>
+      <div class="inner"><p>Crash regulation — what we do if the build crashes. 1. If the build crashes, the tester on duty saves the logs. 2. If the logs show a critical bug, we stop the release — always. 3. If the crash repeats twice, we roll back to the previous version. 4. If the rollback works, QA retests the previous build and we ship it. 5. If someone breaks the build, they bring cake on Monday. The regulation is short because laws must be short.</p></div>
+    </details>
+    <div class="note">Want an automatic B1+ check of your text? Paste it into <b><a href="https://writeandimprove.com" target="_blank" rel="noopener">Write &amp; Improve (Cambridge) ↗</a></b> — the task "Work — Instructions at work".</div>
+  </section>
+
+  <!-- ============ 7. HOMEWORK ============ -->
+  <section class="sec" id="homework">
+    <div class="sec-head">
+      <div class="sec-num">7</div><h2>Homework</h2>
+      <span class="tag">≤ 30 minutes in total</span>
+    </div>
+    <div id="hwList"></div>
+  </section>
+
+  <details class="folding">
+    <summary>🧑‍🏫 Teacher notes</summary>
+    <div class="inner">
+      <p><b>Goal:</b> the student describes rules, game mechanics and studio laws in the zero conditional until the pattern <i>If + Present Simple, Present Simple</i> sounds automatic — and stops hearing "if" as always-a-future-plan.</p>
+      <p><b>Suggested flow:</b> Warm-up: sport rules and non-negotiables; push every answer towards "if…, then…" → Listening: the rollback drill; second pass copies two laws word for word → Reading: the wiki page labels 6 laws; the GDC extension rebuilds 2 statements → Grammar: the mini-table's "law or not a law?" rows are the heart; the video consolidates → Speaking: Round 3 (chain game) is the module's key drill — 8 links without time slips → Writing: the crash regulation is a real QA artefact; keep it in the student's portfolio.</p>
+      <p><b>Success criteria:</b> Round 1 — 6 rules, no will after if; Round 2 — 5 laws, one of them human (cake-level); Round 3 — 8 chain links with zero slips in the Present Simple.</p>
+      <p><b>Error pocket:</b> will in the if-clause (<i>if the build will fail</i>) · past tense in laws (<i>if the servers went down</i>) · Present Continuous for permanent rules · translating «если» as future by default — Russian "если" often introduces one plan, English "if" splits the job with zero conditional first.</p>
+      <p><b>Threads:</b> the rollback drill returns in Lesson 18 (<i>in case the store page breaks, Tom keeps the rollback ready</i>) and in the Module 5 scenario game (Lesson 20, card one); the cake rule becomes the module's running joke; the crash regulation the student writes today is the reading text of Lesson 19 in disguise — instructions grow from laws.</p>
+    </div>
+  </details>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Lesson 17 · Module 5</b> — If the Build Fails, We Roll Back. <a href="../index.html">Course map →</a>
+    <div style="margin-top:8px"><button class="btn small ghost" id="resetLesson">↺ Reset this lesson's progress</button></div>
+      <div class="legal">© 2019-2026 ИП Громова Анна Александровна, ОГРНИП: 319237500156762, ИНН: 236507001744<br>
+    Лицензия № Л035-01218-23/01091451 Интерактивная школа «МУДРО»</div>
+</div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="../assets/js/firebase-config.js?v=10"></script>
+<script src="../assets/js/auth.js?v=10"></script>
+<script src="../assets/js/progress-firebase.js?v=10"></script>
+<script src="../assets/js/engine.js"></script>?v=10
+<script>
+const KEY = 'm05-01';
+const SECTIONS = [
+  {id:'warmup', title:'Warm-up'}, {id:'listening', title:'Listening'}, {id:'reading', title:'Reading'},
+  {id:'grammar', title:'Grammar'}, {id:'speaking', title:'Speaking'}, {id:'writing', title:'Writing'},
+  {id:'homework', title:'Homework'}
+];
+EC.initLesson(KEY, SECTIONS);
+
+/* ---- Warm-up: 3 cards ---- */
+EC.flipGrid('#warmCards', [
+  {front:"1 · What happens in sport if an athlete breaks the rules?", back:"<b>A whistle blows. If the athlete breaks the rules, the referee stops the game.</b><br><span class='tag zc'>zero — true every time</span>"},
+  {front:"2 · Which rule in your studio is non-negotiable?", back:"<b>If we find a critical bug, we stop the release. That one is non-negotiable.</b><br><span class='tag zc'>a studio law</span>"},
+  {front:"3 · If a tester finds a critical bug on release day, what does your team do?", back:"<b>If the bug is critical, we stop the release — a red light is a red light. If it is minor, we fix it in the first patch.</b><br><span class='tag zc'>two laws for two cases</span>"}
+]);
+
+/* ---- Listening: vocab (definitions in Russian — for checking understanding) ---- */
+EC.vocab('#vocabRow', [
+  {w:"to roll back", d:"откатить, вернуть предыдущую версию", e:"If the build fails, we roll back to yesterday's version."},
+  {w:"a pipeline", d:"цепочка сборки: от кода до тестового билда", e:"The pipeline builds a new version every night."},
+  {w:"to crash", d:"упасть, аварийно завершиться", e:"If the client crashes, the launcher restarts it."},
+  {w:"a save", d:"сохранение (прогресс игрока)", e:"If the game freezes, the last save is safe."},
+  {w:"non-negotiable", d:"не подлежит обсуждению", e:"Backing up the build before the demo is non-negotiable."},
+  {w:"a guideline", d:"руководящее правило", e:"The wiki has guidelines for every test case."},
+  {w:"a combo", d:"комбо — серия ударов в правильном порядке", e:"If you press the three buttons in order, the combo fires."},
+  {w:"damage", d:"урон", e:"If the shield is up, the damage is zero."},
+  {w:"a consequence", d:"последствие", e:"Every rule has a consequence."},
+  {w:"to restart", d:"перезапустить", e:"If the level breaks, we restart the client."}
+]);
+
+/* ---- Listening: MCQ ---- */
+EC.mcq('#listenMCQ', {
+  title:"🎧 Comprehension — Part 1: multiple choice",
+  exKey:'m05-01-listen1',
+  items:[
+    {q:"What is studio law number one?", opts:["If the build fails, we roll back","If the build fails, we work all night","If the build fails, we ship anyway"], a:0, why:"“If the build fails, we roll back. Nobody panics, nobody fixes it live.”"},
+    {q:"What happens if someone breaks the build?", opts:["They write a report","They bring cake on Monday","They fix it during the weekend"], a:1, why:"“If someone breaks the build, they bring cake on Monday.”"},
+    {q:"Which game rule does Tom demonstrate?", opts:["If you win, you get a prize","If you press the three buttons in order, the combo fires","If you play at night, the level changes"], a:1, why:"“If you press the three buttons in order, the combo fires and the damage doubles.”"},
+    {q:"Why does Dana mention the cat rule?", opts:["Because the demo really pauses if a cat sits on the keyboard","Because cats delete the save files","Because the cats are afraid of the keyboard"], a:0, why:"“If the cat sits on the keyboard, the demo pauses.” — a true Harbour Lights law."}
+  ]
+});
+
+/* ---- Listening: True/False ---- */
+EC.tf('#listenTF', {
+  title:"🎧 Comprehension — Part 2: true or false",
+  exKey:'m05-01-listen2',
+  items:[
+    {s:"When the build fails, fixing it live is allowed in emergencies.", a:false, why:"False — “Nobody panics, nobody fixes it live. We return to yesterday's version and breathe.”"},
+    {s:"Tom says the zero conditional is not a prediction but a law.", a:true, why:"True — “That is the point of the zero conditional: it is not a prediction, it is a law.”"}
+  ]
+});
+
+/* ---- Reading: label the rule ---- */
+EC.mcq('#readLabel', {
+  title:"📖 Label the rule — which sentence is a true zero conditional?",
+  exKey:'m05-01-read1',
+  items:[
+    {q:"“If the build fails, we roll back to the previous version.”", opts:["Zero — a standing procedure","First — a one-off plan"], a:0, why:"True every time a build fails → zero conditional."},
+    {q:"“If the build fails tonight, we will call the provider.”", opts:["Zero — a law","First — one concrete future"], a:1, why:"One concrete evening plus will → first conditional (Lesson 18)."},
+    {q:"“When in doubt, ask.”", opts:["Zero — when = if here","Not a conditional"], a:0, why:"When in doubt = if in doubt; a law → zero conditional."},
+    {q:"“If a tester reports a bug without a screenshot, the ticket goes back.”", opts:["Zero — a wiki guideline","Zero, but only for serious bugs"], a:0, why:"A guideline that is true every time → zero conditional."},
+    {q:"“If the servers go down during a demo, we switch to the trailer.”", opts:["Zero — the pre-recorded plan B","First — a wish"], a:0, why:"The backup plan is standing, always true → zero conditional."},
+    {q:"“If someone will break the build, they bring cake.”", opts:["Correct","Wrong — no will in the if-half"], a:1, why:"Wrong on purpose: if someone breaks the build, they bring cake. No will after if."}
+  ]
+});
+
+EC.tf('#readTF', {
+  title:"📖 True or false?",
+  exKey:'m05-01-read2',
+  items:[
+    {s:"The wiki page says the studio laws are plans for next month.", a:false, why:"False — “They are not plans and not wishes — they are true every time.”"},
+    {s:"The cake rule has no exceptions, according to the wiki.", a:true, why:"True — “The cake rule has no exceptions.”"}
+  ]
+});
+
+/* ---- Grammar: MCQ ---- */
+EC.mcq('#gramMCQ', {
+  title:"⚙️ Exercise 1 — choose the correct form",
+  exKey:'m05-01-gram1',
+  items:[
+    {q:"If the timer ___ out, the level restarts.", opts:["will run","runs","ran"], a:1, why:"A game law → zero conditional: If + Present Simple, Present Simple."},
+    {q:"If the shield is up, the damage ___ zero.", opts:["is","will be","was"], a:0, why:"Physics of the game — true every time → is."},
+    {q:"If the build ___ tonight, we roll back.", opts:["will fail","fails","is failing"], a:1, why:"A standing procedure, not a prediction → fails (no will)."},
+    {q:"When the demo ___, we show the trailer.", opts:["will freeze","freezes","froze"], a:1, why:"when = if for laws; still zero conditional → freezes."},
+    {q:"If someone ___ the build, they bring cake on Monday.", opts:["breaks","will break","broke"], a:0, why:"The cake law → Present Simple in both halves."},
+    {q:"If you ___ the three buttons in order, the combo fires.", opts:["will press","pressed","press"], a:2, why:"A mechanic that works every time → press."}
+  ]
+});
+
+/* ---- Grammar: gap-fill ---- */
+EC.gap('#gramGap', {
+  title:"⚙️ Exercise 2 — type the verbs (zero conditional)",
+  exKey:'m05-01-gram2',
+  items:[
+    {t:"If the player ___ , the screen fades. (fall — game physics)", a:["falls"], verbs:["present simple"]},
+    {t:"If a bug ___ critical, we stop the release. (be — studio law)", a:["is"], verbs:["present simple"]},
+    {t:"If the servers go down, we ___ the provider. (call — procedure)", a:["call"], verbs:["present simple"]},
+    {t:"If you ___ the three buttons in order, the combo fires. (press — mechanic)", a:["press"], verbs:["present simple"]},
+    {t:"If the cat ___ on the keyboard, the demo pauses. (sit — law #0)", a:["sits"], verbs:["present simple"]},
+    {t:"When the rollback ___, QA retests the previous build. (work — process)", a:["works"], verbs:["present simple"]}
+  ]
+});
+
+/* ---- Grammar: sentence builder ---- */
+EC.order('#gramOrder', {
+  title:"⚙️ Exercise 3 — build the law",
+  exKey:'m05-01-gram3',
+  items:[
+    {words:["If the build fails,","we roll back","to the previous version"], answer:"If the build fails, we roll back to the previous version.", ru:"Если сборка падает, мы откатываемся к предыдущей версии (регламент)."},
+    {words:["If a tester reports","a bug without a screenshot,","the ticket goes back"], answer:"If a tester reports a bug without a screenshot, the ticket goes back.", ru:"Если тестировщик заводит баг без скриншота, тикет возвращают (правило вики)."},
+    {words:["If the servers go down","during a demo,","we switch to the trailer"], answer:"If the servers go down during a demo, we switch to the trailer.", ru:"Если серверы падают во время демо, мы включаем трейлер (план Б)."},
+    {words:["When in doubt,","the team asks —","a five-minute question saves a five-hour rewrite"], answer:"When in doubt, the team asks — a five-minute question saves a five-hour rewrite.", ru:"Если сомневаешься — спрашивай: пятиминутный вопрос экономит пятичасовую переделку."}
+  ]
+});
+
+/* ---- Grammar: true/false on the form ---- */
+EC.tf('#gramTF', {
+  title:"⚙️ Exercise 4 — is the explanation correct?",
+  exKey:'m05-01-gram4',
+  items:[
+    {s:"“If the build will fail, we roll back” is correct because the failure is in the future.", a:false, why:"False — laws take Present Simple in both halves: If the build fails, we roll back. No will after if."},
+    {s:"“When the timer runs out, the level restarts” means the same as “If the timer runs out…”.", a:true, why:"True — when and if are twins in the zero conditional."},
+    {s:"The zero conditional describes one concrete evening next week.", a:false, why:"False — it describes what is true every time; one concrete plan is the first conditional (Lesson 18)."},
+    {s:"“If the shield is up, the damage is zero” is a game law.", a:true, why:"True — game physics is the natural habitat of the zero conditional."}
+  ]
+});
+
+/* ---- Speaking: speed drill ---- */
+EC.flipGrid('#drillCards', [
+  {front:"⏱ The launcher detects no internet.", back:"<b>If there is no internet, the launcher switches to offline mode.</b> <span class='tag zc'>law</span>"},
+  {front:"⏱ A player deletes the game folder.", back:"<b>If you delete the folder, the save files go with it.</b> <span class='tag zc'>law</span>"},
+  {front:"⏱ Two testers edit the same ticket.", back:"<b>If two people edit one ticket, the second edit overwrites the first.</b> <span class='tag zc'>law</span>"},
+  {front:"⏱ The build ships without a version number.", back:"<b>If the build has no version number, support cannot trace the crash.</b> <span class='tag zc'>law</span>"},
+  {front:"⏱ QA skips the smoke test.", back:"<b>If we skip the smoke test, the demo breaks at the worst moment.</b> <span class='tag zc'>law</span>"},
+  {front:"⏱ Someone pushes straight to main on Friday.", back:"<b>If someone pushes to main on Friday, they bring cake on Monday.</b> <span class='tag zc'>the cake law</span>"},
+  {front:"⏱ The demo machine falls asleep.", back:"<b>If the demo machine falls asleep, the stream freezes.</b> <span class='tag zc'>law</span>"},
+  {front:"⏱ A new tester asks about the wiki.", back:"<b>If you don't know the rule, the wiki knows.</b> <span class='tag zc'>law</span>"}
+]);
+EC.recorder('#rec1', {maxSec:90, hint:"Round 1 · six rules of your game in zero conditional"});
+EC.recorder('#rec2', {maxSec:90, hint:"Round 2 · five studio laws, one of them funny"});
+EC.recorder('#rec3', {maxSec:120, hint:"Round 3 · the chain game: 8 links, no time slips"});
+
+/* ---- Writing ---- */
+EC.writer('#writerBox', {
+  task:"✍️ The crash regulation (<b>40–80 words</b>): write <b>5 rules</b> for “what we do if the build crashes” — every rule in the zero conditional. Write it like an internal wiki page: short, calm, non-negotiable.",
+  placeholder:"1. If the build crashes, …  2. If the logs show …, …  3. If the crash repeats twice, …",
+  min:40, max:80
+});
+
+/* ---- Homework ---- */
+EC.checklist('#hwList', {
+  items:[
+    {t:"Test-English B1+: <i>Zero and first conditional and future time clauses</i> — one set of exercises (≈10 minutes) <a href='https://test-english.com/grammar-points/b1-b2/zero-first-conditional-future-time-clauses' target='_blank' rel='noopener'>test-english.com → b1-b2/zero-first-conditional ↗</a>", m:"Tick the box when the page shows your score"},
+    {t:"From the plan: open any game you know (interface, wiki or guide) and copy <b>3 rules with if</b> — check yourself: are they true every time?", m:"Bring the 3 rules to Lesson 18"},
+    {t:"BBC Learning English: <i>The zero conditional</i> — Conditionals with Georgie (if the lesson video did not play in class) <a href='https://www.bbc.co.uk/learningenglish/features/conditionals_with_georgie/ep-240816' target='_blank' rel='noopener'>bbc.co.uk → conditionals_with_georgie ↗</a>", m:"Note 2 of Georgie's examples"},
+    {t:"Shadowing tracks from this page — 5 minutes of repeating after the speaker (both tracks)", m:"Track A = rules of the game, Track B = studio laws"}
+  ]
+});
+
+/* ---- audio speed buttons + reset ---- */
+EC.enhanceAudio();
+document.getElementById('resetLesson').addEventListener('click', () => {
+  if (!confirm('Reset the progress, exercise results and the written text of Lesson 17?')) return;
+  try {
+    const d = JSON.parse(localStorage.getItem('ec_progress_v1') || '{}');
+    delete d.lessons['m05-01']
+    if (window.PG) window.PG.clearLesson('m05-01');;
+    localStorage.setItem('ec_progress_v1', JSON.stringify(d));
+    location.reload();
+  } catch (e) {}
+});
+</script>
+</body>
+</html>

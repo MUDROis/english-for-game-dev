@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 19 — Instructions: Polite but Precise | English for Game Dev</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Play:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="icon" href="../assets/img/favicon.ico">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><img class="logo-img" src="../assets/img/logo.png" alt="English for Game Dev — logo"> English for Game Dev</a>
+    <nav>
+      <a href="../index.html">← Course map</a>
+      <a href="m05-02.html">← Lesson 18</a>
+      <a href="#homework">Homework</a>
+      <span class="auth-chip" id="authChip">Sign in</span>
+    </nav>
+  </div>
+</header>
+
+<section class="lesson-hero">
+  <div class="wrap">
+    <div class="crumb">Module 5 · What If? Scenarios, Rules and Testing · Lesson 19 / 48</div>
+    <h1>Instructions: <span style="color:var(--acc)">Polite</span> but <span style="color:var(--pc)">Precise</span></h1>
+    <p class="goal">Lesson goal: give instructions that people actually follow. The imperative — Press, Hold, Do not click — is the shortest sentence in English, and the softeners — Please, Make sure you…, Be careful not to…, If in doubt, ask — make it human. An instruction plus a condition is the perfect pair: every checklist your team will ever read is built from them.</p>
+    <div class="plan-chips">
+      <a class="tag time" href="#warmup">🔥 Warm-up · 10 min</a>
+      <a class="tag time" href="#listening">🎧 Listening · 12 min</a>
+      <a class="tag time" href="#reading">📖 Reading · 8 min</a>
+      <a class="tag time" href="#grammar">⚙️ Grammar · 10 min</a>
+      <a class="tag time" href="#speaking">🎤 Grammar → Speaking · 15 min</a>
+      <a class="tag time" href="#writing">✍️ Writing · 5 min</a>
+      <a class="tag" href="#homework">🏠 Homework · ≤30 min</a>
+    </div>
+  </div>
+</section>
+
+<div class="progress-wrap" id="lessonProgress">
+  <div class="wrap progress-row">
+    <span class="p-label">Lesson progress: 0/7</span>
+    <div class="bar"><i></i></div>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <!-- ============ 1. WARM-UP ============ -->
+  <section class="sec" id="warmup">
+    <div class="sec-head">
+      <div class="sec-num">1</div><h2>Warm-up</h2>
+      <span class="tag time">10 min</span><span class="tag">processes · screen rules · instructions that stuck</span>
+    </div>
+    <div class="note" style="margin-left:44px">Laws (<span class="tag zc">zero</span>) and plans (<span class="tag fc">first</span>) are done. Today is the third form: <span class="tag imp">IMPERATIVE</span> — the instruction itself. <i>Open the build. Log in as a new user. Do not touch the live database.</i> No subject, no tense — just the verb, and the job gets done.</div>
+
+    <div class="card audio-card">
+      <h3>🎧 Listen to the questions</h3>
+      <audio controls src="../assets/audio/m05-03-warmup.mp3" data-speeds preload="none"></audio>
+    </div>
+
+    <div class="card">
+      <h3>❓ Three questions — click a card to open the sentence starters</h3>
+      <div id="warmCards"></div>
+      <div class="note"><b>The rule of the lesson:</b> an instruction is a verb with no subject: <span class="tag imp">Press Start</span>. Soften it with Please / Make sure you… / Be careful not to… — and it works on humans too.</div>
+    </div>
+  </section>
+
+  <!-- ============ 2. LISTENING ============ -->
+  <section class="sec" id="listening">
+    <div class="sec-head">
+      <div class="sec-num">2</div><h2>Listening — Onboarding Day</h2>
+      <span class="tag time">12 min</span><span class="tag">audio + comprehension</span>
+    </div>
+
+    <img src="../assets/img/l19-instructions.png" alt="A senior tester showing a glowing checklist to a junior at a desk with two monitors and a cat supervising — illustration">
+    <div class="note">Monday at Harbour Lights. A new junior tester joins the team, and Tom runs the welcome tour: six steps, two conditions, one smile. Listen for the <b>imperatives</b> — and count how many instructions have a condition attached.</div>
+
+    <div class="card">
+      <h3>🧩 Before you listen: 10 key words</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 4px">Click a word — a definition and an example will open. The Russian gloss is there to check your understanding. Listen to the recording of all ten words.</p>
+      <div id="vocabRow"></div>
+      <audio controls src="../assets/audio/m05-03-vocab.mp3" data-speeds preload="none" style="width:100%;height:40px"></audio>
+    </div>
+
+    <div class="card audio-card">
+      <h3>🎧 Track 1 — Onboarding Day</h3>
+      <audio controls src="../assets/audio/m05-03-listening.mp3" data-speeds preload="none"></audio>
+      <div class="note" style="margin:0"><b>Listen 1 — for gist:</b> how many steps are on Tom's checklist? &nbsp;·&nbsp; <b>Listen 2 — for detail:</b> catch two bare imperatives and two softened ones (Please… / Be careful not to…).</div>
+    </div>
+
+    <div id="listenMCQ"></div>
+    <div id="listenTF"></div>
+
+    <div class="card">
+      <h3>🌍 Extension — BBC 6 Minute English: Limiting screen time for children</h3>
+      <p style="font-size:14.5px">From the yearly plan: <b><a href="https://www.bbc.co.uk/learningenglish/features/6-minute-english_2026/ep-260618" target="_blank" rel="noopener">Limiting screen time for children ↗</a></b></p>
+      <p style="color:var(--mut);font-size:14px;margin:0">Task: what rules do parents set? Note the <b>imperatives</b> you hear and <b>2 conditional sentences</b>. Which rule would you write as an imperative?</p>
+    </div>
+  </section>
+
+  <!-- ============ 3. READING ============ -->
+  <section class="sec" id="reading">
+    <div class="sec-head">
+      <div class="sec-num">3</div><h2>Reading — The Tester's Checklist</h2>
+      <span class="tag time">8 min</span><span class="tag">imperatives + conditions</span>
+    </div>
+
+    <div class="card">
+      <h3>Harbour Lights Wiki · Page 19: First Week in QA — the checklist</h3>
+      <p><b>Category:</b> onboarding · <b>Owner:</b> Tom · <b>Read time:</b> 3 minutes</p>
+      <p>Welcome to the QA room. This checklist keeps your first week calm. Print it, tick it, follow it.</p>
+      <p>1. Open the build from the launcher — never from the folder. The launcher picks the right version.</p>
+      <p>2. Log in as a new user. Please make sure you test what a new player sees first.</p>
+      <p>3. Do not touch the live database. Test data lives in the sandbox; the live data is sacred.</p>
+      <p>4. If the screen freezes, take a screenshot and stop. Do not guess what the button "should" do.</p>
+      <p>5. Save every log before you close the ticket. Be careful not to delete the test files — the demo build lives in the same folder.</p>
+      <p>6. If in doubt, ask. A five-minute question saves a five-hour rewrite — you have read this line before, because it is also a law.</p>
+    </div>
+
+    <div id="readLabel"></div>
+    <div id="readTF"></div>
+
+    <div class="card">
+      <h3>🌍 Extension — Game Developer: production &amp; QA</h3>
+      <p style="font-size:14.5px">From the yearly plan — pick any production or QA article: <b><a href="https://www.gamedeveloper.com" target="_blank" rel="noopener">gamedeveloper.com ↗</a></b></p>
+      <p style="color:var(--mut);font-size:14px;margin:0">Task: turn <b>2 statements</b> from the article into polite instructions: <i>Please make sure that… / Do not forget to…</i></p>
+    </div>
+  </section>
+
+  <!-- ============ 4. GRAMMAR ============ -->
+  <section class="sec" id="grammar">
+    <div class="sec-head">
+      <div class="sec-num">4</div><h2>Grammar — Imperatives in Instructions</h2>
+      <span class="tag time">10 min</span><span class="tag">rules + 4 exercises</span>
+    </div>
+
+    <div class="grid2">
+      <div class="rulebox imp">
+        <h3><span class="tag imp">IMPERATIVE</span> — the verb is the sentence</h3>
+        <ul>
+          <li>Form: infinitive without <i>to</i>, no subject: <i><b>Press</b> Start. <b>Hold</b> the button. <b>Restart</b> the client.</i></li>
+          <li>Negative: <i><b>Do not click</b> / <b>Don't touch</b> the live database.</i></li>
+          <li>Polite tag: <i><b>Press</b> Start, please.</i> — please at the end or the beginning.</li>
+          <li>Emphatic: <i><b>Do</b> check the logs.</i> — do adds force, not future.</li>
+        </ul>
+        <div class="note" style="margin-top:10px">One instruction = one action. Six short imperatives beat one long sentence with "and then after that".</div>
+      </div>
+      <div class="rulebox imp">
+        <h3>🪄 The softeners — same order, human voice</h3>
+        <ul>
+          <li><b>Please</b> + imperative: <i>Please <b>save</b> your work.</i></li>
+          <li><b>Make sure</b> (you) + verb: <i><b>Make sure you</b> save every log.</i></li>
+          <li><b>Be careful not to</b> + verb: <i><b>Be careful not to</b> delete the test files.</i></li>
+          <li><b>If in doubt, ask</b> — the condition softens the order: <i>If the screen freezes, take a screenshot and stop.</i></li>
+        </ul>
+        <div class="note" style="margin-top:10px">Instruction + condition = the perfect pair for regulations. You built the condition side in Lessons 17–18; now attach the verb.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>⚙️ Mini-table — one instruction, three temperatures</h3>
+      <table class="gtable">
+        <tr><th>Blunt</th><th>Neutral</th><th>Maximally polite</th></tr>
+        <tr><td><i>Save the logs.</i></td><td><i>Please save the logs.</i></td><td><i>Please make sure you save the logs before closing the ticket.</i></td></tr>
+        <tr><td><i>Don't touch the database.</i></td><td><i>Do not touch the live database.</i></td><td><i>Please be careful not to touch the live database.</i></td></tr>
+        <tr><td><i>Ask Priya.</i></td><td><i>If in doubt, ask Priya.</i></td><td><i>If anything is unclear, feel free to ask Priya — she knows the pipeline best.</i></td></tr>
+        <tr><td><i>Restart the client.</i></td><td><i>Restart the client and try again.</i></td><td><i>If the screen freezes, just restart the client and try again — no stress.</i></td></tr>
+      </table>
+      <div class="note">🩹 <b>Typical mistakes of Russian-speaking leads:</b> <span class="no">Do not to click the button</span> → <span class="yes">Do not click the button</span> (no to after do not) · <span class="no">You press the button and you hold it</span> → <span class="yes">Press the button and hold it</span> (instructions need no "you") · <span class="no">Not touch the database!</span> → <span class="yes">Do not touch the database!</span> (the negative needs do not) · <span class="no">Make sure to check…</span> is fine, but in formal checklists prefer <span class="yes">Make sure you check…</span></div>
+    </div>
+
+    <div class="card">
+      <h3>🎬 Video — The Imperative: Give Orders and Commands</h3>
+      <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/Eg0mhvK_OG0" title="The Imperative — Give Orders and Commands — English Grammar" loading="lazy" allowfullscreen></iframe></div>
+      <div class="note" style="margin:0">A compact walkthrough of the imperative — including the negatives that trip everyone. If the video does not open on this device — <a href="https://www.youtube.com/watch?v=Eg0mhvK_OG0" target="_blank" rel="noopener">watch on YouTube ↗</a>.</div>
+    </div>
+
+    <div id="gramMCQ"></div>
+    <div id="gramGap"></div>
+    <div id="gramOrder"></div>
+    <div id="gramTF"></div>
+
+    <div class="card">
+      <h3>🔊 Shadowing — speak along with the speaker</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 4px">Track A — QA steps (bare imperatives), Track B — polite softeners. Listen to a sentence → repeat it out loud in the pause. Two loops per track.</p>
+      <div class="grid2">
+        <div class="audio-card">
+          <span class="tag imp">Track A · QA steps</span>
+          <audio controls src="../assets/audio/m05-03-shadowing-a.mp3" data-speeds preload="none"></audio>
+        </div>
+        <div class="audio-card">
+          <span class="tag imp">Track B · Polite softeners</span>
+          <audio controls src="../assets/audio/m05-03-shadowing-b.mp3" data-speeds preload="none"></audio>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. SPEAKING ============ -->
+  <section class="sec" id="speaking">
+    <div class="sec-head">
+      <div class="sec-num">5</div><h2>Grammar → Speaking — the main section of the lesson</h2>
+      <span class="tag time">15 min</span><span class="tag">goal: instructions people follow</span>
+    </div>
+    <div class="note"><b>The 5-second rule:</b> before giving an instruction ask: <i>who is listening, and what happens if they don't understand?</i> Blunt is for fires, polite is for people, precise is for checklists. And never <i>"do not to…"</i> — do not + verb.</div>
+
+    <div class="card">
+      <div class="speak-round">
+        <h3>🎙 Round 1 — QA Instructions <span class="tag imp">6 steps</span></h3>
+        <p style="font-size:14.5px;margin:0 0 6px">Dictate to a beginner (the teacher, or your recorder) <b>6 steps of testing a build</b> — imperatives plus at least 2 conditions. Model: <i>Open the build, log in as a new user; if the screen freezes, take a screenshot and stop.</i> <b>90 seconds</b>.</p>
+        <div class="starters">
+          <span class="starter imp">Open the build. Log in as…</span>
+          <span class="starter imp">Do not touch…</span>
+          <span class="starter imp">If the screen freezes, take a screenshot.</span>
+          <span class="starter imp">If in doubt, ask…</span>
+        </div>
+        <div id="rec1"></div>
+      </div>
+
+      <div class="speak-round" style="margin-top:18px">
+        <h3>🎙 Round 2 — Onboarding Speech <span class="tag imp">60 seconds</span></h3>
+        <p style="font-size:14.5px;margin:0 0 6px">Welcome a new member to your team (real or imagined) in a <b>60-second speech</b>: what to do, what not to do, who to ask. Use at least 3 imperatives, 1 negative imperative and 1 "if in doubt" line.</p>
+        <div class="starters">
+          <span class="starter imp">Welcome! Start with…</span>
+          <span class="starter imp">Don't worry about…</span>
+          <span class="starter imp">If in doubt, come to me.</span>
+        </div>
+        <div id="rec2"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>🎙 Round 3 — Politeness Slider (the plan's core drill)</h3>
+      <p style="font-size:14.5px;margin:0 0 6px">Take each instruction below and say it <b>three ways</b>: blunt (fire alarm), neutral (colleague), maximally polite (partner or new junior). Then record your favourite trio. Same words, three temperatures.</p>
+      <div class="starters">
+        <span class="starter imp">Save the logs!</span>
+        <span class="starter imp">Please save the logs.</span>
+        <span class="starter imp">Please make sure you save the logs…</span>
+      </div>
+      <div id="rec3"></div>
+    </div>
+
+    <div class="card">
+      <h3>⚡ Speed Drill — a situation every 5 seconds</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 8px">Open a card and instantly give the right instruction — out loud, in imperative form.</p>
+      <div id="drillCards"></div>
+    </div>
+  </section>
+
+  <!-- ============ 6. WRITING ============ -->
+  <section class="sec" id="writing">
+    <div class="sec-head">
+      <div class="sec-num">6</div><h2>Writing — the tester's checklist</h2>
+      <span class="tag time">5 min</span><span class="tag">6 imperatives + 2 conditions, 40–80 words</span>
+    </div>
+    <div id="writerBox" class="card"></div>
+    <details class="folding">
+      <summary>Model answer — open it after your own version</summary>
+      <div class="inner"><p>Testing the demo build — the checklist. 1. Open the build from the launcher. 2. Log in as a new user and check the first-time tutorial. 3. Please make sure you test the save system before anything else. 4. Do not touch the live database — use the sandbox. 5. If the screen freezes, take a screenshot and stop. 6. Save the logs before you close the ticket, and be careful not to delete the test files. If in doubt, ask. Six steps, two conditions, one calm week.</p></div>
+    </details>
+    <div class="note">Want an automatic B1+ check of your text? Paste it into <b><a href="https://writeandimprove.com" target="_blank" rel="noopener">Write &amp; Improve (Cambridge) ↗</a></b> — the task "Work — Instructions and checklists".</div>
+  </section>
+
+  <!-- ============ 7. HOMEWORK ============ -->
+  <section class="sec" id="homework">
+    <div class="sec-head">
+      <div class="sec-num">7</div><h2>Homework</h2>
+      <span class="tag">≤ 30 minutes in total</span>
+    </div>
+    <div id="hwList"></div>
+  </section>
+
+  <details class="folding">
+    <summary>🧑‍🏫 Teacher notes</summary>
+    <div class="inner">
+      <p><b>Goal:</b> the student dictates instructions that are short, precise and adjustable in politeness — bare imperative for speed, softeners for people, conditions for safety — and stops wrapping instructions in "you should".</p>
+      <p><b>Suggested flow:</b> Warm-up: processes and screen-time rules; collect real imperatives → Listening: onboarding day; count the instructions and their conditions → Reading: the wiki checklist mirrors the audio; Game Developer turns articles into instructions → Grammar: the three-temperatures table is the heart — the same order in three voices → Speaking: Round 3 (politeness slider) is the plan's core drill; Round 1 feeds the student's real QA portfolio → Writing: the checklist becomes the module's second artefact.</p>
+      <p><b>Success criteria:</b> Round 1 — 6 steps, ≥2 conditions, no "you should"; Round 2 — 60 seconds, all three parts present; Round 3 — three temperatures without changing the meaning.</p>
+      <p><b>Error pocket:</b> do not to + verb · "you press" instead of "press" · negative without do not · let's for instructions to one person · please overload (please twice in one sentence cancels out).</p>
+      <p><b>Threads:</b> the wiki checklist quotes the "five-minute question" law from Lesson 17 — instructions grow out of laws; the onboarding junior returns in Lesson 20's scenario game as the newest team member; the checklist the student writes today is rehearsal for the Module 5 test's oral block ("continue the rule of the game").</p>
+    </div>
+  </details>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Lesson 19 · Module 5</b> — Instructions: Polite but Precise. <a href="../index.html">Course map →</a>
+    <div style="margin-top:8px"><button class="btn small ghost" id="resetLesson">↺ Reset this lesson's progress</button></div>
+      <div class="legal">© 2019-2026 ИП Громова Анна Александровна, ОГРНИП: 319237500156762, ИНН: 236507001744<br>
+    Лицензия № Л035-01218-23/01091451 Интерактивная школа «МУДРО»</div>
+</div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="../assets/js/firebase-config.js?v=10"></script>
+<script src="../assets/js/auth.js?v=10"></script>
+<script src="../assets/js/progress-firebase.js?v=10"></script>
+<script src="../assets/js/engine.js"></script>?v=10
+<script>
+const KEY = 'm05-03';
+const SECTIONS = [
+  {id:'warmup', title:'Warm-up'}, {id:'listening', title:'Listening'}, {id:'reading', title:'Reading'},
+  {id:'grammar', title:'Grammar'}, {id:'speaking', title:'Speaking'}, {id:'writing', title:'Writing'},
+  {id:'homework', title:'Homework'}
+];
+EC.initLesson(KEY, SECTIONS);
+
+/* ---- Warm-up: 3 cards ---- */
+EC.flipGrid('#warmCards', [
+  {front:"1 · How do you explain a new process to a junior so it actually sticks?", back:"<b>Short steps, one action each: Open the build. Log in as a new user. If the screen freezes, stop and screenshot.</b><br><span class='tag imp'>imperatives + one condition</span>"},
+  {front:"2 · Do you think kids benefit from limited screen time — what rules would you set?", back:"<b>Finish homework first. One hour of games on school days. No phones at the table.</b><br><span class='tag imp'>house rules are imperatives too</span>"},
+  {front:"3 · What instruction did someone give you that changed how you work?", back:"<b>“Save the log before you close the ticket.” One sentence, zero lost logs since.</b><br><span class='tag imp'>good instructions survive years</span>"}
+]);
+
+/* ---- Listening: vocab (definitions in Russian — for checking understanding) ---- */
+EC.vocab('#vocabRow', [
+  {w:"an instruction", d:"инструкция, указание", e:"This checklist keeps your first week calm — six instructions, no guessing."},
+  {w:"to press", d:"нажать (кнопку, клавишу)", e:"Press Start to begin the tutorial."},
+  {w:"to hold", d:"держать (кнопку нажатой)", e:"Hold the jump button for two seconds."},
+  {w:"to make sure", d:"убедиться, проверить", e:"Please make sure you save every log before you close the ticket."},
+  {w:"to be careful", d:"быть осторожным", e:"Be careful not to delete the test files."},
+  {w:"in doubt", d:"в сомнении (if in doubt — если сомневаешься)", e:"If in doubt, ask Priya."},
+  {w:"a checklist", d:"чек-лист", e:"Print the checklist and tick it step by step."},
+  {w:"to skip", d:"пропустить", e:"Do not skip the tutorial step — new players see what you skip."},
+  {w:"a step", d:"шаг", e:"One instruction = one step, one action."},
+  {w:"to shoo away", d:"прогнать (жестом)", e:"If the cat sits on your keyboard, take a photo first, then shoo her away gently."}
+]);
+
+/* ---- Listening: MCQ ---- */
+EC.mcq('#listenMCQ', {
+  title:"🎧 Comprehension — Part 1: multiple choice",
+  exKey:'m05-03-listen1',
+  items:[
+    {q:"What is rule zero of the onboarding?", opts:["Do not touch the live database","If the cat sits on your keyboard, take a photo first, then shoo her away","Always restart the client"], a:1, why:"“If the cat sits on your keyboard, take a photo first, then shoo her away gently.”"},
+    {q:"What must the junior do if the screen freezes?", opts:["Guess what the button should do","Take a screenshot and stop","Restart the whole computer"], a:1, why:"“If the screen freezes, take a screenshot and stop. Do not guess.”"},
+    {q:"Why must the junior not delete the test files?", opts:["The demo build lives in the same folder","The files belong to the publisher","They contain the save data"], a:0, why:"“Be careful not to delete the test files — the demo build is in the same folder.”"},
+    {q:"Who does Tom send the junior to when in doubt?", opts:["Dana","The publisher","Priya"], a:2, why:"“If in doubt, ask Priya; she knows the pipeline better than anyone.”"}
+  ]
+});
+
+/* ---- Listening: True/False ---- */
+EC.tf('#listenTF', {
+  title:"🎧 Comprehension — Part 2: true or false",
+  exKey:'m05-03-listen2',
+  items:[
+    {s:"Tom allows the junior to test from the folder if the launcher is slow.", a:false, why:"False — “Open the build from the launcher — never from the folder.”"},
+    {s:"The onboarding ends at the whiteboard with six steps, two conditions and one smile.", a:true, why:"True — “Onboarding ends at the whiteboard: six steps, two conditions, one smile.”"}
+  ]
+});
+
+/* ---- Reading: label the instruction ---- */
+EC.mcq('#readLabel', {
+  title:"📖 Label the instruction — how soft is it?",
+  exKey:'m05-03-read1',
+  items:[
+    {q:"“Open the build from the launcher — never from the folder.”", opts:["Blunt and precise — a hard rule","A polite request"], a:0, why:"A bare imperative with a reason — checklist voice."},
+    {q:"“Please make sure you test what a new player sees first.”", opts:["Softened with Please + make sure","Blunt"], a:0, why:"Two softeners stacked: please + make sure you."},
+    {q:"“Do not touch the live database.”", opts:["A negative imperative","A suggestion"], a:0, why:"Do not + verb — the strong prohibition form."},
+    {q:"“If the screen freezes, take a screenshot and stop.”", opts:["Instruction + condition — the perfect pair","A conditional plan only"], a:0, why:"An imperative result attached to an if-condition."},
+    {q:"“Be careful not to delete the test files.”", opts:["A warning softener (be careful not to)","A ban"], a:0, why:"Be careful not to + verb — the human warning form."},
+    {q:"“If in doubt, ask.”", opts:["A condition + imperative","A question"], a:0, why:"If in doubt (= if you are in doubt) + the shortest instruction in English."}
+  ]
+});
+
+EC.tf('#readTF', {
+  title:"📖 True or false?",
+  exKey:'m05-03-read2',
+  items:[
+    {s:"The checklist says the live database is the right place for test data.", a:false, why:"False — “Test data lives in the sandbox; the live data is sacred.”"},
+    {s:"The “five-minute question” line also appears in the studio laws.", a:true, why:"True — the checklist quotes it: “you have read this line before, because it is also a law”."}
+  ]
+});
+
+/* ---- Grammar: MCQ ---- */
+EC.mcq('#gramMCQ', {
+  title:"⚙️ Exercise 1 — choose the correct instruction",
+  exKey:'m05-03-gram1',
+  items:[
+    {q:"___ the build from the launcher, not from the folder.", opts:["Open","Opens","You open"], a:0, why:"Instructions need no subject: Open the build."},
+    {q:"___ touch the live database — never, not even on Fridays.", opts:["Not","Do not","Does not"], a:1, why:"The negative imperative is do not + verb."},
+    {q:"___ the jump button for two seconds.", opts:["Hold","Holding","To hold"], a:0, why:"Infinitive without to: Hold the button."},
+    {q:"___ careful not to delete the test files.", opts:["Do","Be","Make"], a:1, why:"The warning softener is be careful not to + verb."},
+    {q:"___ in doubt, ask Priya.", opts:["If","When you will be","Unless"], a:0, why:"If in doubt — the fixed condition phrase for instructions."},
+    {q:"___ sure you save every log before closing the ticket.", opts:["Do","Be","Make"], a:2, why:"Make sure (you) + verb — the polite completeness check."}
+  ]
+});
+
+/* ---- Grammar: gap-fill ---- */
+EC.gap('#gramGap', {
+  title:"⚙️ Exercise 2 — type the imperative",
+  exKey:'m05-03-gram2',
+  items:[
+    {t:"___ the build from the launcher. (open — a step)", a:["open"], verbs:["imperative"]},
+    {t:"___ not touch the live database. (do — negative)", a:["do"], verbs:["do not"]},
+    {t:"___ the log before you close the ticket. (save — a step)", a:["save"], verbs:["imperative"]},
+    {t:"___ a screenshot if the screen freezes. (take — a step)", a:["take"], verbs:["imperative"]},
+    {t:"___ careful not to skip the tutorial. (be — a warning)", a:["be"], verbs:["be careful"]},
+    {t:"___ in doubt, ask. (if — the condition phrase)", a:["if"], verbs:["if in doubt"]}
+  ]
+});
+
+/* ---- Grammar: sentence builder ---- */
+EC.order('#gramOrder', {
+  title:"⚙️ Exercise 3 — build the instruction",
+  exKey:'m05-03-gram3',
+  items:[
+    {words:["Open the build","and log in","as a new user"], answer:"Open the build and log in as a new user.", ru:"Открой билд через лаунчер и зайди как новый пользователь."},
+    {words:["Please make sure","you save every log","before you close the ticket"], answer:"Please make sure you save every log before you close the ticket.", ru:"Пожалуйста, убедись, что ты сохраняешь все логи перед закрытием тикета."},
+    {words:["If the screen freezes,","take a screenshot","and stop"], answer:"If the screen freezes, take a screenshot and stop.", ru:"Если экран завис, сделай скриншот и остановись."},
+    {words:["Be careful not to delete","the test files —","the demo build lives there too"], answer:"Be careful not to delete the test files — the demo build lives there too.", ru:"Осторожно, не удали тестовые файлы — там же живёт демо-билд."}
+  ]
+});
+
+/* ---- Grammar: true/false on the form ---- */
+EC.tf('#gramTF', {
+  title:"⚙️ Exercise 4 — is the explanation correct?",
+  exKey:'m05-03-gram4',
+  items:[
+    {s:"“Do not to click the button” is correct.", a:false, why:"False — after do not the verb is bare: Do not click the button."},
+    {s:"“Press Start, please” is more polite than “Press Start.”", a:true, why:"True — please softens the same order."},
+    {s:"An imperative needs a subject like you.", a:false, why:"False — the imperative is the verb with no subject: Press Start."},
+    {s:"“If in doubt, ask” attaches a condition to an instruction.", a:true, why:"True — instruction + condition is the perfect pair for regulations."}
+  ]
+});
+
+/* ---- Speaking: speed drill ---- */
+EC.flipGrid('#drillCards', [
+  {front:"⏱ A junior is about to test from the folder.", back:"<b>Open the build from the launcher, please — never from the folder.</b> <span class='tag imp'>instruction</span>"},
+  {front:"⏱ The screen froze mid-test.", back:"<b>Take a screenshot and stop. Do not guess.</b> <span class='tag imp'>imperatives</span>"},
+  {front:"⏱ Someone reaches for the live database.", back:"<b>Stop! Do not touch the live database — use the sandbox.</b> <span class='tag imp'>ban</span>"},
+  {front:"⏱ A new tester looks lost.", back:"<b>If in doubt, ask Priya — she knows the pipeline best.</b> <span class='tag imp'>softened</span>"},
+  {front:"⏱ The ticket is closed with no logs.", back:"<b>Please make sure you save the logs before you close a ticket.</b> <span class='tag imp'>polite</span>"},
+  {front:"⏱ The cat is walking on the keyboard.", back:"<b>Take a photo first, then shoo her away gently.</b> <span class='tag imp'>rule zero</span>"},
+  {front:"⏱ A player reports the same bug twice.", back:"<b>Check the duplicate list before you file a new ticket.</b> <span class='tag imp'>instruction</span>"},
+  {front:"⏱ The demo starts in five minutes.", back:"<b>Restart the demo machine now, please.</b> <span class='tag imp'>urgent but polite</span>"}
+]);
+EC.recorder('#rec1', {maxSec:90, hint:"Round 1 · six QA steps with at least two conditions"});
+EC.recorder('#rec2', {maxSec:60, hint:"Round 2 · 60-second onboarding speech"});
+EC.recorder('#rec3', {maxSec:90, hint:"Round 3 · three temperatures of one instruction"});
+
+/* ---- Writing ---- */
+EC.writer('#writerBox', {
+  task:"✍️ Your tester's checklist (<b>40–80 words</b>): write <b>6 instructions</b> for testing a new build — bare imperatives, at least 2 softeners (Please… / Make sure… / Be careful not to…) and 2 conditions (If…, + imperative).",
+  placeholder:"1. Open the build…  2. Please make sure you…  3. Do not touch…  4. If the screen freezes, …",
+  min:40, max:80
+});
+
+/* ---- Homework ---- */
+EC.checklist('#hwList', {
+  items:[
+    {t:"Test-English: <i>The imperative: Sit down! Don't talk!</i> (A1 — a quick level, perfect for automation; one set, ≈10 minutes) <a href='https://test-english.com/grammar-points/a1/imperative-sit-dont-talk' target='_blank' rel='noopener'>test-english.com → a1/imperative ↗</a>", m:"Tick the box when the page shows your score"},
+    {t:"Voice memo (from the plan): record <b>4 instructions</b> for a newcomer to your team — imperatives, at least one negative and one with a condition", m:"We will listen at the start of Lesson 20"},
+    {t:"BBC 6 Minute English: <i>Limiting screen time for children</i> — if we did not finish it in class <a href='https://www.bbc.co.uk/learningenglish/features/6-minute-english_2026/ep-260618' target='_blank' rel='noopener'>bbc.co.uk/learningenglish ↗</a>", m:"Note the imperatives and 2 conditionals you hear"},
+    {t:"Shadowing tracks from this page — 5 minutes of repeating after the speaker (both tracks)", m:"Track A = QA steps, Track B = polite softeners"}
+  ]
+});
+
+/* ---- audio speed buttons + reset ---- */
+EC.enhanceAudio();
+document.getElementById('resetLesson').addEventListener('click', () => {
+  if (!confirm('Reset the progress, exercise results and the written text of Lesson 19?')) return;
+  try {
+    const d = JSON.parse(localStorage.getItem('ec_progress_v1') || '{}');
+    delete d.lessons['m05-03']
+    if (window.PG) window.PG.clearLesson('m05-03');;
+    localStorage.setItem('ec_progress_v1', JSON.stringify(d));
+    location.reload();
+  } catch (e) {}
+});
+</script>
+</body>
+</html>

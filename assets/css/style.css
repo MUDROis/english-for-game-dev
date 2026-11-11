@@ -294,3 +294,53 @@ details.folding .inner{padding:0 18px 16px}
 span.yes{color:#bdf0d8}
 
 .legal{font-size:12px; color:var(--mut); margin-top:12px; line-height:1.7; opacity:.9; text-align:center}
+
+/* ---------- modules 5-8: conditionals, obligation, passive ---------- */
+.tag.fc{color:#ffd98a; background:rgba(255,196,77,.12); border-color:rgba(255,196,77,.4)}
+.tag.imp{color:#ffb3c8; background:rgba(255,120,150,.12); border-color:rgba(255,120,150,.4)}
+.rulebox.zc{border-left:4px solid #5ed6bb}
+.rulebox.fc{border-left:4px solid #ffc44d}
+.rulebox.imp{border-left:4px solid #ff7896}
+.starter.zc{color:#8ee6d2; border-color:rgba(94,214,187,.35)}
+.starter.fc{color:#ffd98a; border-color:rgba(255,196,77,.35)}
+.starter.imp{color:#ffb3c8; border-color:rgba(255,120,150,.4)}
+.gtable .hzc{color:#8ee6d2; background:rgba(94,214,187,.12)}
+.gtable .hfc{color:#ffd98a; background:rgba(255,196,77,.12)}
+.tag.tc{color:#93c5fd; background:rgba(147,197,253,.12); border-color:rgba(147,197,253,.4)}
+.tag.wish{color:#f9a8d4; background:rgba(249,168,212,.12); border-color:rgba(249,168,212,.4)}
+.rulebox.sc{border-left:4px solid #a78bfa}
+.rulebox.tc{border-left:4px solid #60a5fa}
+.rulebox.wish{border-left:4px solid #f472b6}
+.starter.sc{color:#c4b5fd; border-color:rgba(196,181,253,.35)}
+.starter.tc{color:#93c5fd; border-color:rgba(147,197,253,.35)}
+.starter.wish{color:#f9a8d4; border-color:rgba(249,168,212,.4)}
+.gtable .hsc{color:#c4b5fd; background:rgba(196,181,253,.12)}
+.gtable .htc{color:#93c5fd; background:rgba(147,197,253,.12)}
+.gtable .hwish{color:#f9a8d4; background:rgba(249,168,212,.12)}
+.gtable .himp{color:#ffb3c8; background:rgba(255,120,150,.12)}
+.tag.adv{color:#bef264; background:rgba(163,230,53,.12); border-color:rgba(163,230,53,.4)}
+.tag.ded{color:#67e8f9; background:rgba(34,211,238,.12); border-color:rgba(34,211,238,.4)}
+.rulebox.ob{border-left:4px solid #f87171}
+.rulebox.adv{border-left:4px solid #a3e635}
+.rulebox.ded{border-left:4px solid #22d3ee}
+.starter.ob{color:#fca5a5; border-color:rgba(248,113,113,.35)}
+.starter.adv{color:#bef264; border-color:rgba(163,230,53,.35)}
+.starter.ded{color:#67e8f9; border-color:rgba(34,211,238,.4)}
+.gtable .hob{color:#fca5a5; background:rgba(248,113,113,.12)}
+.gtable .hadv{color:#bef264; background:rgba(163,230,53,.12)}
+.gtable .hded{color:#67e8f9; background:rgba(34,211,238,.12)}
+.tag.mp{color:#6ee7b7; background:rgba(52,211,153,.12); border-color:rgba(52,211,153,.4)}
+.tag.cau{color:#f0abfc; background:rgba(232,121,249,.12); border-color:rgba(232,121,249,.4)}
+.rulebox.pv{border-left:4px solid #818cf8}
+.rulebox.mp{border-left:4px solid #34d399}
+.rulebox.cau{border-left:4px solid #e879f9}
+.starter.pv{color:#a5b4fc; border-color:rgba(129,140,248,.35)}
+.starter.mp{color:#6ee7b7; border-color:rgba(52,211,153,.35)}
+.starter.cau{color:#f0abfc; border-color:rgba(232,121,249,.4)}
+.gtable .hpv{color:#a5b4fc; background:rgba(129,140,248,.12)}
+.gtable .hmp{color:#6ee7b7; background:rgba(52,211,153,.12)}
+.gtable .hcau{color:#f0abfc; background:rgba(232,121,249,.12)}
+.tag.zc{color:#8ee6d2; background:rgba(94,214,187,.12); border-color:rgba(94,214,187,.4)}
+.tag.sc{color:#c4b5fd; background:rgba(196,181,253,.12); border-color:rgba(196,181,253,.4)}
+.tag.ob{color:#fca5a5; background:rgba(248,113,113,.12); border-color:rgba(248,113,113,.4)}
+.tag.pv{color:#a5b4fc; background:rgba(129,140,248,.12); border-color:rgba(129,140,248,.4)}

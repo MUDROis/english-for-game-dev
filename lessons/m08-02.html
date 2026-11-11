@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 30 — Rules Must Be Followed | English for Game Dev</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Play:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="icon" href="../assets/img/favicon.ico">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><img class="logo-img" src="../assets/img/logo.png" alt="English for Game Dev — logo"> English for Game Dev</a>
+    <nav>
+      <a href="../index.html">← Course map</a>
+      <a href="m08-01.html">← Lesson 29</a>
+      <a href="#homework">Homework</a>
+      <span class="auth-chip" id="authChip">Sign in</span>
+    </nav>
+  </div>
+</header>
+
+<section class="lesson-hero">
+  <div class="wrap">
+    <div class="crumb">Module 8 · How Games Are Made: Passive and Processes · Lesson 30 / 48</div>
+    <h1>Rules Must Be Followed <span style="color:var(--acc)">The Policy Deck</span></h1>
+    <p class="goal">Yesterday the passive described the factory; today it writes the laws. Lesson goal: turn rules into modal passives — what must be checked, what can be reused, what will be released — and hear the difference between a rule that is followed and a rule that is merely published.</p>
+    <div class="plan-chips">
+      <a class="tag time" href="#warmup">🔥 Warm-up · 10 min</a>
+      <a class="tag time" href="#listening">🎧 Listening · 12 min</a>
+      <a class="tag time" href="#reading">📖 Reading · 10 min</a>
+      <a class="tag time" href="#grammar">⚙️ Grammar · 10 min</a>
+      <a class="tag time" href="#speaking">🎤 Grammar → Speaking · 15 min</a>
+      <a class="tag time" href="#writing">✍️ Writing · 5 min</a>
+      <a class="tag" href="#homework">🏠 Homework · ≤30 min</a>
+    </div>
+  </div>
+</section>
+
+<div class="progress-wrap" id="lessonProgress">
+  <div class="wrap progress-row">
+    <span class="p-label">Lesson progress: 0/7</span>
+    <div class="bar"><i></i></div>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <!-- ============ 1. WARM-UP ============ -->
+  <section class="sec" id="warmup">
+    <div class="sec-head">
+      <div class="sec-num">1</div><h2>Warm-up</h2>
+      <span class="tag time">10 min</span><span class="tag">AI · ethics · studio laws</span>
+    </div>
+    <div class="note" style="margin-left:44px">Yesterday you read your release process aloud — the teacher listens for missing <b>be</b> and stolen <b>V3</b>s. Then — the passive gets authority: <span class="tag mp">MODAL + BE + V3</span> and <span class="tag mp">WILL BE + V3</span>. Module 7 gave you the modals. Module 8 wires them into the passive. The formula never changes.</div>
+
+    <div class="card audio-card">
+      <h3>🎧 Listen to the questions</h3>
+      <audio controls src="../assets/audio/m08-02-warmup.mp3" data-speeds preload="none"></audio>
+    </div>
+
+    <div class="card">
+      <h3>❓ Three questions — click a card to open the sentence starters</h3>
+      <div id="warmCards"></div>
+      <div class="note"><b>The rule of the lesson:</b> rules are written about the action, not the actor. <i>"Two people must check every asset"</i> becomes <i>"every asset must be checked"</i> — the asset is the star, the two people are the fine print.</div>
+    </div>
+  </section>
+
+  <!-- ============ 2. LISTENING ============ -->
+  <section class="sec" id="listening">
+    <div class="sec-head">
+      <div class="sec-num">2</div><h2>Listening — The Policy Deck</h2>
+      <span class="tag time">12 min</span><span class="tag">audio + comprehension</span>
+    </div>
+
+    <img src="../assets/img/l30-policy.png" alt="A game studio meeting table with six large glowing policy cards laid out in a row, a laptop showing an AI texture generator, a publisher letter on the table, team members debating, a cat sitting next to the cards like a board member — illustration">
+    <div class="note">An AI-made texture is found in the game, the publisher asks one sharp question, and nobody knows the answer. The response: a <b>policy deck</b> — six cards, one law per card, all written in the modal passive. Listen for <b>what must, can and will be done</b> on each card.</div>
+
+    <div class="card">
+      <h3>🧩 Before you listen: 10 key words</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 4px">Click a word — a definition and an example will open. The Russian gloss is there to check your understanding. Listen to the recording of all ten words.</p>
+      <div id="vocabRow"></div>
+      <audio controls src="../assets/audio/m08-02-vocab.mp3" data-speeds preload="none" style="width:100%;height:40px"></audio>
+    </div>
+
+    <div class="card audio-card">
+      <h3>🎧 Track 1 — The Policy Deck</h3>
+      <audio controls src="../assets/audio/m08-02-listening.mp3" data-speeds preload="none"></audio>
+      <div class="note" style="margin:0"><b>Listen 1 — for gist:</b> what triggered the policy deck, and how many cards were written? &nbsp;·&nbsp; <b>Listen 2 — for detail:</b> copy one must-be rule and one will-be rule word for word.</div>
+    </div>
+
+    <div id="listenMCQ"></div>
+    <div id="listenTF"></div>
+
+    <div class="card">
+      <h3>🌍 Extension — BBC 6 Minute English: Can AI have a mind of its own?</h3>
+      <p style="font-size:14.5px">From the yearly plan: <b><a href="https://www.bbc.co.uk/learningenglish/features/6-minute-english_2023/ep-230126" target="_blank" rel="noopener">Can AI have a mind of its own? ↗</a></b></p>
+      <p style="color:var(--mut);font-size:14px;margin:0">Listen: what is said about AI consciousness? Note <b>2 passives</b> and <b>2 modal + passive phrases</b> (<i>can be replaced, must be checked</i>) — which one would you put on a studio policy card?</p>
+    </div>
+  </section>
+
+  <!-- ============ 3. READING ============ -->
+  <section class="sec" id="reading">
+    <div class="sec-head">
+      <div class="sec-num">3</div><h2>Reading — Studio Policies v2.0 (internal wiki)</h2>
+      <span class="tag time">10 min</span><span class="tag">six cards + modal spotting</span>
+    </div>
+
+    <div class="card">
+      <h3>Harbour Lights Wiki · Page 22: Studio Policies v2.0</h3>
+      <p><b>Category:</b> law · <b>Owner:</b> Dana, technically · <b>Status:</b> must be followed — or must be changed, but never ignored</p>
+      <p>Grammar check: every card is a <b>modal + be + V3</b> — the strength lives in the modal, the focus lives in the passive.</p>
+      <p>1. Every asset <b>must be checked</b> by two people before it <b>is merged</b>. No exceptions.</p>
+      <p>2. AI use <b>must be disclosed</b>, always. Nothing is punished — but everything is written down.</p>
+      <p>3. Private code <b>can't be uploaded</b> to public tools. (Carved in stone. Twice.)</p>
+      <p>4. Feedback <b>will be collected</b> every Friday and <b>will be answered</b> within a week.</p>
+      <p>5. The deck itself <b>will be reviewed</b> every quarter — rules that are never reread are wallpaper.</p>
+      <p>6. Any decision <b>can be appealed</b> to Dana. Sofa matters <b>must be consulted</b> with the cats.</p>
+    </div>
+
+    <div id="readLabel"></div>
+    <div id="readTF"></div>
+
+    <div class="card">
+      <h3>🌍 Extension — The Guardian: Technology</h3>
+      <p style="font-size:14.5px">From the yearly plan: <b><a href="https://www.theguardian.com/technology" target="_blank" rel="noopener">theguardian.com/technology ↗</a></b></p>
+      <p style="color:var(--mut);font-size:14px;margin:0">Pick an AI or tech piece. Find <b>2 passive constructions</b> and rebuild one of them with a modal: <i>AI is used in hiring → AI must be regulated / could be improved.</i></p>
+    </div>
+  </section>
+
+  <!-- ============ 4. GRAMMAR ============ -->
+  <section class="sec" id="grammar">
+    <div class="sec-head">
+      <div class="sec-num">4</div><h2>Grammar — Modal Passives &amp; the Future Passive</h2>
+      <span class="tag time">10 min</span><span class="tag">modal + be + V3 + 4 exercises</span>
+    </div>
+
+    <div class="grid2">
+      <div class="rulebox mp">
+        <h3><span class="tag mp">MODAL PASSIVE</span> — modal + be + V3</h3>
+        <ul>
+          <li><b>must be + V3</b> — the law: <i>Every asset <b>must be checked</b>.</i></li>
+          <li><b>can be + V3</b> — possible / allowed: <i>Decisions <b>can be appealed</b>. Bugs <b>can be fixed</b> overnight.</i></li>
+          <li><b>can't be + V3</b> — forbidden or impossible: <i>Private code <b>can't be uploaded</b>.</i></li>
+          <li><b>should be + V3</b> — the nudge: <i>Feedback <b>should be answered</b> within a week.</i></li>
+          <li><b>have to be + V3</b> — the external law: <i>Builds <b>have to be signed</b> — the platform requires it.</i></li>
+        </ul>
+        <div class="note" style="margin-top:10px">The formula never changes: <b>modal → be → V3</b>. The Module 7 ladder rides on top of the Module 8 engine.</div>
+      </div>
+      <div class="rulebox mp">
+        <h3>⏭ The future passive — will be + V3</h3>
+        <ul>
+          <li><i>The game <b>will be released</b> in May.</i> — <span class="no">will release</span> means you do it yourself.</li>
+          <li><i>Feedback <b>will be collected</b> every Friday.</i> — the schedule is the news.</li>
+          <li><i>More testers <b>will be hired</b> next quarter.</i> — HR reports love this form.</li>
+          <li>Questions keep the order: <i><b>Will</b> the game <b>be released</b> in May?</i> — <span class="no">will the game release?</span> is the active, a different claim.</li>
+          <li>One modal per verb: <span class="no">will must be</span> does not exist. Choose the boss.</li>
+        </ul>
+        <div class="note" style="margin-top:10px">Careful — the Module 7 echo: <i>the build <b>must be checked</b></i> (a rule) vs <i>the build <b>must have been checked</b></i> (a deduction: somebody surely did it). Be + V3 is a law; have been + V3 is a guess.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>⚙️ Mini-table — the rule, rebuilt as a modal passive</h3>
+      <table class="gtable">
+        <tr><th>Active rule — who does it</th><th>Modal passive — what must happen</th></tr>
+        <tr><td><i>Two people <b>must check</b> every asset.</i></td><td><i>Every asset <b>must be checked</b> by two people.</i></td></tr>
+        <tr><td><i>We <b>will release</b> the game in May.</i></td><td><i>The game <b>will be released</b> in May.</i></td></tr>
+        <tr><td><i>You <b>can't upload</b> private code.</i></td><td><i>Private code <b>can't be uploaded</b>.</i></td></tr>
+        <tr><td><i>The team <b>should answer</b> feedback quickly.</i></td><td><i>Feedback <b>should be answered</b> quickly.</i></td></tr>
+        <tr><td><i>Dana <b>reviews</b> the deck every quarter.</i></td><td><i>The deck <b>is reviewed</b> every quarter.</i> (no modal? plain passive)</td></tr>
+      </table>
+      <div class="note">🩹 <b>Typical mistakes of Russian-speaking policy writers:</b> <span class="no">The build must checked</span> → <span class="yes">The build must <b>be</b> checked</span> (modal + be + V3, the be is not optional) · <span class="no">The game will released in May</span> → <span class="yes">The game will be released in May</span> · <span class="no">Rules must followed</span> → <span class="yes">Rules must be followed</span> · <span class="no">The build must be check</span> → <span class="yes">must be checked</span> (V3, not V1) · <span class="no">will must be approved</span> → <span class="yes">must be approved / will be approved</span> (one modal per verb).</div>
+    </div>
+
+    <div class="card">
+      <h3>🎬 Video — English Class: When to use the passive in English</h3>
+      <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/kWUoT5oaf-Y" title="English Class: When to use the passive in English" loading="lazy" allowfullscreen></iframe></div>
+      <div class="note" style="margin:0">Three minutes on the choice itself: when the passive is the right voice — and when it is hiding something. If the video does not open on this device — <a href="https://www.youtube.com/watch?v=kWUoT5oaf-Y" target="_blank" rel="noopener">watch on YouTube ↗</a>.</div>
+    </div>
+
+    <div id="gramMCQ"></div>
+    <div id="gramGap"></div>
+    <div id="gramOrder"></div>
+    <div id="gramTF"></div>
+
+    <div class="card">
+      <h3>🔊 Shadowing — speak along with the speaker</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 4px">Track A — the modal passives (the policy deck), Track B — the future passive (the roadmap). Listen to a sentence → repeat it out loud in the pause. Two loops per track.</p>
+      <div class="grid2">
+        <div class="audio-card">
+          <span class="tag mp">Track A · The policy deck</span>
+          <audio controls src="../assets/audio/m08-02-shadowing-a.mp3" data-speeds preload="none"></audio>
+        </div>
+        <div class="audio-card">
+          <span class="tag mp">Track B · The future passive</span>
+          <audio controls src="../assets/audio/m08-02-shadowing-b.mp3" data-speeds preload="none"></audio>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. SPEAKING ============ -->
+  <section class="sec" id="speaking">
+    <div class="sec-head">
+      <div class="sec-num">5</div><h2>Grammar → Speaking — the main section of the lesson</h2>
+      <span class="tag time">15 min</span><span class="tag">goal: rules that sound like laws</span>
+    </div>
+    <div class="note"><b>The 5-second rule:</b> before every rule ask silently: <i>which modal, and is my be + V3 intact?</i> If you catch yourself saying <i>"assets must checked"</i> — stop, the be ran away: <i>"assets must be checked."</i> A law without its be is not a law.</div>
+
+    <div class="card">
+      <div class="speak-round">
+        <h3>🎙 Round 1 — Your Policy Deck <span class="tag mp">6 cards</span></h3>
+        <p style="font-size:14.5px;margin:0 0 6px">Write your studio's laws out loud — <b>6 policy cards in 90 seconds</b>, every one a modal passive: <i>assets must be tested before merge; feedback will be collected weekly; assets can be reused if they are open-source; private keys can't be shared.</i> At least one card must be about the cats — they are management.</p>
+        <div class="starters">
+          <span class="starter mp">… must be checked / approved</span>
+          <span class="starter mp">… can be reused / appealed</span>
+          <span class="starter mp">… can't be uploaded / shared</span>
+          <span class="starter mp">… will be reviewed / collected</span>
+        </div>
+        <div id="rec1"></div>
+      </div>
+
+      <div class="speak-round" style="margin-top:18px">
+        <h3>🎙 Round 2 — The Future of the Studio <span class="tag mp">roadmap in passive</span></h3>
+        <p style="font-size:14.5px;margin:0 0 6px">Describe your studio's next year — <b>90 seconds</b>, every point a future passive: <i>the demo will be shown at the showcase; two testers will be hired; the sequel will be announced — eventually.</i> Dreams are allowed, but they must be phrased properly.</p>
+        <div class="starters">
+          <span class="starter mp">The demo will be shown …</span>
+          <span class="starter mp">More testers will be hired …</span>
+          <span class="starter mp">The trailer will be released …</span>
+          <span class="starter mp">… will be decided by the cats</span>
+        </div>
+        <div id="rec2"></div>
+      </div>
+
+      <div class="speak-round" style="margin-top:18px">
+        <h3>🎙 Round 3 — Devil's Advocate <span class="tag mp">defend the deck</span></h3>
+        <p style="font-size:14.5px;margin:0 0 6px">The teacher attacks <b>3 of your policy cards</b> ("but what if the deadline…?"). Defend them <b>without leaving the passive</b>: <i>the deadline can be moved, but the checks can't be skipped.</i> If you say an active rule — the point goes to the devil.</p>
+        <div class="starters">
+          <span class="starter mp">The deadline can be moved …</span>
+          <span class="starter mp">The checks can't be skipped …</span>
+          <span class="starter mp">Exceptions must be approved …</span>
+          <span class="starter mp">Nothing will be changed without …</span>
+        </div>
+        <div id="rec3"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>⚡ Speed Drill — sort the laws</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 8px">Open a card and instantly name the modal and its strength — law, possibility, ban, nudge or schedule — then say the whole passive sentence aloud.</p>
+      <div id="drillCards"></div>
+    </div>
+  </section>
+
+  <!-- ============ 6. WRITING ============ -->
+  <section class="sec" id="writing">
+    <div class="sec-head">
+      <div class="sec-num">6</div><h2>Writing — the rules page</h2>
+      <span class="tag time">5 min</span><span class="tag">5 rules, 40–80 words</span>
+    </div>
+    <div id="writerBox" class="card"></div>
+    <details class="folding">
+      <summary>Model answer — open it after your own version</summary>
+      <div class="inner"><p>Harbour Lights — Rules (the short version). Every asset must be checked by two people before it is merged. AI use must be disclosed — honestly, and on the first try. Private code can't be uploaded to public tools; this one is carved in stone. Feedback will be collected every Friday and will be answered within a week. The rules themselves will be reviewed every quarter — a rule that is never reread is just wallpaper.</p></div>
+    </details>
+    <div class="note">Want an automatic B1+ check of your text? Paste it into <b><a href="https://writeandimprove.com" target="_blank" rel="noopener">Write &amp; Improve (Cambridge) ↗</a></b> — the task "Work — Your work and future plans".</div>
+  </section>
+
+  <!-- ============ 7. HOMEWORK ============ -->
+  <section class="sec" id="homework">
+    <div class="sec-head">
+      <div class="sec-num">7</div><h2>Homework</h2>
+      <span class="tag">≤ 30 minutes in total</span>
+    </div>
+    <div id="hwList"></div>
+  </section>
+
+  <details class="folding">
+    <summary>🧑‍🏫 Teacher notes</summary>
+    <div class="inner">
+      <p><b>Goal:</b> the student writes and speaks rules as modal passives — must/can/should/have to + be + V3, plus will be + V3 for the future — and never drops the be again. The Module 7 ladder (obligation → permission → advice) now lives inside the passive engine.</p>
+      <p><b>Suggested flow:</b> Warm-up: AI-ethics questions that force should-be-imposed and must-be-approved → Listening: the policy deck; second pass copies one must-be card and one will-be card word for word → Reading: the wiki deck labels six cards by modal strength; the Guardian extension rebuilds one real passive with a modal → Grammar: the formula "modal → be → V3" is the whole lesson; the must-be vs must-have-been echo is the trap → Speaking: Round 1 is the fluency drill (6 cards), Round 2 moves to the future, Round 3 is the pressure test — defend the deck without leaving the passive → Writing: the rules page is pinned next to the release process from Lesson 29.</p>
+      <p><b>Success criteria:</b> Round 1 — 6 cards, three different modals, every be present; Round 2 — 5 future passives, no will release slips; Round 3 — three defences, max one active escape; the rules page — 5 sentences, each a correct modal passive.</p>
+      <p><b>Error pocket:</b> dropped be (<i>must checked</i>) · V1 for V3 (<i>must be check</i>) · double modals (<i>will must be</i>) · future active for passive (<i>the game will release in May</i>) · must be vs must have been (rule vs deduction).</p>
+      <p><b>Threads:</b> the policy deck returns in the Lesson 32 release report (the patch must be approved); the devil's-advocate defence style reappears in Module 9 (reported speech: the rules were attacked — and defended); card six's sofa clause stays canon forever.</p>
+    </div>
+  </details>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Lesson 30 · Module 8</b> — Rules Must Be Followed <a href="../index.html">Course map →</a>
+    <div style="margin-top:8px"><button class="btn small ghost" id="resetLesson">↺ Reset this lesson's progress</button></div>
+      <div class="legal">© 2019-2026 ИП Громова Анна Александровна, ОГРНИП: 319237500156762, ИНН: 236507001744<br>
+    Лицензия № Л035-01218-23/01091451 Интерактивная школа «МУДРО»</div>
+</div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="../assets/js/firebase-config.js?v=10"></script>
+<script src="../assets/js/auth.js?v=10"></script>
+<script src="../assets/js/progress-firebase.js?v=10"></script>
+<script src="../assets/js/engine.js"></script>?v=10
+<script>
+const KEY = 'm08-02';
+const SECTIONS = [
+  {id:'warmup', title:'Warm-up'}, {id:'listening', title:'Listening'}, {id:'reading', title:'Reading'},
+  {id:'grammar', title:'Grammar'}, {id:'speaking', title:'Speaking'}, {id:'writing', title:'Writing'},
+  {id:'homework', title:'Homework'}
+];
+EC.initLesson(KEY, SECTIONS);
+
+/* ---- Warm-up: 3 cards ---- */
+EC.flipGrid('#warmCards', [
+  {front:"1 · Can AI have a mind of its own — or is it just statistics?", back:"<b>My honest answer: minds are not made of weights — real thought still has to be done by brains, and the question is far from settled.</b><br><span class='tag pv'>are not made of — plain passive</span>"},
+  {front:"2 · What rules should be imposed on AI tools in creative work?", back:"<b>AI use must be disclosed, sources must be checked, and artists' consent must be asked for — three cards I would pin on any wall.</b><br><span class='tag mp'>must be disclosed / checked / asked for</span>"},
+  {front:"3 · Which decisions in your studio must be approved by you personally?", back:"<b>The pitch, the people and the price. Everything else can be delegated — and will be, next lesson.</b><br><span class='tag mp'>must be approved / can be delegated</span>"}
+]);
+
+/* ---- Listening: vocab (definitions in Russian — for checking understanding) ---- */
+EC.vocab('#vocabRow', [
+  {w:"a policy", d:"политика, правило компании", e:"Every policy must be written down — and read."},
+  {w:"to approve", d:"утверждать, одобрять", e:"The patch must be approved by the platform."},
+  {w:"to disclose", d:"раскрывать, сообщать официально", e:"AI use must be disclosed, always."},
+  {w:"transparent", d:"прозрачный, открытый", e:"Decisions should be transparent — people follow rules they understand."},
+  {w:"to regulate", d:"регулировать", e:"AI tools are being regulated in more countries every year."},
+  {w:"guidelines", d:"рекомендации, указания", e:"Clear guidelines must be provided to every new artist."},
+  {w:"to enforce", d:"обеспечивать соблюдение, принуждать", e:"A rule that is not enforced is just a suggestion."},
+  {w:"a violation", d:"нарушение", e:"Every violation must be reported within a day."},
+  {w:"confidential", d:"конфиденциальный", e:"Confidential files can't be uploaded to public tools."},
+  {w:"to review", d:"пересматривать, проверять", e:"The deck will be reviewed every quarter."}
+]);
+
+/* ---- Listening: MCQ ---- */
+EC.mcq('#listenMCQ', {
+  title:"🎧 Comprehension — Part 1: multiple choice",
+  exKey:'m08-02-listen1',
+  items:[
+    {q:"What triggered the emergency meeting?", opts:["A broken build on a Friday","An AI-made texture was found in the game, and its source was not disclosed","The cats scratched the sofa again"], a:1, why:"“A texture made by an AI generator was uploaded to the game… was its source disclosed? Nobody knows.”"},
+    {q:"What is card one of the policy deck?", opts:["Every asset must be checked before it is merged","Feedback will be collected weekly","The deck will be reviewed quarterly"], a:0, why:"“Card one: every asset must be checked before it is merged. No exceptions.”"},
+    {q:"What happens if AI use is disclosed?", opts:["The asset is deleted immediately","Nothing is punished — but everything is written down","The publisher is called at once"], a:1, why:"“AI use must be disclosed, always. Nothing is punished — but everything is written down.”"},
+    {q:"Why will the deck itself be reviewed every quarter?", opts:["Because Dana likes meetings","Because rules that are never reread are not rules — they are wallpaper","Because the publisher demands it"], a:1, why:"“Rules that are never reread are not rules, they are wallpaper.”"}
+  ]
+});
+
+/* ---- Listening: True/False ---- */
+EC.tf('#listenTF', {
+  title:"🎧 Comprehension — Part 2: true or false",
+  exKey:'m08-02-listen2',
+  items:[
+    {s:"Private code can be uploaded to public tools if it is renamed.", a:false, why:"False — “Private code can't be uploaded to public tools. That one is carved in stone.”"},
+    {s:"Feedback will be collected every Friday and answered within a week.", a:true, why:"True — “Feedback will be collected every Friday, and it will be answered within a week.”"},
+    {s:"Sofa-related matters must be consulted with the cats.", a:true, why:"True — card six: “the cats must be consulted on all sofa-related matters.” Management is management."}
+  ]
+});
+
+/* ---- Reading: label the card ---- */
+EC.mcq('#readLabel', {
+  title:"📖 Label the card — which modal, and what strength?",
+  exKey:'m08-02-read1',
+  items:[
+    {q:"“Every asset must be checked by two people.”", opts:["must — the law","can — the possibility"], a:0, why:"must be checked — no exceptions, the strongest card in the deck."},
+    {q:"“Private code can't be uploaded to public tools.”", opts:["A ban — forbidden","An option — allowed if careful"], a:0, why:"can't be uploaded — prohibition. Carved in stone, remember?"},
+    {q:"“Feedback will be collected every Friday.”", opts:["The future passive — a schedule","The present passive — a habit"], a:0, why:"will be collected — the future passive: a promise with a date."},
+    {q:"“Any decision can be appealed to Dana.”", opts:["can — permission, a safety valve","must — an obligation"], a:0, why:"can be appealed — permission. You may, you don't have to."},
+    {q:"“Sofa matters must be consulted with the cats.”", opts:["must — the law (a joke with a real form)","should — a gentle nudge"], a:0, why:"must be consulted — even the joke keeps the correct form: must + be + V3."},
+    {q:"“The build must approved by the platform.”", opts:["Correct","Wrong — the be ran away: must be approved"], a:1, why:"Wrong on purpose: modal + BE + V3. A law without its be is not a law."}
+  ]
+});
+
+EC.tf('#readTF', {
+  title:"📖 True or false?",
+  exKey:'m08-02-read2',
+  items:[
+    {s:"The wiki says AI use is punished harshly once it is disclosed.", a:false, why:"False — “Nothing is punished — but everything is written down.” Honesty is free; hiding is not."},
+    {s:"The wiki compares rules that are never reread to wallpaper.", a:true, why:"True — “rules that are never reread are wallpaper.” That is why card five exists."}
+  ]
+});
+
+/* ---- Grammar: MCQ ---- */
+EC.mcq('#gramMCQ', {
+  title:"⚙️ Exercise 1 — choose the correct form",
+  exKey:'m08-02-gram1',
+  items:[
+    {q:"Every asset ___ before it is merged.", opts:["must checked","must be checked","must be check"], a:1, why:"modal + be + V3: must be checked. Both the be and the V3 are required."},
+    {q:"The game ___ in May.", opts:["will released","will be released","will be release"], a:1, why:"Future passive: will be released. will released has no be; will be release has no V3."},
+    {q:"Private code ___ to public tools.", opts:["can't be uploaded","can't uploaded","can't be upload"], a:0, why:"can't be uploaded — the ban keeps the full formula."},
+    {q:"___ the deadline ___ if the demo needs another week?", opts:["Can … move","Can … be moved","Is … can moved"], a:1, why:"Can the deadline be moved? — the passive question keeps modal + be + V3."},
+    {q:"The build must be approved. What does that mean?", opts:["A rule: the approval is required","A guess: it was surely approved","A fact: it was approved yesterday"], a:0, why:"must be + V3 = a rule. The guess would be must have been approved."},
+    {q:"More testers ___ next quarter.", opts:["will hire","will be hired","are will hired"], a:1, why:"will be hired — the testers receive the action. will hire means the studio does it themselves."}
+  ]
+});
+
+/* ---- Grammar: gap-fill ---- */
+EC.gap('#gramGap', {
+  title:"⚙️ Exercise 2 — type the missing words",
+  exKey:'m08-02-gram2',
+  items:[
+    {t:"Every asset ___ be checked before it is merged. (one word)", a:["must"], verbs:["must"]},
+    {t:"The patch ___ be approved by the platform this afternoon. (future + passive)", a:["will"], verbs:["will"]},
+    {t:"Confidential files ___ be uploaded to public tools. (ban — two words)", a:["can't","cannot"], verbs:["can't be + V3"]},
+    {t:"Feedback should ___ answered within a week. (one word)", a:["be"], verbs:["be"]},
+    {t:"The deck will be ___ every quarter. (review — V3)", a:["reviewed"], verbs:["reviewed"]},
+    {t:"Decisions can ___ appealed to Dana. (one word)", a:["be"], verbs:["be"]}
+  ]
+});
+
+/* ---- Grammar: sentence builder ---- */
+EC.order('#gramOrder', {
+  title:"⚙️ Exercise 3 — build the law",
+  exKey:'m08-02-gram3',
+  items:[
+    {words:["Every asset must be checked","before it","is merged"], answer:"Every asset must be checked before it is merged.", ru:"Каждый ассет должен быть проверен, прежде чем его примут (must be + V3)."},
+    {words:["Private code can't be uploaded","to public tools —","that one is carved in stone"], answer:"Private code can't be uploaded to public tools — that one is carved in stone.", ru:"Приватный код нельзя загружать в публичные инструменты — это высечено в камне (can't be + V3)."},
+    {words:["Feedback will be collected","every Friday","and answered within a week"], answer:"Feedback will be collected every Friday and answered within a week.", ru:"Обратная связь будет собираться каждую пятницу и получит ответ в течение недели (will be + V3)."},
+    {words:["The game will be released in May,","but the date","can be moved"], answer:"The game will be released in May, but the date can be moved.", ru:"Игра выйдет в мае, но дату можно перенести (will be + can be + V3)."}
+  ]
+});
+
+/* ---- Grammar: true/false on the form ---- */
+EC.tf('#gramTF', {
+  title:"⚙️ Exercise 4 — is the explanation correct?",
+  exKey:'m08-02-gram4',
+  items:[
+    {s:"“The build must checked” is acceptable in speech.", a:false, why:"False — the be is not optional: must be checked. A law without its be is not a law."},
+    {s:"“The build must have been approved” is a guess about the past.", a:true, why:"True — must have been + V3 is deduction (Module 7); must be + V3 is a rule."},
+    {s:"“Will must be approved” is correct if you are very serious.", a:false, why:"False — one modal per verb: must be approved, or will be approved."},
+    {s:"In passive questions the be + V3 stays intact: “Can the deadline be moved?”", a:true, why:"True — modal first, then be + V3, whatever the word order."}
+  ]
+});
+
+/* ---- Speaking: speed drill ---- */
+EC.flipGrid('#drillCards', [
+  {front:"⏱ Sort it: “Two people check every asset — the rule.”", back:"<b>Every asset must be checked by two people.</b> <span class='tag mp'>must be — the law</span>"},
+  {front:"⏱ Sort it: “You may reuse open-source assets.”", back:"<b>Open-source assets can be reused.</b> <span class='tag mp'>can be — permission</span>"},
+  {front:"⏱ Sort it: “Sharing private keys is forbidden.”", back:"<b>Private keys can't be shared.</b> <span class='tag mp'>can't be — the ban</span>"},
+  {front:"⏱ Sort it: “We answer feedback within a week — the promise.”", back:"<b>Feedback will be answered within a week.</b> <span class='tag mp'>will be — the schedule</span>"},
+  {front:"⏱ Sort it: “The platform requires a signature on every build.”", back:"<b>Builds have to be signed — the platform requires it.</b> <span class='tag mp'>have to be — the external law</span>"},
+  {front:"⏱ Sort it: “Someone surely approved this build last night.”", back:"<b>The build must have been approved last night.</b> <span class='tag mp'>must have been — the guess, not the rule</span>"},
+  {front:"⏱ Sort it: “We will show the demo at the showcase.”", back:"<b>The demo will be shown at the showcase.</b> <span class='tag mp'>will be — the future passive</span>"},
+  {front:"⏱ Sort it: “The cats approve all sofa decisions — always.”", back:"<b>Sofa decisions must be approved by the cats.</b> <span class='tag mp'>must be — management privileges</span>"}
+]);
+EC.recorder('#rec1', {maxSec:90, hint:"Round 1 · Your Policy Deck — 6 cards, three different modals"});
+EC.recorder('#rec2', {maxSec:90, hint:"Round 2 · The Future of the Studio — every point a future passive"});
+EC.recorder('#rec3', {maxSec:120, hint:"Round 3 · Devil's Advocate — defend 3 cards without leaving the passive"});
+
+/* ---- Writing ---- */
+EC.writer('#writerBox', {
+  task:"✍️ The rules page (<b>40–80 words</b>): write the <b>Rules</b> section for your (real or dream) studio's website — <b>5 sentences</b>, every one a correct modal passive. At least one must be, one can/can't be and one will be.",
+  placeholder:"1. Every … must be …  2. … can be …  3. … can't be …  4. … will be …",
+  min:40, max:80
+});
+
+/* ---- Homework ---- */
+EC.checklist('#hwList', {
+  items:[
+    {t:"Test-English: <i>Passive voice — all tenses</i> — repeat the set and find the modal-passive items (≈10 minutes) <a href='https://test-english.com/grammar-points/b1-b2/passive-voice-all-tenses/' target='_blank' rel='noopener'>test-english.com → b1-b2/passive-voice-all-tenses ↗</a>", m:"Tick the box when the page shows your score"},
+    {t:"From the plan: write <b>4 predictions about the industry</b> in will be + V3 — <i>cloud gaming will be streamed; AI tools will be regulated…</i>", m:"Every prediction keeps be + V3 intact"},
+    {t:"BBC 6 Minute English: <i>Can AI have a mind of its own?</i> — if the lesson extension did not fit <a href='https://www.bbc.co.uk/learningenglish/features/6-minute-english_2023/ep-230126' target='_blank' rel='noopener'>bbc.co.uk → 6-minute-english · ep-230126 ↗</a>", m:"Collect 2 modal + passive phrases from the episode"},
+    {t:"Shadowing tracks from this page — 5 minutes of repeating after the speaker (both tracks)", m:"Track A = the policy deck, Track B = the future passive"}
+  ]
+});
+
+/* ---- audio speed buttons + reset ---- */
+EC.enhanceAudio();
+document.getElementById('resetLesson').addEventListener('click', () => {
+  if (!confirm('Reset the progress, exercise results and the written text of Lesson 30?')) return;
+  try {
+    const d = JSON.parse(localStorage.getItem('ec_progress_v1') || '{}');
+    delete d.lessons['m08-02']
+    if (window.PG) window.PG.clearLesson('m08-02');;
+    localStorage.setItem('ec_progress_v1', JSON.stringify(d));
+    location.reload();
+  } catch (e) {}
+});
+</script>
+</body>
+</html>

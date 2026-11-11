@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 20 — Bug Triage: The Scenario Game | English for Game Dev</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Play:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="icon" href="../assets/img/favicon.ico">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><img class="logo-img" src="../assets/img/logo.png" alt="English for Game Dev — logo"> English for Game Dev</a>
+    <nav>
+      <a href="../index.html">← Course map</a>
+      <a href="m05-03.html">← Lesson 19</a>
+      <a href="#homework">Homework</a>
+      <span class="auth-chip" id="authChip">Sign in</span>
+    </nav>
+  </div>
+</header>
+
+<section class="lesson-hero">
+  <div class="wrap">
+    <div class="crumb">Module 5 · What If? Scenarios, Rules and Testing · Lesson 20 / 48</div>
+    <h1>Bug Triage: The <span style="color:var(--acc)">Scenario Game</span></h1>
+    <p class="goal">Module finale. Lesson goal: react to any live situation with the right tool — the law (zero conditional), the plan (first conditional), the instruction (imperative) or the insurance (in case) — and prove it in Module Test 5. By the end, "what if…?" should never freeze you again: you will have three ready answers.</p>
+    <div class="plan-chips">
+      <a class="tag time" href="#warmup">🔥 Warm-up · 10 min</a>
+      <a class="tag time" href="#listening">🎧 Listening · 10 min</a>
+      <a class="tag time" href="#reading">📖 Reading · 8 min</a>
+      <a class="tag time" href="#grammar">⚙️ Grammar Review · 8 min</a>
+      <a class="tag time" href="#speaking">🎤 Speaking Challenge · 15 min</a>
+      <a class="tag time" href="#test">🏁 Module Test 5 · 15 min</a>
+      <a class="tag" href="#homework">🏠 Homework · ≤30 min</a>
+    </div>
+  </div>
+</section>
+
+<div class="progress-wrap" id="lessonProgress">
+  <div class="wrap progress-row">
+    <span class="p-label">Lesson progress: 0/7</span>
+    <div class="bar"><i></i></div>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <!-- ============ 1. WARM-UP ============ -->
+  <section class="sec" id="warmup">
+    <div class="sec-head">
+      <div class="sec-num">1</div><h2>Warm-up</h2>
+      <span class="tag time">10 min</span><span class="tag">cats · funny bugs · the 6 a.m. marathon</span>
+    </div>
+    <div class="note" style="margin-left:44px">Before the game: warm up all three tools one more time. A <span class="tag zc">law</span> is true every time, a <span class="tag fc">plan</span> is this release's stake, an <span class="tag imp">instruction</span> tells the verb. Today's answers are rehearsals for the scenario game and the test.</div>
+
+    <div class="card audio-card">
+      <h3>🎧 Listen to the questions</h3>
+      <audio controls src="../assets/audio/m05-04-warmup.mp3" data-speeds preload="none"></audio>
+    </div>
+
+    <div class="card">
+      <h3>❓ Three questions — click a card to open the sentence starters</h3>
+      <div id="warmCards"></div>
+      <div class="note"><b>The rule of the day:</b> mix the tools on purpose — one law, one plan, one instruction per answer. That mix is exactly what the scenario game will demand.</div>
+    </div>
+  </section>
+
+  <!-- ============ 2. LISTENING ============ -->
+  <section class="sec" id="listening">
+    <div class="sec-head">
+      <div class="sec-num">2</div><h2>Listening — The Scenario Game Night</h2>
+      <span class="tag time">10 min</span><span class="tag">audio + comprehension</span>
+    </div>
+
+    <img src="../assets/img/l20-triage.png" alt="A triage board with glowing cards in three columns, dice and scenario cards on the table, a cat sitting on the keyboard — illustration">
+    <div class="note">Friday evening, Harbour Lights. The release is done, the pizza is on the table, and Dana brings out a deck of scenario cards. The rules of the game: for every situation, answer three times — <b>the law</b> (zero), <b>the plan</b> (first), <b>the instruction</b> (imperative).</div>
+
+    <div class="card">
+      <h3>🧩 Before you listen: 10 key words</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 4px">Click a word — a definition and an example will open. The Russian gloss is there to check your understanding. Listen to the recording of all ten words.</p>
+      <div id="vocabRow"></div>
+      <audio controls src="../assets/audio/m05-04-vocab.mp3" data-speeds preload="none" style="width:100%;height:40px"></audio>
+    </div>
+
+    <div class="card audio-card">
+      <h3>🎧 Track 1 — The Scenario Game Night</h3>
+      <audio controls src="../assets/audio/m05-04-listening.mp3" data-speeds preload="none"></audio>
+      <div class="note" style="margin:0"><b>Listen 1 — for gist:</b> which three situations do the cards describe? &nbsp;·&nbsp; <b>Listen 2 — for detail:</b> for the server-crash card, copy the law, the plan and the instruction word for word.</div>
+    </div>
+
+    <div id="listenMCQ"></div>
+    <div id="listenTF"></div>
+
+    <div class="card">
+      <h3>🌍 Extension — TED-Ed: Why do cats act so weird?</h3>
+      <p style="font-size:14.5px">From the yearly plan: <b><a href="https://ed.ted.com/lessons/why-do-cats-act-so-weird-tony-buffington" target="_blank" rel="noopener">Why do cats act so weird? — Tony Buffington ↗</a></b></p>
+      <p style="color:var(--mut);font-size:14px;margin:0">Task: what rules of cat behaviour does the video explain? Rebuild <b>2 facts as zero conditionals</b>: <i>If a cat blinks slowly, it means trust.</i></p>
+    </div>
+  </section>
+
+  <!-- ============ 3. READING ============ -->
+  <section class="sec" id="reading">
+    <div class="sec-head">
+      <div class="sec-num">3</div><h2>Reading — The Cat QA Fact File</h2>
+      <span class="tag time">8 min</span><span class="tag">laws of cat behaviour</span>
+    </div>
+
+    <div class="card">
+      <h3>Harbour Lights Wiki · Page 20: Cat QA — the fact file</h3>
+      <p><b>Category:</b> office wildlife · <b>Owner:</b> everyone · <b>Status:</b> scientifically verified (see the TED-Ed video above)</p>
+      <p>Our cats are not a distraction. They are a quality-control department with its own laws.</p>
+      <p>1. If a cat blinks slowly at you, it means trust. Blink back — this is the office etiquette.</p>
+      <p>2. If the keyboard is warm, a cat will sit on it. Physics beats productivity, every time.</p>
+      <p>3. If Lag runs at six in the morning, the whole house wakes up. There is no off switch.</p>
+      <p>4. If a cat brings you a toy, do not refuse it. Refusal has consequences.</p>
+      <p>5. If the demo starts, Boss appears. She does not know the word "rehearsal".</p>
+      <p>6. If you respect the cat's schedule, the cat respects yours. Rarely, but it happens.</p>
+    </div>
+
+    <div id="readLabel"></div>
+    <div id="readTF"></div>
+
+    <div class="card">
+      <h3>🌍 Extension — News in Levels</h3>
+      <p style="font-size:14.5px">From the yearly plan — pick a level-3 tech news: <b><a href="https://www.newsinlevels.com" target="_blank" rel="noopener">newsinlevels.com ↗</a></b></p>
+      <p style="color:var(--mut);font-size:14px;margin:0">Task: read the story twice (level 1 and level 3) and compare the language. Say one <b>zero</b> and one <b>first</b> conditional about the news.</p>
+    </div>
+  </section>
+
+  <!-- ============ 4. GRAMMAR REVIEW ============ -->
+  <section class="sec" id="grammar">
+    <div class="sec-head">
+      <div class="sec-num">4</div><h2>Grammar Review — One Board, Three Tools</h2>
+      <span class="tag time">8 min</span><span class="tag">the student explains first</span>
+    </div>
+    <div class="note"><b>How to use this section (from the plan):</b> cover the matrix with your hand and draw it from memory first: four rows, one line each. Then compare, and only then sort the six examples — explaining it from memory is the exercise.</div>
+
+    <div class="card">
+      <h3>⚙️ The consolidation matrix</h3>
+      <table class="gtable">
+        <tr><th>When you mean…</th><th>Take…</th><th>Example</th></tr>
+        <tr><td>A law of nature, a game rule, a process</td><td><span class="tag zc">ZERO CONDITIONAL</span></td><td><i>If the player <b>falls</b>, the screen <b>fades</b>.</i></td></tr>
+        <tr><td>A plan with a consequence (this release, this week)</td><td><span class="tag fc">FIRST CONDITIONAL</span></td><td><i>If QA <b>approves</b>, we <b>will ship</b> on Friday.</i></td></tr>
+        <tr><td>A direct instruction</td><td><span class="tag imp">IMPERATIVE</span></td><td><i><b>Open</b> the build. <b>Do not touch</b> the database.</i></td></tr>
+        <tr><td>Insurance, prepared in advance</td><td><span class="tag fc">IN CASE</span></td><td><i>In case the store page <b>breaks</b>, the rollback <b>stays</b> ready.</i></td></tr>
+        <tr><td>The opposite condition</td><td><span class="tag fc">UNLESS</span> (= if not)</td><td><i>Unless the servers <b>hold</b>, we <b>will postpone</b>.</i></td></tr>
+        <tr><td>An instant trigger</td><td><span class="tag fc">AS SOON AS</span></td><td><i>As soon as the trailer <b>drops</b>, I <b>will post</b> it.</i></td></tr>
+      </table>
+    </div>
+
+    <div id="gramMCQ"></div>
+    <div id="gramGap"></div>
+    <div id="gramOrder"></div>
+    <div id="gramTF"></div>
+
+    <div class="card">
+      <h3>🎬 Video — BBC Learning English: What is a conditional? (Conditionals with Georgie)</h3>
+      <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/fyqR1yb09CQ" title="BBC Learning English: What is a conditional? — Conditionals with Georgie" loading="lazy" allowfullscreen></iframe></div>
+      <div class="note" style="margin:0">A five-minute map of the whole conditional family — a good checkpoint before the test. If the video does not open on this device — <a href="https://www.youtube.com/watch?v=fyqR1yb09CQ" target="_blank" rel="noopener">watch on YouTube ↗</a>.</div>
+    </div>
+
+    <div class="card">
+      <h3>🔊 Shadowing — speak along with the speaker</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 4px">Track A — laws and plans mixed, Track B — instructions and insurance. Listen to a sentence → repeat it out loud in the pause. Two loops per track.</p>
+      <div class="grid2">
+        <div class="audio-card">
+          <span class="tag zc">Track A · Laws &amp; plans</span>
+          <audio controls src="../assets/audio/m05-04-shadowing-a.mp3" data-speeds preload="none"></audio>
+        </div>
+        <div class="audio-card">
+          <span class="tag imp">Track B · Instructions &amp; insurance</span>
+          <audio controls src="../assets/audio/m05-04-shadowing-b.mp3" data-speeds preload="none"></audio>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. SPEAKING CHALLENGE ============ -->
+  <section class="sec" id="speaking">
+    <div class="sec-head">
+      <div class="sec-num">5</div><h2>Speaking Challenge — the Scenario Game</h2>
+      <span class="tag time">15 min</span><span class="tag">8 cards · 2-minute role-play · autocorrect</span>
+    </div>
+    <div class="note"><b>The quota (from the plan):</b> every card gets the triple answer — <b>law → plan → instruction</b>. No paper, three seconds to start. Two takes: Take 1, self-check, then the stakeholder call.</div>
+
+    <div class="card">
+      <div class="speak-round">
+        <h3>🎙 Round 1 — The Scenario Game <span class="tag zc">8 cards</span></h3>
+        <p style="font-size:14.5px;margin:0 0 6px">Open a card, read the situation, and answer three times: the rule (zero), the plan (first), the instruction (imperative). The model answers open on click — but say yours first.</p>
+        <div id="gameCards"></div>
+        <div id="rec1"></div>
+      </div>
+
+      <div class="speak-round" style="margin-top:18px">
+        <h3>🎙 Round 2 — Stakeholder Call <span class="tag fc">2 minutes, all conditionals</span></h3>
+        <p style="font-size:14.5px;margin:0 0 6px">Explain to a worried client what happens if the release is delayed: the scenarios, the safety nets, the new date. Two minutes, every sentence a conditional or an instruction — this is the plan's role-play.</p>
+        <div class="starters">
+          <span class="starter zc">If we delay the release, the beta …</span>
+          <span class="starter fc">If the fix is ready by Monday, we will …</span>
+          <span class="starter imp">Do not worry — the rollback stays ready.</span>
+        </div>
+        <div id="rec2"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>🩹 Round 3 — Autocorrect (the plan's error list)</h3>
+      <p style="font-size:14.5px;margin:0 0 6px">Five sentences with the module's classic mistakes. Correct each one <b>out loud</b> — by ear first, then check the card.</p>
+      <div id="fixCards"></div>
+      <div id="rec3"></div>
+    </div>
+  </section>
+
+  <!-- ============ 6. MODULE TEST 5 ============ -->
+  <section class="sec" id="test">
+    <div class="sec-head">
+      <div class="sec-num">6</div><h2>Module Test 5 — 15 minutes</h2>
+      <span class="tag time">14 items + 1 speaking task</span><span class="tag">no peeking at the rules</span>
+    </div>
+    <div class="note"><b>Rules of the test (from the plan):</b> one sitting, no scrolling back. Part 1 — choose the form; Part 2 — the connectors; Part 3 — autocorrect; Part 4 — "continue the rule of the game", recorded. If a written part is below 60% — revisit that lesson's Grammar section. The full review happens at the start of Lesson 21.</div>
+
+    <div id="testChoose"></div>
+    <div id="testGap"></div>
+    <div id="testErrors"></div>
+
+    <div class="card">
+      <h3>🎙 Part 4 — Speaking: "Continue the rule of the game" (record it)</h3>
+      <p style="font-size:14.5px;margin:0 0 6px">Three prompts. For each: say one or two full sentences — a rule, a plan or an instruction — then click the card to compare with the model.</p>
+      <div id="testTrans"></div>
+      <div id="recTest"></div>
+    </div>
+
+    <div id="testScore" class="card" style="display:none">
+      <h3>🏁 Your Module 5 result</h3>
+      <p id="testScoreText" style="font-size:16px"></p>
+      <div class="note">50–70% — repeat the Grammar sections of the weak lessons this week. 70–90% — solid base; the teacher will polish the details in class. 90%+ — excellent: if-sentences live in your speech now. The full review happens at the start of Lesson 21 (the first lesson of Module 6 — where "if" stops being real).</div>
+    </div>
+  </section>
+
+  <!-- ============ 7. HOMEWORK ============ -->
+  <section class="sec" id="homework">
+    <div class="sec-head">
+      <div class="sec-num">7</div><h2>Homework</h2>
+      <span class="tag">≤ 30 minutes in total</span>
+    </div>
+    <div id="hwList"></div>
+  </section>
+
+  <details class="folding">
+    <summary>🧑‍🏫 Teacher notes</summary>
+    <div class="inner">
+      <p><b>Goal:</b> consolidate and measure the module: the student reacts to live situations with the right tool (law / plan / instruction / insurance), fixes the classic errors by ear, then passes the 15-minute test without looking back.</p>
+      <p><b>Suggested flow:</b> Warm-up: the cat questions; collect one law, one plan and one instruction per answer → Listening: the scenario game night; extract the triple-answer structure → Reading: the cat fact file rebuilds facts as laws → Grammar: the student draws the matrix BEFORE opening it; the video gives the whole family in five minutes → Speaking: Round 1 is the module's key drill (8 cards, triple answers) → Test: one sitting, note weak spots for Module 6.</p>
+      <p><b>Success criteria:</b> the scenario game — 8 cards with the triple answer and ≤3-second starts; the stakeholder call — 2 minutes, no Russian hesitations; the test — 70%+ overall.</p>
+      <p><b>After the test:</b> Part 1–2 below 60% → Lessons 17–18; Part 3 → Lesson 19. The full error review happens at the start of Lesson 21.</p>
+      <p><b>Threads:</b> the rollback drill from Lesson 17 opens card one; Boss the cat closes the listening story — and, per the fact file, will also attend the demo in Module 6; the stakeholder call rehearses the "explaining delays" skill that returns in Module 9 (reported speech); Module 6 reopens "if" for unreal worlds: second and third conditionals, wish and if only.</p>
+    </div>
+  </details>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Lesson 20 · Module 5</b> — Bug Triage: The Scenario Game. <a href="../index.html">Course map →</a>
+    <div style="margin-top:8px"><button class="btn small ghost" id="resetLesson">↺ Reset this lesson's progress</button></div>
+      <div class="legal">© 2019-2026 ИП Громова Анна Александровна, ОГРНИП: 319237500156762, ИНН: 236507001744<br>
+    Лицензия № Л035-01218-23/01091451 Интерактивная школа «МУДРО»</div>
+</div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="../assets/js/firebase-config.js?v=10"></script>
+<script src="../assets/js/auth.js?v=10"></script>
+<script src="../assets/js/progress-firebase.js?v=10"></script>
+<script src="../assets/js/engine.js"></script>?v=10
+<script>
+const KEY = 'm05-04';
+const SECTIONS = [
+  {id:'warmup', title:'Warm-up'}, {id:'listening', title:'Listening'}, {id:'reading', title:'Reading'},
+  {id:'grammar', title:'Grammar Review'}, {id:'speaking', title:'Speaking'}, {id:'test', title:'Module Test'},
+  {id:'homework', title:'Homework'}
+];
+EC.initLesson(KEY, SECTIONS);
+
+/* ---- Warm-up: 3 cards ---- */
+EC.flipGrid('#warmCards', [
+  {front:"1 · If your cat sat on your keyboard during a demo, what would you do?", back:"<b>Our demo pauses automatically: if the cat sits on the keyboard, the demo pauses. Then I take a photo, then I shoo her away.</b><br><span class='tag zc'>the law</span> <span class='tag imp'>the instruction</span>"},
+  {front:"2 · Which bug in your career was the funniest?", back:"<b>A hitbox made the boss invincible while dancing. If the boss danced, the damage was zero.</b><br><span class='tag zc'>a bug described as a law</span>"},
+  {front:"3 · What happens in your house when the cats start running at 6 a.m.?", back:"<b>When the cats start running, everything falls off the shelves. If Lag runs, Boss follows.</b><br><span class='tag zc'>when = if, a law</span>"}
+]);
+
+/* ---- Listening: vocab (definitions in Russian — for checking understanding) ---- */
+EC.vocab('#vocabRow', [
+  {w:"a triage", d:"сортировка проблем по срочности", e:"Bug triage puts the most urgent bug first."},
+  {w:"an exploit", d:"эксплойт — нечестный приём, ломающий правила игры", e:"If a tester finds an exploit, we pay the bounty."},
+  {w:"a bug bounty", d:"награда за найденный баг", e:"The studio pays a bug bounty for serious exploits."},
+  {w:"to escalate", d:"эскалировать, передавать выше", e:"If the crash repeats, we escalate it to the dev team."},
+  {w:"a scenario", d:"сценарий — история возможной ситуации", e:"Every card in the game is a scenario."},
+  {w:"a stakeholder", d:"заинтересованное лицо (заказчик, издатель…)", e:"The stakeholder call lasts two minutes."},
+  {w:"to prioritize", d:"расставить приоритеты", e:"Triage means you prioritize: critical first."},
+  {w:"a status page", d:"страница статуса серверов", e:"Do not restart the stream until the status page is green."},
+  {w:"to postpone", d:"перенести на позже", e:"Unless the fix is tested, we will postpone the patch."},
+  {w:"to ship", d:"выпустить (игру, обновление)", e:"The release is done — we shipped on Friday."}
+]);
+
+/* ---- Listening: MCQ ---- */
+EC.mcq('#listenMCQ', {
+  title:"🎧 Comprehension — Part 1: multiple choice",
+  exKey:'m05-04-listen1',
+  items:[
+    {q:"What are the rules of the scenario game?", opts:["One answer per card","Three answers: the law, the plan, the instruction","The fastest answer wins pizza"], a:1, why:"“The others answer three times: the law, the plan, and the instruction.”"},
+    {q:"What does the law say about a crashing server?", opts:["If the server crashes, the stream switches to the pre-recorded video","If the server crashes, everyone goes home","If the server crashes, they restart the game"], a:0, why:"“The law: if the server crashes, the stream switches to the pre-recorded video.”"},
+    {q:"What happens if a tester finds an exploit in the shop?", opts:["The tester gets a bug bounty","The shop closes forever","The tester is fired"], a:0, why:"“If a tester finds an exploit, we pay a bug bounty.”"},
+    {q:"How does the evening end?", opts:["Dana wins the game","The pizza arrives late","Lag sits on the deck and the game pauses"], a:2, why:"“If Lag sits on the deck, the game pauses. That is the law of this studio.”"}
+  ]
+});
+
+/* ---- Listening: True/False ---- */
+EC.tf('#listenTF', {
+  title:"🎧 Comprehension — Part 2: true or false",
+  exKey:'m05-04-listen2',
+  items:[
+    {s:"The instruction for the server-crash card says to restart the stream immediately.", a:false, why:"False — “Do not restart the stream until the status page is green.”"},
+    {s:"If the press notices the exploit, the studio will publish an honest post.", a:true, why:"True — “The plan: if the press notices, we will publish an honest post.”"}
+  ]
+});
+
+/* ---- Reading: label the law ---- */
+EC.mcq('#readLabel', {
+  title:"📖 Label the sentence — which tool is it?",
+  exKey:'m05-04-read1',
+  items:[
+    {q:"“If a cat blinks slowly at you, it means trust.”", opts:["Zero — a law of cat behaviour","First — a plan for tonight"], a:0, why:"True every time → zero conditional."},
+    {q:"“If the keyboard is warm, a cat will sit on it.”", opts:["Zero","First — a prediction with evidence"], a:1, why:"will in the result and a concrete future → first conditional (a very safe prediction)."},
+    {q:"“If a cat brings you a toy, do not refuse it.”", opts:["Instruction with a condition","A pure law"], a:0, why:"do not refuse is an imperative inside an if-sentence."},
+    {q:"“If the demo starts, Boss appears.”", opts:["Zero — the office law","Imperative"], a:0, why:"Present Simple in both halves → zero conditional."},
+    {q:"“If you respect the cat's schedule, the cat respects yours.”", opts:["Zero — with a rare exception","First"], a:0, why:"A general truth (mostly) → zero conditional."},
+    {q:"“If Lag runs at six in the morning, the whole house wakes up.”", opts:["Zero — nature's schedule","A plan"], a:0, why:"Every day, no exceptions → zero conditional."}
+  ]
+});
+
+EC.tf('#readTF', {
+  title:"📖 True or false?",
+  exKey:'m05-04-read2',
+  items:[
+    {s:"The wiki says the cats are a distraction, not a department.", a:false, why:"False — “They are not a distraction. They are a quality-control department.”"},
+    {s:"Blinking back at a cat is the office etiquette, according to the wiki.", a:true, why:"True — “Blink back — this is the office etiquette.”"}
+  ]
+});
+
+/* ---- Grammar Review: sort the example ---- */
+EC.mcq('#gramMCQ', {
+  title:"⚙️ Exercise 1 — sort the example: law, plan, instruction or insurance?",
+  exKey:'m05-04-gram1',
+  items:[
+    {q:"“If the player falls, the screen fades.”", opts:["Law — zero conditional","Plan — first conditional"], a:0, why:"True every time → zero conditional."},
+    {q:"“If the fix is ready by Monday, we will ship the patch.”", opts:["Law","Plan — first conditional"], a:1, why:"One concrete next week with will → first conditional."},
+    {q:"“Take a screenshot and stop.”", opts:["Instruction — imperative","Law"], a:0, why:"Bare verb, no subject → imperative."},
+    {q:"“In case the servers go down, we keep the provider's number handy.”", opts:["Insurance — in case","Law"], a:0, why:"Prepared in advance, before anything might happen → in case."},
+    {q:"“Unless the demo build passes, we will not book the room.”", opts:["The opposite condition — unless","Insurance"], a:0, why:"unless = if not; the booking happens only if the build passes."},
+    {q:"“As soon as the status page is green, restart the stream.”", opts:["Trigger + instruction","A law of nature"], a:0, why:"as soon as + imperative — a trigger with a command."}
+  ]
+});
+
+/* ---- Grammar Review: gap-fill ---- */
+EC.gap('#gramGap', {
+  title:"⚙️ Exercise 2 — fill the gap with the right tool",
+  exKey:'m05-04-gram2',
+  items:[
+    {t:"If the server crashes, the stream ___ to the video. (switch — the law)", a:["switches"], verbs:["present simple"]},
+    {t:"If it crashes again, we ___ the provider. (call — the plan)", a:["will call","'ll call"], verbs:["will"]},
+    {t:"___ the status page is green, we restart the stream. (as soon as — the trigger, full phrase)", a:["as soon as"], verbs:["as soon as"]},
+    {t:"___ restart the stream until the page is green. (do not — the instruction, full negative)", a:["do not","don't"], verbs:["do not"]},
+    {t:"___ the fix is tested, we will not ship it. (unless — the opposite condition)", a:["unless"], verbs:["unless"]},
+    {t:"___ the support asks for the logs, we keep them for a month. (in case — the insurance, full phrase)", a:["in case"], verbs:["in case"]}
+  ]
+});
+
+/* ---- Grammar Review: sentence builder ---- */
+EC.order('#gramOrder', {
+  title:"⚙️ Exercise 3 — build the triple answer",
+  exKey:'m05-04-gram3',
+  items:[
+    {words:["If a tester finds an exploit,","we pay","a bug bounty"], answer:"If a tester finds an exploit, we pay a bug bounty.", ru:"Если тестировщик находит эксплойт, мы платим награду (закон)."},
+    {words:["If the press notices it,","we will publish","an honest post"], answer:"If the press notices it, we will publish an honest post.", ru:"Если пресса заметит, мы опубликуем честный пост (план)."},
+    {words:["Please report exploits","only through","the bounty form"], answer:"Please report exploits only through the bounty form.", ru:"Пожалуйста, сообщайте об эксплойтах только через форму награды (инструкция)."},
+    {words:["If Lag sits on the deck,","the game pauses —","that is the law of this studio"], answer:"If Lag sits on the deck, the game pauses — that is the law of this studio.", ru:"Если Лаг садится на колоду, игра останавливается — таков закон студии."}
+  ]
+});
+
+/* ---- Grammar Review: true/false ---- */
+EC.tf('#gramTF', {
+  title:"⚙️ Exercise 4 — is the explanation correct?",
+  exKey:'m05-04-gram4',
+  items:[
+    {s:"“If I will see the bug, I will report it” is correct.", a:false, why:"False — no will in the if-half: If I see the bug, I will report it."},
+    {s:"“Unless I don't finish the test, we ship” has a double negation.", a:true, why:"True — unless already means if not: Unless I finish the test, we don't ship."},
+    {s:"“In case the demo crashes, we show the video” describes insurance.", a:true, why:"True — in case = prepared before it might happen."},
+    {s:"“Take a screenshot if the screen freezes” is an instruction with a condition.", a:true, why:"True — imperative + condition, the perfect pair from Lesson 19."}
+  ]
+});
+
+/* ---- Speaking: scenario game cards ---- */
+EC.flipGrid('#gameCards', [
+  {front:"🎮 Card 1 · The server crashes during the launch stream.", back:"<b>Law:</b> if the server crashes, the stream switches to the video. <b>Plan:</b> if it crashes again, we will call the provider. <b>Instruction:</b> do not restart the stream until the page is green."},
+  {front:"🎮 Card 2 · A cat walks on the keyboard mid-demo.", back:"<b>Law:</b> if Boss appears, the demo pauses. <b>Plan:</b> if she stays, we will show the gameplay video. <b>Instruction:</b> shoo her away gently and carry on."},
+  {front:"🎮 Card 3 · The main sponsor leaves the project.", back:"<b>Law:</b> if a sponsor leaves, we review the budget. <b>Plan:</b> if we find a new partner this quarter, we will keep the roadmap. <b>Instruction:</b> tell the team the same day — no rumours."},
+  {front:"🎮 Card 4 · A tester finds an exploit in the shop.", back:"<b>Law:</b> if a tester finds an exploit, we pay the bounty. <b>Plan:</b> if the press notices, we will publish an honest post. <b>Instruction:</b> report exploits only through the bounty form."},
+  {front:"🎮 Card 5 · The build fails two hours before the release.", back:"<b>Law:</b> if the build fails, we roll back. <b>Plan:</b> if the rollback passes, we will ship the old build. <b>Instruction:</b> do not fix anything live."},
+  {front:"🎮 Card 6 · The demo machine falls asleep on stage.", back:"<b>Law:</b> if the machine sleeps, the stream freezes. <b>Plan:</b> if it happens again, we will buy a new one. <b>Instruction:</b> disable sleep mode before every demo."},
+  {front:"🎮 Card 7 · A junior closes a ticket without logs.", back:"<b>Law:</b> if a ticket has no logs, support cannot trace the bug. <b>Plan:</b> if it happens once more, we will run a log workshop. <b>Instruction:</b> save the logs before you close any ticket."},
+  {front:"🎮 Card 8 · The trailer leaks a day early.", back:"<b>Law:</b> if a trailer leaks, the internet reacts fast. <b>Plan:</b> if it spreads, we will post the official version immediately. <b>Instruction:</b> do not comment before the official post."}
+]);
+EC.recorder('#rec1', {maxSec:180, hint:"Round 1 · 8 cards: law → plan → instruction for each"});
+
+/* ---- Speaking: autocorrect cards ---- */
+EC.flipGrid('#fixCards', [
+  {front:"🩹 “If I will see the bug, I will report it.”", back:"<span class='no'>If I will see</span> → <span class='yes'>If I see the bug, I will report it.</span><br>No will in the if-half — Lesson 17's first commandment."},
+  {front:"🩹 “Unless we don't find critical bugs, we ship on Friday.”", back:"<span class='no'>unless we don't find</span> → <span class='yes'>Unless we find critical bugs, we ship on Friday.</span><br>unless already means if not — no second not."},
+  {front:"🩹 “I will call you when I will know the new date.”", back:"<span class='no'>when I will know</span> → <span class='yes'>I will call you when I know the new date.</span><br>Time connectors keep Present Simple."},
+  {front:"🩹 “Do not to restart the stream.”", back:"<span class='no'>do not to restart</span> → <span class='yes'>Do not restart the stream.</span><br>do not + bare verb."},
+  {front:"🩹 “If the demo will crash, show the video.”", back:"<span class='no'>if the demo will crash</span> → <span class='yes'>If the demo crashes, show the video.</span><br>The law in the if-half stays Present Simple."}
+]);
+EC.recorder('#rec2', {maxSec:120, hint:"Round 2 · the stakeholder call: 2 minutes, all conditionals"});
+EC.recorder('#rec3', {maxSec:90, hint:"Round 3 · autocorrect: fix each sentence by ear first"});
+
+/* ---- TEST Part 1: choose the tool (5) ---- */
+EC.mcq('#testChoose', {
+  title:"🏁 Part 1 — choose the form (5 items)",
+  exKey:'m05-04-test1',
+  items:[
+    {q:"If the player ___ all the coins, the door opens.", opts:["collects","will collect","collected"], a:0, why:"A game law, true every time → zero conditional (Present Simple)."},
+    {q:"If the demo ___ tomorrow, we will show the gameplay video.", opts:["crashes","will crash","is crashing"], a:0, why:"No will in the if-half: if + Present Simple, will in the result."},
+    {q:"___ the build from the launcher, please.", opts:["Opening","Open","You open"], a:1, why:"A direct instruction → imperative (bare verb)."},
+    {q:"Unless QA ___ the patch, we will not ship it on Friday.", opts:["will approve","approves","approved"], a:1, why:"unless keeps Present Simple: unless QA approves."},
+    {q:"If the servers hold under the load, the launch ___ on schedule.", opts:["stays","will stay","is staying"], a:1, why:"One concrete future release → first conditional: will + infinitive."}
+  ]
+});
+
+/* ---- TEST Part 2: the connectors (5) ---- */
+EC.gap('#testGap', {
+  title:"🏁 Part 2 — fill the connector (5 blanks)",
+  exKey:'m05-04-test2',
+  items:[
+    {t:"___ the servers hold, we will postpone the launch. (unless / in case — choose the connector, full word)", a:["unless"], verbs:["unless"]},
+    {t:"___ the store page breaks, Tom keeps the rollback ready. (unless / in case — choose the connector, full phrase)", a:["in case"], verbs:["in case"]},
+    {t:"___ the trailer drops, I will post it on the wishlist page. (as soon as / until — full phrase)", a:["as soon as"], verbs:["as soon as"]},
+    {t:"We will stay at the office ___ the status page is green. (until / as long as — full word)", a:["until"], verbs:["until"]},
+    {t:"___ the wishlists keep growing, the party stays on the calendar. (as long as / in case — full phrase)", a:["as long as"], verbs:["as long as"]}
+  ]
+});
+
+/* ---- TEST Part 3: find and fix the error (4) ---- */
+EC.mcq('#testErrors', {
+  title:"🏁 Part 3 — find and fix the error (4 items)",
+  exKey:'m05-04-test3',
+  items:[
+    {q:"“If I will find the exploit, I will report it.”", opts:["will find → find","report → reporting"], a:0, why:"No will in the if-half: If I find the exploit, I will report it."},
+    {q:"“Unless we don't test the patch, we ship it.”", opts:["don't test → test","Unless → If"], a:0, why:"unless already means if not — the second not is a double negation."},
+    {q:"“Do not to touch the live database.”", opts:["do not to touch → do not touch","touch → touching"], a:0, why:"do not + bare verb, no to."},
+    {q:"“If the demo will freeze, take a screenshot.”", opts:["will freeze → freezes","take → taking"], a:0, why:"The if-half of a law stays Present Simple."}
+  ]
+});
+
+/* ---- TEST Part 4: speaking transformations ---- */
+EC.flipGrid('#testTrans', [
+  {front:"Prompt 1 · Continue the rule: “If the player collects all the coins, …”", back:"Model: <b>… the door opens and the level ends. If the door opens, the save happens automatically.</b> <span class='tag zc'>zero conditional laws</span>"},
+  {front:"Prompt 2 · Continue the plan: “If the servers hold on launch day, …”", back:"Model: <b>… we will ship on schedule, and as soon as the build is live, I will send you the link.</b> <span class='tag fc'>first conditional + as soon as</span>"},
+  {front:"Prompt 3 · Give the instruction: the new tester is about to test from the folder.", back:"Model: <b>Open the build from the launcher, please. If the launcher is slow, wait — do not test from the folder.</b> <span class='tag imp'>imperatives + condition</span>"}
+]);
+EC.recorder('#recTest', {maxSec:120, hint:"Part 4 · continue the rule of the game: 3 prompts"});
+
+/* ---- Module score summary ---- */
+function showTestScore() {
+  try {
+    const d = JSON.parse(localStorage.getItem('ec_progress_v1') || '{}');
+    const L = d.lessons && d.lessons['m05-04'];
+    const keys = ['m05-04-test1','m05-04-test2','m05-04-test3'];
+    let got = 0, total = 0, parts = [];
+    keys.forEach(k => {
+      const s = L && L.scores && L.scores[k];
+      if (s) { got += s[0]; total += s[1]; parts.push(`${s[0]}/${s[1]}`); }
+    });
+    if (total === 0) return;
+    const pct = Math.round(got / total * 100);
+    const box = document.getElementById('testScore');
+    box.style.display = 'block';
+    const verdict = pct >= 90 ? 'Excellent — if-sentences live in your speech now. 🎉'
+      : pct >= 70 ? 'Solid base — the teacher will polish the details in class. 👍'
+      : 'Repeat the Grammar sections of your weak lessons this week — Module 6 builds on them.';
+    document.getElementById('testScoreText').innerHTML =
+      `Written parts: <b>${got}/${total}</b> (${pct}%) — ${parts.join(' · ')}.<br>${verdict}`;
+  } catch (e) {}
+}
+['#testChoose','#testGap','#testErrors'].forEach(sel => {
+  const root = document.querySelector(sel);
+  if (!root) return;
+  new MutationObserver(showTestScore).observe(root, {subtree:true, childList:true, characterData:true, attributes:true});
+});
+
+/* ---- Homework ---- */
+EC.checklist('#hwList', {
+  items:[
+    {t:"From the plan (optional): Test-English B1+ — the mixed set <i>Zero and first conditional and future time clauses</i>, second pass for automaticity (≈10 minutes) <a href='https://test-english.com/grammar-points/b1-b2/zero-first-conditional-future-time-clauses' target='_blank' rel='noopener'>test-english.com → b1-b2/zero-first-conditional ↗</a>", m:"Compare your score with Lesson 17 — it should grow"},
+    {t:"Test 5 review (from the plan): the full error review happens at the start of Lesson 21 — bring your weakest part", m:"Note which part was hardest: 1, 2, 3 or 4"},
+    {t:"Bring one rule with if from any game (interface, wiki or guide) — we will open Module 6 with it", m:"One rule, one sentence, one law"},
+    {t:"Shadowing tracks from Lessons 17–20 — 10 minutes of repeating after the speaker (any tracks)", m:"Laws, plans and instructions should feel like your own"}
+  ]
+});
+
+/* ---- audio speed buttons + reset ---- */
+EC.enhanceAudio();
+showTestScore();
+document.getElementById('resetLesson').addEventListener('click', () => {
+  if (!confirm('Reset the progress, exercise results and the written text of Lesson 20?')) return;
+  try {
+    const d = JSON.parse(localStorage.getItem('ec_progress_v1') || '{}');
+    delete d.lessons['m05-04']
+    if (window.PG) window.PG.clearLesson('m05-04');;
+    localStorage.setItem('ec_progress_v1', JSON.stringify(d));
+    location.reload();
+  } catch (e) {}
+});
+</script>
+</body>
+</html>

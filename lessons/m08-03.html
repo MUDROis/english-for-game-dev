@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 31 — I Had It Tested: Delegation | English for Game Dev</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Play:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="icon" href="../assets/img/favicon.ico">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><img class="logo-img" src="../assets/img/logo.png" alt="English for Game Dev — logo"> English for Game Dev</a>
+    <nav>
+      <a href="../index.html">← Course map</a>
+      <a href="m08-02.html">← Lesson 30</a>
+      <a href="#homework">Homework</a>
+      <span class="auth-chip" id="authChip">Sign in</span>
+    </nav>
+  </div>
+</header>
+
+<section class="lesson-hero">
+  <div class="wrap">
+    <div class="crumb">Module 8 · How Games Are Made: Passive and Processes · Lesson 31 / 48</div>
+    <h1>I Had It Tested: Delegation <span style="color:var(--acc)">The Delegation Log</span></h1>
+    <p class="goal">The founder's secret weapon — the causative. Lesson goal: say what was done for you, not by you — I had the build tested, we are having the trailer made — and control the make / let / allow triad: who is forced, who is permitted, and who is merely informed.</p>
+    <div class="plan-chips">
+      <a class="tag time" href="#warmup">🔥 Warm-up · 10 min</a>
+      <a class="tag time" href="#listening">🎧 Listening · 12 min</a>
+      <a class="tag time" href="#reading">📖 Reading · 10 min</a>
+      <a class="tag time" href="#grammar">⚙️ Grammar · 10 min</a>
+      <a class="tag time" href="#speaking">🎤 Grammar → Speaking · 15 min</a>
+      <a class="tag time" href="#writing">✍️ Writing · 5 min</a>
+      <a class="tag" href="#homework">🏠 Homework · ≤30 min</a>
+    </div>
+  </div>
+</section>
+
+<div class="progress-wrap" id="lessonProgress">
+  <div class="wrap progress-row">
+    <span class="p-label">Lesson progress: 0/7</span>
+    <div class="bar"><i></i></div>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <!-- ============ 1. WARM-UP ============ -->
+  <section class="sec" id="warmup">
+    <div class="sec-head">
+      <div class="sec-num">1</div><h2>Warm-up</h2>
+      <span class="tag time">10 min</span><span class="tag">housework · workload · repaired things</span>
+    </div>
+    <div class="note" style="margin-left:44px">The rules from Lesson 30 are pinned on the wall — the teacher checks two of them aloud. Then — the passive learns to name you as the organiser: <span class="tag cau">HAVE / GET + OBJECT + V3</span>. Yesterday: what must be done. Today: who did you get to do it?</div>
+
+    <div class="card audio-card">
+      <h3>🎧 Listen to the questions</h3>
+      <audio controls src="../assets/audio/m08-03-warmup.mp3" data-speeds preload="none"></audio>
+    </div>
+
+    <div class="card">
+      <h3>❓ Three questions — click a card to open the sentence starters</h3>
+      <div id="warmCards"></div>
+      <div class="note"><b>The rule of the lesson:</b> <i>I tested the build</i> — my hands. <i>I had the build tested</i> — my signature, somebody else's hands. The causative is the grammar of founders, managers and people whose sofa is being repaired by professionals.</div>
+    </div>
+  </section>
+
+  <!-- ============ 2. LISTENING ============ -->
+  <section class="sec" id="listening">
+    <div class="sec-head">
+      <div class="sec-num">2</div><h2>Listening — Delegation Day</h2>
+      <span class="tag time">12 min</span><span class="tag">audio + comprehension</span>
+    </div>
+
+    <img src="../assets/img/l31-delegation.png" alt="A game studio founder at her desk with arms open while tasks fly away from her as glowing paper planes towards teammates: reports flying to an analytics screen, a pitch deck flying to a freelancer, a sofa being repaired by a professional, a team planning a sprint at a whiteboard, a cat supervising from the top shelf — illustration">
+    <div class="note">Dana has a problem, and the problem is Dana — she does everything herself. The team stages an intervention, and one week becomes an experiment: <b>what can be delegated, and how do you say it?</b> Listen for <b>have / get something done</b> — and for the make / let / allow rules at the end.</div>
+
+    <div class="card">
+      <h3>🧩 Before you listen: 10 key words</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 4px">Click a word — a definition and an example will open. The Russian gloss is there to check your understanding. Listen to the recording of all ten words.</p>
+      <div id="vocabRow"></div>
+      <audio controls src="../assets/audio/m08-03-vocab.mp3" data-speeds preload="none" style="width:100%;height:40px"></audio>
+    </div>
+
+    <div class="card audio-card">
+      <h3>🎧 Track 1 — Delegation Day</h3>
+      <audio controls src="../assets/audio/m08-03-listening.mp3" data-speeds preload="none"></audio>
+      <div class="note" style="margin:0"><b>Listen 1 — for gist:</b> what was delegated on which day, and what did Dana keep for herself? &nbsp;·&nbsp; <b>Listen 2 — for detail:</b> copy two causative sentences word for word — one with had, one with got.</div>
+    </div>
+
+    <div id="listenMCQ"></div>
+    <div id="listenTF"></div>
+
+    <div class="card">
+      <h3>🌍 Extension — BBC 6 Minute English: Who does the housework?</h3>
+      <p style="font-size:14.5px">From the yearly plan: <b><a href="https://www.bbc.co.uk/learningenglish/features/6-minute-english_2026/ep-260813" target="_blank" rel="noopener">Who does the housework? ↗</a></b></p>
+      <p style="color:var(--mut);font-size:14px;margin:0">Listen: how do couples split chores? Note <b>2 phrases about sharing tasks</b> — we will rebuild them as causatives: <i>she has the windows cleaned; he gets the shopping delivered.</i></p>
+    </div>
+  </section>
+
+  <!-- ============ 3. READING ============ -->
+  <section class="sec" id="reading">
+    <div class="sec-head">
+      <div class="sec-num">3</div><h2>Reading — The Delegation Log (internal wiki)</h2>
+      <span class="tag time">10 min</span><span class="tag">log entries + construction spotting</span>
+    </div>
+
+    <div class="card">
+      <h3>Harbour Lights Wiki · Page 23: Delegation Log — Month One</h3>
+      <p><b>Category:</b> management · <b>Owner:</b> Dana, mostly · <b>Status:</b> entries are made weekly; guilt is not included</p>
+      <p>Grammar check: <i>have/get + object + V3</i> = arranged for you · <i>make/let/allow</i> = force / permit / formal permit.</p>
+      <p>1. The weekly reports <b>were automated</b>. — Dana <b>had them automated</b>. (Monday)</p>
+      <p>2. The pitch deck <b>was designed</b> by a freelancer. — Dana <b>got it designed</b> in three days. (Tuesday)</p>
+      <p>3. The sofa <b>was repaired</b> by professionals. — Dana <b>had it repaired</b>; the cats <b>must not be blamed</b>. (Wednesday)</p>
+      <p>4. The sprint plan <b>was decided</b> by the team. — Dana <b>let the team decide</b>. (Thursday)</p>
+      <p>5. A real lunch break <b>was made mandatory</b>. — Dana <b>made everyone take</b> one, away from keyboards. (Friday)</p>
+      <p>6. Standing rules: the publisher <b>makes us log</b> our hours · we <b>don't let anyone push</b> to main on Fridays · the wiki <b>allows interns to shadow</b> QA.</p>
+    </div>
+
+    <div id="readLabel"></div>
+    <div id="readTF"></div>
+
+    <div class="card">
+      <h3>🌍 Extension — Game Developer: production &amp; management</h3>
+      <p style="font-size:14.5px">From the yearly plan — pick any management article: <b><a href="https://www.gamedeveloper.com" target="_blank" rel="noopener">gamedeveloper.com ↗</a></b></p>
+      <p style="color:var(--mut);font-size:14px;margin:0">Find <b>2 phrases about delegation</b> and rephrase each with have/get something done: <i>the studio outsources QA → they have QA done by an external team.</i></p>
+    </div>
+  </section>
+
+  <!-- ============ 4. GRAMMAR ============ -->
+  <section class="sec" id="grammar">
+    <div class="sec-head">
+      <div class="sec-num">4</div><h2>Grammar — Causative have/get + make/let/allow</h2>
+      <span class="tag time">10 min</span><span class="tag">have it done + 4 exercises</span>
+    </div>
+
+    <div class="grid2">
+      <div class="rulebox cau">
+        <h3><span class="tag cau">CAUSATIVE</span> — have/get + object + V3</h3>
+        <ul>
+          <li><b>have + object + V3</b> = arranged, done for you: <i>I <b>had the build tested</b>.</i> (I didn't test it — I organised it.)</li>
+          <li><b>get + object + V3</b> = the same, more informal — often with effort: <i>I <b>got the pitch deck designed</b> in three days.</i></li>
+          <li>Any tense works: <i>We <b>are having the trailer made</b>.</i> · She <b>will get the demo built</b>.</li>
+          <li><b>The trap of the month:</b> <i>I <b>had tested</b> the build</i> = past perfect, I did it earlier. <i>I <b>had the build tested</b></i> = someone did it for me. One word moves — the whole meaning moves.</li>
+        </ul>
+        <div class="note" style="margin-top:10px">The doer can be named with <b>by</b>: <i>I got the deck designed <b>by a freelancer</b>.</i></div>
+      </div>
+      <div class="rulebox cau">
+        <h3>🎮 The triad — make / let / allow</h3>
+        <ul>
+          <li><b>make + object + bare infinitive</b> = force: <i>The publisher <b>makes us log</b> our hours.</i></li>
+          <li><b>let + object + bare infinitive</b> = permit (informal): <i>We <b>don't let anyone push</b> to main on Fridays.</i></li>
+          <li><b>allow + object + to-infinitive</b> = permit (formal): <i>The rules <b>allow interns to shadow</b> QA.</i></li>
+          <li>Passive versions: <i>We <b>are made to log</b> hours. We <b>are allowed to work</b> remotely.</i> — but <i>let</i> has no common passive: <span class="no">we are let to push</span> does not exist.</li>
+        </ul>
+        <div class="note" style="margin-top:10px">Tone check: <i>made</i> = no choice · <i>let</i> = casual permission · <i>allowed to</i> = the policy document. Same right, three volumes.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>⚙️ Mini-table — who really did it?</h3>
+      <table class="gtable">
+        <tr><th>Sentence</th><th>Who did the work?</th></tr>
+        <tr><td><i>I tested the build.</i></td><td><b>I did</b> — plain active, my own hands.</td></tr>
+        <tr><td><i>I had tested the build.</i></td><td><b>I did</b> — past perfect: before something else happened.</td></tr>
+        <tr><td><i>I had the build tested.</i></td><td><b>Somebody else did</b> — I arranged it. The causative.</td></tr>
+        <tr><td><i>I got the build tested.</i></td><td><b>Somebody else did</b> — informal, maybe with chasing people.</td></tr>
+        <tr><td><i>The build was tested.</i></td><td><b>Somebody did</b> — pure passive, the organiser is invisible.</td></tr>
+      </table>
+      <div class="note">🩹 <b>Typical mistakes of Russian-speaking founders:</b> <span class="no">I had tested the build by Tom</span> → <span class="yes">I had the build tested by Tom</span> (causative needs the object before V3) · <span class="no">I had the build test</span> → <span class="yes">I had the build tested</span> (V3, not V1) · <span class="no">The rules make you to sign</span> → <span class="yes">The rules make you sign</span> (make takes no to) · <span class="no">We let people to work remotely</span> → <span class="yes">We let people work remotely</span> (let takes no to) · <span class="no">We allow push on Fridays</span> → <span class="yes">We allow people to push on Fridays</span> (allow needs the object + to).</div>
+    </div>
+
+    <div class="card">
+      <h3>🎬 Video — Have something done: The causative (BBC English Class)</h3>
+      <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/tY8ch2SdTw8" title="Have something done: The causative — BBC English Class" loading="lazy" allowfullscreen></iframe></div>
+      <div class="note" style="margin:0">Two and a half minutes of pure causative — hair is cut, cars are serviced, forms are filled by other people. If the video does not open on this device — <a href="https://www.youtube.com/watch?v=tY8ch2SdTw8" target="_blank" rel="noopener">watch on YouTube ↗</a>.</div>
+    </div>
+
+    <div id="gramMCQ"></div>
+    <div id="gramGap"></div>
+    <div id="gramOrder"></div>
+    <div id="gramTF"></div>
+
+    <div class="card">
+      <h3>🔊 Shadowing — speak along with the speaker</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 4px">Track A — the causative (delegation week), Track B — make / let / allow (the standing rules). Listen to a sentence → repeat it out loud in the pause. Two loops per track.</p>
+      <div class="grid2">
+        <div class="audio-card">
+          <span class="tag cau">Track A · The causative</span>
+          <audio controls src="../assets/audio/m08-03-shadowing-a.mp3" data-speeds preload="none"></audio>
+        </div>
+        <div class="audio-card">
+          <span class="tag cau">Track B · Make / let / allow</span>
+          <audio controls src="../assets/audio/m08-03-shadowing-b.mp3" data-speeds preload="none"></audio>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. SPEAKING ============ -->
+  <section class="sec" id="speaking">
+    <div class="sec-head">
+      <div class="sec-num">5</div><h2>Grammar → Speaking — the main section of the lesson</h2>
+      <span class="tag time">15 min</span><span class="tag">goal: organise without doing</span>
+    </div>
+    <div class="note"><b>The 5-second rule:</b> before every sentence ask silently: <i>did my hands do it, or did I arrange it?</i> If you arranged it — have/get + object + V3. If you catch yourself saying <i>"I had tested the build"</i> when you mean delegation — stop: one word moved, and the sofa is still broken.</div>
+
+    <div class="card">
+      <div class="speak-round">
+        <h3>🎙 Round 1 — Your Delegation Day <span class="tag cau">5 days, 5 sentences</span></h3>
+        <p style="font-size:14.5px;margin:0 0 6px">Your ideal working week as a founder or lead — <b>5 delegations in 90 seconds</b>, each a causative: <i>I had the reports automated; I got the pitch deck designed; I had the servers monitored overnight; I let the team pick the tools.</i> One item must stay non-delegated — what do you keep, and why?</p>
+        <div class="starters">
+          <span class="starter cau">I had the reports automated…</span>
+          <span class="starter cau">I got the deck designed…</span>
+          <span class="starter cau">We are having the trailer made…</span>
+          <span class="starter cau">I let the team decide…</span>
+        </div>
+        <div id="rec1"></div>
+      </div>
+
+      <div class="speak-round" style="margin-top:18px">
+        <h3>🎙 Round 2 — Household HQ <span class="tag cau">the home edition</span></h3>
+        <p style="font-size:14.5px;margin:0 0 6px">Apply the causative to your home — <b>90 seconds</b>: <i>I had the sofa repaired — the cats must not be blamed; we get our shopping delivered; I had my eyes tested after the 60-hour crunch week.</i> Three home items, one work item, all arranged by you.</p>
+        <div class="starters">
+          <span class="starter cau">I had the sofa repaired…</span>
+          <span class="starter cau">We get … delivered…</span>
+          <span class="starter cau">I had my eyes tested…</span>
+          <span class="starter cau">The cats must not be blamed…</span>
+        </div>
+        <div id="rec2"></div>
+      </div>
+
+      <div class="speak-round" style="margin-top:18px">
+        <h3>🎙 Round 3 — The Nuance Duel <span class="tag cau">make vs let vs allow</span></h3>
+        <p style="font-size:14.5px;margin:0 0 6px">One meaning — three volumes. Explain the difference <b>with examples from your team</b>, out loud: <i>the publisher makes us log hours (no choice) · we let interns shadow QA (casual yes) · the policy allows everyone to work remotely (the official version).</i> Then swap: the teacher gives a situation, you pick the right verb and defend the choice.</p>
+        <div class="starters">
+          <span class="starter cau">… makes us …</span>
+          <span class="starter cau">… lets people …</span>
+          <span class="starter cau">… allows people to …</span>
+          <span class="starter cau">We are made to / allowed to…</span>
+        </div>
+        <div id="rec3"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>⚡ Speed Drill — who did it?</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 8px">Open a card and instantly say: who did the work — you, or someone you arranged? Then rebuild the sentence in the other construction.</p>
+      <div id="drillCards"></div>
+    </div>
+  </section>
+
+  <!-- ============ 6. WRITING ============ -->
+  <section class="sec" id="writing">
+    <div class="sec-head">
+      <div class="sec-num">6</div><h2>Writing — the delegation list</h2>
+      <span class="tag time">5 min</span><span class="tag">6 items, 40–80 words</span>
+    </div>
+    <div id="writerBox" class="card"></div>
+    <details class="folding">
+      <summary>Model answer — open it after your own version</summary>
+      <div class="inner"><p>Delegated this month. 1. I had the weekly reports automated — two hours a week are saved. 2. I got the pitch deck designed by a freelancer — three days, better than anything I could have made. 3. We are having the launch trailer made by an external studio. 4. I had the studio sofa repaired — the cats must not be blamed. 5. I got my eyes tested after the crunch week. 6. I let the team decide the sprint plan — and I make everyone take a real lunch break, away from the keyboards.</p></div>
+    </details>
+    <div class="note">Want an automatic B1+ check of your text? Paste it into <b><a href="https://writeandimprove.com" target="_blank" rel="noopener">Write &amp; Improve (Cambridge) ↗</a></b> — the task "Work — Your work and future plans".</div>
+  </section>
+
+  <!-- ============ 7. HOMEWORK ============ -->
+  <section class="sec" id="homework">
+    <div class="sec-head">
+      <div class="sec-num">7</div><h2>Homework</h2>
+      <span class="tag">≤ 30 minutes in total</span>
+    </div>
+    <div id="hwList"></div>
+  </section>
+
+  <details class="folding">
+    <summary>🧑‍🏫 Teacher notes</summary>
+    <div class="inner">
+      <p><b>Goal:</b> the student distinguishes doing, organising and being organised — I tested / I had tested / I had it tested stop being one blurry sentence. The make/let/allow triad gets sorted by tone: force, casual permission, official permission.</p>
+      <p><b>Suggested flow:</b> Warm-up: housework and repaired things — the causative's natural habitat → Listening: delegation week; second pass copies one had-sentence and one got-sentence word for word → Reading: the log labels five entries by construction; the Game Developer extension rephrases two real delegation phrases → Grammar: the mini-table's "who really did it?" rows are the heart of the lesson; the had-tested trap gets its own row → Speaking: Round 1 (the week) is the fluency drill; Round 2 moves the grammar home; Round 3 is the tone duel → Writing: the delegation list is read aloud at the start of Lesson 32.</p>
+      <p><b>Success criteria:</b> Round 1 — 5 causatives, at least one with get, one continuous; Round 3 — all three verbs used with the right tone; the list — 6 items, 5 have/get + V3 and 1 make/let.</p>
+      <p><b>Error pocket:</b> causative without the object (<i>I had tested by Tom</i>) · V1 for V3 (<i>had the build test</i>) · make/let + to (<i>makes you to sign</i>) · allow without the object (<i>allow push</i>) · past perfect confused with the causative (<i>I had tested</i> ≠ <i>I had it tested</i>).</p>
+      <p><b>Threads:</b> Dana's kept tasks — "the pitch and the people" — return in the Lesson 32 release report; the sofa saga continues (it was repaired, it will be tested by cats); the causative meets reported speech in Module 9: <i>she said she had had it tested</i>.</p>
+    </div>
+  </details>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Lesson 31 · Module 8</b> — I Had It Tested: Delegation <a href="../index.html">Course map →</a>
+    <div style="margin-top:8px"><button class="btn small ghost" id="resetLesson">↺ Reset this lesson's progress</button></div>
+      <div class="legal">© 2019-2026 ИП Громова Анна Александровна, ОГРНИП: 319237500156762, ИНН: 236507001744<br>
+    Лицензия № Л035-01218-23/01091451 Интерактивная школа «МУДРО»</div>
+</div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="../assets/js/firebase-config.js?v=10"></script>
+<script src="../assets/js/auth.js?v=10"></script>
+<script src="../assets/js/progress-firebase.js?v=10"></script>
+<script src="../assets/js/engine.js"></script>?v=10
+<script>
+const KEY = 'm08-03';
+const SECTIONS = [
+  {id:'warmup', title:'Warm-up'}, {id:'listening', title:'Listening'}, {id:'reading', title:'Reading'},
+  {id:'grammar', title:'Grammar'}, {id:'speaking', title:'Speaking'}, {id:'writing', title:'Writing'},
+  {id:'homework', title:'Homework'}
+];
+EC.initLesson(KEY, SECTIONS);
+
+/* ---- Warm-up: 3 cards ---- */
+EC.flipGrid('#warmCards', [
+  {front:"1 · In your home, who does the housework — and how is it split?", back:"<b>The cleaning is split, but the windows are washed by a service — we have them cleaned twice a year, and that is a family law now.</b><br><span class='tag cau'>have them cleaned — arranged, not done</span>"},
+  {front:"2 · What is one work task you wish somebody else did for you?", back:"<b>The weekly report — I wish I had it automated. Actually, that is exactly what happens this week in the listening.</b><br><span class='tag cau'>had it automated — the dream, then the log</span>"},
+  {front:"3 · When did you last get something fixed — at work or at home?", back:"<b>I got my laptop's fan replaced last month — it was done in a day, and the noise that had been ignored for a year disappeared.</b><br><span class='tag cau'>got it replaced — informal causative</span>"}
+]);
+
+/* ---- Listening: vocab (definitions in Russian — for checking understanding) ---- */
+EC.vocab('#vocabRow', [
+  {w:"to delegate", d:"делегировать, поручать", e:"Founders don't do everything — founders get things done."},
+  {w:"to outsource", d:"передавать на аутсорс", e:"QA was outsourced to an external team last year."},
+  {w:"to repair", d:"ремонтировать", e:"The sofa was repaired by professionals on Wednesday."},
+  {w:"to hire", d:"нанимать", e:"Two testers will be hired next quarter."},
+  {w:"a freelancer", d:"фрилансер", e:"The pitch deck was designed by a freelancer in three days."},
+  {w:"workload", d:"загрузка, объём работы", e:"Her workload was cut in half after the automation."},
+  {w:"to trust", d:"доверять", e:"You can't delegate what you don't trust anyone with."},
+  {w:"to automate", d:"автоматизировать", e:"The reports were automated — nobody writes them by hand now."},
+  {w:"an errand", d:"поручение, мелкое дело", e:"Errands are the first thing to be delegated."},
+  {w:"responsibility", d:"ответственность", e:"Responsibility can be shared — it can't be outsourced."}
+]);
+
+/* ---- Listening: MCQ ---- */
+EC.mcq('#listenMCQ', {
+  title:"🎧 Comprehension — Part 1: multiple choice",
+  exKey:'m08-03-listen1',
+  items:[
+    {q:"What was Dana's problem, according to the team?", opts:["She delegated too much","She did everything herself — even fixing the coffee machine","She hired too many freelancers"], a:1, why:"“She writes the wiki, she tests the demo, she fixes the coffee machine, and she answers emails at midnight.”"},
+    {q:"What happened to the weekly reports on Monday?", opts:["Dana had them automated","They were banned","Tom was made to write them by hand"], a:0, why:"“I had the weekly reports automated, Dana announces. It took two hours, and I got two weeks of my life back.”"},
+    {q:"What is the story of the sofa?", opts:["It was sold","It was repaired — and the cats must not be blamed","It was replaced by a new one from the publisher"], a:1, why:"“I had it repaired, and the cats must not be blamed — the scratch patterns were clearly made in self-defence.”"},
+    {q:"What did Dana keep for herself?", opts:["The wiki and the coffee machine","The pitch and the people","The time tracker and the emails"], a:1, why:"“Two things, Dana says. The pitch, and the people. Everything else can be delegated.”"}
+  ]
+});
+
+/* ---- Listening: True/False ---- */
+EC.tf('#listenTF', {
+  title:"🎧 Comprehension — Part 2: true or false",
+  exKey:'m08-03-listen2',
+  items:[
+    {s:"Dana got the pitch deck designed by a freelancer in three days.", a:true, why:"True — “I got the pitch deck designed by a freelancer. It was done in three days.”"},
+    {s:"Dana made the team plan the sprint themselves.", a:false, why:"False — she let the team decide: “I let the team decide the sprint plan… the sprint was planned better than I could have planned it.” She made them take lunch breaks — that is a different day."},
+    {s:"On Friday Dana made the whole team take a real lunch break.", a:true, why:"True — “I made the whole team take a real lunch break, away from the keyboards.”"}
+  ]
+});
+
+/* ---- Reading: label the construction ---- */
+EC.mcq('#readLabel', {
+  title:"📖 Label the log entry — causative, make, let, or allow?",
+  exKey:'m08-03-read1',
+  items:[
+    {q:"“Dana had them automated.”", opts:["Causative — have + object + V3","Force — make"], a:0, why:"had them automated — she arranged it; a script does the writing now."},
+    {q:"“Dana got it designed in three days.”", opts:["Causative with get — informal, quick result","Pure passive"], a:0, why:"got it designed — the informal causative, often with some chasing involved."},
+    {q:"“The publisher makes us log our hours.”", opts:["Force — make + bare infinitive","Permission — let"], a:0, why:"makes us log — no choice, no to. The external law in person."},
+    {q:"“We don't let anyone push to main on Fridays.”", opts:["Permission — let + bare infinitive","Force — make"], a:0, why:"don't let anyone push — casual permission (here: its absence). No to."},
+    {q:"“The wiki allows interns to shadow QA.”", opts:["Formal permission — allow + to-infinitive","Force — make"], a:0, why:"allows interns to shadow — the official, document version of let."},
+    {q:"“Dana had tested the build before the demo.”", opts:["The causative — it was tested for her","The past perfect — she tested it herself, earlier"], a:1, why:"The trap! had tested = past perfect, her own hands. The causative would be had the build tested."}
+  ]
+});
+
+EC.tf('#readTF', {
+  title:"📖 True or false?",
+  exKey:'m08-03-read2',
+  items:[
+    {s:"The log says the sofa was repaired and the cats must not be blamed.", a:true, why:"True — “Dana had it repaired; the cats must not be blamed.” The scratch patterns were made in self-defence."},
+    {s:"The log says guilt is included with every entry.", a:false, why:"False — “entries are made weekly; guilt is not included.” That is the joke in the status line."}
+  ]
+});
+
+/* ---- Grammar: MCQ ---- */
+EC.mcq('#gramMCQ', {
+  title:"⚙️ Exercise 1 — choose the correct form",
+  exKey:'m08-03-gram1',
+  items:[
+    {q:"The build is slow — we should ___ this week.", opts:["test it","have it tested","had it tested"], a:1, why:"have it tested — arrange for someone to test it. had it tested is past."},
+    {q:"I ___ the sofa repaired yesterday — finally.", opts:["had","was","did"], a:0, why:"I had the sofa repaired — causative in the past. The professionals did the work."},
+    {q:"We are ___ the trailer made by an external studio right now.", opts:["having","have","has"], a:0, why:"are having the trailer made — the causative works in the continuous too."},
+    {q:"The publisher ___ us log our hours every week.", opts:["lets","makes","allows"], a:1, why:"makes us log — force, no to. The publisher gives no choice."},
+    {q:"We don't ___ anyone push to main on Fridays.", opts:["make","allow","let"], a:2, why:"don't let anyone push — informal permission, bare infinitive. (allow would need to push.)"},
+    {q:"The rules ___ interns to shadow the QA team.", opts:["let","allow","make"], a:1, why:"allow interns to shadow — the formal version takes the object + to-infinitive."}
+  ]
+});
+
+/* ---- Grammar: gap-fill ---- */
+EC.gap('#gramGap', {
+  title:"⚙️ Exercise 2 — type the missing word",
+  exKey:'m08-03-gram2',
+  items:[
+    {t:"I ___ the build tested yesterday. (arranged it — past, one word)", a:["had"], verbs:["had"]},
+    {t:"She ___ the pitch deck designed in three days. (get — past, informal)", a:["got"], verbs:["got"]},
+    {t:"We are ___ the trailer made at the moment. (have — continuous)", a:["having"], verbs:["having"]},
+    {t:"The publisher ___ us log our hours. (force — present, one word)", a:["makes"], verbs:["makes"]},
+    {t:"We don't ___ anyone push on Fridays. (permit, informal — one word)", a:["let"], verbs:["let"]},
+    {t:"The rules ___ interns to shadow QA. (formal permission — one word)", a:["allow"], verbs:["allow"]}
+  ]
+});
+
+/* ---- Grammar: sentence builder ---- */
+EC.order('#gramOrder', {
+  title:"⚙️ Exercise 3 — build the delegation",
+  exKey:'m08-03-gram3',
+  items:[
+    {words:["I had the weekly reports","automated —","two hours a week are saved"], answer:"I had the weekly reports automated — two hours a week are saved.", ru:"Я сделала так, что отчёты автоматизировали — экономия два часа в неделю (causative)."},
+    {words:["I got the pitch deck designed","by a freelancer —","it was done in three days"], answer:"I got the pitch deck designed by a freelancer — it was done in three days.", ru:"Я организовала дизайн питч-дека — фрилансер сделал его за три дня (get + by)."},
+    {words:["The publisher makes us log","our hours,","but we let the team pick the tools"], answer:"The publisher makes us log our hours, but we let the team pick the tools.", ru:"Издатель заставляет нас логировать часы, но мы позволяем команде выбирать инструменты (make vs let)."},
+    {words:["I had the sofa repaired —","the cats must not be blamed,","the scratches were made in self-defence"], answer:"I had the sofa repaired — the cats must not be blamed, the scratches were made in self-defence.", ru:"Я отдала диван в ремонт — котов винить нельзя (causative + passive)."}
+  ]
+});
+
+/* ---- Grammar: true/false on the form ---- */
+EC.tf('#gramTF', {
+  title:"⚙️ Exercise 4 — is the explanation correct?",
+  exKey:'m08-03-gram4',
+  items:[
+    {s:"“I had tested the build” means someone tested it for me.", a:false, why:"False — that is the past perfect: I tested it myself, earlier. The causative is “I had the build tested”."},
+    {s:"“The rules make you to sign the NDA” is wrong — make takes the bare infinitive.", a:true, why:"True — make you sign. No to after make."},
+    {s:"“We allow to work remotely” is correct.", a:false, why:"False — allow needs an object: allow people to work remotely."},
+    {s:"“We are allowed to work remotely” is the passive of the allow-structure.", a:true, why:"True — are allowed to + infinitive. But let has no common passive."}
+  ]
+});
+
+/* ---- Speaking: speed drill ---- */
+EC.flipGrid('#drillCards', [
+  {front:"⏱ Who did it? “I tested the build.”", back:"<b>You did it — plain active, your own hands.</b> <span class='tag cau'>active — no delegation</span>"},
+  {front:"⏱ Who did it? “I had the build tested.”", back:"<b>Someone else did it — you arranged it.</b> <span class='tag cau'>causative — your signature, their hands</span>"},
+  {front:"⏱ Who did it? “I had tested the build before the demo.”", back:"<b>You did — past perfect: earlier than another past event.</b> <span class='tag cau'>the one-word trap</span>"},
+  {front:"⏱ Rebuild: “The publisher forces us to log hours.”", back:"<b>The publisher makes us log hours.</b> <span class='tag cau'>make + bare infinitive — force</span>"},
+  {front:"⏱ Rebuild: “The rules officially permit remote work.”", back:"<b>The rules allow us to work remotely.</b> <span class='tag cau'>allow + to-infinitive — the document version</span>"},
+  {front:"⏱ Rebuild: “We give interns casual permission to shadow QA.”", back:"<b>We let interns shadow QA.</b> <span class='tag cau'>let + bare infinitive — the casual yes</span>"},
+  {front:"⏱ Make it continuous: “We have the trailer made (right now).”", back:"<b>We are having the trailer made right now.</b> <span class='tag cau'>the causative in the continuous</span>"},
+  {front:"⏱ The cats' rule: who may sit on the keyboard?", back:"<b>Only Boss is allowed to sit on the keyboard — and he lets nobody move him.</b> <span class='tag cau'>allowed to + lets — both in one law</span>"}
+]);
+EC.recorder('#rec1', {maxSec:90, hint:"Round 1 · Your Delegation Day — 5 causatives, one thing you keep"});
+EC.recorder('#rec2', {maxSec:90, hint:"Round 2 · Household HQ — three home items, one work item"});
+EC.recorder('#rec3', {maxSec:120, hint:"Round 3 · The Nuance Duel — make vs let vs allow, with your examples"});
+
+/* ---- Writing ---- */
+EC.writer('#writerBox', {
+  task:"✍️ Delegated this month (<b>40–80 words</b>): a list of <b>6 items</b> — <b>5 causatives</b> (have/get + object + V3) and <b>1 make or let</b>. This list will be read aloud at the start of Lesson 32.",
+  placeholder:"1. I had the reports automated.  2. I got … designed.  3. We are having … made.  4. I let the team …",
+  min:40, max:80
+});
+
+/* ---- Homework ---- */
+EC.checklist('#hwList', {
+  items:[
+    {t:"Test-English: <i>Have something done</i> — one set of exercises (≈10 minutes) <a href='https://test-english.com/grammar-points/b1-b2/have-something-done/' target='_blank' rel='noopener'>test-english.com → b1-b2/have-something-done ↗</a>", m:"Tick the box when the page shows your score"},
+    {t:"Voice task from the plan: record <b>4 sentences</b> — what was done for you this week (<i>I had… , I got…, We are having…, I let…</i>) — use the Round 1 recorder or your phone", m:"Every sentence names who really did the work"},
+    {t:"BBC 6 Minute English: <i>Who does the housework?</i> — if the lesson extension did not fit <a href='https://www.bbc.co.uk/learningenglish/features/6-minute-english_2026/ep-260813' target='_blank' rel='noopener'>bbc.co.uk → 6-minute-english · ep-260813 ↗</a>", m:"Rebuild 2 phrases from the episode as causatives"},
+    {t:"Shadowing tracks from this page — 5 minutes of repeating after the speaker (both tracks)", m:"Track A = the causative, Track B = make / let / allow"}
+  ]
+});
+
+/* ---- audio speed buttons + reset ---- */
+EC.enhanceAudio();
+document.getElementById('resetLesson').addEventListener('click', () => {
+  if (!confirm('Reset the progress, exercise results and the written text of Lesson 31?')) return;
+  try {
+    const d = JSON.parse(localStorage.getItem('ec_progress_v1') || '{}');
+    delete d.lessons['m08-03']
+    if (window.PG) window.PG.clearLesson('m08-03');;
+    localStorage.setItem('ec_progress_v1', JSON.stringify(d));
+    location.reload();
+  } catch (e) {}
+});
+</script>
+</body>
+</html>

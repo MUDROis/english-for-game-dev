@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 23 — I Wish My Cats Could Talk | English for Game Dev</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Play:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="icon" href="../assets/img/favicon.ico">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><img class="logo-img" src="../assets/img/logo.png" alt="English for Game Dev — logo"> English for Game Dev</a>
+    <nav>
+      <a href="../index.html">← Course map</a>
+      <a href="m06-02.html">← Lesson 22</a>
+      <a href="#homework">Homework</a>
+      <span class="auth-chip" id="authChip">Sign in</span>
+    </nav>
+  </div>
+</header>
+
+<section class="lesson-hero">
+  <div class="wrap">
+    <div class="crumb">Module 6 · Multiverse of Possibilities · Lesson 23 / 48</div>
+    <h1>I Wish My Cats Could Talk, <span style="color:var(--acc)">and Other Honest Wishes</span></h1>
+    <p class="goal">The multiverse of wishes and regrets. Lesson goal: say what you want to be different — now (wish + Past Simple), about yesterday (wish + had V3), and about other people's behaviour (wish + would) — plus the politest choice in English: would rather. Harbour Lights runs a cat parliament to practise all three.</p>
+    <div class="plan-chips">
+      <a class="tag time" href="#warmup">🔥 Warm-up · 10 min</a>
+      <a class="tag time" href="#listening">🎧 Listening · 12 min</a>
+      <a class="tag time" href="#reading">📖 Reading · 10 min</a>
+      <a class="tag time" href="#grammar">⚙️ Grammar · 10 min</a>
+      <a class="tag time" href="#speaking">🎤 Grammar → Speaking · 15 min</a>
+      <a class="tag time" href="#writing">✍️ Writing · 5 min</a>
+      <a class="tag" href="#homework">🏠 Homework · ≤30 min</a>
+    </div>
+  </div>
+</section>
+
+<div class="progress-wrap" id="lessonProgress">
+  <div class="wrap progress-row">
+    <span class="p-label">Lesson progress: 0/7</span>
+    <div class="bar"><i></i></div>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <!-- ============ 1. WARM-UP ============ -->
+  <section class="sec" id="warmup">
+    <div class="sec-head">
+      <div class="sec-num">1</div><h2>Warm-up</h2>
+      <span class="tag time">10 min</span><span class="tag">cats · wishes · quiet Sundays</span>
+    </div>
+    <div class="note" style="margin-left:44px">If-conditions built universes; wishes build <b>walls</b> — wish walls. The three clocks: <span class="tag wish">wish + PAST</span> for now, <span class="tag wish">wish + HAD V3</span> for regrets, <span class="tag wish">wish + WOULD</span> for other people's behaviour. And the politest choice of all: <i>I would rather…</i></div>
+
+    <div class="card audio-card">
+      <h3>🎧 Listen to the questions</h3>
+      <audio controls src="../assets/audio/m06-03-warmup.mp3" data-speeds preload="none"></audio>
+    </div>
+
+    <div class="card">
+      <h3>❓ Three questions — click a card to open the sentence starters</h3>
+      <div id="warmCards"></div>
+      <div class="note"><b>The rule of the lesson:</b> after wish the time moves one step back — a wish about now takes past simple, a regret about yesterday takes had V3. The past here is distance, not a clock — same trick as Lesson 21.</div>
+    </div>
+  </section>
+
+  <!-- ============ 2. LISTENING ============ -->
+  <section class="sec" id="listening">
+    <div class="sec-head">
+      <div class="sec-num">2</div><h2>Listening — The Cat Parliament</h2>
+      <span class="tag time">12 min</span><span class="tag">audio + comprehension</span>
+    </div>
+
+    <img src="../assets/img/l23-cats.png" alt="Three cats holding a tiny formal parliament on a game studio table: one cat at a podium, speech bubbles with wish-symbols, a human team listening respectfully, warm lamps, dark graphite background with orange glow — illustration">
+    <div class="note">Friday afternoon, Harbour Lights. Dana pins a paper to the wall: <b>today the cats get a voice</b>. The parliament has one law — every complaint must start with <i>I wish</i>. Listen for the three kinds of wishes.</div>
+
+    <div class="card">
+      <h3>🧩 Before you listen: 10 key words</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 4px">Click a word — a definition and an example will open. The Russian gloss is there to check your understanding. Listen to the recording of all ten words.</p>
+      <div id="vocabRow"></div>
+      <audio controls src="../assets/audio/m06-03-vocab.mp3" data-speeds preload="none" style="width:100%;height:40px"></audio>
+    </div>
+
+    <div class="card audio-card">
+      <h3>🎧 Track 1 — The Cat Parliament</h3>
+      <audio controls src="../assets/audio/m06-03-listening.mp3" data-speeds preload="none"></audio>
+      <div class="note" style="margin:0"><b>Listen 1 — for gist:</b> what does each cat wish about? &nbsp;·&nbsp; <b>Listen 2 — for detail:</b> copy one wish about now, one regret and one wish + would, word for word.</div>
+    </div>
+
+    <div id="listenMCQ"></div>
+    <div id="listenTF"></div>
+
+    <div class="card">
+      <h3>🌍 Extension — BBC 6 Minute English: Our love of pets</h3>
+      <p style="font-size:14.5px">From the yearly plan: <b><a href="https://www.bbc.co.uk/learningenglish/features/6-minute-english_2024/ep-240104" target="_blank" rel="noopener">Our love of pets ↗</a></b></p>
+      <p style="color:var(--mut);font-size:14px;margin:0">Task: why do we love pets? Note <b>2 wish/hope phrases</b> and any second conditional you hear. What would your pet say about your working hours — a wish about now, or a wish + would?</p>
+    </div>
+  </section>
+
+  <!-- ============ 3. READING ============ -->
+  <section class="sec" id="reading">
+    <div class="sec-head">
+      <div class="sec-num">3</div><h2>Reading — The Wish Wall (internal wiki)</h2>
+      <span class="tag time">10 min</span><span class="tag">wishes + wish spotting</span>
+    </div>
+
+    <div class="card">
+      <h3>Harbour Lights Wiki · Page 15: The Wish Wall</h3>
+      <p><b>Category:</b> team culture · <b>Owner:</b> everyone · <b>Status:</b> honest wishes only</p>
+      <p>The Wish Wall collects sentences that start with <i>I wish</i> or <i>If only</i>. The wall's grammar rule: label every wish with its clock — now, regret, or other people.</p>
+      <p>1. I wish patches did not change the meta every month. (a wish about now)</p>
+      <p>2. I wish I had skied more as a teenager — the legs forget, the fear does not. (a regret)</p>
+      <p>3. If only the launcher remembered my password. (now, and stronger than wish)</p>
+      <p>4. I wish the cats would stop walking on the demo machine five minutes before the stream. (other creatures' behaviour)</p>
+      <p>5. I wish I had automated the regression tests in spring. (a classic QA regret)</p>
+      <p>6. I would rather build one honest puzzle game than three trendy shooters. (a choice, not a wish — but it lives on the wall)</p>
+    </div>
+
+    <div id="readLabel"></div>
+    <div id="readTF"></div>
+
+    <div class="card">
+      <h3>🌍 Extension — National Geographic: Animals</h3>
+      <p style="font-size:14.5px">From the yearly plan — pick any cat-related piece: <b><a href="https://www.nationalgeographic.com/animals" target="_blank" rel="noopener">nationalgeographic.com/animals ↗</a></b></p>
+      <p style="color:var(--mut);font-size:14px;margin:0">Task: retell <b>3 facts</b>, then add one wish: <i>I wish house cats could…</i> — and explain what would change if the wish came true. (That last sentence is a second conditional — say it on purpose.)</p>
+    </div>
+  </section>
+
+  <!-- ============ 4. GRAMMAR ============ -->
+  <section class="sec" id="grammar">
+    <div class="sec-head">
+      <div class="sec-num">4</div><h2>Grammar — wish / if only / would rather</h2>
+      <span class="tag time">10 min</span><span class="tag">three clocks + 4 exercises</span>
+    </div>
+
+    <div class="grid2">
+      <div class="rulebox wish">
+        <h3><span class="tag wish">WISH</span> — the two time machines from Lesson 21–22, wearing a wish</h3>
+        <ul>
+          <li>wish + Past Simple = a wish about <b>now</b>: <i>I wish I <b>had</b> more time. I wish the launcher <b>remembered</b> my password.</i></li>
+          <li>wish + had V3 = a <b>regret</b> about the past: <i>I wish we <b>had launched</b> in spring. I wish I <b>had automated</b> the tests.</i></li>
+          <li><b>If only</b> = the same grammar, but louder and more emotional: <i>If only I <b>had</b> twice the budget!</i></li>
+          <li>The time moves one step back: now → past simple, yesterday → had V3. The past is distance, not a clock.</li>
+        </ul>
+        <div class="note" style="margin-top:10px">wish… could is allowed for abilities: <i>I wish I <b>could</b> draw.</i> (= I can't, and I want to.)</div>
+      </div>
+      <div class="rulebox wish">
+        <h3>😤 wish + WOULD and 🤝 WOULD RATHER</h3>
+        <ul>
+          <li>wish + would = irritation about <b>someone else's</b> behaviour you want to change: <i>I wish my cat <b>would stop</b> meowing at 5 a.m.</i></li>
+          <li>Not about yourself: say <i>I wish I had…</i>, never ~~I wish I would~~.</li>
+          <li><b>would rather</b> + infinitive without to = a polite choice: <i>I <b>would rather build</b> a puzzle game than a shooter.</i></li>
+          <li>Short answers live here too: <i>Which shift? — I'd rather take mornings.</i></li>
+        </ul>
+        <div class="note" style="margin-top:10px">The whole lesson in one line: <i>I wish the build were green, I wish we had tested it, and I wish the cat would leave the keyboard.</i></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>⚙️ Mini-table — which clock is it?</h3>
+      <table class="gtable">
+        <tr><th>Sentence</th><th>Why?</th></tr>
+        <tr><td><i>I wish patches did not change the meta.</i></td><td>True right now (they do change it) → wish + past simple → a wish about <b>now</b>.</td></tr>
+        <tr><td><i>I wish I had skied more as a teenager.</i></td><td>Finished past that cannot change → wish + had V3 → a <b>regret</b>.</td></tr>
+        <tr><td><i>I wish the cats would stop sitting on the demo machine.</i></td><td>Someone else's behaviour, wanted different → wish + <b>would</b>.</td></tr>
+        <tr><td><i>I wish I would stop skipping the tutorial.</i></td><td><b>Wrong</b> — wish + would is not used about yourself: I wish I stopped… (or: I wish I didn't skip…).</td></tr>
+        <tr><td><i>If only the launcher remembered my password.</i></td><td>if only = wish, but emotional → a wish about <b>now</b>.</td></tr>
+      </table>
+      <div class="note">🩹 <b>Typical mistakes of Russian-speaking wishers:</b> <span class="no">I wish I have more time</span> → <span class="yes">I wish I had more time</span> (one step back) · <span class="no">I wish I would listened to Tom</span> → <span class="yes">I wish I had listened to Tom</span> (a regret needs had V3) · <span class="no">I wish my cat would not be annoying yesterday</span> → <span class="yes">I wish my cat had not been on the keyboard yesterday</span> (past = had V3, even for cats) · <span class="no">I would rather to build…</span> → <span class="yes">I would rather build…</span> (no to after rather).</div>
+    </div>
+
+    <div class="card">
+      <h3>🎬 Video — BBC Learning English: How to use 'wish' (English In A Minute)</h3>
+      <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/i7SfiMG0UPM" title="BBC Learning English: How to use 'wish' — English In A Minute" loading="lazy" allowfullscreen></iframe></div>
+      <div class="note" style="margin:0">One minute, all three wish-clocks. If the video does not open on this device — <a href="https://www.youtube.com/watch?v=i7SfiMG0UPM" target="_blank" rel="noopener">watch on YouTube ↗</a>.</div>
+    </div>
+
+    <div id="gramMCQ"></div>
+    <div id="gramGap"></div>
+    <div id="gramOrder"></div>
+    <div id="gramTF"></div>
+
+    <div class="card">
+      <h3>🔊 Shadowing — speak along with the speaker</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 4px">Track A — wishes about now and regrets, Track B — wishes about other creatures and choices. Listen to a sentence → repeat it out loud in the pause. Two loops per track.</p>
+      <div class="grid2">
+        <div class="audio-card">
+          <span class="tag wish">Track A · Wishes and regrets</span>
+          <audio controls src="../assets/audio/m06-03-shadowing-a.mp3" data-speeds preload="none"></audio>
+        </div>
+        <div class="audio-card">
+          <span class="tag wish">Track B · Wish + would, would rather</span>
+          <audio controls src="../assets/audio/m06-03-shadowing-b.mp3" data-speeds preload="none"></audio>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. SPEAKING ============ -->
+  <section class="sec" id="speaking">
+    <div class="sec-head">
+      <div class="sec-num">5</div><h2>Grammar → Speaking — the main section of the lesson</h2>
+      <span class="tag time">15 min</span><span class="tag">goal: wishes that sound honest, not translated</span>
+    </div>
+    <div class="note"><b>The 5-second rule:</b> before every wish ask silently: <i>is it about now, about yesterday, or about someone else?</i> If you catch yourself saying <i>"I wish I would have more time"</i> — stop, rebuild calmly: <i>"I wish I had more time."</i> One step back — that is the whole secret.</div>
+
+    <div class="card">
+      <div class="speak-round">
+        <h3>🎙 Round 1 — Wish Wall <span class="tag wish">6 wishes</span></h3>
+        <p style="font-size:14.5px;margin:0 0 6px">Six wishes, different clocks: two about work, one about cats, one about skiing or sport, one about Marvel, one free. Model: <i>I wish patches did not change the meta; I wish I had skied more as a teenager.</i> Label each clock out loud. <b>2 minutes</b>.</p>
+        <div class="starters">
+          <span class="starter wish">I wish the build were…</span>
+          <span class="starter wish">I wish patches did not…</span>
+          <span class="starter wish">I wish I had…</span>
+          <span class="starter wish">If only…</span>
+        </div>
+        <div id="rec1"></div>
+      </div>
+
+      <div class="speak-round" style="margin-top:18px">
+        <h3>🎙 Round 2 — Cat Parliament <span class="tag wish">your cats' complaints</span></h3>
+        <p style="font-size:14.5px;margin:0 0 6px">Present <b>the complaints of your cats</b> (real or imagined) through wish + would: <i>The cats wish I would stop taking calls on the balcony; they wish the keyboard were heated.</i> At least four complaints. <b>90 seconds</b>.</p>
+        <div class="starters">
+          <span class="starter wish">The cats wish I would…</span>
+          <span class="starter wish">They wish the flat had…</span>
+          <span class="starter wish">If only the humans…</span>
+        </div>
+        <div id="rec2"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>🎙 Round 3 — Regret to Plan (the plan's core drill)</h3>
+      <p style="font-size:14.5px;margin:0 0 6px">Take <b>3 regrets</b> and turn each into a plan for the future — the wish names the past, the plan owns the future: <i>I wish I had automated testing → So now I will hire a QA lead.</i> Six sentences total, recorded as one story.</p>
+      <div class="starters">
+        <span class="starter wish">I wish I had… → So this month I will…</span>
+        <span class="starter wish">I wish we had… → So next quarter we will…</span>
+        <span class="starter wish">If only I had… → So the first step is…</span>
+      </div>
+      <div id="rec3"></div>
+    </div>
+
+    <div class="card">
+      <h3>⚡ Speed Drill — a wish every 5 seconds</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 8px">Open a card and instantly say the wish it hides — out loud, with the right clock.</p>
+      <div id="drillCards"></div>
+    </div>
+  </section>
+
+  <!-- ============ 6. WRITING ============ -->
+  <section class="sec" id="writing">
+    <div class="sec-head">
+      <div class="sec-num">6</div><h2>Writing — a letter to your past self</h2>
+      <span class="tag time">5 min</span><span class="tag">5 sentences, 40–80 words</span>
+    </div>
+    <div id="writerBox" class="card"></div>
+    <details class="folding">
+      <summary>Model answer — open it after your own version</summary>
+      <div class="inner"><p>Dear me, one year ago. I wish you had started the portfolio in March, not September. I wish you had automated the regression tests before the winter update — the launch would have been calmer. I wish you would stop promising Friday deadlines to publishers: they believe you. Start English earlier; the interviews will thank you. And take the ski trip — the legs forget, the fear does not. Your future self ships on time now, and the cats sleep on the warm keyboard.</p></div>
+    </details>
+    <div class="note">Want an automatic B2 check of your text? Paste it into <b><a href="https://writeandimprove.com" target="_blank" rel="noopener">Write &amp; Improve (Cambridge) ↗</a></b> — the task "Work — Your work and future plans".</div>
+  </section>
+
+  <!-- ============ 7. HOMEWORK ============ -->
+  <section class="sec" id="homework">
+    <div class="sec-head">
+      <div class="sec-num">7</div><h2>Homework</h2>
+      <span class="tag">≤ 30 minutes in total</span>
+    </div>
+    <div id="hwList"></div>
+  </section>
+
+  <details class="folding">
+    <summary>🧑‍🏫 Teacher notes</summary>
+    <div class="inner">
+      <p><b>Goal:</b> the student separates the three wish-clocks automatically — past simple for now, had V3 for regrets, would for other creatures' behaviour — and uses would rather for polite choices without the stray <i>to</i>.</p>
+      <p><b>Suggested flow:</b> Warm-up: what the cats misunderstand about work; push every answer into "I wish…" → Listening: the cat parliament; second pass copies one wish per clock → Reading: the Wish Wall labels six sentences; the NatGeo extension adds a second-conditional tail → Grammar: the mini-table's "which clock?" rows decide everything; the one-minute video consolidates → Speaking: Round 3 (regret to plan) is the module's key drill — the wish names the past, the plan owns the future → Writing: the letter to your past self is the third portfolio artefact; keep it for the graduation lesson in Module 12.</p>
+      <p><b>Success criteria:</b> Round 1 — 6 wishes, all three clocks used and labelled; Round 2 — four complaints with wish + would or wish + past; Round 3 — three regret→plan pairs with a real first step in each plan.</p>
+      <p><b>Error pocket:</b> present after wish (<i>I wish I have</i>) · would have after wish for regrets (<i>I wish I would have listened</i>) · wish + would about yourself · <i>would rather to build</i> · mixing if only with if-conditions (if only starts a wish, not a condition).</p>
+      <p><b>Threads:</b> the six wishes from Round 1 are the student's homework lines — Lesson 24 opens by reciting them; the heated keyboard returns in Lesson 24's debate as the "quality of life" argument; regret to plan is the exact move the final pitch in Module 12 will reuse ("what I would have done differently — and what I will do now").</p>
+    </div>
+  </details>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Lesson 23 · Module 6</b> — I Wish My Cats Could Talk. <a href="../index.html">Course map →</a>
+    <div style="margin-top:8px"><button class="btn small ghost" id="resetLesson">↺ Reset this lesson's progress</button></div>
+      <div class="legal">© 2019-2026 ИП Громова Анна Александровна, ОГРНИП: 319237500156762, ИНН: 236507001744<br>
+    Лицензия № Л035-01218-23/01091451 Интерактивная школа «МУДРО»</div>
+</div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="../assets/js/firebase-config.js?v=10"></script>
+<script src="../assets/js/auth.js?v=10"></script>
+<script src="../assets/js/progress-firebase.js?v=10"></script>
+<script src="../assets/js/engine.js"></script>?v=10
+<script>
+const KEY = 'm06-03';
+const SECTIONS = [
+  {id:'warmup', title:'Warm-up'}, {id:'listening', title:'Listening'}, {id:'reading', title:'Reading'},
+  {id:'grammar', title:'Grammar'}, {id:'speaking', title:'Speaking'}, {id:'writing', title:'Writing'},
+  {id:'homework', title:'Homework'}
+];
+EC.initLesson(KEY, SECTIONS);
+
+/* ---- Warm-up: 3 cards ---- */
+EC.flipGrid('#warmCards', [
+  {front:"1 · What do you wish your cats understood about your work?", back:"<b>I wish they understood deadlines — then they would not sit on the laptop at 9 a.m. on release day.</b><br><span class='tag wish'>wish about now + its own wish + would</span>"},
+  {front:"2 · If only cats could type — what would they complain about?", back:"<b>If only cats could type, the bug tracker would be full of one-star reviews of my coffee.</b><br><span class='tag wish'>if only = a louder wish about now</span>"},
+  {front:"3 · What would you rather do on a free Sunday: play a game, ski, or watch a Marvel marathon?", back:"<b>I would rather ski — I wish winter lasted three more months here.</b><br><span class='tag wish'>would rather + a wish about now</span>"}
+]);
+
+/* ---- Listening: vocab (definitions in Russian — for checking understanding) ---- */
+EC.vocab('#vocabRow', [
+  {w:"to meow", d:"мяукать", e:"I wish the cats would not meow during meetings."},
+  {w:"a complaint", d:"жалоба", e:"The parliament collected seven complaints in five minutes."},
+  {w:"to purr", d:"мурчать, урчать", e:"Pixel purrs only when the build is green."},
+  {w:"to interrupt", d:"прерывать", e:"I wish the launcher would stop interrupting with update pop-ups."},
+  {w:"annoying", d:"раздражающий", e:"The 5 a.m. meowing is annoying, but the cats are family."},
+  {w:"a routine", d:"распорядок, рутина", e:"Cats love routine — and hate changes to it."},
+  {w:"to spoil", d:"баловать", e:"We spoil the cats with a heated keyboard policy."},
+  {w:"attention", d:"внимание", e:"I wish I could give the cats more attention on launch weeks."},
+  {w:"to nap", d:"дремать, вздремнуть", e:"Naps are mandatory in Lag's universe."},
+  {w:"grumpy", d:"ворчливый, недовольный", e:"Boss gets grumpy when breakfast is late."}
+]);
+
+/* ---- Listening: MCQ ---- */
+EC.mcq('#listenMCQ', {
+  title:"🎧 Comprehension — Part 1: multiple choice",
+  exKey:'m06-03-listen1',
+  items:[
+    {q:"What is the one law of the cat parliament?", opts:["Every complaint must start with “I wish” and take no more than ten seconds","Only cats who can type may speak","Complaints must be about food"], a:0, why:"“Every complaint must start with I wish, and no complaint may exceed ten seconds.”"},
+    {q:"What is Boss's complaint about?", opts:["The balcony","Deadlines and late feeding on ship days","The cold keyboard"], a:1, why:"“I wish I understood deadlines. When the build ships, everyone celebrates, and nobody feeds me on time.”"},
+    {q:"What does Lag wish about the keyboard?", opts:["That it were warmer at night","That it were quieter","That it had no keys"], a:0, why:"“If only the keyboard were warmer at night — I would sleep on it all winter.”"},
+    {q:"How many wishes does Dana ask each human to say?", opts:["One about work, one about the past, one about someone else's behaviour","Three about work","One per cat"], a:0, why:"“Say one wish about your work, one about your past, and one about someone else's behaviour.”"}
+  ]
+});
+
+/* ---- Listening: True/False ---- */
+EC.tf('#listenTF', {
+  title:"🎧 Comprehension — Part 2: true or false",
+  exKey:'m06-03-listen2',
+  items:[
+    {s:"Pixel's complaint is about humans taking calls on the balcony.", a:true, why:"True — “I wish the humans would stop taking calls on the balcony. The balcony is my sun.”"},
+    {s:"Tom refuses to write the cats' complaints into the minutes.", a:false, why:"False — he translates them: “the cats wish we would stop working late…”"},
+    {s:"After the parliament, naps are mandatory again.", a:true, why:"True — “The cats approve — naps are mandatory again.”"}
+  ]
+});
+
+/* ---- Reading: label the wish ---- */
+EC.mcq('#readLabel', {
+  title:"📖 Label the wish — which clock does each sentence use?",
+  exKey:'m06-03-read1',
+  items:[
+    {q:"“I wish patches did not change the meta every month.”", opts:["A wish about now — past simple","A regret — had V3"], a:0, why:"The meta does change it, right now → wish + past simple."},
+    {q:"“I wish I had skied more as a teenager.”", opts:["A wish about now","A regret about the past — had V3"], a:1, why:"A finished past that cannot change → wish + had V3."},
+    {q:"“I wish the cats would stop walking on the demo machine.”", opts:["A wish about now","A wish about someone else's behaviour — would"], a:1, why:"Other creatures' behaviour you want changed → wish + would."},
+    {q:"“I wish I would stop skipping the tutorial.”", opts:["Correct","Wrong — wish + would is not used about yourself"], a:1, why:"Wrong on purpose: I wish I stopped skipping… — or I wish I didn't skip…"},
+    {q:"“If only the launcher remembered my password.”", opts:["A wish about now, louder than wish","A regret about yesterday"], a:0, why:"if only = the same grammar as wish, but emotional → a wish about now."},
+    {q:"“I would rather build one honest puzzle game than three trendy shooters.”", opts:["A wish","A choice — would rather + bare infinitive"], a:1, why:"would rather expresses preference, not a wish — no to after rather."}
+  ]
+});
+
+EC.tf('#readTF', {
+  title:"📖 True or false?",
+  exKey:'m06-03-read2',
+  items:[
+    {s:"The Wish Wall accepts only wishes about work.", a:false, why:"False — work, cats, skiing, launchers and Marvel all live on the wall."},
+    {s:"The wall's rule is to label every wish with its clock: now, regret, or other people.", a:true, why:"True — “label every wish with its clock — now, regret, or other people.”"}
+  ]
+});
+
+/* ---- Grammar: MCQ ---- */
+EC.mcq('#gramMCQ', {
+  title:"⚙️ Exercise 1 — choose the correct form",
+  exKey:'m06-03-gram1',
+  items:[
+    {q:"I wish I ___ more time for the portfolio.", opts:["have","had","would have"], a:1, why:"A wish about now → one step back: had."},
+    {q:"I wish we ___ the regression tests in spring.", opts:["automated","had automated","would automate"], a:1, why:"A regret about a finished past → wish + had V3."},
+    {q:"I wish my cat ___ meowing at 5 a.m.", opts:["stops","would stop","stopped to"], a:1, why:"Someone else's behaviour you want changed → wish + would."},
+    {q:"If only the launcher ___ my password!", opts:["remembers","remember","remembered"], a:2, why:"A wish about now → past simple: remembered."},
+    {q:"I ___ build one honest puzzle game than three trendy shooters.", opts:["would rather","would rather to","wish"], a:0, why:"A polite choice → would rather + bare infinitive."},
+    {q:"I wish I ___ draw concept art myself.", opts:["can","could","would can"], a:1, why:"An ability I lack → wish + could."}
+  ]
+});
+
+/* ---- Grammar: gap-fill ---- */
+EC.gap('#gramGap', {
+  title:"⚙️ Exercise 2 — type the verbs (wish / if only / would rather)",
+  exKey:'m06-03-gram2',
+  items:[
+    {t:"I wish I ___ more time. (have — a wish about now)", a:["had"], verbs:["past simple"]},
+    {t:"I wish we ___ in spring. (launch — a regret)", a:["had launched"], verbs:["had V3"]},
+    {t:"I wish the cats ___ on the demo machine. (not walk — other creatures)", a:["would not walk","wouldn't walk"], verbs:["wish + would"]},
+    {t:"If only I ___ the answer! (know — a wish about now)", a:["knew"], verbs:["past simple"]},
+    {t:"I ___ take the morning shift. (rather — a polite choice)", a:["would rather"], verbs:["would rather"]},
+    {t:"I wish I ___ test on consoles. (can — an ability I lack)", a:["could"], verbs:["wish + could"]}
+  ]
+});
+
+/* ---- Grammar: sentence builder ---- */
+EC.order('#gramOrder', {
+  title:"⚙️ Exercise 3 — build the wish",
+  exKey:'m06-03-gram3',
+  items:[
+    {words:["I wish patches","did not change","the meta every month"], answer:"I wish patches did not change the meta every month.", ru:"Хотелось бы, чтобы патчи не меняли мету каждый месяц (желание о настоящем)."},
+    {words:["I wish I had automated","the regression tests","in spring"], answer:"I wish I had automated the regression tests in spring.", ru:"Жаль, что я не автоматизировала регрессионные тесты весной (сожаление)."},
+    {words:["I wish my cat","would stop meowing","at 5 a.m."], answer:"I wish my cat would stop meowing at 5 a.m.", ru:"Хотелось бы, чтобы кот перестал мяукать в 5 утра (чужое поведение)."},
+    {words:["I would rather build","one honest puzzle game","than three trendy shooters"], answer:"I would rather build one honest puzzle game than three trendy shooters.", ru:"Я бы лучше сделал одну честную головоломку, чем три модных шутера."}
+  ]
+});
+
+/* ---- Grammar: true/false on the form ---- */
+EC.tf('#gramTF', {
+  title:"⚙️ Exercise 4 — is the explanation correct?",
+  exKey:'m06-03-gram4',
+  items:[
+    {s:"“I wish I have more time” is correct because the wish is about the present.", a:false, why:"False — the time moves one step back: I wish I had more time."},
+    {s:"wish + would is for other people's or animals' behaviour, not your own.", a:true, why:"True — I wish my cat would stop meowing. About yourself: I wish I had… or I wish I didn't…"},
+    {s:"“If only” follows different grammar from “wish”.", a:false, why:"False — if only uses exactly the same clocks, just louder and more emotional."},
+    {s:"After would rather the verb has no to: I would rather build…", a:true, why:"True — would rather + bare infinitive."}
+  ]
+});
+
+/* ---- Speaking: speed drill ---- */
+EC.flipGrid('#drillCards', [
+  {front:"⏱ The build is red. Say your wish.", back:"<b>I wish the build were green.</b> <span class='tag wish'>now — past simple</span>"},
+  {front:"⏱ You skipped the smoke test last Friday.", back:"<b>I wish I had run the smoke test.</b> <span class='tag wish'>regret — had V3</span>"},
+  {front:"⏱ The cat meows through your standup.", back:"<b>I wish the cat would stop meowing during standups.</b> <span class='tag wish'>would — other creatures</span>"},
+  {front:"⏱ The launcher forgets your password.", back:"<b>If only the launcher remembered my password.</b> <span class='tag wish'>if only — now</span>"},
+  {front:"⏱ Two shifts: mornings or nights?", back:"<b>I would rather take mornings.</b> <span class='tag wish'>would rather</span>"},
+  {front:"⏱ You did not ski last winter.", back:"<b>I wish I had skied last winter.</b> <span class='tag wish'>regret — had V3</span>"},
+  {front:"⏱ The publisher calls you at midnight.", back:"<b>I wish the publisher would call during office hours.</b> <span class='tag wish'>would — other people</span>"},
+  {front:"⏱ You cannot draw concept art.", back:"<b>I wish I could draw — then the mood boards would be mine.</b> <span class='tag wish'>wish + could</span>"}
+]);
+EC.recorder('#rec1', {maxSec:120, hint:"Round 1 · six wishes, label each clock out loud"});
+EC.recorder('#rec2', {maxSec:90, hint:"Round 2 · the cats' parliament — four complaints"});
+EC.recorder('#rec3', {maxSec:120, hint:"Round 3 · three regrets turned into plans"});
+
+/* ---- Writing ---- */
+EC.writer('#writerBox', {
+  task:"✍️ A letter to your past self (<b>40–80 words</b>): 5 sentences — <b>2 regrets</b> (wish + had V3), <b>1 wish + would</b> about your past behaviour, and <b>2 pieces of advice</b> for the you of one year ago.",
+  placeholder:"Dear me, one year ago. I wish you had… I wish you would stop… Start… And…",
+  min:40, max:80
+});
+
+/* ---- Homework ---- */
+EC.checklist('#hwList', {
+  items:[
+    {t:"Test-English B1+: <i>Wishes and regrets</i> — one set of exercises (≈10 minutes) <a href='https://test-english.com/grammar-points/b1-b2/wishes-regrets/' target='_blank' rel='noopener'>test-english.com → b1-b2/wishes-regrets ↗</a>", m:"Tick the box when the page shows your score"},
+    {t:"From the plan: learn <b>your 6 wishes</b> from Round 1 by heart — the teacher will ask for them at the start of Lesson 24", m:"All three clocks must be there: now, regret, other people"},
+    {t:"BBC Learning English: <i>How to use 'wish'</i> — English In A Minute (if the lesson video did not play in class) <a href='https://www.youtube.com/watch?v=i7SfiMG0UPM' target='_blank' rel='noopener'>youtube.com → How to use 'wish' ↗</a>", m:"Note the 3 wish patterns from the video"},
+    {t:"Shadowing tracks from this page — 5 minutes of repeating after the speaker (both tracks)", m:"Track A = wishes and regrets, Track B = would and would rather"}
+  ]
+});
+
+/* ---- audio speed buttons + reset ---- */
+EC.enhanceAudio();
+document.getElementById('resetLesson').addEventListener('click', () => {
+  if (!confirm('Reset the progress, exercise results and the written text of Lesson 23?')) return;
+  try {
+    const d = JSON.parse(localStorage.getItem('ec_progress_v1') || '{}');
+    delete d.lessons['m06-03']
+    if (window.PG) window.PG.clearLesson('m06-03');;
+    localStorage.setItem('ec_progress_v1', JSON.stringify(d));
+    location.reload();
+  } catch (e) {}
+});
+</script>
+</body>
+</html>

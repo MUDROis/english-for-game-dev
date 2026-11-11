@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 29 — Builds Are Compiled, Bugs Are Found | English for Game Dev</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Play:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="icon" href="../assets/img/favicon.ico">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><img class="logo-img" src="../assets/img/logo.png" alt="English for Game Dev — logo"> English for Game Dev</a>
+    <nav>
+      <a href="../index.html">← Course map</a>
+      <a href="m07-04.html">← Lesson 28</a>
+      <a href="#homework">Homework</a>
+      <span class="auth-chip" id="authChip">Sign in</span>
+    </nav>
+  </div>
+</header>
+
+<section class="lesson-hero">
+  <div class="wrap">
+    <div class="crumb">Module 8 · How Games Are Made: Passive and Processes · Lesson 29 / 48</div>
+    <h1>Builds Are Compiled, Bugs Are Found <span style="color:var(--acc)">The Studio Tour</span></h1>
+    <p class="goal">Module 8 opens the factory doors — the passive is the voice the industry speaks in. Lesson goal: describe how games are made — what is compiled, what is tested, what was decided and by whom — and stop translating active sentences in your head: here, the process matters more than the person.</p>
+    <div class="plan-chips">
+      <a class="tag time" href="#warmup">🔥 Warm-up · 10 min</a>
+      <a class="tag time" href="#listening">🎧 Listening · 12 min</a>
+      <a class="tag time" href="#reading">📖 Reading · 10 min</a>
+      <a class="tag time" href="#grammar">⚙️ Grammar · 10 min</a>
+      <a class="tag time" href="#speaking">🎤 Grammar → Speaking · 15 min</a>
+      <a class="tag time" href="#writing">✍️ Writing · 5 min</a>
+      <a class="tag" href="#homework">🏠 Homework · ≤30 min</a>
+    </div>
+  </div>
+</section>
+
+<div class="progress-wrap" id="lessonProgress">
+  <div class="wrap progress-row">
+    <span class="p-label">Lesson progress: 0/7</span>
+    <div class="bar"><i></i></div>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <!-- ============ 1. WARM-UP ============ -->
+  <section class="sec" id="warmup">
+    <div class="sec-head">
+      <div class="sec-num">1</div><h2>Warm-up</h2>
+      <span class="tag time">10 min</span><span class="tag">pipelines · industry · processes</span>
+    </div>
+    <div class="note" style="margin-left:44px">First — Module Test 7 review: the teacher walks through your weakest part of the test, and the modals go back in your pocket (they will be needed again in Lesson 30). Then — the new voice: <span class="tag pv">BE + V3</span>. Module 7 was about who decides. Module 8 is about what gets done.</div>
+
+    <div class="card audio-card">
+      <h3>🎧 Listen to the questions</h3>
+      <audio controls src="../assets/audio/m08-01-warmup.mp3" data-speeds preload="none"></audio>
+    </div>
+
+    <div class="card">
+      <h3>❓ Three questions — click a card to open the sentence starters</h3>
+      <div id="warmCards"></div>
+      <div class="note"><b>The rule of the lesson:</b> the passive moves the important thing to the front. We don't say <i>"somebody compiles builds every night"</i> — we say <i>"builds are compiled every night"</i>. Nobody cares about somebody. The build is the star.</div>
+    </div>
+  </section>
+
+  <!-- ============ 2. LISTENING ============ -->
+  <section class="sec" id="listening">
+    <div class="sec-head">
+      <div class="sec-num">2</div><h2>Listening — The Studio Tour</h2>
+      <span class="tag time">12 min</span><span class="tag">audio + comprehension</span>
+    </div>
+
+    <img src="../assets/img/l29-tour.png" alt="A game studio shown like a factory floor: a build farm of glowing servers, a QA corner with bug cards sorted on a board, an art wall with a big level illustration, a release board with a trailer counter, a founder guiding a new intern, a cat asleep on a sofa — illustration">
+    <div class="note">A new intern arrives at Harbour Lights, and Dana does the tour herself. Every sentence on this tour is a <b>passive</b> — listen for what <b>is done</b> at each stop, and notice how rarely the doer matters.</div>
+
+    <div class="card">
+      <h3>🧩 Before you listen: 10 key words</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 4px">Click a word — a definition and an example will open. The Russian gloss is there to check your understanding. Listen to the recording of all ten words.</p>
+      <div id="vocabRow"></div>
+      <audio controls src="../assets/audio/m08-01-vocab.mp3" data-speeds preload="none" style="width:100%;height:40px"></audio>
+    </div>
+
+    <div class="card audio-card">
+      <h3>🎧 Track 1 — The Studio Tour</h3>
+      <audio controls src="../assets/audio/m08-01-listening.mp3" data-speeds preload="none"></audio>
+      <div class="note" style="margin:0"><b>Listen 1 — for gist:</b> how many stops does the tour have, and what happens at each one? &nbsp;·&nbsp; <b>Listen 2 — for detail:</b> copy two passive sentences word for word — one in the present, one in the past.</div>
+    </div>
+
+    <div id="listenMCQ"></div>
+    <div id="listenTF"></div>
+
+    <div class="card">
+      <h3>🌍 Extension — GDC: talks from real studios</h3>
+      <p style="font-size:14.5px">From the yearly plan: <b><a href="https://www.youtube.com/channel/UC0JB7TSe49lg56u6qH8y_MQ" target="_blank" rel="noopener">GDC on YouTube ↗</a></b></p>
+      <p style="color:var(--mut);font-size:14px;margin:0">Pick any 15–20 minute talk and watch the first 8 minutes. Note <b>3 passive or process phrases</b> you hear (<i>is designed, was created, are built</i>) — say what each one moves to the front of the sentence.</p>
+    </div>
+  </section>
+
+  <!-- ============ 3. READING ============ -->
+  <section class="sec" id="reading">
+    <div class="sec-head">
+      <div class="sec-num">3</div><h2>Reading — How a Build Ships (internal wiki)</h2>
+      <span class="tag time">10 min</span><span class="tag">pipeline + passive spotting</span>
+    </div>
+
+    <div class="card">
+      <h3>Harbour Lights Wiki · Page 21: How a Build Ships</h3>
+      <p><b>Category:</b> production · <b>Owner:</b> everyone, that is the point · <b>Status:</b> updated nightly, like the builds</p>
+      <p>Grammar check: this page is written in the passive on purpose. <i>be + V3</i> = the process is the news; <i>by …</i> appears only when the doer matters.</p>
+      <p>1. Code <b>is written</b> and <b>is reviewed</b> by at least one other person.</p>
+      <p>2. Builds <b>are compiled</b> nightly on the build farm — nobody presses a button, it <b>is done</b> automatically.</p>
+      <p>3. Smoke tests <b>are run</b> at 7:00, and the results <b>are posted</b> to the channel before the first coffee.</p>
+      <p>4. Critical bugs <b>are fixed</b> before anything new <b>is added</b>.</p>
+      <p>5. Playtests <b>are run</b> every Thursday, and real players <b>are invited</b> — the sofa <b>was bought</b> for them.</p>
+      <p>6. The release <b>is announced</b> on the store page, and the patch notes <b>are written</b> by the whole team.</p>
+    </div>
+
+    <div id="readLabel"></div>
+    <div id="readTF"></div>
+
+    <div class="card">
+      <h3>🌍 Extension — The Guardian: Games industry</h3>
+      <p style="font-size:14.5px">From the yearly plan: <b><a href="https://www.theguardian.com/games" target="_blank" rel="noopener">theguardian.com/games ↗</a></b></p>
+      <p style="color:var(--mut);font-size:14px;margin:0">Pick an industry news piece. Retell it in <b>4 sentences</b> — at least <b>2 in the passive</b>: <i>the studio was acquired; 60 people were laid off; the game was delayed…</i></p>
+    </div>
+  </section>
+
+  <!-- ============ 4. GRAMMAR ============ -->
+  <section class="sec" id="grammar">
+    <div class="sec-head">
+      <div class="sec-num">4</div><h2>Grammar — Passive: Present &amp; Past</h2>
+      <span class="tag time">10 min</span><span class="tag">be + V3 + 4 exercises</span>
+    </div>
+
+    <div class="grid2">
+      <div class="rulebox pv">
+        <h3><span class="tag pv">PASSIVE</span> — be + V3</h3>
+        <ul>
+          <li><b>Present:</b> am/is/are + V3 — <i>Builds <b>are compiled</b> nightly. The store page <b>is updated</b> every Friday.</i></li>
+          <li><b>Past:</b> was/were + V3 — <i>The trailer <b>was released</b> last month. The bugs <b>were fixed</b> overnight.</i></li>
+          <li><b>When?</b> The process matters more than the person. News, reports, pipelines, rules — they all live in the passive.</li>
+          <li><b>by</b> appears only when the doer matters: <i>The level <b>was designed by</b> our lead artist.</i></li>
+        </ul>
+        <div class="note" style="margin-top:10px">Questions keep the same parts: <i><b>Is</b> the build <b>tested</b>? When <b>was</b> it <b>released</b>?</i> — be first, V3 stays.</div>
+      </div>
+      <div class="rulebox pv">
+        <h3>🚫 The trap — what the passive is not</h3>
+        <ul>
+          <li>No <b>be</b>, no passive: <span class="no">the game released yesterday</span> → <span class="yes">the game <b>was</b> released yesterday</span>.</li>
+          <li>V3, not V2: <span class="no">is builded</span> → <span class="yes">is <b>built</b></span> (build–built–built).</li>
+          <li>Intransitive verbs have no passive at all: <i>the bug disappeared</i> — full stop. You cannot "disappear it".</li>
+          <li>Don't sprinkle <b>by</b> everywhere: most real passives have no agent — <i>the build was rolled back</i> (by whom? doesn't matter).</li>
+        </ul>
+        <div class="note" style="margin-top:10px">Mega-test: <span class="no">The accident was happened at 3 a.m.</span> — wrong, <i>happen</i> has no passive. <span class="yes">The accident happened at 3 a.m.</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>⚙️ Mini-table — active → passive, studio edition</h3>
+      <table class="gtable">
+        <tr><th>Active — the doer matters</th><th>Passive — the process matters</th></tr>
+        <tr><td><i>We <b>compile</b> builds nightly.</i></td><td><i>Builds <b>are compiled</b> nightly.</i></td></tr>
+        <tr><td><i>Our lead artist <b>designed</b> the level.</i></td><td><i>The level <b>was designed by</b> our lead artist.</i> (her name is the news)</td></tr>
+        <tr><td><i>Somebody <b>found</b> the bug.</i></td><td><i>The bug <b>was found</b>.</i> (nobody knows or cares who)</td></tr>
+        <tr><td><i>They <b>release</b> patches every month.</i></td><td><i>Patches <b>are released</b> every month.</i></td></tr>
+        <tr><td><i>Mila <b>fixed</b> the critical bug.</i></td><td><i>The critical bug <b>was fixed by</b> Mila.</i> (praise is the news)</td></tr>
+      </table>
+      <div class="note">🩹 <b>Typical mistakes of Russian-speaking pipeline engineers:</b> <span class="no">The build is compile</span> → <span class="yes">The build is compiled</span> (V3, not V1) · <span class="no">The game released in May</span> → <span class="yes">The game was released in May</span> (no be, no passive) · <span class="no">English is spoke here</span> → <span class="yes">English is spoken here</span> · <span class="no">The accident was happened</span> → <span class="yes">The accident happened</span> (no passive after happen) · <span class="no">The bug was discover by a player</span> → <span class="yes">The bug was discovered by a player</span>.</div>
+    </div>
+
+    <div class="card">
+      <h3>🎬 Video — Present and Past Passives: The Grammar Gameshow (Episode 16)</h3>
+      <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/mAFd4jjo0YU" title="Present and Past Passives — The Grammar Gameshow Episode 16" loading="lazy" allowfullscreen></iframe></div>
+      <div class="note" style="margin:0">Two contestants, three rounds, one passive gauntlet. If the video does not open on this device — <a href="https://www.youtube.com/watch?v=mAFd4jjo0YU" target="_blank" rel="noopener">watch on YouTube ↗</a>. BBC Learning English also has a calm 6-minute version: <a href="https://www.youtube.com/watch?v=nI5zaB6QL-o" target="_blank" rel="noopener">Present and past passives — 6 Minute Grammar ↗</a>.</div>
+    </div>
+
+    <div id="gramMCQ"></div>
+    <div id="gramGap"></div>
+    <div id="gramOrder"></div>
+    <div id="gramTF"></div>
+
+    <div class="card">
+      <h3>🔊 Shadowing — speak along with the speaker</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 4px">Track A — the passive present, Track B — the passive past. Listen to a sentence → repeat it out loud in the pause. Two loops per track.</p>
+      <div class="grid2">
+        <div class="audio-card">
+          <span class="tag pv">Track A · The passive present</span>
+          <audio controls src="../assets/audio/m08-01-shadowing-a.mp3" data-speeds preload="none"></audio>
+        </div>
+        <div class="audio-card">
+          <span class="tag pv">Track B · The passive past</span>
+          <audio controls src="../assets/audio/m08-01-shadowing-b.mp3" data-speeds preload="none"></audio>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. SPEAKING ============ -->
+  <section class="sec" id="speaking">
+    <div class="sec-head">
+      <div class="sec-num">5</div><h2>Grammar → Speaking — the main section of the lesson</h2>
+      <span class="tag time">15 min</span><span class="tag">goal: processes that sound like a studio</span>
+    </div>
+    <div class="note"><b>The 5-second rule:</b> before every sentence ask silently: <i>what is the star — the doer or the process?</i> If the doer is unknown, obvious or boring — the passive wins. If you catch yourself saying <i>"the game released yesterday"</i> — stop, rebuild: <i>"the game was released yesterday."</i></div>
+
+    <div class="card">
+      <div class="speak-round">
+        <h3>🎙 Round 1 — Your Studio Tour <span class="tag pv">8 stops</span></h3>
+        <p style="font-size:14.5px;margin:0 0 6px">Give a 90-second tour of your (real or dream) studio — <b>8 passive sentences</b>: <i>builds are compiled here; playtests are run every Thursday; the trailer was released last month; coffee is drunk by the litre.</i> Two stops must use <b>by</b> — two people who actually matter.</p>
+        <div class="starters">
+          <span class="starter pv">Builds are …</span>
+          <span class="starter pv">Bugs are …</span>
+          <span class="starter pv">Playtests are run …</span>
+          <span class="starter pv">… was designed by …</span>
+        </div>
+        <div id="rec1"></div>
+      </div>
+
+      <div class="speak-round" style="margin-top:18px">
+        <h3>🎙 Round 2 — The Newsroom <span class="tag pv">flip the headlines</span></h3>
+        <p style="font-size:14.5px;margin:0 0 6px">Turn <b>5 active headlines</b> into passive ones and back — <b>90 seconds</b>, out loud: <i>The studio laid off 60 people → 60 people were laid off. A player found the speedrun bug → the speedrun bug was found by a player.</i> Keep the meaning identical — only the spotlight moves.</p>
+        <div class="starters">
+          <span class="starter pv">The studio acquired …</span>
+          <span class="starter pv">… were announced yesterday</span>
+          <span class="starter pv">A modder fixed …</span>
+          <span class="starter pv">The release was delayed …</span>
+        </div>
+        <div id="rec2"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>⚡ Speed Drill — flip the spotlight</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 8px">Open a card and instantly say the passive version — or explain why the passive is impossible. Then say which version the studio would really use, and why.</p>
+      <div id="drillCards"></div>
+    </div>
+  </section>
+
+  <!-- ============ 6. WRITING ============ -->
+  <section class="sec" id="writing">
+    <div class="sec-head">
+      <div class="sec-num">6</div><h2>Writing — the release process</h2>
+      <span class="tag time">5 min</span><span class="tag">6 sentences, 40–80 words</span>
+    </div>
+    <div id="writerBox" class="card"></div>
+    <details class="folding">
+      <summary>Model answer — open it after your own version</summary>
+      <div class="inner"><p>How a release ships at Harbour Lights. Code is reviewed by a second person, and builds are compiled nightly. Smoke tests are run at seven, and the results are posted before coffee. Critical bugs are fixed first, while new features are kept waiting. Playtests are run every Thursday, and real players are invited. Finally, the release is announced on the store page, and the patch notes are written by the whole team. Nobody is a hero here — the pipeline is.</p></div>
+    </details>
+    <div class="note">Want an automatic B1+ check of your text? Paste it into <b><a href="https://writeandimprove.com" target="_blank" rel="noopener">Write &amp; Improve (Cambridge) ↗</a></b> — the task "Work — Your work and future plans".</div>
+  </section>
+
+  <!-- ============ 7. HOMEWORK ============ -->
+  <section class="sec" id="homework">
+    <div class="sec-head">
+      <div class="sec-num">7</div><h2>Homework</h2>
+      <span class="tag">≤ 30 minutes in total</span>
+    </div>
+    <div id="hwList"></div>
+  </section>
+
+  <details class="folding">
+    <summary>🧑‍🏫 Teacher notes</summary>
+    <div class="inner">
+      <p><b>Goal:</b> the student describes processes in the passive without translating — is/are + V3 and was/were + V3 become the default voice for pipelines, reports and news. Class opens with the Module Test 7 review; the modals are not abandoned, they return as modal passives next lesson.</p>
+      <p><b>Suggested flow:</b> Warm-up: three questions that force is-prepared / is-overlooked / was-shocked → Listening: the tour; second pass copies one present-passive and one past-passive sentence word for word → Reading: the wiki page is passive on purpose; the Guardian extension retells news with half passive sentences → Grammar: the mini-table's "who is the star?" rows decide everything; the Gameshow episode lands the traps (is builded, was happened) → Speaking: Round 1 (the tour) is the fluency drill — 8 passives, two with by; Round 2 flips headlines both ways → Writing: the release process is the artefact the student reads aloud at the start of Lesson 30.</p>
+      <p><b>Success criteria:</b> Round 1 — 8 passive sentences, no missing be, exactly two by-agents; Round 2 — 5 successful flips including one "impossible" (intransitive); the description — 6 sentences, 4+ passives, no is builded.</p>
+      <p><b>Error pocket:</b> missing be (<i>the game released</i>) · V2 for V3 (<i>is builded / was wrote</i>) · passive with intransitives (<i>was happened, was disappeared</i>) · by-overuse · questions that drop be (<i>when released the trailer?</i> → <i>when was the trailer released?</i>).</p>
+      <p><b>Threads:</b> Mila the intern returns in Lesson 31 (delegation day — she is given real tasks); the policy deck mentioned in the tour becomes Lesson 30's listening; the cats' feeding schedule ("fed twice a day, not to be disturbed") is canon now and will appear in the release report.</p>
+    </div>
+  </details>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Lesson 29 · Module 8</b> — Builds Are Compiled, Bugs Are Found <a href="../index.html">Course map →</a>
+    <div style="margin-top:8px"><button class="btn small ghost" id="resetLesson">↺ Reset this lesson's progress</button></div>
+      <div class="legal">© 2019-2026 ИП Громова Анна Александровна, ОГРНИП: 319237500156762, ИНН: 236507001744<br>
+    Лицензия № Л035-01218-23/01091451 Интерактивная школа «МУДРО»</div>
+</div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="../assets/js/firebase-config.js?v=10"></script>
+<script src="../assets/js/auth.js?v=10"></script>
+<script src="../assets/js/progress-firebase.js?v=10"></script>
+<script src="../assets/js/engine.js"></script>?v=10
+<script>
+const KEY = 'm08-01';
+const SECTIONS = [
+  {id:'warmup', title:'Warm-up'}, {id:'listening', title:'Listening'}, {id:'reading', title:'Reading'},
+  {id:'grammar', title:'Grammar'}, {id:'speaking', title:'Speaking'}, {id:'writing', title:'Writing'},
+  {id:'homework', title:'Homework'}
+];
+EC.initLesson(KEY, SECTIONS);
+
+/* ---- Warm-up: 3 cards ---- */
+EC.flipGrid('#warmCards', [
+  {front:"1 · How is a game build prepared on your project — step by step?", back:"<b>Code is reviewed, then builds are compiled nightly, smoke tests are run at seven, and the results are posted before coffee.</b><br><span class='tag pv'>the process is the news — passive</span>"},
+  {front:"2 · Which part of game development is most often overlooked by players?", back:"<b>Testing is overlooked — players see the trailer, not the thousand bugs that were found and fixed before launch.</b><br><span class='tag pv'>is overlooked / are found — present passives</span>"},
+  {front:"3 · What was the last piece of industry news that shocked you?", back:"<b>A studio was closed two weeks after a hit was released — the awards were won, but the money was never seen.</b><br><span class='tag pv'>past passives — news is written in them</span>"}
+]);
+
+/* ---- Listening: vocab (definitions in Russian — for checking understanding) ---- */
+EC.vocab('#vocabRow', [
+  {w:"to compile", d:"компилировать — собирать код в работающую сборку", e:"Builds are compiled here every night."},
+  {w:"a pipeline", d:"конвейер, цепочка шагов сборки", e:"The whole pipeline is automated — nobody presses buttons."},
+  {w:"to launch", d:"запускать, выпускать", e:"The game was launched on Friday the 13th. Bold."},
+  {w:"to announce", d:"объявлять, анонсировать", e:"The release is announced on the store page."},
+  {w:"to design", d:"проектировать, разрабатывать дизайн", e:"This level was designed by our lead artist."},
+  {w:"to overlook", d:"упускать из виду, не замечать", e:"Testing is often overlooked by players."},
+  {w:"a patch", d:"патч — небольшое исправление после релиза", e:"A day-one patch is being prepared right now."},
+  {w:"to automate", d:"автоматизировать", e:"The reports were automated — two hours of work every week are saved."},
+  {w:"nightly", d:"каждую ночь, еженощно", e:"Builds are compiled nightly, like bread in a bakery."},
+  {w:"maintenance", d:"обслуживание, поддержка", e:"Server maintenance is done while the players sleep."}
+]);
+
+/* ---- Listening: MCQ ---- */
+EC.mcq('#listenMCQ', {
+  title:"🎧 Comprehension — Part 1: multiple choice",
+  exKey:'m08-01-listen1',
+  items:[
+    {q:"How often are builds compiled at Harbour Lights?", opts:["Every Monday","Every night, automatically","Only before a release"], a:1, why:"“Builds are compiled here every night, and they are tested automatically before anyone drinks their first coffee.”"},
+    {q:"What happens if a build is broken?", opts:["The whole team stays late","It is rolled back, and the person who broke it brings cake","The build farm is switched off"], a:1, why:"“If a build is broken, it is rolled back, and the person who broke it brings cake.”"},
+    {q:"What is the story of the level on the art wall?", opts:["It was designed in one evening","It was rejected three times and rebuilt twice","It was bought from another studio"], a:1, why:"“This level was designed by our lead artist. It was rejected three times, and it was rebuilt twice — that is how good work is made.”"},
+    {q:"What do all the sentences on the release board have in common?", opts:["They are all written by Dana","They all use the passive — the process matters more than the person","They are all about the cats"], a:1, why:"“Nobody cares who did it. The build, the bugs, the trailer — the process matters more than the person. That is why we speak passive here.”"}
+  ]
+});
+
+/* ---- Listening: True/False ---- */
+EC.tf('#listenTF', {
+  title:"🎧 Comprehension — Part 2: true or false",
+  exKey:'m08-01-listen2',
+  items:[
+    {s:"The trailer was watched 200,000 times in one week.", a:true, why:"True — “The trailer was released last month, and it was watched two hundred thousand times in one week.”"},
+    {s:"Playtests are run every Friday.", a:false, why:"False — “Playtests are run every Thursday, and real players are invited.”"},
+    {s:"The cats are fed twice a day — and they are not to be disturbed.", a:true, why:"True — “Boss and Lag are fed twice a day, and they are not to be disturbed. Some rules are not made by people.”"}
+  ]
+});
+
+/* ---- Reading: label the sentence ---- */
+EC.mcq('#readLabel', {
+  title:"📖 Label the sentence — passive present, passive past, or active?",
+  exKey:'m08-01-read1',
+  items:[
+    {q:"“Code is written and reviewed by at least one other person.”", opts:["Passive present","Passive past","Active"], a:0, why:"is written / is reviewed — present simple passive, with a by-agent that matters."},
+    {q:"“The sofa was bought for them.”", opts:["Passive present","Passive past","Active"], a:1, why:"was bought — past simple passive. The sofa is the star; the shopper is anonymous."},
+    {q:"“Nobody presses a button.”", opts:["Passive present","Passive past","Active"], a:2, why:"Active — the verb is plain present simple. Some sentences refuse to be passive."},
+    {q:"“Smoke tests are run at 7:00.”", opts:["Passive present — and note: run never becomes runned","Passive past","Active"], a:0, why:"are run — run is irregular: run–ran–run. The V3 is run."},
+    {q:"“The results are posted before the first coffee.”", opts:["Passive present","Passive past","Active"], a:0, why:"are posted — the process is the news, the poster is unknown."},
+    {q:"“The game disappeared from the store.”", opts:["Passive present","Passive past","Active — and it cannot be made passive"], a:2, why:"Active — disappear is intransitive: things disappear, they are not disappeared. No passive exists."}
+  ]
+});
+
+EC.tf('#readTF', {
+  title:"📖 True or false?",
+  exKey:'m08-01-read2',
+  items:[
+    {s:"The wiki says patch notes are written by the whole team.", a:true, why:"True — “the patch notes are written by the whole team.” The only by-agent that includes everybody."},
+    {s:"The wiki says builds are compiled every morning by the founder.", a:false, why:"False — builds are compiled nightly, and nobody presses a button: it is done automatically."}
+  ]
+});
+
+/* ---- Grammar: MCQ ---- */
+EC.mcq('#gramMCQ', {
+  title:"⚙️ Exercise 1 — choose the correct form",
+  exKey:'m08-01-gram1',
+  items:[
+    {q:"Builds ___ every night on the build farm.", opts:["compile","is compiled","are compiled"], a:2, why:"Builds are plural → are + V3: are compiled."},
+    {q:"The trailer ___ last month.", opts:["was released","released","is releasing"], a:0, why:"Past passive: was released. “The trailer released” has no be — no passive."},
+    {q:"The level was designed ___ our lead artist.", opts:["from","of","by"], a:2, why:"The doer is the news → by: was designed by our lead artist."},
+    {q:"When ___ the patch notes ___?", opts:["was … wrote","were … written","did … written"], a:1, why:"Plural + passive: were they written? was wrote mixes singular, past and V2."},
+    {q:"Which sentence cannot be made passive?", opts:["The team fixed the bug","The bug disappeared overnight","A player found the exploit"], a:1, why:"disappear is intransitive — no object, no passive. The other two have objects."},
+    {q:"Smoke tests ___ automatically at seven.", opts:["run","are run","is run"], a:1, why:"are run — plural subject, passive. run–ran–run: the V3 is run."}
+  ]
+});
+
+/* ---- Grammar: gap-fill ---- */
+EC.gap('#gramGap', {
+  title:"⚙️ Exercise 2 — type the missing word",
+  exKey:'m08-01-gram2',
+  items:[
+    {t:"The build ___ rolled back yesterday. (be — past, singular)", a:["was"], verbs:["was"]},
+    {t:"Critical bugs ___ fixed the same day. (be — present, plural)", a:["are"], verbs:["are"]},
+    {t:"The trailer was ___ by 200,000 people in one week. (watch — V3)", a:["watched"], verbs:["watched"]},
+    {t:"The level was ___ three times and rebuilt twice. (reject — V3)", a:["rejected"], verbs:["rejected"]},
+    {t:"Playtests are ___ every Thursday. (run — V3, one word)", a:["run"], verbs:["run"]},
+    {t:"The store page is ___ every Friday. (update — V3)", a:["updated"], verbs:["updated"]}
+  ]
+});
+
+/* ---- Grammar: sentence builder ---- */
+EC.order('#gramOrder', {
+  title:"⚙️ Exercise 3 — build the passive",
+  exKey:'m08-01-gram3',
+  items:[
+    {words:["Builds are compiled","every night","on the build farm"], answer:"Builds are compiled every night on the build farm.", ru:"Сборки компилируются каждую ночь на билд-ферме (present passive)."},
+    {words:["The trailer was released","last month —","and it was watched 200,000 times"], answer:"The trailer was released last month — and it was watched 200,000 times.", ru:"Трейлер выпустили в прошлом месяце — и его посмотрели 200 000 раз (past passive)."},
+    {words:["This level was designed by","our lead artist —","it was rejected three times"], answer:"This level was designed by our lead artist — it was rejected three times.", ru:"Этот уровень создан нашим ведущим художником — его трижды отклоняли (by-agent + past passive)."},
+    {words:["Playtests are run every Thursday,","and real players","are invited"], answer:"Playtests are run every Thursday, and real players are invited.", ru:"Плейтесты проводятся каждый четверг, и приглашаются настоящие игроки (present passive)."}
+  ]
+});
+
+/* ---- Grammar: true/false on the form ---- */
+EC.tf('#gramTF', {
+  title:"⚙️ Exercise 4 — is the explanation correct?",
+  exKey:'m08-01-gram4',
+  items:[
+    {s:"“The game released in May” is a correct passive sentence.", a:false, why:"False — no be, no passive: The game was released in May."},
+    {s:"“Is builded” is wrong because build is irregular: build–built–built.", a:true, why:"True — the V3 is built: is built. Builded does not exist."},
+    {s:"“The accident was happened at 3 a.m.” is correct.", a:false, why:"False — happen is intransitive: the accident happened. Was happened does not exist."},
+    {s:"Most real passive sentences have no by-agent.", a:true, why:"True — the passive is chosen precisely because the doer is unknown, obvious or boring."}
+  ]
+});
+
+/* ---- Speaking: speed drill ---- */
+EC.flipGrid('#drillCards', [
+  {front:"⏱ Flip it: “We compile builds nightly.”", back:"<b>Builds are compiled nightly.</b> <span class='tag pv'>present passive — the doer is obvious</span>"},
+  {front:"⏱ Flip it: “Our lead artist designed the level.”", back:"<b>The level was designed by our lead artist.</b> <span class='tag pv'>past passive + by — her name is the news</span>"},
+  {front:"⏱ Flip it: “Somebody found the bug.”", back:"<b>The bug was found.</b> <span class='tag pv'>past passive, no agent — nobody knows who</span>"},
+  {front:"⏱ Flip it: “They will announce the release tomorrow.”", back:"<b>The release will be announced tomorrow.</b> <span class='tag mp'>a preview of Lesson 30 — will be + V3</span>"},
+  {front:"⏱ Flip it: “The sofa disappeared.”", back:"<b>The sofa disappeared.</b> <span class='tag pv'>no passive — disappear is intransitive. (Boss knows nothing.)</span>"},
+  {front:"⏱ Flip it: “A player found the speedrun bug.”", back:"<b>The speedrun bug was found by a player.</b> <span class='tag pv'>by matters — credit where credit is due</span>"},
+  {front:"⏱ Flip it: “The cats broke the vase.”", back:"<b>The vase was broken.</b> <span class='tag pv'>passive hides the guilty party — management uses this voice a lot</span>"},
+  {front:"⏱ Flip it: “Mila fixed the coffee machine.”", back:"<b>The coffee machine was fixed by Mila.</b> <span class='tag pv'>by Mila — the intern's first legend begins</span>"}
+]);
+EC.recorder('#rec1', {maxSec:90, hint:"Round 1 · Your Studio Tour — 8 passive sentences, two with by"});
+EC.recorder('#rec2', {maxSec:90, hint:"Round 2 · The Newsroom — flip 5 headlines both ways"});
+
+/* ---- Writing ---- */
+EC.writer('#writerBox', {
+  task:"✍️ The release process (<b>40–80 words</b>): describe how a build becomes a release on your (real or dream) project — <b>6 sentences</b>, at least <b>4 in the passive</b>. This text will be read aloud at the start of Lesson 30.",
+  placeholder:"Code is reviewed … Builds are compiled … Smoke tests are run …",
+  min:40, max:80
+});
+
+/* ---- Homework ---- */
+EC.checklist('#hwList', {
+  items:[
+    {t:"Test-English: <i>Passive voice — all tenses</i> — one set of exercises (≈10 minutes) <a href='https://test-english.com/grammar-points/b1-b2/passive-voice-all-tenses/' target='_blank' rel='noopener'>test-english.com → b1-b2/passive-voice-all-tenses ↗</a>", m:"Tick the box when the page shows your score"},
+    {t:"From the plan: pick any news piece on <a href='https://www.theguardian.com/games' target='_blank' rel='noopener'>theguardian.com/games ↗</a> and write down <b>3 passive constructions</b> you find", m:"Mark the be and the V3 in each one"},
+    {t:"The Grammar Gameshow: <i>Present and Past Passives</i> — if the lesson video did not play in class <a href='https://www.youtube.com/watch?v=mAFd4jjo0YU' target='_blank' rel='noopener'>youtube.com → watch?v=mAFd4jjo0YU ↗</a>", m:"Play along and count your correct answers"},
+    {t:"Shadowing tracks from this page — 5 minutes of repeating after the speaker (both tracks)", m:"Track A = the passive present, Track B = the passive past"}
+  ]
+});
+
+/* ---- audio speed buttons + reset ---- */
+EC.enhanceAudio();
+document.getElementById('resetLesson').addEventListener('click', () => {
+  if (!confirm('Reset the progress, exercise results and the written text of Lesson 29?')) return;
+  try {
+    const d = JSON.parse(localStorage.getItem('ec_progress_v1') || '{}');
+    delete d.lessons['m08-01']
+    if (window.PG) window.PG.clearLesson('m08-01');;
+    localStorage.setItem('ec_progress_v1', JSON.stringify(d));
+    location.reload();
+  } catch (e) {}
+});
+</script>
+</body>
+</html>

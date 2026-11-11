@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 18 — Unless, As Soon As, In Case | English for Game Dev</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Play:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="icon" href="../assets/img/favicon.ico">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="../index.html"><img class="logo-img" src="../assets/img/logo.png" alt="English for Game Dev — logo"> English for Game Dev</a>
+    <nav>
+      <a href="../index.html">← Course map</a>
+      <a href="m05-01.html">← Lesson 17</a>
+      <a href="#homework">Homework</a>
+      <span class="auth-chip" id="authChip">Sign in</span>
+    </nav>
+  </div>
+</header>
+
+<section class="lesson-hero">
+  <div class="wrap">
+    <div class="crumb">Module 5 · What If? Scenarios, Rules and Testing · Lesson 18 / 48</div>
+    <h1><span style="color:var(--acc)">Unless</span>, <span style="color:var(--pc)">As Soon As</span>, <span style="color:var(--ok)">In Case</span></h1>
+    <p class="goal">Lesson goal: turn laws into plans. The first conditional (If + Present Simple, will) speaks about one concrete future with stakes, and the time connectors — unless, as soon as, until, in case, as long as — build the safety nets around it. Inside every connector the tense stays Present Simple: If you press Escape, the game will pause.</p>
+    <div class="plan-chips">
+      <a class="tag time" href="#warmup">🔥 Warm-up · 10 min</a>
+      <a class="tag time" href="#listening">🎧 Listening · 12 min</a>
+      <a class="tag time" href="#reading">📖 Reading · 10 min</a>
+      <a class="tag time" href="#grammar">⚙️ Grammar · 10 min</a>
+      <a class="tag time" href="#speaking">🎤 Grammar → Speaking · 15 min</a>
+      <a class="tag time" href="#writing">✍️ Writing · 5 min</a>
+      <a class="tag" href="#homework">🏠 Homework · ≤30 min</a>
+    </div>
+  </div>
+</section>
+
+<div class="progress-wrap" id="lessonProgress">
+  <div class="wrap progress-row">
+    <span class="p-label">Lesson progress: 0/7</span>
+    <div class="bar"><i></i></div>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <!-- ============ 1. WARM-UP ============ -->
+  <section class="sec" id="warmup">
+    <div class="sec-head">
+      <div class="sec-num">1</div><h2>Warm-up</h2>
+      <span class="tag time">10 min</span><span class="tag">work communication · deadlines · promises</span>
+    </div>
+    <div class="note" style="margin-left:44px">Last lesson was laws (<span class="tag zc">zero</span>). Today is one concrete future: <span class="tag fc">FIRST CONDITIONAL</span> — <i>If QA approves the build, we will ship on Friday.</i> Plus the connectors that carry stakes: <span class="tag fc">unless</span> = if not, <span class="tag fc">as soon as</span> = immediately when, <span class="tag fc">in case</span> = as insurance.</div>
+
+    <div class="card audio-card">
+      <h3>🎧 Listen to the questions</h3>
+      <audio controls src="../assets/audio/m05-02-warmup.mp3" data-speeds preload="none"></audio>
+    </div>
+
+    <div class="card">
+      <h3>❓ Three questions — click a card to open the sentence starters</h3>
+      <div id="warmCards"></div>
+      <div class="note"><b>The rule of the lesson:</b> a law is true every time; a plan with stakes is true once — for this release, this week, this build. Plans take <span class="tag fc">if + Present Simple, will</span>.</div>
+    </div>
+  </section>
+
+  <!-- ============ 2. LISTENING ============ -->
+  <section class="sec" id="listening">
+    <div class="sec-head">
+      <div class="sec-num">2</div><h2>Listening — The Release Plan with Stakes</h2>
+      <span class="tag time">12 min</span><span class="tag">audio + comprehension</span>
+    </div>
+
+    <img src="../assets/img/l18-safety.png" alt="A release timeline arrow flying to a launch flag with three glowing safety nets under it and a cat sleeping in one net — illustration">
+    <div class="note">Friday planning at Harbour Lights. The winter update has a launch date — and every plan comes with a stake. Listen for the <b>conditions</b> (if), the <b>safety nets</b> (unless, in case) and the <b>triggers</b> (as soon as).</div>
+
+    <div class="card">
+      <h3>🧩 Before you listen: 10 key words</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 4px">Click a word — a definition and an example will open. The Russian gloss is there to check your understanding. Listen to the recording of all ten words.</p>
+      <div id="vocabRow"></div>
+      <audio controls src="../assets/audio/m05-02-vocab.mp3" data-speeds preload="none" style="width:100%;height:40px"></audio>
+    </div>
+
+    <div class="card audio-card">
+      <h3>🎧 Track 1 — The Release Plan with Stakes</h3>
+      <audio controls src="../assets/audio/m05-02-listening.mp3" data-speeds preload="none"></audio>
+      <div class="note" style="margin:0"><b>Listen 1 — for gist:</b> what ships on Friday, and what could postpone it? &nbsp;·&nbsp; <b>Listen 2 — for detail:</b> catch one <i>if</i>, one <i>unless</i>, one <i>in case</i> and one <i>as soon as</i> — copy them word for word.</div>
+    </div>
+
+    <div id="listenMCQ"></div>
+    <div id="listenTF"></div>
+
+    <div class="card">
+      <h3>🌍 Extension — BBC 6 Minute English: Rude emails</h3>
+      <p style="font-size:14.5px">From the yearly plan: <b><a href="https://www.bbc.co.uk/learningenglish/features/6-minute-english_2026/ep-260702" target="_blank" rel="noopener">Rude emails ↗</a></b></p>
+      <p style="color:var(--mut);font-size:14px;margin:0">Task: why do emails turn rude? Note <b>2 phrases for polite requests</b> and any <b>if / unless</b> structures you hear.</p>
+    </div>
+  </section>
+
+  <!-- ============ 3. READING ============ -->
+  <section class="sec" id="reading">
+    <div class="sec-head">
+      <div class="sec-num">3</div><h2>Reading — The Email Doctor</h2>
+      <span class="tag time">10 min</span><span class="tag">a polite letter with stakes</span>
+    </div>
+
+    <div class="card">
+      <h3>From: Dana · To: Marcus (partner studio) · Subject: Launch week — plan B</h3>
+      <p>Hi Marcus,</p>
+      <p>Quick update before our launch on Friday. If QA approves the build on Wednesday, we will ship on schedule. If we find a critical bug, we will stop the launch and tell you the same day — no quiet delays, I promise.</p>
+      <p>Two safety nets. Unless the servers hold under the launch load, we will postpone to the following Tuesday. And in case the store page breaks on launch day, our QA lead keeps the rollback ready, so the downtime will be minutes, not days.</p>
+      <p>As soon as the trailer passes the review, I will send it to you. Could you confirm the banner slot before Thursday? As long as everything stays green, the plan does not change.</p>
+      <p>Thanks — and talk after the launch,<br>Dana</p>
+    </div>
+
+    <div id="readLabel"></div>
+    <div id="readTF"></div>
+
+    <div class="card">
+      <h3>🌍 Extension — Breaking News English</h3>
+      <p style="font-size:14.5px">From the yearly plan — choose any business news lesson at level 5–6: <b><a href="https://breakingnewsenglish.com" target="_blank" rel="noopener">breakingnewsenglish.com ↗</a></b></p>
+      <p style="color:var(--mut);font-size:14px;margin:0">Task: do the reading, then say <b>3 first-conditional sentences</b> about the company in the news: <i>If the deal goes through, they will open two studios.</i></p>
+    </div>
+  </section>
+
+  <!-- ============ 4. GRAMMAR ============ -->
+  <section class="sec" id="grammar">
+    <div class="sec-head">
+      <div class="sec-num">4</div><h2>Grammar — First Conditional &amp; Future Time Clauses</h2>
+      <span class="tag time">10 min</span><span class="tag">rules + 4 exercises</span>
+    </div>
+
+    <div class="grid2">
+      <div class="rulebox fc">
+        <h3><span class="tag fc">FIRST CONDITIONAL</span> — one plan, real stakes</h3>
+        <ul>
+          <li>Form: <i>If + Present Simple, will + infinitive</i> — <i>If QA <b>approves</b> the build, we <b>will ship</b> on Friday.</i></li>
+          <li>Meaning: one concrete, possible future — this release, this week.</li>
+          <li>Promises and warnings: <i>If we <b>find</b> a critical bug, we <b>will stop</b> the launch.</i></li>
+          <li>will can move: <i>We <b>will ship</b> if QA <b>approves</b>.</i> (no comma then)</li>
+        </ul>
+        <div class="note" style="margin-top:10px">Zero = every time; first = this time. If you can add "this Friday" — it is first.</div>
+      </div>
+      <div class="rulebox fc">
+        <h3>🔗 The connectors — all keep Present Simple inside</h3>
+        <ul>
+          <li><b>unless</b> = if not: <i>Unless the servers <b>hold</b>, we <b>will postpone</b>.</i></li>
+          <li><b>as soon as</b> = immediately when: <i>As soon as the trailer <b>passes</b> the review, I <b>will send</b> it.</i></li>
+          <li><b>in case</b> = insurance, before it might happen: <i>In case the store page <b>breaks</b>, Tom <b>keeps</b> the rollback ready.</i></li>
+          <li><b>until</b> / <b>as long as</b>: <i>We <b>will not sleep</b> until the build <b>is</b> live. As long as the numbers <b>grow</b>, the party <b>stays</b>.</i></li>
+        </ul>
+        <div class="note" style="margin-top:10px">🩹 The classic trap: <span class="no">If you will press Escape…</span> → <span class="yes">If you press Escape, the game will pause.</span> will never goes into the if-half.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>⚙️ Mini-table — law, plan, or insurance?</h3>
+      <table class="gtable">
+        <tr><th>Sentence</th><th>Why?</th></tr>
+        <tr><td><i>If the build <b>fails</b>, we <b>roll back</b>.</i></td><td>True every time → <b>zero</b> (yesterday's law).</td></tr>
+        <tr><td><i>If QA <b>approves</b> on Wednesday, we <b>will ship</b> on Friday.</i></td><td>One concrete release → <b>first</b>.</td></tr>
+        <tr><td><i>Unless the servers <b>hold</b>, we <b>will postpone</b>.</i></td><td>unless = if not; the plan with its opposite condition → <b>first</b>.</td></tr>
+        <tr><td><i>In case the store page <b>breaks</b>, we <b>keep</b> the rollback ready.</i></td><td>Insurance before anything happens → <b>in case</b> (no will needed).</td></tr>
+        <tr><td><i>As soon as the trailer <b>passes</b>, I <b>will send</b> it.</i></td><td>A trigger and its result → <b>first</b> with a time connector.</td></tr>
+        <tr><td><i>As long as the numbers <b>grow</b>, the party <b>stays</b>.</i></td><td>A condition that must continue → <b>as long as</b>.</td></tr>
+      </table>
+      <div class="note">🩹 <b>Typical mistakes of Russian-speaking PMs:</b> <span class="no">If the partner will confirm, we sign</span> → <span class="yes">If the partner confirms, we will sign</span> · <span class="no">Unless we don't find bugs, we ship</span> → <span class="yes">Unless we find bugs, we ship</span> (unless already means if not — no second "not") · <span class="no">I will call you when I will know</span> → <span class="yes">I will call you when I know</span> · <span class="no">In case the page will break…</span> → <span class="yes">In case the page breaks…</span></div>
+    </div>
+
+    <div class="card">
+      <h3>🎬 Video — BBC Learning English: The first conditional (Conditionals with Georgie)</h3>
+      <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/kpDaqFQ1YCM" title="BBC Learning English: The first conditional — Conditionals with Georgie" loading="lazy" allowfullscreen></iframe></div>
+      <div class="note" style="margin:0">Georgie builds plans with stakes in five minutes. If the video does not open on this device — <a href="https://www.youtube.com/watch?v=kpDaqFQ1YCM" target="_blank" rel="noopener">watch on YouTube ↗</a>.</div>
+    </div>
+
+    <div id="gramMCQ"></div>
+    <div id="gramGap"></div>
+    <div id="gramOrder"></div>
+    <div id="gramTF"></div>
+
+    <div class="card">
+      <h3>🔊 Shadowing — speak along with the speaker</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 4px">Track A — plans and promises (if + will), Track B — safety nets and triggers (unless / in case / as soon as). Listen to a sentence → repeat it out loud in the pause. Two loops per track.</p>
+      <div class="grid2">
+        <div class="audio-card">
+          <span class="tag fc">Track A · Plans &amp; promises</span>
+          <audio controls src="../assets/audio/m05-02-shadowing-a.mp3" data-speeds preload="none"></audio>
+        </div>
+        <div class="audio-card">
+          <span class="tag fc">Track B · Safety nets &amp; triggers</span>
+          <audio controls src="../assets/audio/m05-02-shadowing-b.mp3" data-speeds preload="none"></audio>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. SPEAKING ============ -->
+  <section class="sec" id="speaking">
+    <div class="sec-head">
+      <div class="sec-num">5</div><h2>Grammar → Speaking — the main section of the lesson</h2>
+      <span class="tag time">15 min</span><span class="tag">goal: plans with stakes, promises, polite emails</span>
+    </div>
+    <div class="note"><b>The 5-second rule:</b> before every if-sentence ask: <i>is it a law, or this release's plan?</i> And remember the trap: <i>if you will press…</i> does not exist. If + Present Simple. Always.</div>
+
+    <div class="card">
+      <div class="speak-round">
+        <h3>🎙 Round 1 — Release Plan with Stakes <span class="tag fc">6 sentences</span></h3>
+        <p style="font-size:14.5px;margin:0 0 6px">Take your nearest real release, exam or deadline and give it <b>6 sentences with stakes</b>: at least one <b>if</b>, one <b>unless</b>, one <b>as soon as</b>, one <b>in case</b>. Model: <i>If QA approves, we launch; unless the servers hold, we postpone; as soon as the trailer drops, I will post it.</i> <b>2 minutes</b>.</p>
+        <div class="starters">
+          <span class="starter fc">If (QA) approves …, we will …</span>
+          <span class="starter fc">Unless … holds, we will postpone.</span>
+          <span class="starter fc">As soon as … drops, I will …</span>
+          <span class="starter fc">In case … breaks, we keep … ready.</span>
+        </div>
+        <div id="rec1"></div>
+      </div>
+
+      <div class="speak-round" style="margin-top:18px">
+        <h3>🎙 Round 2 — Promise Corner <span class="tag fc">condition → promise</span></h3>
+        <p style="font-size:14.5px;margin:0 0 6px">Turn five conditions into promises about your real work or QA course. Model: <i>If I get the budget, I will hire two QA engineers. If I finish the regression module on Sunday, I will take a day off.</i> Every promise must have a real stake. <b>90 seconds</b>.</p>
+        <div class="starters">
+          <span class="starter fc">If I get …, I will hire …</span>
+          <span class="starter fc">If I finish … by Sunday, I will …</span>
+          <span class="starter fc">Unless something dramatic happens, we will …</span>
+        </div>
+        <div id="rec2"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>🎙 Round 3 — Email Doctor (the plan's core drill)</h3>
+      <p style="font-size:14.5px;margin:0 0 6px">Below is a rude partner email. Rewrite it <b>out loud</b> as a polite one with first conditionals: <i>If it is possible, could you…; we will reply as soon as we know.</i> Then record your version. The rude email stays in the past where it belongs.</p>
+      <div class="card" style="background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:8px 0">
+        <p style="margin:0;font-size:14.5px"><b>From:</b> angry partner · “You missed the date again. Send the build NOW. If you will miss the deadline one more time, we will find another studio. And don't write to me until it's done.”</p>
+      </div>
+      <div class="starters">
+        <span class="starter fc">If it is possible, could you …</span>
+        <span class="starter fc">We will reply as soon as we know …</span>
+        <span class="starter fc">Unless the date changes, we will deliver on …</span>
+      </div>
+      <div id="rec3"></div>
+    </div>
+
+    <div class="card">
+      <h3>⚡ Speed Drill — a situation every 5 seconds</h3>
+      <p style="color:var(--mut);font-size:14px;margin:0 0 8px">Open a card and instantly say the plan, the promise or the safety net — out loud, with the right connector.</p>
+      <div id="drillCards"></div>
+    </div>
+  </section>
+
+  <!-- ============ 6. WRITING ============ -->
+  <section class="sec" id="writing">
+    <div class="sec-head">
+      <div class="sec-num">6</div><h2>Writing — the partner letter</h2>
+      <span class="tag time">5 min</span><span class="tag">3 first conditionals, 40–80 words</span>
+    </div>
+    <div id="writerBox" class="card"></div>
+    <details class="folding">
+      <summary>Model answer — open it after your own version</summary>
+      <div class="inner"><p>Hi Marcus, a quick plan for launch week. If QA approves the build on Wednesday, we will ship on Friday as agreed. If the partner banners are ready by Thursday, we will turn them on the same evening. Unless something dramatic happens, the trailer goes live on Monday, and we will send you the final numbers as soon as the store updates them. If you need the demo earlier, just say the word — we will find a slot.</p></div>
+    </details>
+    <div class="note">Want an automatic B1+ check of your text? Paste it into <b><a href="https://writeandimprove.com" target="_blank" rel="noopener">Write &amp; Improve (Cambridge) ↗</a></b> — the task "Work — Emails to a partner".</div>
+  </section>
+
+  <!-- ============ 7. HOMEWORK ============ -->
+  <section class="sec" id="homework">
+    <div class="sec-head">
+      <div class="sec-num">7</div><h2>Homework</h2>
+      <span class="tag">≤ 30 minutes in total</span>
+    </div>
+    <div id="hwList"></div>
+  </section>
+
+  <details class="folding">
+    <summary>🧑‍🏫 Teacher notes</summary>
+    <div class="inner">
+      <p><b>Goal:</b> the student plans one concrete future out loud — if + Present Simple + will — and handles the four safety-net connectors (unless, as soon as, in case, until / as long as) without dragging will inside the condition.</p>
+      <p><b>Suggested flow:</b> Warm-up: rude emails and protected deadlines; collect unless candidates → Listening: the release plan with stakes; second pass copies if / unless / in case / as soon as word for word → Reading: Dana's letter labels every connector; Breaking News gives 3 free first conditionals → Grammar: the mini-table's law-vs-plan-vs-insurance rows are the heart; the trap box (if you will press) is the module's most valuable sentence → Speaking: Round 3 (email doctor) is the plan's core drill — the student rewrites rudeness into conditionals in real time.</p>
+      <p><b>Success criteria:</b> Round 1 — 6 sentences, all four connectors present, no will after if/unless/as soon as/in case; Round 2 — 5 promises with real stakes; Round 3 — the rude email softened with at least 3 first conditionals.</p>
+      <p><b>Error pocket:</b> will in the if-half · double negation with unless (<i>unless we don't…</i>) · will after when/as soon as/until · confusing if and in case (if = when it happens; in case = as insurance before it might) · unless for impossible conditions (use if… not or second conditional instead).</p>
+      <p><b>Threads:</b> Tom's rollback from Lesson 17 returns as the insurance policy (<i>in case the store page breaks, Tom keeps the rollback ready</i>); the office party is now officially a conditional promise; the polite-letter genre grows into Lesson 19's instructions — writing to a partner is one step from writing a checklist; the rude email quotes the BBC episode from the listening section.</p>
+    </div>
+  </details>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Lesson 18 · Module 5</b> — Unless, As Soon As, In Case. <a href="../index.html">Course map →</a>
+    <div style="margin-top:8px"><button class="btn small ghost" id="resetLesson">↺ Reset this lesson's progress</button></div>
+      <div class="legal">© 2019-2026 ИП Громова Анна Александровна, ОГРНИП: 319237500156762, ИНН: 236507001744<br>
+    Лицензия № Л035-01218-23/01091451 Интерактивная школа «МУДРО»</div>
+</div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="../assets/js/firebase-config.js?v=10"></script>
+<script src="../assets/js/auth.js?v=10"></script>
+<script src="../assets/js/progress-firebase.js?v=10"></script>
+<script src="../assets/js/engine.js"></script>?v=10
+<script>
+const KEY = 'm05-02';
+const SECTIONS = [
+  {id:'warmup', title:'Warm-up'}, {id:'listening', title:'Listening'}, {id:'reading', title:'Reading'},
+  {id:'grammar', title:'Grammar'}, {id:'speaking', title:'Speaking'}, {id:'writing', title:'Writing'},
+  {id:'homework', title:'Homework'}
+];
+EC.initLesson(KEY, SECTIONS);
+
+/* ---- Warm-up: 3 cards ---- */
+EC.flipGrid('#warmCards', [
+  {front:"1 · Have you ever received or written a rude email — what happened?", back:"<b>Yes — a partner once wrote: send the build NOW. I replied calmly: if we find a critical bug, we will tell you the same day.</b><br><span class='tag fc'>first conditional — a plan with stakes</span>"},
+  {front:"2 · What do you do as soon as a critical bug appears?", back:"<b>As soon as a critical bug appears, I stop the release and call the QA lead.</b><br><span class='tag fc'>as soon as — the trigger fires immediately</span>"},
+  {front:"3 · Which deadline do you protect unless something truly dramatic happens?", back:"<b>Unless the servers go down, we protect the Friday launch. It moves only for a critical bug.</b><br><span class='tag fc'>unless = if not</span>"}
+]);
+
+/* ---- Listening: vocab (definitions in Russian — for checking understanding) ---- */
+EC.vocab('#vocabRow', [
+  {w:"to approve", d:"одобрить, согласовать", e:"If QA approves the build on Wednesday, we will ship on Friday."},
+  {w:"to postpone", d:"перенести на позже", e:"Unless the servers hold, we will postpone the launch."},
+  {w:"to delay", d:"задержать, затянуть", e:"No quiet delays — if something changes, we will tell you the same day."},
+  {w:"a backup", d:"резервная копия", e:"We keep a backup of the store page in case it breaks."},
+  {w:"unless", d:"если только… не (= if not)", e:"Unless something dramatic happens, the plan does not change."},
+  {w:"in case", d:"на случай, если (как страховка)", e:"In case the store page breaks, Tom keeps the rollback ready."},
+  {w:"as soon as", d:"как только", e:"As soon as the trailer passes the review, I will send it."},
+  {w:"until", d:"до тех пор, пока (не)", e:"We will not sleep until the build is live."},
+  {w:"as long as", d:"до тех пор, пока / при условии, что", e:"As long as the numbers grow, the party stays on the calendar."},
+  {w:"to confirm", d:"подтвердить", e:"Could you confirm the banner slot before Thursday?"}
+]);
+
+/* ---- Listening: MCQ ---- */
+EC.mcq('#listenMCQ', {
+  title:"🎧 Comprehension — Part 1: multiple choice",
+  exKey:'m05-02-listen1',
+  items:[
+    {q:"When exactly will the studio ship?", opts:["If QA approves the build on Wednesday, they will ship on Friday","If the wishlists pass 50,000","As soon as the party is planned"], a:0, why:"“If QA approves the build on Wednesday, we will ship on Friday.”"},
+    {q:"What will postpone the launch?", opts:["A rainy launch day","The servers not holding under the launch load","One minor bug"], a:1, why:"“Unless the servers hold under the launch load, we will postpone to the following week.”"},
+    {q:"What happens as soon as the trailer passes the review?", opts:["The party starts","Priya will post it on the wishlist page","The launch moves to Tuesday"], a:1, why:"“As soon as the trailer passes the review, I will post it on the wishlist page.”"},
+    {q:"Why does Tom keep the rollback ready?", opts:["For fun","In case the store page breaks on launch day","Because Dana asked him to delete saves"], a:1, why:"“In case the store page breaks on launch day, Tom keeps the rollback ready.”"}
+  ]
+});
+
+/* ---- Listening: True/False ---- */
+EC.tf('#listenTF', {
+  title:"🎧 Comprehension — Part 2: true or false",
+  exKey:'m05-02-listen2',
+  items:[
+    {s:"Dana promises to report problems quietly, without the partner.", a:false, why:"False — “If we find a critical bug, we will stop the launch and tell you the same day — no quiet delays.”"},
+    {s:"The office party is a conditional promise.", a:true, why:"True — “As long as the wishlist numbers keep growing, the office party stays on the calendar.”"}
+  ]
+});
+
+/* ---- Reading: label the connector ---- */
+EC.mcq('#readLabel', {
+  title:"📖 Label the connector — what carries the stake?",
+  exKey:'m05-02-read1',
+  items:[
+    {q:"“If QA approves the build on Wednesday, we will ship on schedule.”", opts:["if — the main condition","in case — insurance"], a:0, why:"The plan itself depends on it → if + Present Simple, will."},
+    {q:"“If we find a critical bug, we will stop the launch and tell you the same day.”", opts:["A warning with a promise inside","A law like the cake rule"], a:0, why:"One concrete future release → first conditional."},
+    {q:"“Unless the servers hold under the launch load, we will postpone.”", opts:["unless = if not","unless = because"], a:0, why:"Unless introduces the condition that must NOT happen → if not."},
+    {q:"“In case the store page breaks on launch day, our QA lead keeps the rollback ready.”", opts:["Insurance prepared in advance","A result that happens after"], a:0, why:"In case = as insurance, prepared before anything might happen."},
+    {q:"“As soon as the trailer passes the review, I will send it to you.”", opts:["The trigger fires immediately","Only at the end of the month"], a:0, why:"As soon as = immediately when."},
+    {q:"“Could you confirm the banner slot before Thursday?”", opts:["A polite request","A rude demand"], a:0, why:"Could you… — the polite request frame from the email doctor."}
+  ]
+});
+
+EC.tf('#readTF', {
+  title:"📖 True or false?",
+  exKey:'m05-02-read2',
+  items:[
+    {s:"Dana promises quiet delays if the launch moves.", a:false, why:"False — the letter says “no quiet delays”."},
+    {s:"Dana's plan has two explicit safety nets.", a:true, why:"True — “Two safety nets” introduce the unless and the in case sentences."}
+  ]
+});
+
+/* ---- Grammar: MCQ ---- */
+EC.mcq('#gramMCQ', {
+  title:"⚙️ Exercise 1 — choose the correct form",
+  exKey:'m05-02-gram1',
+  items:[
+    {q:"If the partner ___ the banner slot, we will turn the banners on.", opts:["will confirm","confirms","confirmed"], a:1, why:"No will in the if-half: if + Present Simple."},
+    {q:"___ the servers hold, we will launch on Friday.", opts:["Unless","In case","As soon as"], a:0, why:"Unless = if not: the launch happens only if the servers hold."},
+    {q:"As soon as the build ___ live, I will send you the link.", opts:["will go","goes","went"], a:1, why:"Time connectors keep Present Simple: as soon as it goes."},
+    {q:"___ the store page breaks, Tom keeps the rollback ready.", opts:["Unless","In case","Until"], a:1, why:"Insurance before anything might happen → in case."},
+    {q:"We will not sleep ___ the build is live.", opts:["until","in case","unless"], a:0, why:"Up to the moment it is live → until."},
+    {q:"___ the wishlists keep growing, the party stays on the calendar.", opts:["As long as","In case","As soon as"], a:0, why:"A condition that must continue → as long as."}
+  ]
+});
+
+/* ---- Grammar: gap-fill ---- */
+EC.gap('#gramGap', {
+  title:"⚙️ Exercise 2 — type the correct form",
+  exKey:'m05-02-gram2',
+  items:[
+    {t:"If QA ___ the build on Wednesday, we will ship on Friday. (approve — the condition)", a:["approves"], verbs:["present simple"]},
+    {t:"If we find a critical bug, we ___ the launch. (stop — the plan)", a:["will stop","'ll stop"], verbs:["will"]},
+    {t:"___ the servers hold, we will postpone to Tuesday. (unless / in case — choose the connector, full word)", a:["unless"], verbs:["unless"]},
+    {t:"As soon as the trailer passes the review, I ___ it to the partner. (send — the promise)", a:["will send","'ll send"], verbs:["will"]},
+    {t:"We will stay at the office ___ the status page is green. (until — up to the moment)", a:["until"], verbs:["until"]},
+    {t:"___ the demo crashes, we show the gameplay video. (in case / unless — choose the connector, full word)", a:["in case"], verbs:["in case"]}
+  ]
+});
+
+/* ---- Grammar: sentence builder ---- */
+EC.order('#gramOrder', {
+  title:"⚙️ Exercise 3 — build the plan",
+  exKey:'m05-02-gram3',
+  items:[
+    {words:["If QA approves the build,","we will ship","on Friday"], answer:"If QA approves the build, we will ship on Friday.", ru:"Если QA одобрит сборку в среду, мы выпустим игру в пятницу (план)."},
+    {words:["Unless the servers hold,","we will postpone","to the following Tuesday"], answer:"Unless the servers hold, we will postpone to the following Tuesday.", ru:"Если только серверы не выдержат, мы перенесём релиз на вторник (страховка)."},
+    {words:["As soon as the trailer drops,","I will post it","on the wishlist page"], answer:"As soon as the trailer drops, I will post it on the wishlist page.", ru:"Как только трейлер выйдет, я сразу размещу его на странице желаемого."},
+    {words:["We will not sleep","until the build","is live"], answer:"We will not sleep until the build is live.", ru:"Мы не будем спать, пока билд не выйдет в свет."}
+  ]
+});
+
+/* ---- Grammar: true/false on the form ---- */
+EC.tf('#gramTF', {
+  title:"⚙️ Exercise 4 — is the explanation correct?",
+  exKey:'m05-02-gram4',
+  items:[
+    {s:"“If you will press Escape, the game will pause” is correct.", a:false, why:"False — will never goes into the if-half: If you press Escape, the game will pause."},
+    {s:"“Unless we don't find bugs, we ship” has a double negation problem.", a:true, why:"True — unless already means if not; the correct form is: Unless we find bugs, we ship."},
+    {s:"“In case the store page breaks, Tom keeps the rollback ready” describes insurance prepared in advance.", a:true, why:"True — in case = as insurance, before anything might happen."},
+    {s:"“I will call you when I will know” is correct.", a:false, why:"False — time connectors keep Present Simple: I will call you when I know."}
+  ]
+});
+
+/* ---- Speaking: speed drill ---- */
+EC.flipGrid('#drillCards', [
+  {front:"⏱ The build passed QA this morning.", back:"<b>If QA signed off, we will ship on Friday.</b> <span class='tag fc'>if + will</span>"},
+  {front:"⏱ The servers are shaky in the load report.", back:"<b>Unless the servers hold, we will postpone to Tuesday.</b> <span class='tag fc'>unless</span>"},
+  {front:"⏱ The trailer is one click from approval.", back:"<b>As soon as the trailer passes, I will post it.</b> <span class='tag fc'>as soon as</span>"},
+  {front:"⏱ The store page crashed during last launch.", back:"<b>In case it breaks again, the rollback stays ready.</b> <span class='tag fc'>in case</span>"},
+  {front:"⏱ The partner asks for the final numbers.", back:"<b>We will send them as soon as the store updates.</b> <span class='tag fc'>as soon as</span>"},
+  {front:"⏱ The party is planned for Friday night.", back:"<b>As long as the numbers grow, the party stays.</b> <span class='tag fc'>as long as</span>"},
+  {front:"⏱ The exam date is Sunday.", back:"<b>If I finish the module by Saturday, I will sleep all Sunday.</b> <span class='tag fc'>promise</span>"},
+  {front:"⏱ A minor bug is found, launch is tomorrow.", back:"<b>If it is minor, we will fix it in the first patch — the launch stays.</b> <span class='tag fc'>plan</span>"}
+]);
+EC.recorder('#rec1', {maxSec:120, hint:"Round 1 · release plan with stakes: if + unless + as soon as + in case"});
+EC.recorder('#rec2', {maxSec:90, hint:"Round 2 · five promises with real stakes"});
+EC.recorder('#rec3', {maxSec:120, hint:"Round 3 · rewrite the rude email out loud, then record"});
+
+/* ---- Writing ---- */
+EC.writer('#writerBox', {
+  task:"✍️ The partner letter (<b>40–80 words</b>): write a short polite letter about your nearest deadline. Requirements: <b>3 first conditionals</b> — what happens if they confirm, what happens if they delay, and one safety net (unless / in case / as soon as).",
+  placeholder:"Hi Marcus, a quick plan… If you confirm …, we will … If the date moves …, unless …",
+  min:40, max:80
+});
+
+/* ---- Homework ---- */
+EC.checklist('#hwList', {
+  items:[
+    {t:"Test-English B1: <i>First conditional, future time clauses</i> — one set of exercises (≈10 minutes) <a href='https://test-english.com/grammar-points/b1/first-conditional-future-time-clauses/' target='_blank' rel='noopener'>test-english.com → b1/first-conditional ↗</a>", m:"Tick the box when the page shows your score"},
+    {t:"From the plan: write <b>4 sentences with unless and in case</b> about your real work or studies", m:"Two with unless, two with in case — bring them to Lesson 19"},
+    {t:"Voice memo (from the plan): your release plan with stakes — 6 sentences, one per connector (if / unless / as soon as / in case / until / as long as)", m:"Record it on your phone; we will listen at the start of Lesson 19"},
+    {t:"Shadowing tracks from this page — 5 minutes of repeating after the speaker (both tracks)", m:"Track A = plans and promises, Track B = safety nets and triggers"}
+  ]
+});
+
+/* ---- audio speed buttons + reset ---- */
+EC.enhanceAudio();
+document.getElementById('resetLesson').addEventListener('click', () => {
+  if (!confirm('Reset the progress, exercise results and the written text of Lesson 18?')) return;
+  try {
+    const d = JSON.parse(localStorage.getItem('ec_progress_v1') || '{}');
+    delete d.lessons['m05-02']
+    if (window.PG) window.PG.clearLesson('m05-02');;
+    localStorage.setItem('ec_progress_v1', JSON.stringify(d));
+    location.reload();
+  } catch (e) {}
+});
+</script>
+</body>
+</html>
